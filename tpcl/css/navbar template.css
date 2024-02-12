@@ -1,0 +1,86 @@
+/*Navbar:=============================*/
+
+nav.navbar {
+    /* eckige Navbar*/
+    border-radius: 0;
+/*    margin-bottom: 30px;*/
+}
+nav.navbar,
+ul.navbar-nav {
+    background-color: #1E6091;
+    padding: 0px;
+}
+
+
+li.nav-item:hover,
+li.nav-item:focus,
+li.nav-item.active
+{
+    background-color: #5B8CB2;
+}
+a.nav-link {
+    color: #ffffff !important;
+    font-weight: bold;
+    border: none;
+/*    margin: 5px 15px 5px 15px;*/
+padding: 15px 20px 15px 20px !important;
+}
+
+/*Dropdown=============================*/
+a.dropdown-item:hover,
+a.dropdown-item:focus {
+    color: #474747;
+    text-decoration: none;
+    background-color: #e3e3e3 !important;
+}
+
+a.dropdown-item {
+     color: #474747;
+    }
+    
+    
+div.dropdown-divider {
+    margin: 0;
+}
+
+li.dropdown > div.dropdown-menu {
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    border-style: solid;
+border-color: #e3e3e3;
+}
+
+
+@media (min-width: 768px) {.dropdown:hover >.dropdown-menu {display: block;}}
+
+
+
+/*Mobile View===========================*/
+a.navbar-brand {
+    padding: 15px;
+    color:#ffffff !important;
+   
+}
+
+.navbar-toggler {border-radius:0;
+margin-right:15px}
+
+div.navbar-collapse.show {
+    margin: 0px 15px 20px 15px;
+     border-top:1px white solid;
+}
+
+div.navbar-collapse.show > form {
+    margin-left: 0px;
+    margin-top:10px;
+}
+
+/* suchfeld */
+
+div.navbar-collapse button.btn {
+    background-color:white; 
+    color:#1E6091;
+    border: 1px solid #ced4da;
+}
