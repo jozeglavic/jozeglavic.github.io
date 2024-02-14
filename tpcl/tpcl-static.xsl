@@ -50,7 +50,7 @@
 		</doc>
 		<xsl:variable name="gamsdev"><xsl:text>https://jozeglavic.github.io</xsl:text></xsl:variable>
 		<xsl:variable name="projectAbbr">tpcl</xsl:variable>
-		<xsl:variable name="projectRootPath" select="concat($gamsdev, '/' ,$projectAbbr)"/>
+		<xsl:variable name="projectRootPath" select="concat($gamsdev, '/',$projectAbbr)"/>
 		<doc xmlns="http://www.oxygenxml.com/ns/doc/xsl">
 			<desc>C:/Users/Cookie/gams-local/gams-data/apache/tpcl</desc>
 		</doc>
