@@ -791,7 +791,7 @@
 					</section>
 				</xsl:when>
 				<xsl:otherwise>
-					<xsl:call-template name="content"/>
+					<!--<xsl:call-template name="content"/>-->
 				</xsl:otherwise>
 			</xsl:choose>
 		</main>
