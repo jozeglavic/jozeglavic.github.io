@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title type="main">SI_ZAL_LJU-0296_35_ovoj I_pismo 5</title>
+			<editor>
+               <persName xml:id="JG">
+                  <surname>Glavič</surname>
+                  <forename>Jože</forename>
+               </persName>
+            </editor><respStmt xml:id="NBK">               
+               <persName>
+                  <surname>Budna</surname>
+                  <surname>Kodrič</surname>
+                  <forename>Nataša</forename>
+               </persName>
+               <resp>Transcribing</resp>
+            </respStmt></titleStmt>
+			<publicationStmt>
+            <publisher>Zgodovinski arhiv Ljubljana</publisher>
+            <address>
+               <orgName>Zgodovinski arhiv Ljubljana</orgName>
+               <street>Mestni trg, 27</street>
+               <settlement>Ljubljana</settlement>
+               <postCode>1000</postCode>
+               <country>Slovenija</country>
+            </address>
+            <distributor>ZIM</distributor>
+            <pubPlace>Graz</pubPlace>
+            <date when="2020">2020</date>
+         <idno type="PID">o:tpcl.5</idno></publicationStmt>
+			<sourceDesc>
+            <bibl />   <!--AUTOMATIC NAMING AFTER adding correspDesc; Naming "Pismo" + <correspAction type="sent"><persName>Josephine Zeschka</persName> ""poslano k" <correspAction type="received"><persName>Fidelis Terpinz</persName> + " <date when="1825-03-22">22.März.1825</date>" -->
+            <msDesc rend="manuscript">
+               <msIdentifier>
+                  <institution xml:lang="sl">Zgodovinski arhiv Ljubljana</institution>                  
+                  <repository>SI_ZAL_LJU/0296 Graščina Fužine, Ljubljana, 1616-1925</repository>              
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+		</fileDesc>
+	<profileDesc>
+         <!-- ADD MANUAL-->
+         <correspDesc>
+            <correspAction type="sent">
+            	<persName ref="persName.xml#fidelij">Fidelis Terpinz</persName>
+            	<settlement ref="placeName.xml#kranj">Krainburg</settlement>
+            	<date>S.D.</date>
+            </correspAction>
+            <correspAction type="received">
+            	<persName ref="persName.xml#josephine">Josephine Zeschka</persName>
+            	<settlement ref="placeName.xml#ljubljana">Laibach</settlement>               
+            </correspAction>
+         </correspDesc>
+      </profileDesc></teiHeader><facsimile><surface xml:id="facs_1" ulx="0" uly="0" lrx="1541" lry="2510" corresp="LJU296_35_I_P05_001.tif">
+			<graphic url="LJU296_35_I_P05_001.tif" width="1541px" height="2510px" />
+			<zone ulx="262" uly="569" lrx="1495" lry="1896" rendition="TextRegion" xml:id="facs_1_r1">
+				<zone ulx="438" uly="569" lrx="1150" lry="637" rendition="Line" xml:id="facs_1_r1l1" />
+				<zone ulx="292" uly="822" lrx="1471" lry="903" rendition="Line" xml:id="facs_1_r1l2" />
+				<zone ulx="289" uly="920" lrx="1491" lry="1002" rendition="Line" xml:id="facs_1_r1l3" />
+				<zone ulx="295" uly="1009" lrx="1427" lry="1108" rendition="Line" xml:id="facs_1_r1l4" />
+				<zone ulx="303" uly="1116" lrx="1480" lry="1207" rendition="Line" xml:id="facs_1_r1l5" />
+				<zone ulx="297" uly="1221" lrx="1471" lry="1313" rendition="Line" xml:id="facs_1_r1l6" />
+				<zone ulx="266" uly="1322" lrx="689" lry="1408" rendition="Line" xml:id="facs_1_r1l7" />
+				<zone ulx="262" uly="1472" lrx="1435" lry="1566" rendition="Line" xml:id="facs_1_r1l8" />
+				<zone ulx="318" uly="1580" lrx="948" lry="1649" rendition="Line" xml:id="facs_1_r1l9" />
+				<zone ulx="782" uly="1665" lrx="1495" lry="1736" rendition="Line" xml:id="facs_1_r1l10" />
+				<zone ulx="995" uly="1796" lrx="1355" lry="1842" rendition="Line" xml:id="facs_1_r1l11" />
+			</zone>
+		</surface><surface xml:id="facs_2" ulx="0" uly="0" lrx="2512" lry="1549" corresp="LJU296_35_I_P05_002.tif">
+			<graphic url="LJU296_35_I_P05_002.tif" width="2512px" height="1549px" />
+		</surface></facsimile>
+	
+	
+	<text>
+		<body><div type="letter"><div type="letter">
+			<pb facs="#facs_1" xml:id="LJU296_35_I_P05_001.tif" n="1" />
+			<opener rend="center"><salute><lb facs="#facs_1_r1l1" n="N001" /><hi rend="italic">Meine theuerste Josephine!</hi></salute></opener>
+			<p facs="#facs_1_r1">				
+				<lb facs="#facs_1_r1l2" n="N002" />Ich mache mir zum größten Vergnugen
+				<lb facs="#facs_1_r1l3" n="N003" />beygehenden kleinen unschuldigen <hi rend="italic">Deliquenten
+				<lb facs="#facs_1_r1l4" n="N004" />Ihrer</hi> milden Behandlung anzuvertrauen;
+				<lb facs="#facs_1_r1l5" n="N005" />er ist mein Zögling von Jugend auf, und
+				<lb facs="#facs_1_r1l6" n="N006" />lohn so ziemlich meine ihm geopferten
+				<lb facs="#facs_1_r1l7" n="N007" /><hi rend="italic">Instructionen</hi>. 				
+			</p>
+			<closer>
+				<lb facs="#facs_1_r1l8" n="N008" />Ich bitte dieß kleine Andenken güttigst 
+				<lb facs="#facs_1_r1l9" n="N009" />anzunehmen, von Ihren
+				<lb facs="#facs_1_r1l10" n="N010" />anstrichtigsten ergebensten 
+				<lb facs="#facs_1_r1l11" n="N011" /><persName ref="persName.xml#fidelij">Fidelis Terpinz</persName>
+			</closer>
+			<pb facs="#facs_2" xml:id="LJU296_35_I_P05_002.tif" n="2" />
+		</div></div></body>
+	</text>
+</TEI>
