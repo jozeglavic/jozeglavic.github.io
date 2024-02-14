@@ -48,7 +48,7 @@
 		<doc xmlns="http://www.oxygenxml.com/ns/doc/xsl">
 			<desc>tpcl</desc>
 		</doc>
-		<xsl:variable name="gamsdev"><xsl:text>https://jozeglavic.github.io</xsl:text>
+		<xsl:variable name="gamsdev"><xsl:text>https://jozeglavic.github.io</xsl:text></xsl:variable>
 		<xsl:variable name="projectAbbr">tpcl</xsl:variable>
 		<xsl:variable name="projectRootPath" select="concat($gamsdev'/',$projectAbbr)"/>
 		<doc xmlns="http://www.oxygenxml.com/ns/doc/xsl">
