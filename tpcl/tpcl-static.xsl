@@ -550,7 +550,7 @@
 												<div class="card-body">
 													<div id="results">
 														<ol class="result">
-															<!-- <xsl:call-template name="results"/> -->
+															<xsl:call-template name="results"/>
 														</ol>
 													</div>
 												</div>
@@ -791,7 +791,7 @@
 					</section>
 				</xsl:when>
 				<xsl:otherwise>
-					<!--<xsl:call-template name="content"/>-->
+					<xsl:call-template name="content"/>
 				</xsl:otherwise>
 			</xsl:choose>
 		</main>
