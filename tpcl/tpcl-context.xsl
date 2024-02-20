@@ -35,8 +35,7 @@
                     <div class="card">
                         <div class="card-body" style="text-align: justify;">
                             <h3>Doborodšli</h3>
-                            <p>Stran pred vami je digitalna reprezentacija fizičnega arhivskega gradiva - korespodence družine Terpinc. Samo arhivsko gradivo se hrani v Zgodovinskem arhivu Ljubljana, spletna izdaja pred vami, pa je poskus predstavitve korespondence na spletu. Namen izdaje ni samo omogočiti lažji in širši dostop do vsebine pisem, ampak tudi ponuditi pisma v širšem zgodovinskem kontekstu časa in prostora
-							zainteresirani publiki. Dodatnimi informacijame in metapodatki so namenjene tako ključnemu mimoidočemu kot tudi raziskovalcem, njihov namen pa je pomoč pri razumevanju vsebine pisem.</p>
+                            <p>Stran pred vami je digitalna reprezentacija fizičnega arhivskega gradiva - korespondence družine Terpinc. Samo arhivsko gradivo se hrani v Zgodovinskem arhivu Ljubljana, spletna izdaja pred vami, pa je poskus predstavitve korespondence na spletu. Namen izdaje ni samo omogočiti lažji in širši dostop do vsebine pisem, ampak tudi ponuditi pisma v širšem zgodovinskem kontekstu časa in prostora zainteresirani publiki. Dodatne informacije in metapodatki so namenjene tako ključnemu mimoidočemu kot tudi raziskovalcem, njihov namen pa je pomoč pri razumevanju vsebine pisem.</p>
                         </div> 
                     </div>
 					<div class="row d-flex justify-content-center py-4">
@@ -54,7 +53,7 @@
 						<div class="px-0 card-body py-4 text-center">
 					<a href="/archive/objects/context:{$projectAbbr}/methods/sdef:Context/get?mode=osebe">
 						<img src="{$projectRootPath}/img/druzina_cesko.jpg" class="img-fluid"/>
-						<h3 class="card-title" style="color: white; background-color: #5B8CB2;">Korespodenti</h3>
+						<h3 class="card-title" style="color: white; background-color: #5B8CB2;">Osebe</h3>
 					</a>
 						</div>
 						</div>

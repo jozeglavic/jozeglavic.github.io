@@ -165,7 +165,7 @@
 										</xsl:if>								
 										<a class="nav-link"
 													href="/archive/objects/context:{$projectAbbr}/methods/sdef:Context/get?mode=osebe"
-											>Korespodenti</a>
+											>Osebe</a>
 								</li>
 								<li class="nav-item">	
 										<xsl:if test="$mode = 'kraji'">
