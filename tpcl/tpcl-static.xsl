@@ -417,9 +417,9 @@
 																<p>
 																	Cilj je uporabniku ponuditi facsimile pisma z transkripcijo opremljenega besedila. S tem ponuditi bralcu dodatne informacije za lažje razumevanje vsebine v okviru zgodovinske razdalje ter pismo predstaviti skozi prizmo časa, prostora in vpletenih ljudi.
 																</p>
-																<blockquote>
+																<blockquote class="blockquote">
 																	<p>"Glavni cilj opomb je premostiti zgodovinsko razdaljo med sedanjim bralcem in avtorjem ter prejemniki pisem, da je besedilo razumljivo in berljivo. Opombe se osredotočajo na zapolnitev morebitnih vrzeli v znanju bralcev te izdaje. Pri pisanju opomb smo upoštevali, kaj so naši predhodniki storili s pisem." </p>
-																	<footer>Vir: <a href="http://vangoghletters.org/vg/about_5.html">vangoghletters.org</a></footer>
+																	Vir: <a href="http://vangoghletters.org/vg/about_5.html">vangoghletters.org</a>
 																</blockquote>
 															</li>
 															<li>
