@@ -384,6 +384,7 @@
 												<div class="card-body">
 													<h2>Projekt</h2>
 													<ul class="toc">
+														<li><a href="#materials">O gradivu</a></li>
 														<li><a href="#about">O projektu</a></li>
 														<li><a href="#goal">Cilji projekta</a></li>
 														<li><a href="#workflow">Delovni proces</a></li>
@@ -396,6 +397,13 @@
 										<article class="col-md-8">
 											<div class="card" data-mh="group1">
 												<div class="card-body">
+													<div id="materials">	
+														<h3>O projektu</h3>												
+														<p> <a href="https://www.zal-lj.si/">Zgodovinski arhiv Ljubljana</a> hrani fond Graščine Fužine (SI_ZAL_LJU/0296 (1616-1925); nemško Herrschaft Fužine). Del tega fonda je korepsondenca članov družine Terpinc in njihovega družabnega kroga. Zbirka 319 pisem in 2 potovalnih dnevnikov iz 19. stoletja, je bila ob drugi svetovni vojni razbita in raztresena, ponovno pa je bila po združena s strani arhiva. Pisemska zbirka je datirana med letoma 1825-1858, pisana v stari gotici in nemškem jeziku. Kot primarni zgodovinski viri zbirka pokriva lokalno zgodovino mesta Ljubljana sredi 19. stoletja. Večina pisem je korespondenca med zakoncema Fidelijem in Josephino Terpinc (rojena Češko).</p>
+														<p>Korespondenca je bila že fizično objavljena v (<a href="http://www.arhivsko-drustvo.si/wp-content/uploads/2019/01/Viri-št.-41.pdf">Viri št. 41</a>). Ta zajema prvi del korespondence, večinoma gre za pisma med zakoncema Terpinc ter sorodniki in prijatelji, le nekaj malega je poslovnih pisem. Glavnina pisem je urejena v škatlah 35 in 35a v 12 ovojih.</p>
+														<p>Zaradi obsežnosti je korespondenca vsebinsko razdeljena na družinsko (primarno) in ostalo (sekundarno). Primarna je pomembnejša, ker je nastala znotraj (sorodstveno) tesneje povezanega kroga ljudi, v ospredju pa so način komunikacije, teme »pogovorov« in osebnostne značilnosti ter nagnjenja posameznikov, ki so na ta način jasneje in bolj osebno predstavljeni. Sekundarna korespondenca (pisma prijateljev in znancev) je časovno bolj razpršena, saj obsega daljše obdobje (1823–1875), pogosto nima »rdeče niti« pogovorov oz. dogodkov, korespondenti pa so med seboj v različno intenzivnih stikih. Ta pisma bodo počakala na objavo v prihodnje.</p>
+														<p>Transkripcije pisem v publikaciji Viri so označene z zaporednimi številkami, ki se ujemajo z digitalizati originalov na tej spletni strani. Oboji si sledijo kronološko, medtem ko je originalno gradivo v fondu Graščina Fužine urejeno glede na korespondente. Transkripcijo pisme je opravila Nataša Budna Kodrič</p>
+													</div>	
 													<div id="about">	
 														<h3>O projektu</h3>												
 														<p> <a href="https://www.zal-lj.si/">Historical Archive of Ljubljana</a> is keeping a fond (archival unit of collection) Graščine Fužine (SI_ZAL_LJU/0296; german Herrschaft Fužine). Part of that fond contains a correspondence between members of family Terpinc and their social circle. The collection of 319 letter and 2 travelogues from 19 century, initial scattered, were collected by the archive. The collection of letters is dated between 1825-1858, are written in old gothic font and German language. As primary historical source, they cover the local history of city Ljubljana in the mid 19 century. Majority of letter is corresponded between the spouse Fidelio and Josephina Terpinc (born Češko).</p>
@@ -589,7 +597,7 @@
         <div>  
           <p> Jože Glavič (<a target="_blank" href="mailto:joze.glavic@zal-lj.si">joze.glavic@zal-lj.si</a>) <br/>Zgodovinski arhiv Ljubljana</p>
           <p> Zgodovinski arhiv Ljubljana Enota za Dolenjsko in Belo krajino <br/> Skalickega ulica 1 (grad Grm)<br/> 8000 Novo mesto<br/> Slovenija<br/> Tel: +386 40 854 376<br/></p>
-          <p>Digitalna izdaja objave pisem je bila izdelana v okviru zaključne naloge magisterska študija digitalne humanistike v okviru Univerze v Grazu (Avstrija). Naloga je bila izvedena pod mentorstvom Univ.-Prof. Dr.phil. M.A. Georg Vogelerja. Trenutno je objavljeno le del pisem. Korpus pisem se bo postpoma dopolnjeval.</p>
+          <p>Digitalna izdaja objave pisem je bila izdelana v okviru zaključne naloge magisterska študija digitalne humanistike v okviru Univerze v Grazu (Avstrija). Naloga je bila izvedena pod mentorstvom Univ.-Prof. Dr.phil. M.A. Georg Vogelerja. Trenutno je objavljeno le del pisem. Korpus pisem se bo postopoma dopolnjeval.</p>
           <p> Vso odgovornost za tehnično izvedbo in spremna besedila nosi avtor te spletne strani. Originalno transkripcijo pisem s spremno študijo je opravila Nataša Budna Kodrič. Ta so bila objavljena v <a href="http://www.arhivsko-drustvo.si/wp-content/uploads/2019/01/Viri-št.-41.pdf">Viri št. 41</a>. Anotacijo in opremljanje z metapodatki je opravil Jože Glavič.</p>
         </div>        
         <div>

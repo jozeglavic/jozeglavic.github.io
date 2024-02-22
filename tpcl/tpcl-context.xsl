@@ -35,7 +35,7 @@
                     <div class="card">
                         <div class="card-body" style="text-align: justify;">
                             <h3>Doborodšli</h3>
-                            <p>Stran pred vami je digitalna reprezentacija fizičnega arhivskega gradiva - korespondence družine Terpinc. Samo arhivsko gradivo se hrani v Zgodovinskem arhivu Ljubljana, spletna izdaja pred vami, pa je poskus predstavitve korespondence na spletu. Namen izdaje ni samo omogočiti lažji in širši dostop do vsebine pisem, ampak tudi ponuditi pisma v širšem zgodovinskem kontekstu časa in prostora zainteresirani publiki. Dodatne informacije in metapodatki so namenjene tako ključnemu mimoidočemu kot tudi raziskovalcem, njihov namen pa je pomoč pri razumevanju vsebine pisem.</p>
+                            <p>Stran pred vami je digitalna reprezentacija fizičnega arhivskega gradiva - korespondence družine Terpinc. Samo arhivsko gradivo se hrani v Zgodovinskem arhivu Ljubljana (del fonda SI_ZAL_LJU/0296, Graščina Fužine, Ljubljana 1616-1925), spletna izdaja pred vami, pa je poskus predstavitve korespondence na spletu. Namen izdaje ni samo omogočiti lažji in širši dostop do vsebine pisem, ampak tudi ponuditi pisma v širšem zgodovinskem kontekstu časa in prostora zainteresirani publiki. Dodatne informacije in metapodatki so namenjene tako ključnemu mimoidočemu kot tudi raziskovalcem, njihov namen pa je pomoč pri razumevanju vsebine pisem.</p>
                         </div> 
                     </div>
 					<div class="row d-flex justify-content-center py-4">
