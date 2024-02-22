@@ -141,40 +141,40 @@
 									<a class="nav-link"
 										href="/context:{$projectAbbr}"
 										>Domov <span class="sr-only">(current)</span>
-										</a>
+									</a>
 								</li>
 								<li class="nav-item">
-										<xsl:if test="$mode = 'project'">
-											<xsl:attribute name="class">nav-item active</xsl:attribute>
-										</xsl:if>
-										<a class="nav-link"
-											href="/archive/objects/context:{$projectAbbr}/methods/sdef:Context/get?mode=project"
-											>O projektu</a>
-								</li>															
-								<li class="nav-item">
+									<xsl:if test="$mode = 'project'">
+										<xsl:attribute name="class">nav-item active</xsl:attribute>
+									</xsl:if>
+									<a class="nav-link"
+										href="/archive/objects/context:{$projectAbbr}/methods/sdef:Context/get?mode=project"
+										>O projektu</a>
+									</li>															
+									<li class="nav-item">
 										<xsl:if test="$mode = 'list_letters'">
-												<xsl:attribute name="class">nav-item active</xsl:attribute>
+											<xsl:attribute name="class">nav-item active</xsl:attribute>
 										</xsl:if>
 										<a class="nav-link"
-												href="/archive/objects/context:{$projectAbbr}/methods/sdef:Context/get?mode=list_letters"
+											href="/archive/objects/context:{$projectAbbr}/methods/sdef:Context/get?mode=list_letters"
 											>Pisma</a>
-								</li>
-								<li class="nav-item">	
-										<xsl:if test="$mode = 'osebe'">
-											<xsl:attribute name="class">nav-item active</xsl:attribute>
-										</xsl:if>								
-										<a class="nav-link"
-													href="/archive/objects/context:{$projectAbbr}/methods/sdef:Context/get?mode=osebe"
-											>Osebe</a>
-								</li>
-								<li class="nav-item">	
-										<xsl:if test="$mode = 'kraji'">
-											<xsl:attribute name="class">nav-item active</xsl:attribute>
-										</xsl:if>
-										<a class="nav-link"
-										href="/archive/objects/context:{$projectAbbr}/methods/sdef:Context/get?mode=kraji"
-											>Lokacije</a>
-								</li>
+										</li>
+										<li class="nav-item">	
+											<xsl:if test="$mode = 'osebe'">
+												<xsl:attribute name="class">nav-item active</xsl:attribute>
+											</xsl:if>								
+											<a class="nav-link"
+												href="/archive/objects/context:{$projectAbbr}/methods/sdef:Context/get?mode=osebe"
+												>Osebe</a>
+											</li>
+											<li class="nav-item">	
+												<xsl:if test="$mode = 'kraji'">
+													<xsl:attribute name="class">nav-item active</xsl:attribute>
+												</xsl:if>
+												<a class="nav-link"
+													href="/archive/objects/context:{$projectAbbr}/methods/sdef:Context/get?mode=kraji"
+													>Lokacije</a>
+												</li>
 								<!--<li class="nav-item">
 									<xsl:if test="$mode = (concat('context:', $projectAbbr))">
 										<xsl:attribute name="class">nav-item active</xsl:attribute>
@@ -384,8 +384,7 @@
 												<div class="card-body">
 													<h2>Projekt</h2>
 													<ul class="toc">
-														<li><a href="#materials">O gradivu</a></li>
-														<li><a href="#about">O projektu</a></li>
+														<li><a href="#materials">O gradivu</a></li>														
 														<li><a href="#goal">Cilji projekta</a></li>
 														<li><a href="#workflow">Delovni proces</a></li>
 														<li><a href="#fm">Upravljanje z datotekami</a></li>
@@ -398,329 +397,322 @@
 											<div class="card" data-mh="group1">
 												<div class="card-body">
 													<div id="materials">	
-														<h3>O projektu</h3>												
-														<p> <a href="https://www.zal-lj.si/">Zgodovinski arhiv Ljubljana</a> hrani fond Graščine Fužine (SI_ZAL_LJU/0296 (1616-1925); nemško Herrschaft Fužine). Del tega fonda je korepsondenca članov družine Terpinc in njihovega družabnega kroga. Zbirka 319 pisem in 2 potovalnih dnevnikov iz 19. stoletja, je bila ob drugi svetovni vojni razbita in raztresena, ponovno pa je bila po združena s strani arhiva. Pisemska zbirka je datirana med letoma 1825-1858, pisana v stari gotici in nemškem jeziku. Kot primarni zgodovinski viri zbirka pokriva lokalno zgodovino mesta Ljubljana sredi 19. stoletja. Večina pisem je korespondenca med zakoncema Fidelijem in Josephino Terpinc (rojena Češko).</p>
+														<h3>O gradivu</h3>												
+														<p> <a href="https://www.zal-lj.si/">Zgodovinski arhiv Ljubljana</a> hrani fond Graščine Fužine (SI_ZAL_LJU/0296 (1616-1925); nemško Herrschaft Fužine). Del tega fonda je korespondenca članov družine Terpinc in njihovega družabnega kroga. Zbirka 319 pisem in 2 potovalnih dnevnikov iz 19. stoletja, je bila ob drugi svetovni vojni razbita in raztresena, ponovno pa je bila po združena s strani arhiva. Pisemska zbirka je datirana med letoma 1825-1858, pisana v stari gotici in nemškem jeziku. Kot primarni zgodovinski viri zbirka pokriva lokalno zgodovino mesta Ljubljana sredi 19. stoletja. Večina pisem je korespondenca med zakoncema Fidelijem in Josephino Terpinc (rojena Češko).</p>
 														<p>Korespondenca je bila že fizično objavljena v (<a href="http://www.arhivsko-drustvo.si/wp-content/uploads/2019/01/Viri-št.-41.pdf">Viri št. 41</a>). Ta zajema prvi del korespondence, večinoma gre za pisma med zakoncema Terpinc ter sorodniki in prijatelji, le nekaj malega je poslovnih pisem. Glavnina pisem je urejena v škatlah 35 in 35a v 12 ovojih.</p>
 														<p>Zaradi obsežnosti je korespondenca vsebinsko razdeljena na družinsko (primarno) in ostalo (sekundarno). Primarna je pomembnejša, ker je nastala znotraj (sorodstveno) tesneje povezanega kroga ljudi, v ospredju pa so način komunikacije, teme »pogovorov« in osebnostne značilnosti ter nagnjenja posameznikov, ki so na ta način jasneje in bolj osebno predstavljeni. Sekundarna korespondenca (pisma prijateljev in znancev) je časovno bolj razpršena, saj obsega daljše obdobje (1823–1875), pogosto nima »rdeče niti« pogovorov oz. dogodkov, korespondenti pa so med seboj v različno intenzivnih stikih. Ta pisma bodo počakala na objavo v prihodnje.</p>
 														<p>Transkripcije pisem v publikaciji Viri so označene z zaporednimi številkami, ki se ujemajo z digitalizati originalov na tej spletni strani. Oboji si sledijo kronološko, medtem ko je originalno gradivo v fondu Graščina Fužine urejeno glede na korespondente. Transkripcijo pisme je opravila Nataša Budna Kodrič</p>
-													</div>	
-													<div id="about">	
-														<h3>O projektu</h3>												
-														<p> <a href="https://www.zal-lj.si/">Historical Archive of Ljubljana</a> is keeping a fond (archival unit of collection) Graščine Fužine (SI_ZAL_LJU/0296; german Herrschaft Fužine). Part of that fond contains a correspondence between members of family Terpinc and their social circle. The collection of 319 letter and 2 travelogues from 19 century, initial scattered, were collected by the archive. The collection of letters is dated between 1825-1858, are written in old gothic font and German language. As primary historical source, they cover the local history of city Ljubljana in the mid 19 century. Majority of letter is corresponded between the spouse Fidelio and Josephina Terpinc (born Češko).</p>
-														<p>Korespondenca je bila že fizično objavljena v (<a href="http://www.arhivsko-drustvo.si/wp-content/uploads/2019/01/Viri-št.-41.pdf">Viri št. 41</a>). Ta zajema le del korespondence, ki je ohranjena v Zgodovinskem arhivu Ljubljana v fondu Graščina Fužine (SI_ZAL_LJU/0296). Glavnina pisem je urejena v škatlah 35 in 35a v 12 ovojih. Gre za pisma med sorodniki in prijatelji, le nekaj malega je poslovnih pisem.</p>
-														<p>Zaradi obsežnosti je korespondenca vsebinsko razdeljena na družinsko (primarno) in ostalo (sekundarno). Primarna je pomembnejša, ker je nastala znotraj (sorodstveno) tesneje povezanega kroga ljudi, v ospredju pa so način komunikacije, teme »pogovorov« in osebnostne značilnosti ter nagnjenja posameznikov, ki so na ta način jasneje in bolj osebno predstavljeni. Sekundarna korespondenca (pisma prijateljev in znancev) je časovno bolj razpršena, saj obsega daljše obdobje (1823–1875), pogosto nima »rdeče niti« pogovorov oz. dogodkov, korespondenti pa so med seboj v različno intenzivnih stikih. Ta pisma bodo počakala na objavo v prihodnje.</p>
-														<p>Transkripcije pisem v publikaciji Viri so označene z zaporednimi številkami, ki se ujemajo z digitalizati originalov na tej spletni strani. Oboji si sledijo kronološko, medtem ko je originalno gradivo v fondu Graščina Fužine urejeno glede na korespondente.</p>
-													</div>	
+													</div>															
 													<div id="goal">	
-														<h3>Project Goal</h3> 
+														<h3>Cilji projekta</h3> 
 														<ol>
 															<li>
-																<h2>Archival Source Publishing</h2>
+																<h4>Objavljanje arhivskega gradiva</h4>
 																<p>
-																	With the existence of a partial printed edition of letters, the idea arose to create a digital version of the letter collection.
+																	Zaradi obstoja delne tiskane izdaje pisem se je pojavila ideja o ustvarjanju digitalne različice zbirke pisem.
 																</p>
 																<p>
-																	With the creation of a digital edition, we aim to make archival materials more widely available for researchers, scholars, enthusiasts, and students through new digital media. Not everybody reads old gothic font. We can add extra interactive information to the text to help understand the text better (abbreviations, descriptions of people, places). There is also the “problem of being lost in the crowd”. If the archival materials are not properly described, equipped with proper metadata, they can be easily missed when searched for. We can even say they “don’t exist”. This is a way to put some important materials more into focus.
+																	Z ustvarjanjem digitalne izdaje si prizadevamo, da bi arhivsko gradivo postalo širše dostopno raziskovalcem, znanstvenikom, navdušencem in študentom prek novih digitalnih medijev. Ne vsi znajo brati stare gotike. Besedilu lahko dodamo dodatne interaktivne informacije, ki pomagajo bolje razumeti besedilo (kratice, opisi ljudi, krajev). Obstaja tudi "problem izgube v množici". Če arhivsko gradivo ni pravilno opisano in opremljeno z ustreznimi metapodatki, ga je mogoče enostavno spregledati pri iskanju. Lahko celo rečemo, da "ne obstaja". To je način, da nekaterim pomembnim gradivom damo več pozornosti.
 																</p>
 																<p>
-																	With that, the goal is to offer a user a letter facsimile with transcription of the annotated text. The annotation's main purpose is to offer a reader additional information for easier understanding of the content in the scope of historical distance. The goal is to present letters through the prism of time, space, and people involved.
+																	Cilj je uporabniku ponuditi facsimile pisma z transkripcijo opremljenega besedila. Glavni namen opremljanja je ponuditi bralcu dodatne informacije za lažje razumevanje vsebine v okviru zgodovinske razdalje. Cilj je pisma predstaviti skozi prizmo časa, prostora in vpletenih ljudi.
 																</p>
 																<blockquote>
-																	<p>“The primary aim of the annotations is to bridge the historic distance between the present reader and the author and recipients of the letters so that the text is comprehensible and readable. The annotations focus on filling any gaps in the knowledge of the readers of this edition. In writing the annotations, we took account of what our predecessors have done with the letters.”</p>
-																	<footer>Source: <a href="http://vangoghletters.org/vg/about_5.html">vangoghletters.org</a></footer>
+																	<p>"Glavni cilj opomb je premostiti zgodovinsko razdaljo med sedanjim bralcem in avtorjem ter prejemniki pisem, da je besedilo razumljivo in berljivo. Opombe se osredotočajo na zapolnitev morebitnih vrzeli v znanju bralcev te izdaje. Pri pisanju opomb smo upoštevali, kaj so naši predhodniki storili s pisem." </p>
+																	<footer>Vir: <a href="http://vangoghletters.org/vg/about_5.html">vangoghletters.org</a></footer>
 																</blockquote>
 															</li>
 															<li>
-																<h2>Easier Management of Collection</h2>
+																<h4>Lažje upravljanje zbirke</h4>
 																<p>
-																	Easier management of the collection with features such as advanced search, annotation, correspsearch, etc., gives countless options for advanced and faster processing of the letters not only for the users but also for the manager of the collection. This is especially important when thinking of organizing the structure of physical letters. The digital version gives us the option to present letters either through a timeline (from the earliest to the newest letter) or by correspondents (there are more than only two senders and receivers).
+																	Lažje upravljanje zbirke z lastnostmi, kot so napredno iskanje, opombe, iskanje po korespondenci itd., nudi številne možnosti za napredno in hitrejše obdelovanje pisem ne le za uporabnike, ampak tudi za upravljalca zbirke. To je še posebej pomembno, ko razmišljamo o organiziranju strukture fizičnih pisem. Digitalna različica nam omogoča, da pisma predstavimo bodisi skozi časovnico (od najstarejšega do najnovejšega pisma) ali po korespondentih (pošiljateljev in prejemnikov je več kot le dva).
 																</p>
 															</li>
 															<li>
-																<h2>Connecting the Letter Edition</h2>
+																<h4>Povezovanje izdaje pisem</h4>
 																<p>
-																	Using the <code>&lt;correspDesc&gt;</code> tag in the context of Correspondence Metadata Interchange Format and correspSearch web service can give the letter collection additional value. Not only do we put letters in context, but we also give them structural organization form and show relationships and connections between individual letters. Additionally, it gives us the possibility to create CMIF format in the future with which we can put the letters of a single collection in the context of others' letters with CMIF standard applied.
+																	Uporaba oznake <code>&lt;correspDesc&gt;</code> v kontekstu oblikovanja metapodatkov za korespondenco in spletnega servisa correspSearch lahko zbirki pisem doda dodatno vrednost. Ne samo, da postavljamo pisma v kontekst, ampak jim tudi dajemo strukturo organizacije in prikazujemo odnose in povezave med posameznimi pismi. Poleg tega nam omogoča ustvarjanje formata CMIF v prihodnosti, s katerim lahko pisma ene zbirke postavimo v kontekst pisem drugih z uporabo standarda CMIF.
 																</p>
 															</li>
 															<li>
-																<h2>Preserving the Original</h2>
+																<h4>Ohranjanje originala</h4>
 																<p>
-																	If people use a digital edition instead of the original physical papers, the state of the original can be preserved better. Less physical usage means a better condition of the original for the future.
+																	Če ljudje uporabljajo digitalno izdajo namesto originalnih fizičnih papirjev, se stanje originala lahko bolje ohrani. Manjša fizična uporaba pomeni boljše stanje originala za prihodnost.
 																</p>
 															</li>
 															<li>
-																<h2>Availability</h2>
+																<h4>Dostopnost</h4>
 																<p>
-																	With a digital edition, we make materials accessible all the time (literally 24/7). So more users can use the same material at the same time.
+																	S digitalno izdajo gradivo postane dostopno ves čas (dobesedno 24 ur na dan, 7 dni v tednu). Tako lahko več uporabnikov isto gradivo uporablja istočasno.
 																</p>
 															</li>
 															<li>
-																<h2>Long-time Preservation</h2>
+																<h4>Dolgoročno ohranjanje</h4>
 																<p>
-																	With creating a digital adequate copy of the original material, we can also think of long-time preservation of the material. As paper is slowly disintegrating through time, a digital copy does not. There are other problems with digital preservation, which can be better explained in the MA. We can always follow the logic: better to have two objects to preserve than only one or none.
+																	S ustvarjanjem digitalne ustrezne kopije originalnega gradiva lahko razmišljamo tudi o dolgoročnem ohranjanju gradiva. Ker papir počasi razpada skozi čas, digitalna kopija tega ne počne. Obstajajo še drugi problemi digitalnega ohranjanja, ki jih lahko bolje razložimo v magistrskem delu. Vedno lahko sledimo logiki: bolje je imeti dva predmeta za ohranjanje kot le enega ali nobenega.
 																</p>
 															</li>
 															<li>
-																<h2>Creating a Workflow for Archive, Including Archive Personnel</h2>
+																<h4>Ustvarjanje delovnega postopka za arhiv, vključno z osebjem arhiva</h4>
 																<p>
-																	Creating an example “pilot project” on how to make a digital edition with limited sources in the archive. With that example workflow, other editions can be then derived from it. Including employees of the archive in the working group to help adapt materials. With that, building a digital culture inside the archive. Sharing awareness of possible open source, available digital tools (Transkribus), and technologies (XML, XSLT, web technologies).
-																</p>
-															</li>
-														</ol>
-													</div>											
-													<div id="workflow">	
-														<h3>Workflow</h3>
-														<ol>
-															<li>
-																<h2>Digitization</h2>
-																<p>
-																	The letters were digitized in-house with a scanner EPSON DS-50000 in .tiff format with 300 dpi.
-																</p>
-															</li>
-															<li>
-																<h2>Transcribing</h2>
-																<p>
-																	As the letters are written in old gothic font, they were transcribed for the first part of the published printed edition. Those transcribed letters were then used to build an HTR model with the software Transkribus (<a href="https://transkribus.eu/Transkribus/">transkribus.eu</a>). The letters were imported into the program with the built-in import tool. Each letter was run through layout analysis (which defines the text area of the digitized letter), and the transcribed text was then copy-pasted to the connected letter and checked.
-																</p>
-																<p>
-																	The HTR model was built for automatic transcription using 65 letters (21,189 words). The CER (Character Error Rate) is recorded at 5.06%. We can advocate the invested time for building a model with the time savings when transcribing the "still not transcribed letters." The first is the automatic transcription of the letter with the HTR model. Then the letter is manually checked and corrected, a so-called semi-automatic transcribing. With additional letters transcribed and manually checked, we can then develop a better and more efficient HTR model.
-																</p>
-															</li>
-															<li>
-																<h2>Exporting TEI XML</h2>
-																<p>
-																	Transkribus offers customizable export options. Main options are "Server export" and "Client export". Both options offer .pdf, TEI, DOCX, simple TXT exports. One difference is in TEI export (which was important for the export process in this project). "Server export" doesn’t allow any preference changes to TEI export, on the other hand, "Client export" allows changes to zone tags (defining which zone to use, either region, line, word, or no zone) and also tags for a line break (option between <code>&lt;l&gt;</code> and <code>&lt;lb&gt;</code> tag). There is also an option to include the image name as the xml:id attribute in the <code>&lt;pb&gt;</code> tag.
-																</p>
-																<p>
-																	When using "server export," the export tool sometimes provided unfinished results (empty .xml files, the reason why was not discovered). In the project, the export was done with the "client export" option, letter by letter with predefined options (Zone per line; Image names as <code>&lt;pb&gt;</code> xml:id; Line breaks <code>&lt;lb&gt;</code>).
-																</p>
-															</li>
-															<li>
-																<h2>Adapting the XML File</h2>
-																<p>
-																	The exported .xml was TEI compliant; however, some adjustments were needed to be done to become the desired form of a letter, which affects the end process of publishing the letters online.
-																</p>
-																<p>
-																	The xml_modification.xsl was created to use XSLT transformation. The file is available in materials and it is commented for understanding.
-																</p>
-																<p>
-																	Main adjustments of the xml_modification.xsl are:
-																</p>
-																<ul>
-																	<li>Copying the prepared external header in each letter with <code>&lt;fileDesc&gt;</code> and <code>&lt;profileDesc&gt;</code> information (the information that are the same for each letter)</li>
-																	<li>Adding <code>&lt;div type=”letter”&gt;</code> and <code>&lt;p&gt;</code> tags to represent the letter form</li>
-																	<li>Removing the repeating <code>&lt;facsimile tag&gt;</code> and copying its xml:id attribute into <code>&lt;surface&gt;</code> tag for each .jpg file</li>
-																</ul>
-															</li>
-															<li>
-																<h2>Manual Annotating</h2>
-																<p>
-																	Examples of already published digital edition were researched. Main sources:
+																	Ustvarjanje primerjalnega "pilotnega projekta" o tem, kako narediti digitalno izdajo z omejenimi viri v arhivu. S tem primerjalnim delovnim postopkom se lahko izpeljejo druge izdaje. Vključitev zaposlenih v arhivsko delovno skupino za pomoč pri prilagajanju gradiva. S tem se gradi digitalna kultura v arhivu. Deljenje ozaveščenosti o možnih odprtokodnih, dostopnih digitalnih orodjih (Transkribus) in tehnologijah (XML, XSLT, spletnih tehnologijah).
+																	</p>
+																</li>
+															</ol>
+														</div>											
+														<div id="workflow">	
+															<h3>Workflow</h3>
+															<ol>
+																<li>
+																	<h2>Digitization</h2>
+																	<p>
+																		The letters were digitized in-house with a scanner EPSON DS-50000 in .tiff format with 300 dpi.
+																	</p>
+																</li>
+																<li>
+																	<h2>Transcribing</h2>
+																	<p>
+																		As the letters are written in old gothic font, they were transcribed for the first part of the published printed edition. Those transcribed letters were then used to build an HTR model with the software Transkribus (<a href="https://transkribus.eu/Transkribus/">transkribus.eu</a>). The letters were imported into the program with the built-in import tool. Each letter was run through layout analysis (which defines the text area of the digitized letter), and the transcribed text was then copy-pasted to the connected letter and checked.
+																	</p>
+																	<p>
+																		The HTR model was built for automatic transcription using 65 letters (21,189 words). The CER (Character Error Rate) is recorded at 5.06%. We can advocate the invested time for building a model with the time savings when transcribing the "still not transcribed letters." The first is the automatic transcription of the letter with the HTR model. Then the letter is manually checked and corrected, a so-called semi-automatic transcribing. With additional letters transcribed and manually checked, we can then develop a better and more efficient HTR model.
+																	</p>
+																</li>
+																<li>
+																	<h2>Exporting TEI XML</h2>
+																	<p>
+																		Transkribus offers customizable export options. Main options are "Server export" and "Client export". Both options offer .pdf, TEI, DOCX, simple TXT exports. One difference is in TEI export (which was important for the export process in this project). "Server export" doesn’t allow any preference changes to TEI export, on the other hand, "Client export" allows changes to zone tags (defining which zone to use, either region, line, word, or no zone) and also tags for a line break (option between <code>&lt;l&gt;</code> and <code>&lt;lb&gt;</code> tag). There is also an option to include the image name as the xml:id attribute in the <code>&lt;pb&gt;</code> tag.
+																	</p>
+																	<p>
+																		When using "server export," the export tool sometimes provided unfinished results (empty .xml files, the reason why was not discovered). In the project, the export was done with the "client export" option, letter by letter with predefined options (Zone per line; Image names as <code>&lt;pb&gt;</code> xml:id; Line breaks <code>&lt;lb&gt;</code>).
+																	</p>
+																</li>
+																<li>
+																	<h2>Adapting the XML File</h2>
+																	<p>
+																		The exported .xml was TEI compliant; however, some adjustments were needed to be done to become the desired form of a letter, which affects the end process of publishing the letters online.
+																	</p>
+																	<p>
+																		The xml_modification.xsl was created to use XSLT transformation. The file is available in materials and it is commented for understanding.
+																	</p>
+																	<p>
+																		Main adjustments of the xml_modification.xsl are:
+																	</p>
 																	<ul>
-																		<li><a href="https://ride.i-d-e.de/issues/issue-10/">ride.i-d-e.de</a></li>
-																		<li><a href="https://encoding-correspondence.bbaw.de/v1/">encoding-correspondence.bbaw.de</a></li>
-																		<li><a href="https://journals.openedition.org/jtei/1742">journals.openedition.org</a></li>
-																		<li><a href="http://vangoghletters.org">vangoghletters.org</a></li>
-																		<li><a href="https://edition-humboldt.de/">edition-humboldt.de</a></li>
-																		<li><a href="https://www.jeanpaul-edition.de/">jeanpaul-edition.de</a></li>
+																		<li>Copying the prepared external header in each letter with <code>&lt;fileDesc&gt;</code> and <code>&lt;profileDesc&gt;</code> information (the information that are the same for each letter)</li>
+																		<li>Adding <code>&lt;div type=”letter”&gt;</code> and <code>&lt;p&gt;</code> tags to represent the letter form</li>
+																		<li>Removing the repeating <code>&lt;facsimile tag&gt;</code> and copying its xml:id attribute into <code>&lt;surface&gt;</code> tag for each .jpg file</li>
 																	</ul>
-																</p>
-																<p>
-																	A standalone document (Annotation.docx; part of materials) was created as an internal guideline. In the document are noted the main used annotations, examples, and rules on how to use them.
-																</p>
-																<p>
-																	Here ends the step that was done for the project.
-																</p>
-															</li>
-															<li>
-																<h2>Publishing</h2>
-																<p>
-																	The next step is the form and means of how to publish the letters. That part still needs to be put into a practical example.
-																</p>
-															</li>
-														</ol>
+																</li>
+																<li>
+																	<h2>Manual Annotating</h2>
+																	<p>
+																		Examples of already published digital edition were researched. Main sources:
+																		<ul>
+																			<li><a href="https://ride.i-d-e.de/issues/issue-10/">ride.i-d-e.de</a></li>
+																			<li><a href="https://encoding-correspondence.bbaw.de/v1/">encoding-correspondence.bbaw.de</a></li>
+																			<li><a href="https://journals.openedition.org/jtei/1742">journals.openedition.org</a></li>
+																			<li><a href="http://vangoghletters.org">vangoghletters.org</a></li>
+																			<li><a href="https://edition-humboldt.de/">edition-humboldt.de</a></li>
+																			<li><a href="https://www.jeanpaul-edition.de/">jeanpaul-edition.de</a></li>
+																		</ul>
+																	</p>
+																	<p>
+																		A standalone document (Annotation.docx; part of materials) was created as an internal guideline. In the document are noted the main used annotations, examples, and rules on how to use them.
+																	</p>
+																	<p>
+																		Here ends the step that was done for the project.
+																	</p>
+																</li>
+																<li>
+																	<h2>Publishing</h2>
+																	<p>
+																		The next step is the form and means of how to publish the letters. That part still needs to be put into a practical example.
+																	</p>
+																</li>
+															</ol>
+														</div>
+														<div id="fm">	
+															<h3>Files Managment</h3> 
+														</div>
+														<div id="access">	
+															<h3>Accesibility</h3> 
+														</div>											
 													</div>
-													<div id="fm">	
-														<h3>Files Managment</h3> 
-													</div>
-													<div id="access">	
-														<h3>Accesibility</h3> 
-													</div>											
 												</div>
-											</div>
-										</article>
-									</section>
-								</xsl:when>
-								<xsl:when test="$mode = 'list_letters'">
-									<section class="row">
-										<article class="col-md-12 ">
-											<div class="card">
-												<div class="card-body">
-													<div id="results">
-														<ol class="result">
-															<xsl:call-template name="results"/>
-														</ol>
+											</article>
+										</section>
+									</xsl:when>
+									<xsl:when test="$mode = 'list_letters'">
+										<section class="row">
+											<article class="col-md-12 ">
+												<div class="card">
+													<div class="card-body">
+														<div id="results">
+															<ol class="result">
+																<xsl:call-template name="results"/>
+															</ol>
+														</div>
 													</div>
 												</div>
-											</div>
-										</article>													
-									</section>						
-								</xsl:when>
-								<xsl:when test="$mode = 'osebe'">
-									<section class="row">
-										<article class="col-md-12 ">
-											<div class="card">
-												<div class="card-body">
-													<p>TEST osebe</p>
+											</article>													
+										</section>						
+									</xsl:when>
+									<xsl:when test="$mode = 'osebe'">
+										<section class="row">
+											<article class="col-md-12 ">
+												<div class="card">
+													<div class="card-body">
+														<p>TEST osebe</p>
+													</div>
 												</div>
-											</div>
-										</article>													
-									</section>						
-								</xsl:when>
-								<xsl:when test="$mode = 'kraji'">
-									<section class="row">
-										<article class="col-md-12 ">
-											<div class="card">
-												<div class="card-body">
-													<p>TEST kraji</p>
+											</article>													
+										</section>						
+									</xsl:when>
+									<xsl:when test="$mode = 'kraji'">
+										<section class="row">
+											<article class="col-md-12 ">
+												<div class="card">
+													<div class="card-body">
+														<p>TEST kraji</p>
+													</div>
 												</div>
-											</div>
-										</article>													
-									</section>						
-								</xsl:when>
-								<xsl:when test="$mode = 'about'">
-									<section class="row">
-										<article class="col-md-12 ">
-											<div class="card">
-												<div class="card-body">
-													<h3>Informacije o odgovornosti</h3>
-        <div>  
-          <p> Jože Glavič (<a target="_blank" href="mailto:joze.glavic@zal-lj.si">joze.glavic@zal-lj.si</a>) <br/>Zgodovinski arhiv Ljubljana</p>
-          <p> Zgodovinski arhiv Ljubljana Enota za Dolenjsko in Belo krajino <br/> Skalickega ulica 1 (grad Grm)<br/> 8000 Novo mesto<br/> Slovenija<br/> Tel: +386 40 854 376<br/></p>
-          <p>Digitalna izdaja objave pisem je bila izdelana v okviru zaključne naloge magisterska študija digitalne humanistike v okviru Univerze v Grazu (Avstrija). Naloga je bila izvedena pod mentorstvom Univ.-Prof. Dr.phil. M.A. Georg Vogelerja. Trenutno je objavljeno le del pisem. Korpus pisem se bo postopoma dopolnjeval.</p>
-          <p> Vso odgovornost za tehnično izvedbo in spremna besedila nosi avtor te spletne strani. Originalno transkripcijo pisem s spremno študijo je opravila Nataša Budna Kodrič. Ta so bila objavljena v <a href="http://www.arhivsko-drustvo.si/wp-content/uploads/2019/01/Viri-št.-41.pdf">Viri št. 41</a>. Anotacijo in opremljanje z metapodatki je opravil Jože Glavič.</p>
-        </div>        
-        <div>
-          <h3>Tehnična infrastruktura</h3>
-          <p>
-            <a target="_blank" href="https://gams.uni-graz.at/"> GAMS-Geisteswissenschaftliches Asset Management
-              System </a>
-          <p>
-            <a target="_blank" href="http://informationsmodellierung.uni-graz.at"> Zentrum für
-              Informationsmodellierung - Austrian Centre for Digital Humanities </a>
-          </p>
-          </p>
-        </div>
-        <div>
-          <h3>Identifikacija</h3>
-          <p> Permalink: tbd<br/> Handle: tbd </p>
-        </div>       
-      
-												</div>
-											</div>
-										</article>													
-									</section>						
-								</xsl:when>
-								<xsl:when test="$mode = 'search'">
-									<!-- muss auch im project-search kopiert werden, damit die felderbox auch bei den ergebnissen stehen bleibt. wenn ein projekt keine erweiterte suche hat, kann man das ignorieren -->
-									<section class="row">
-										<article class="col-md-5">
-											<div class="card">
-												<div class="card-body">
-													<div class="advancedSearch">
-														<h3>Erweiterte Suche</h3>
-														<div id="backStart">
-															<form method="get" name="g3search" role="form"
-																action="/search/gsearch">
-																<!-- ////////////////////// -->
-																<div class="input-group form-group">
-																	<input type="text" class="form-control"
-																		placeholder="Volltextsuche" id="query2"
-																		name="query"/>
-																		<div class="input-group-append">
-																			<span class="input-group-text" id="basic-addon">
-																				<a
-																					href="/archive/objects/context:{$projectAbbr}/methods/sdef:Context/get?mode=searchHelp"
-																					>?</a>
-																				</span>
-																			</div>
-																		</div>
-																		<!-- ////////////////////// -->
-																		<div class="form-group">
-																			<label for="exampleSelect1">Example select</label>
-																			<select class="form-control" id="exampleSelect1">
-																				<option>1</option>
-																				<option>2</option>
-																				<option>3</option>
-																				<option>4</option>
-																				<option>5</option>
-																			</select>
-																		</div>
-																		<!-- ////////////////////// -->
-																		<div class="form-group">
-																			<label for="exampleSelect2">Mutiple select list
-																				(hold shift to select more than one):</label>
-																				<select multiple="multiple" class="form-control"
-																					id="sel2" name="sellist2">
-																					<option>1</option>
-																					<option>2</option>
-																					<option>3</option>
-																					<option>4</option>
-																					<option>5</option>
-																				</select>
-																			</div>
+											</article>													
+										</section>						
+									</xsl:when>
+									<xsl:when test="$mode = 'about'">
+										<section class="row">
+											<article class="col-md-12 ">
+												<div class="card">
+													<div class="card-body">
+														<h3>Informacije o odgovornosti</h3>
+														<div>  
+															<p> Jože Glavič (<a target="_blank" href="mailto:joze.glavic@zal-lj.si">joze.glavic@zal-lj.si</a>) <br/>Zgodovinski arhiv Ljubljana</p>
+															<p> Zgodovinski arhiv Ljubljana Enota za Dolenjsko in Belo krajino <br/> Skalickega ulica 1 (grad Grm)<br/> 8000 Novo mesto<br/> Slovenija<br/> Tel: +386 40 854 376<br/></p>
+															<p>Digitalna izdaja objave pisem je bila izdelana v okviru zaključne naloge magisterska študija digitalne humanistike v okviru Univerze v Grazu (Avstrija). Naloga je bila izvedena pod mentorstvom Univ.-Prof. Dr.phil. M.A. Georg Vogelerja. Trenutno je objavljeno le del pisem. Korpus pisem se bo postopoma dopolnjeval.</p>
+															<p> Vso odgovornost za tehnično izvedbo in spremna besedila nosi avtor te spletne strani. Originalno transkripcijo pisem s spremno študijo je opravila Nataša Budna Kodrič. Ta so bila objavljena v <a href="http://www.arhivsko-drustvo.si/wp-content/uploads/2019/01/Viri-št.-41.pdf">Viri št. 41</a>. Anotacijo in opremljanje z metapodatki je opravil Jože Glavič.</p>
+														</div>        
+														<div>
+															<h3>Tehnična infrastruktura</h3>
+															<p>
+																<a target="_blank" href="https://gams.uni-graz.at/"> GAMS-Geisteswissenschaftliches Asset Management
+																	System </a>
+																	<p>
+																		<a target="_blank" href="http://informationsmodellierung.uni-graz.at"> Zentrum für
+																			Informationsmodellierung - Austrian Centre for Digital Humanities </a>
+																		</p>
+																	</p>
+																</div>
+																<div>
+																	<h3>Identifikacija</h3>
+																	<p> Permalink: tbd<br/> Handle: tbd </p>
+																</div>       
+
+															</div>
+														</div>
+													</article>													
+												</section>						
+											</xsl:when>
+											<xsl:when test="$mode = 'search'">
+												<!-- muss auch im project-search kopiert werden, damit die felderbox auch bei den ergebnissen stehen bleibt. wenn ein projekt keine erweiterte suche hat, kann man das ignorieren -->
+												<section class="row">
+													<article class="col-md-5">
+														<div class="card">
+															<div class="card-body">
+																<div class="advancedSearch">
+																	<h3>Erweiterte Suche</h3>
+																	<div id="backStart">
+																		<form method="get" name="g3search" role="form"
+																			action="/search/gsearch">
 																			<!-- ////////////////////// -->
-																			<div class="form-group">
-																				<label for="exampleTextarea">Example
-																					textarea</label>
-																					<textarea class="form-control"
-																						id="exampleTextarea" rows="3">
-																						<xsl:text> </xsl:text>
-																					</textarea>
-																				</div>
-																				<fieldset class="form-group">
-																					<legend>Radio buttons</legend>
-																					<div class="form-check">
-																						<label class="form-check-label">
-																							<input type="radio" class="form-check-input"
-																								name="optionsRadios" id="optionsRadios1"
-																								value="option1"/> 1 </label>
+																			<div class="input-group form-group">
+																				<input type="text" class="form-control"
+																					placeholder="Volltextsuche" id="query2"
+																					name="query"/>
+																					<div class="input-group-append">
+																						<span class="input-group-text" id="basic-addon">
+																							<a
+																								href="/archive/objects/context:{$projectAbbr}/methods/sdef:Context/get?mode=searchHelp"
+																								>?</a>
+																							</span>
+																						</div>
+																					</div>
+																					<!-- ////////////////////// -->
+																					<div class="form-group">
+																						<label for="exampleSelect1">Example select</label>
+																						<select class="form-control" id="exampleSelect1">
+																							<option>1</option>
+																							<option>2</option>
+																							<option>3</option>
+																							<option>4</option>
+																							<option>5</option>
+																						</select>
+																					</div>
+																					<!-- ////////////////////// -->
+																					<div class="form-group">
+																						<label for="exampleSelect2">Mutiple select list
+																							(hold shift to select more than one):</label>
+																							<select multiple="multiple" class="form-control"
+																								id="sel2" name="sellist2">
+																								<option>1</option>
+																								<option>2</option>
+																								<option>3</option>
+																								<option>4</option>
+																								<option>5</option>
+																							</select>
+																						</div>
+																						<!-- ////////////////////// -->
+																						<div class="form-group">
+																							<label for="exampleTextarea">Example
+																								textarea</label>
+																								<textarea class="form-control"
+																									id="exampleTextarea" rows="3">
+																									<xsl:text> </xsl:text>
+																								</textarea>
 																							</div>
-																							<div class="form-check">
-																								<label class="form-check-label">
-																									<input type="radio" class="form-check-input"
-																										name="optionsRadios" id="optionsRadios2"
-																										value="option2"/> 2 </label>
-																									</div>
-																									<div class="form-check disabled">
-																										<label class="form-check-label">
-																											<input type="radio" class="form-check-input"
-																												name="optionsRadios" id="optionsRadios3"
-																												value="option3"/> 3 </label>
-																											</div>
-																										</fieldset>
-																										<div class="form-group">
-																											<button type="submit" class="btn btn-default"
-																												>Suche</button>
-																												<xsl:text> </xsl:text>
-																												<button type="reset" class="btn btn-default"
-																													>Zurücksetzen</button>
+																							<fieldset class="form-group">
+																								<legend>Radio buttons</legend>
+																								<div class="form-check">
+																									<label class="form-check-label">
+																										<input type="radio" class="form-check-input"
+																											name="optionsRadios" id="optionsRadios1"
+																											value="option1"/> 1 </label>
+																										</div>
+																										<div class="form-check">
+																											<label class="form-check-label">
+																												<input type="radio" class="form-check-input"
+																													name="optionsRadios" id="optionsRadios2"
+																													value="option2"/> 2 </label>
 																												</div>
-																												<input type="hidden" name="hitPageSize"
-																													id="hitPageSize" value="10"/>
-																													<input type="hidden" name="hitPageStart"
-																														id="hitPageStart" value="1"/>
-																														<input type="hidden" id="pid" name="pid"
-																															value="epsg"/>
-																															<input type="hidden" id="mode" value="search"/>
-																															<input type="hidden" name="search"
-																																value="advanced"/>
-																																<input type="hidden" name="x2">
-																																	<xsl:attribute name="value">
-																																		<xsl:value-of select="$searchXsl"/>
-																																	</xsl:attribute>
-																																</input>
-																															</form>
+																												<div class="form-check disabled">
+																													<label class="form-check-label">
+																														<input type="radio" class="form-check-input"
+																															name="optionsRadios" id="optionsRadios3"
+																															value="option3"/> 3 </label>
+																														</div>
+																													</fieldset>
+																													<div class="form-group">
+																														<button type="submit" class="btn btn-default"
+																															>Suche</button>
+																															<xsl:text> </xsl:text>
+																															<button type="reset" class="btn btn-default"
+																																>Zurücksetzen</button>
+																															</div>
+																															<input type="hidden" name="hitPageSize"
+																																id="hitPageSize" value="10"/>
+																																<input type="hidden" name="hitPageStart"
+																																	id="hitPageStart" value="1"/>
+																																	<input type="hidden" id="pid" name="pid"
+																																		value="epsg"/>
+																																		<input type="hidden" id="mode" value="search"/>
+																																		<input type="hidden" name="search"
+																																			value="advanced"/>
+																																			<input type="hidden" name="x2">
+																																				<xsl:attribute name="value">
+																																					<xsl:value-of select="$searchXsl"/>
+																																				</xsl:attribute>
+																																			</input>
+																																		</form>
 												<!--<form method="get" name="g3search" role="form" action="/search/gsearch">
 												
 												<div class="form-group">
