@@ -406,13 +406,13 @@
 													<div id="goal">	
 														<h3>Cilji projekta</h3> 
 														<ol>
-															<h4><li></h4>
+															<li>
 																<h4>Objavljanje arhivskega gradiva</h4>
 																<p>
 																	Zaradi obstoja delne tiskane izdaje pisem se je pojavila ideja o ustvarjanju digitalne različice zbirke pisem.
 																</p>
 																<p>
-																	Z ustvarjanjem digitalne izdaje si prizadevamo, da bi arhivsko gradivo postalo širše dostopno raziskovalcem, znanstvenikom, navdušencem in študentom prek novih digitalnih medijev. Ne vsi znajo brati stare gotike. Besedilu lahko dodamo dodatne interaktivne informacije, ki pomagajo bolje razumeti besedilo (kratice, opisi ljudi, krajev). Obstaja tudi "problem izgube v množici". Če arhivsko gradivo ni pravilno opisano in opremljeno z ustreznimi metapodatki, ga je mogoče enostavno spregledati pri iskanju. Lahko celo rečemo, da "ne obstaja". To je način, da nekaterim pomembnim gradivom damo več pozornosti.
+																	Z ustvarjanjem digitalne izdaje si prizadevamo, da bi arhivsko gradivo postalo širše dostopno raziskovalcem, znanstvenikom, navdušencem in študentom prek novih digitalnih medijev. Novi digitalni mediji v pirmerjavi z tiskano digitalno iizdajo omogočajo, da besedilu  dodamo dodatne interaktivne informacije, ki pomagajo bolje razumeti besedilo v kontesktu današnjega časa (razlaga kratic, informacije o vsebini, definiranje omenjene osebe, opise in določitev krajev z različnimi imeni). Obstaja tudi "problem biti izgubljen v množici". Če arhivsko gradivo ni pravilno opisano in opremljeno z ustreznimi metapodatki, ga je mogoče enostavno spregledati pri iskanju. Lahko celo rečemo, da "ne obstaja". To je način, da pomembnemu gradivu damo več pozornosti.
 																</p>
 																<p>
 																	Cilj je uporabniku ponuditi facsimile pisma z transkripcijo opremljenega besedila. Glavni namen opremljanja je ponuditi bralcu dodatne informacije za lažje razumevanje vsebine v okviru zgodovinske razdalje. Cilj je pisma predstaviti skozi prizmo časa, prostora in vpletenih ljudi.
