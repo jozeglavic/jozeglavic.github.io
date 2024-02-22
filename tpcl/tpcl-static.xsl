@@ -406,7 +406,7 @@
 													<div id="goal">	
 														<h3>Cilji projekta</h3> 
 														<ol>
-															<li>
+															<h4><li></h4>
 																<h4>Objavljanje arhivskega gradiva</h4>
 																<p>
 																	Zaradi obstoja delne tiskane izdaje pisem se je pojavila ideja o ustvarjanju digitalne različice zbirke pisem.
