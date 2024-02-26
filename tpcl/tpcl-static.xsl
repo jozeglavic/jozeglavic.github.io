@@ -417,302 +417,306 @@
 																<p>
 																	Cilj je uporabniku ponuditi facsimile pisma z transkripcijo opremljenega besedila. S tem ponuditi bralcu dodatne informacije za lažje razumevanje vsebine v okviru zgodovinske razdalje ter pismo predstaviti skozi prizmo časa, prostora in vpletenih ljudi.
 																</p>
-																<blockquote class="blockquote">
-																	<p>"Glavni cilj opomb je premostiti zgodovinsko razdaljo med sedanjim bralcem in avtorjem ter prejemniki pisem, da je besedilo razumljivo in berljivo. Opombe se osredotočajo na zapolnitev morebitnih vrzeli v znanju bralcev te izdaje. Pri pisanju opomb smo upoštevali, kaj so naši predhodniki storili s pisem." </p>
-																	Vir: <a href="http://vangoghletters.org/vg/about_5.html">vangoghletters.org</a>
+																<figure class="bg-white p-3 rounded" style="border-left: .25rem solid #f68e9d;">
+																<blockquote class="blockquote pb-2 text-center">
+																	<p>"Glavni cilj opomb je premostiti zgodovinsko razdaljo med sedanjim bralcem in avtorjem ter prejemniki pisem, da je besedilo razumljivo in berljivo. Opombe se osredotočajo na zapolnitev morebitnih vrzeli v znanju bralcev te izdaje. Pri pisanju opomb smo upoštevali, kaj so naši predhodniki storili s pisem."</p>
 																</blockquote>
-															</li>
-															<li>
-																<h4>Lažje upravljanje zbirke</h4>
-																<p>
-																	Lažje upravljanje zbirke z lastnostmi, kot so napredno iskanje, opombe, iskanje po korespondenci itd., nudi številne možnosti za napredno in hitrejše obdelovanje pisem ne le za uporabnike, ampak tudi za upravljalca zbirke. To je še posebej pomembno, ko razmišljamo o organiziranju strukture fizičnih pisem. Digitalna različica nam omogoča, da pisma predstavimo bodisi skozi časovnico (od najstarejšega do najnovejšega pisma) ali po korespondentih (pošiljateljev in prejemnikov je več kot le dva).
-																</p>
-															</li>
-															<li>
-																<h4>Povezovanje izdaje pisem</h4>
-																<p>
-																	Uporaba oznake <code>&lt;correspDesc&gt;</code> v kontekstu oblikovanja metapodatkov za korespondenco in spletnega servisa correspSearch lahko zbirki pisem doda dodatno vrednost. Ne samo, da postavljamo pisma v kontekst, ampak jim tudi dajemo strukturo organizacije in prikazujemo odnose in povezave med posameznimi pismi. Poleg tega nam omogoča ustvarjanje formata CMIF v prihodnosti, s katerim lahko pisma ene zbirke postavimo v kontekst pisem drugih z uporabo standarda CMIF.
-																</p>
-															</li>
-															<li>
-																<h4>Ohranjanje originala</h4>
-																<p>
-																	Če ljudje uporabljajo digitalno izdajo namesto originalnih fizičnih papirjev, se stanje originala lahko bolje ohrani. Manjša fizična uporaba pomeni boljše stanje originala za prihodnost.
-																</p>
-															</li>
-															<li>
-																<h4>Dostopnost</h4>
-																<p>
-																	S digitalno izdajo gradivo postane dostopno ves čas (dobesedno 24 ur na dan, 7 dni v tednu). Tako lahko več uporabnikov isto gradivo uporablja istočasno.
-																</p>
-															</li>
-															<li>
-																<h4>Dolgoročno ohranjanje</h4>
-																<p>
-																	S ustvarjanjem digitalne ustrezne kopije originalnega gradiva lahko razmišljamo tudi o dolgoročnem ohranjanju gradiva. Ker papir počasi razpada skozi čas, digitalna kopija tega ne počne. Obstajajo še drugi problemi digitalnega ohranjanja, ki jih lahko bolje razložimo v magistrskem delu. Vedno lahko sledimo logiki: bolje je imeti dva predmeta za ohranjanje kot le enega ali nobenega.
-																</p>
-															</li>
-															<li>
-																<h4>Ustvarjanje delovnega postopka za arhiv, vključno z osebjem arhiva</h4>
-																<p>
-																	Ustvarjanje primerjalnega "pilotnega projekta" o tem, kako narediti digitalno izdajo z omejenimi viri v arhivu. S tem primerjalnim delovnim postopkom se lahko izpeljejo druge izdaje. Vključitev zaposlenih v arhivsko delovno skupino za pomoč pri prilagajanju gradiva. S tem se gradi digitalna kultura v arhivu. Deljenje ozaveščenosti o možnih odprtokodnih, dostopnih digitalnih orodjih (Transkribus) in tehnologijah (XML, XSLT, spletnih tehnologijah).
-																	</p>
-																</li>
-															</ol>
-														</div>											
-														<div id="workflow">	
-															<h3>Workflow</h3>
-															<ol>
-																<li>
-																	<h2>Digitization</h2>
-																	<p>
-																		The letters were digitized in-house with a scanner EPSON DS-50000 in .tiff format with 300 dpi.
-																	</p>
-																</li>
-																<li>
-																	<h2>Transcribing</h2>
-																	<p>
-																		As the letters are written in old gothic font, they were transcribed for the first part of the published printed edition. Those transcribed letters were then used to build an HTR model with the software Transkribus (<a href="https://transkribus.eu/Transkribus/">transkribus.eu</a>). The letters were imported into the program with the built-in import tool. Each letter was run through layout analysis (which defines the text area of the digitized letter), and the transcribed text was then copy-pasted to the connected letter and checked.
-																	</p>
-																	<p>
-																		The HTR model was built for automatic transcription using 65 letters (21,189 words). The CER (Character Error Rate) is recorded at 5.06%. We can advocate the invested time for building a model with the time savings when transcribing the "still not transcribed letters." The first is the automatic transcription of the letter with the HTR model. Then the letter is manually checked and corrected, a so-called semi-automatic transcribing. With additional letters transcribed and manually checked, we can then develop a better and more efficient HTR model.
-																	</p>
-																</li>
-																<li>
-																	<h2>Exporting TEI XML</h2>
-																	<p>
-																		Transkribus offers customizable export options. Main options are "Server export" and "Client export". Both options offer .pdf, TEI, DOCX, simple TXT exports. One difference is in TEI export (which was important for the export process in this project). "Server export" doesn’t allow any preference changes to TEI export, on the other hand, "Client export" allows changes to zone tags (defining which zone to use, either region, line, word, or no zone) and also tags for a line break (option between <code>&lt;l&gt;</code> and <code>&lt;lb&gt;</code> tag). There is also an option to include the image name as the xml:id attribute in the <code>&lt;pb&gt;</code> tag.
-																	</p>
-																	<p>
-																		When using "server export," the export tool sometimes provided unfinished results (empty .xml files, the reason why was not discovered). In the project, the export was done with the "client export" option, letter by letter with predefined options (Zone per line; Image names as <code>&lt;pb&gt;</code> xml:id; Line breaks <code>&lt;lb&gt;</code>).
-																	</p>
-																</li>
-																<li>
-																	<h2>Adapting the XML File</h2>
-																	<p>
-																		The exported .xml was TEI compliant; however, some adjustments were needed to be done to become the desired form of a letter, which affects the end process of publishing the letters online.
-																	</p>
-																	<p>
-																		The xml_modification.xsl was created to use XSLT transformation. The file is available in materials and it is commented for understanding.
-																	</p>
-																	<p>
-																		Main adjustments of the xml_modification.xsl are:
-																	</p>
-																	<ul>
-																		<li>Copying the prepared external header in each letter with <code>&lt;fileDesc&gt;</code> and <code>&lt;profileDesc&gt;</code> information (the information that are the same for each letter)</li>
-																		<li>Adding <code>&lt;div type=”letter”&gt;</code> and <code>&lt;p&gt;</code> tags to represent the letter form</li>
-																		<li>Removing the repeating <code>&lt;facsimile tag&gt;</code> and copying its xml:id attribute into <code>&lt;surface&gt;</code> tag for each .jpg file</li>
-																	</ul>
-																</li>
-																<li>
-																	<h2>Manual Annotating</h2>
-																	<p>
-																		Examples of already published digital edition were researched. Main sources:
-																		<ul>
-																			<li><a href="https://ride.i-d-e.de/issues/issue-10/">ride.i-d-e.de</a></li>
-																			<li><a href="https://encoding-correspondence.bbaw.de/v1/">encoding-correspondence.bbaw.de</a></li>
-																			<li><a href="https://journals.openedition.org/jtei/1742">journals.openedition.org</a></li>
-																			<li><a href="http://vangoghletters.org">vangoghletters.org</a></li>
-																			<li><a href="https://edition-humboldt.de/">edition-humboldt.de</a></li>
-																			<li><a href="https://www.jeanpaul-edition.de/">jeanpaul-edition.de</a></li>
-																		</ul>
-																	</p>
-																	<p>
-																		A standalone document (Annotation.docx; part of materials) was created as an internal guideline. In the document are noted the main used annotations, examples, and rules on how to use them.
-																	</p>
-																	<p>
-																		Here ends the step that was done for the project.
-																	</p>
-																</li>
-																<li>
-																	<h2>Publishing</h2>
-																	<p>
-																		The next step is the form and means of how to publish the letters. That part still needs to be put into a practical example.
-																	</p>
-																</li>
-															</ol>
-														</div>
-														<div id="fm">	
-															<h3>Files Managment</h3> 
-														</div>
-														<div id="access">	
-															<h3>Accesibility</h3> 
-														</div>											
-													</div>
-												</div>
-											</article>
-										</section>
-									</xsl:when>
-									<xsl:when test="$mode = 'list_letters'">
-										<section class="row">
-											<article class="col-md-12 ">
-												<div class="card">
-													<div class="card-body">
-														<div id="results">
-															<ol class="result">
-																<xsl:call-template name="results"/>
-															</ol>
-														</div>
-													</div>
-												</div>
-											</article>													
-										</section>						
-									</xsl:when>
-									<xsl:when test="$mode = 'osebe'">
-										<section class="row">
-											<article class="col-md-12 ">
-												<div class="card">
-													<div class="card-body">
-														<p>TEST osebe</p>
-													</div>
-												</div>
-											</article>													
-										</section>						
-									</xsl:when>
-									<xsl:when test="$mode = 'kraji'">
-										<section class="row">
-											<article class="col-md-12 ">
-												<div class="card">
-													<div class="card-body">
-														<p>TEST kraji</p>
-													</div>
-												</div>
-											</article>													
-										</section>						
-									</xsl:when>
-									<xsl:when test="$mode = 'about'">
-										<section class="row">
-											<article class="col-md-12 ">
-												<div class="card">
-													<div class="card-body">
-														<h3>Informacije o odgovornosti</h3>
-														<div>  
-															<p> Jože Glavič (<a target="_blank" href="mailto:joze.glavic@zal-lj.si">joze.glavic@zal-lj.si</a>) <br/>Zgodovinski arhiv Ljubljana</p>
-															<p> Zgodovinski arhiv Ljubljana Enota za Dolenjsko in Belo krajino <br/> Skalickega ulica 1 (grad Grm)<br/> 8000 Novo mesto<br/> Slovenija<br/> Tel: +386 40 854 376<br/></p>
-															<p>Digitalna izdaja objave pisem je bila izdelana v okviru zaključne naloge magisterska študija digitalne humanistike v okviru Univerze v Grazu (Avstrija). Naloga je bila izvedena pod mentorstvom Univ.-Prof. Dr.phil. M.A. Georg Vogelerja. Trenutno je objavljeno le del pisem. Korpus pisem se bo postopoma dopolnjeval.</p>
-															<p> Vso odgovornost za tehnično izvedbo in spremna besedila nosi avtor te spletne strani. Originalno transkripcijo pisem s spremno študijo je opravila Nataša Budna Kodrič. Ta so bila objavljena v <a href="http://www.arhivsko-drustvo.si/wp-content/uploads/2019/01/Viri-št.-41.pdf">Viri št. 41</a>. Anotacijo in opremljanje z metapodatki je opravil Jože Glavič.</p>
-														</div>        
-														<div>
-															<h3>Tehnična infrastruktura</h3>
+																<figcaption class="blockquote-footer">
+																	Vir: <a href="http://vangoghletters.org/vg/about_5.html">vangoghletters.org</a>
+																</figcaption>
+															</figure>															
+														</li>
+														<li>
+															<h4>Lažje upravljanje zbirke</h4>
 															<p>
-																<a target="_blank" href="https://gams.uni-graz.at/"> GAMS-Geisteswissenschaftliches Asset Management
-																	System </a>
-																	<p>
-																		<a target="_blank" href="http://informationsmodellierung.uni-graz.at"> Zentrum für
-																			Informationsmodellierung - Austrian Centre for Digital Humanities </a>
-																		</p>
-																	</p>
-																</div>
-																<div>
-																	<h3>Identifikacija</h3>
-																	<p> Permalink: tbd<br/> Handle: tbd </p>
-																</div>       
-
-															</div>
+																Lažje upravljanje zbirke z lastnostmi, kot so napredno iskanje, opombe, iskanje po korespondenci itd., nudi številne možnosti za napredno in hitrejše obdelovanje pisem ne le za uporabnike, ampak tudi za upravljalca zbirke. To je še posebej pomembno, ko razmišljamo o organiziranju strukture fizičnih pisem. Digitalna različica nam omogoča, da pisma predstavimo bodisi skozi časovnico (od najstarejšega do najnovejšega pisma) ali po korespondentih (pošiljateljev in prejemnikov je več).
+															</p>
+														</li>
+														<li>
+															<h4>Povezovanje izdaje pisem</h4>
+															<p>
+																Uporaba oznake <code>&lt;correspDesc&gt;</code> v kontekstu oblikovanja Correspondence Metadata Interchange Format (CMIF) v okviru  correspSearch lahko zbirki pisem doda dodatno vrednost. Ne samo, da postavljamo pisma v kontekst, ampak jim tudi strukturno uredimo in prikazujemo odnose in povezave med posameznimi pismi. Poleg tega nam omogoča ustvarjanje formata CMIF v prihodnosti, s katerim lahko pisma ene zbirke postavimo v kontekst pisem drugih z uporabo standarda CMIF.
+															</p>
+														</li>
+														<li>
+															<h4>Ohranjanje originala</h4>
+															<p>
+																Če ljudje uporabljajo digitalno izdajo namesto originalnih fizičnih papirjev, se fizični originali manj uporabljajo in stem bolje ohranijo. Manjša fizična uporaba pomeni boljše stanje originala za prihodnost.
+															</p>
+														</li>
+														<li>
+															<h4>Dostopnost</h4>
+															<p>
+																Z digitalno izdajo je gradivo dostopno ves čas (dobesedno 24 ur na dan, 7 dni v tednu). Prav tako lahko več uporabnikov gradivo uporablja istočasno.
+															</p>
+														</li>
+														<li>
+															<h4>Dolgoročno ohranjanje</h4>
+															<p>
+																Z ustvarjanjem digitalne ustrezne kopije originalnega gradiva lahko razmišljamo tudi o dolgoročnem ohranjanju gradiva. Ker papir počasi razpada skozi čas, digitalna kopija tega ne počne. Vedno lahko sledimo logiki: bolje je imeti dva predmeta za ohranjanje kot le enega ali nobenega.
+															</p>
+														</li>
+														<li>
+															<h4>Ustvarjanje delovnega postopka za arhiv, vključno z osebjem arhiva</h4>
+															<p>
+																Ustvarjanje primerjalnega "pilotnega projekta" o tem, kako narediti digitalno izdajo z omejenimi viri v arhivu. Primer delovnega procesa tega projekta je lahko primer za izdelavo nadaljnih izdaj. Primer lahko vsebuje vključitev zaposlenih v arhivsko delovno skupino za pomoč pri prilagajanju gradiv. Na tak način se tudi gradi digitalna kultura v arhivu. Predvsem se deli in ozavešča uporaba možnih odprtokodnih, dostopnih digitalnih orodjih (Transkribus) in ostalih tehnologij (XML, XSLT, HTML ipd.).
+															</p>
+														</li>
+													</ol>
+												</div>											
+												<div id="workflow">	
+													<h3>Workflow</h3>
+													<ol>
+														<li>
+															<h2>Digitization</h2>
+															<p>
+																The letters were digitized in-house with a scanner EPSON DS-50000 in .tiff format with 300 dpi.
+															</p>
+														</li>
+														<li>
+															<h2>Transcribing</h2>
+															<p>
+																As the letters are written in old gothic font, they were transcribed for the first part of the published printed edition. Those transcribed letters were then used to build an HTR model with the software Transkribus (<a href="https://transkribus.eu/Transkribus/">transkribus.eu</a>). The letters were imported into the program with the built-in import tool. Each letter was run through layout analysis (which defines the text area of the digitized letter), and the transcribed text was then copy-pasted to the connected letter and checked.
+															</p>
+															<p>
+																The HTR model was built for automatic transcription using 65 letters (21,189 words). The CER (Character Error Rate) is recorded at 5.06%. We can advocate the invested time for building a model with the time savings when transcribing the "still not transcribed letters." The first is the automatic transcription of the letter with the HTR model. Then the letter is manually checked and corrected, a so-called semi-automatic transcribing. With additional letters transcribed and manually checked, we can then develop a better and more efficient HTR model.
+															</p>
+														</li>
+														<li>
+															<h2>Exporting TEI XML</h2>
+															<p>
+																Transkribus offers customizable export options. Main options are "Server export" and "Client export". Both options offer .pdf, TEI, DOCX, simple TXT exports. One difference is in TEI export (which was important for the export process in this project). "Server export" doesn’t allow any preference changes to TEI export, on the other hand, "Client export" allows changes to zone tags (defining which zone to use, either region, line, word, or no zone) and also tags for a line break (option between <code>&lt;l&gt;</code> and <code>&lt;lb&gt;</code> tag). There is also an option to include the image name as the xml:id attribute in the <code>&lt;pb&gt;</code> tag.
+															</p>
+															<p>
+																When using "server export," the export tool sometimes provided unfinished results (empty .xml files, the reason why was not discovered). In the project, the export was done with the "client export" option, letter by letter with predefined options (Zone per line; Image names as <code>&lt;pb&gt;</code> xml:id; Line breaks <code>&lt;lb&gt;</code>).
+															</p>
+														</li>
+														<li>
+															<h2>Adapting the XML File</h2>
+															<p>
+																The exported .xml was TEI compliant; however, some adjustments were needed to be done to become the desired form of a letter, which affects the end process of publishing the letters online.
+															</p>
+															<p>
+																The xml_modification.xsl was created to use XSLT transformation. The file is available in materials and it is commented for understanding.
+															</p>
+															<p>
+																Main adjustments of the xml_modification.xsl are:
+															</p>
+															<ul>
+																<li>Copying the prepared external header in each letter with <code>&lt;fileDesc&gt;</code> and <code>&lt;profileDesc&gt;</code> information (the information that are the same for each letter)</li>
+																<li>Adding <code>&lt;div type=”letter”&gt;</code> and <code>&lt;p&gt;</code> tags to represent the letter form</li>
+																<li>Removing the repeating <code>&lt;facsimile tag&gt;</code> and copying its xml:id attribute into <code>&lt;surface&gt;</code> tag for each .jpg file</li>
+															</ul>
+														</li>
+														<li>
+															<h2>Manual Annotating</h2>
+															<p>
+																Examples of already published digital edition were researched. Main sources:
+																<ul>
+																	<li><a href="https://ride.i-d-e.de/issues/issue-10/">ride.i-d-e.de</a></li>
+																	<li><a href="https://encoding-correspondence.bbaw.de/v1/">encoding-correspondence.bbaw.de</a></li>
+																	<li><a href="https://journals.openedition.org/jtei/1742">journals.openedition.org</a></li>
+																	<li><a href="http://vangoghletters.org">vangoghletters.org</a></li>
+																	<li><a href="https://edition-humboldt.de/">edition-humboldt.de</a></li>
+																	<li><a href="https://www.jeanpaul-edition.de/">jeanpaul-edition.de</a></li>
+																</ul>
+															</p>
+															<p>
+																A standalone document (Annotation.docx; part of materials) was created as an internal guideline. In the document are noted the main used annotations, examples, and rules on how to use them.
+															</p>
+															<p>
+																Here ends the step that was done for the project.
+															</p>
+														</li>
+														<li>
+															<h2>Publishing</h2>
+															<p>
+																The next step is the form and means of how to publish the letters. That part still needs to be put into a practical example.
+															</p>
+														</li>
+													</ol>
+												</div>
+												<div id="fm">	
+													<h3>Files Managment</h3> 
+												</div>
+												<div id="access">	
+													<h3>Accesibility</h3> 
+												</div>											
+											</div>
+										</div>
+									</article>
+								</section>
+							</xsl:when>
+							<xsl:when test="$mode = 'list_letters'">
+								<section class="row">
+									<article class="col-md-12 ">
+										<div class="card">
+											<div class="card-body">
+												<div id="results">
+													<ol class="result">
+														<xsl:call-template name="results"/>
+													</ol>
+												</div>
+											</div>
+										</div>
+									</article>													
+								</section>						
+							</xsl:when>
+							<xsl:when test="$mode = 'osebe'">
+								<section class="row">
+									<article class="col-md-12 ">
+										<div class="card">
+											<div class="card-body">
+												<p>TEST osebe</p>
+											</div>
+										</div>
+									</article>													
+								</section>						
+							</xsl:when>
+							<xsl:when test="$mode = 'kraji'">
+								<section class="row">
+									<article class="col-md-12 ">
+										<div class="card">
+											<div class="card-body">
+												<p>TEST kraji</p>
+											</div>
+										</div>
+									</article>													
+								</section>						
+							</xsl:when>
+							<xsl:when test="$mode = 'about'">
+								<section class="row">
+									<article class="col-md-12 ">
+										<div class="card">
+											<div class="card-body">
+												<h3>Informacije o odgovornosti</h3>
+												<div>  
+													<p> Jože Glavič (<a target="_blank" href="mailto:joze.glavic@zal-lj.si">joze.glavic@zal-lj.si</a>) <br/>Zgodovinski arhiv Ljubljana</p>
+													<p> Zgodovinski arhiv Ljubljana Enota za Dolenjsko in Belo krajino <br/> Skalickega ulica 1 (grad Grm)<br/> 8000 Novo mesto<br/> Slovenija<br/> Tel: +386 40 854 376<br/></p>
+													<p>Digitalna izdaja objave pisem je bila izdelana v okviru zaključne naloge magisterska študija digitalne humanistike v okviru Univerze v Grazu (Avstrija). Naloga je bila izvedena pod mentorstvom Univ.-Prof. Dr.phil. M.A. Georg Vogelerja. Trenutno je objavljeno le del pisem. Korpus pisem se bo postopoma dopolnjeval.</p>
+													<p> Vso odgovornost za tehnično izvedbo in spremna besedila nosi avtor te spletne strani. Originalno transkripcijo pisem s spremno študijo je opravila Nataša Budna Kodrič. Ta so bila objavljena v <a href="http://www.arhivsko-drustvo.si/wp-content/uploads/2019/01/Viri-št.-41.pdf">Viri št. 41</a>. Anotacijo in opremljanje z metapodatki je opravil Jože Glavič.</p>
+												</div>        
+												<div>
+													<h3>Tehnična infrastruktura</h3>
+													<p>
+														<a target="_blank" href="https://gams.uni-graz.at/"> GAMS-Geisteswissenschaftliches Asset Management
+															System </a>
+															<p>
+																<a target="_blank" href="http://informationsmodellierung.uni-graz.at"> Zentrum für
+																	Informationsmodellierung - Austrian Centre for Digital Humanities </a>
+																</p>
+															</p>
 														</div>
-													</article>													
-												</section>						
-											</xsl:when>
-											<xsl:when test="$mode = 'search'">
-												<!-- muss auch im project-search kopiert werden, damit die felderbox auch bei den ergebnissen stehen bleibt. wenn ein projekt keine erweiterte suche hat, kann man das ignorieren -->
-												<section class="row">
-													<article class="col-md-5">
-														<div class="card">
-															<div class="card-body">
-																<div class="advancedSearch">
-																	<h3>Erweiterte Suche</h3>
-																	<div id="backStart">
-																		<form method="get" name="g3search" role="form"
-																			action="/search/gsearch">
+														<div>
+															<h3>Identifikacija</h3>
+															<p> Permalink: tbd<br/> Handle: tbd </p>
+														</div>       
+
+													</div>
+												</div>
+											</article>													
+										</section>						
+									</xsl:when>
+									<xsl:when test="$mode = 'search'">
+										<!-- muss auch im project-search kopiert werden, damit die felderbox auch bei den ergebnissen stehen bleibt. wenn ein projekt keine erweiterte suche hat, kann man das ignorieren -->
+										<section class="row">
+											<article class="col-md-5">
+												<div class="card">
+													<div class="card-body">
+														<div class="advancedSearch">
+															<h3>Erweiterte Suche</h3>
+															<div id="backStart">
+																<form method="get" name="g3search" role="form"
+																	action="/search/gsearch">
+																	<!-- ////////////////////// -->
+																	<div class="input-group form-group">
+																		<input type="text" class="form-control"
+																			placeholder="Volltextsuche" id="query2"
+																			name="query"/>
+																			<div class="input-group-append">
+																				<span class="input-group-text" id="basic-addon">
+																					<a
+																						href="/archive/objects/context:{$projectAbbr}/methods/sdef:Context/get?mode=searchHelp"
+																						>?</a>
+																					</span>
+																				</div>
+																			</div>
 																			<!-- ////////////////////// -->
-																			<div class="input-group form-group">
-																				<input type="text" class="form-control"
-																					placeholder="Volltextsuche" id="query2"
-																					name="query"/>
-																					<div class="input-group-append">
-																						<span class="input-group-text" id="basic-addon">
-																							<a
-																								href="/archive/objects/context:{$projectAbbr}/methods/sdef:Context/get?mode=searchHelp"
-																								>?</a>
-																							</span>
-																						</div>
+																			<div class="form-group">
+																				<label for="exampleSelect1">Example select</label>
+																				<select class="form-control" id="exampleSelect1">
+																					<option>1</option>
+																					<option>2</option>
+																					<option>3</option>
+																					<option>4</option>
+																					<option>5</option>
+																				</select>
+																			</div>
+																			<!-- ////////////////////// -->
+																			<div class="form-group">
+																				<label for="exampleSelect2">Mutiple select list
+																					(hold shift to select more than one):</label>
+																					<select multiple="multiple" class="form-control"
+																						id="sel2" name="sellist2">
+																						<option>1</option>
+																						<option>2</option>
+																						<option>3</option>
+																						<option>4</option>
+																						<option>5</option>
+																					</select>
+																				</div>
+																				<!-- ////////////////////// -->
+																				<div class="form-group">
+																					<label for="exampleTextarea">Example
+																						textarea</label>
+																						<textarea class="form-control"
+																							id="exampleTextarea" rows="3">
+																							<xsl:text> </xsl:text>
+																						</textarea>
 																					</div>
-																					<!-- ////////////////////// -->
-																					<div class="form-group">
-																						<label for="exampleSelect1">Example select</label>
-																						<select class="form-control" id="exampleSelect1">
-																							<option>1</option>
-																							<option>2</option>
-																							<option>3</option>
-																							<option>4</option>
-																							<option>5</option>
-																						</select>
-																					</div>
-																					<!-- ////////////////////// -->
-																					<div class="form-group">
-																						<label for="exampleSelect2">Mutiple select list
-																							(hold shift to select more than one):</label>
-																							<select multiple="multiple" class="form-control"
-																								id="sel2" name="sellist2">
-																								<option>1</option>
-																								<option>2</option>
-																								<option>3</option>
-																								<option>4</option>
-																								<option>5</option>
-																							</select>
-																						</div>
-																						<!-- ////////////////////// -->
-																						<div class="form-group">
-																							<label for="exampleTextarea">Example
-																								textarea</label>
-																								<textarea class="form-control"
-																									id="exampleTextarea" rows="3">
-																									<xsl:text> </xsl:text>
-																								</textarea>
-																							</div>
-																							<fieldset class="form-group">
-																								<legend>Radio buttons</legend>
+																					<fieldset class="form-group">
+																						<legend>Radio buttons</legend>
+																						<div class="form-check">
+																							<label class="form-check-label">
+																								<input type="radio" class="form-check-input"
+																									name="optionsRadios" id="optionsRadios1"
+																									value="option1"/> 1 </label>
+																								</div>
 																								<div class="form-check">
 																									<label class="form-check-label">
 																										<input type="radio" class="form-check-input"
-																											name="optionsRadios" id="optionsRadios1"
-																											value="option1"/> 1 </label>
+																											name="optionsRadios" id="optionsRadios2"
+																											value="option2"/> 2 </label>
 																										</div>
-																										<div class="form-check">
+																										<div class="form-check disabled">
 																											<label class="form-check-label">
 																												<input type="radio" class="form-check-input"
-																													name="optionsRadios" id="optionsRadios2"
-																													value="option2"/> 2 </label>
+																													name="optionsRadios" id="optionsRadios3"
+																													value="option3"/> 3 </label>
 																												</div>
-																												<div class="form-check disabled">
-																													<label class="form-check-label">
-																														<input type="radio" class="form-check-input"
-																															name="optionsRadios" id="optionsRadios3"
-																															value="option3"/> 3 </label>
-																														</div>
-																													</fieldset>
-																													<div class="form-group">
-																														<button type="submit" class="btn btn-default"
-																															>Suche</button>
-																															<xsl:text> </xsl:text>
-																															<button type="reset" class="btn btn-default"
-																																>Zurücksetzen</button>
-																															</div>
-																															<input type="hidden" name="hitPageSize"
-																																id="hitPageSize" value="10"/>
-																																<input type="hidden" name="hitPageStart"
-																																	id="hitPageStart" value="1"/>
-																																	<input type="hidden" id="pid" name="pid"
-																																		value="epsg"/>
-																																		<input type="hidden" id="mode" value="search"/>
-																																		<input type="hidden" name="search"
-																																			value="advanced"/>
-																																			<input type="hidden" name="x2">
-																																				<xsl:attribute name="value">
-																																					<xsl:value-of select="$searchXsl"/>
-																																				</xsl:attribute>
-																																			</input>
-																																		</form>
+																											</fieldset>
+																											<div class="form-group">
+																												<button type="submit" class="btn btn-default"
+																													>Suche</button>
+																													<xsl:text> </xsl:text>
+																													<button type="reset" class="btn btn-default"
+																														>Zurücksetzen</button>
+																													</div>
+																													<input type="hidden" name="hitPageSize"
+																														id="hitPageSize" value="10"/>
+																														<input type="hidden" name="hitPageStart"
+																															id="hitPageStart" value="1"/>
+																															<input type="hidden" id="pid" name="pid"
+																																value="epsg"/>
+																																<input type="hidden" id="mode" value="search"/>
+																																<input type="hidden" name="search"
+																																	value="advanced"/>
+																																	<input type="hidden" name="x2">
+																																		<xsl:attribute name="value">
+																																			<xsl:value-of select="$searchXsl"/>
+																																		</xsl:attribute>
+																																	</input>
+																																</form>
 												<!--<form method="get" name="g3search" role="form" action="/search/gsearch">
 												
 												<div class="form-group">
