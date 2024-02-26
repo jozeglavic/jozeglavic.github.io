@@ -397,7 +397,7 @@
 												<div class="card-body">
 													<div id="project">	
 														<h3>O projektu</h3>
-														<p>Sam projekt je bil izdelan v okviru izdelave zaključne naloge magisterska študija digitalne humanistike na Karl-Franzens-Universität Graz (Avstrija). Avtor, Jože Glavič, sem poleg same teoretičnega pisnega dela magistrske naloge poskrbel tudi za praktični del - ta vsebuje idelavo xml datotek pisem, izdelavo modela za transkribiranje v orodju Transkribus, xslt pretvorbo pisem za objavo v okviru GAMS infrastrukture. Poleg tega pa tudi prilagoditev in izdelavo spletne strani na podlagi GAMS predlog. Več o postopku pod poglavjem <a href="#workflow">"D"elovni proces"</a>. Naloga je bila izvedena pod mentorstvom Univ.-Prof. Dr.phil. M.A. Georg Vogelerja (Institut Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities). Trenutno je objavljeno le del pisem. Korpus pisem se bo postopoma dopolnjeval.														
+														<p>Sam projekt je bil izdelan v okviru izdelave zaključne naloge magisterska študija digitalne humanistike na Karl-Franzens-Universität Graz (Avstrija). Avtor, Jože Glavič, sem poleg same teoretičnega pisnega dela magistrske naloge poskrbel tudi za praktični del - ta vsebuje idelavo xml datotek pisem, izdelavo modela za transkribiranje v orodju Transkribus, xslt pretvorbo pisem za objavo v okviru GAMS infrastrukture. Poleg tega pa tudi prilagoditev in izdelavo spletne strani na podlagi GAMS predlog. Več o postopku pod poglavjem <a href="#workflow">"Delovni proces"</a>. Naloga je bila izvedena pod mentorstvom Univ.-Prof. Dr.phil. M.A. Georg Vogelerja (Institut Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities). Trenutno je objavljeno le del pisem. Korpus pisem se bo postopoma dopolnjeval.														
 													</p>
 												</div>	
 												<div id="materials">	
@@ -505,7 +505,7 @@
 																Glavne prilagoditve xml_modification.xsl so:
 															</p>
 															<ul>
-																<li>Vstavljanje pripravljenega zunanje glave v vsako pismo s podatki <code>&lt;fileDesc&gt;</code> in <code>&lt;profileDesc&gt;</code> (informacije, ki so enake za vsako pismo)</li>
+																<li>Vstavljanje pripravljenega zunanje glave ("header") v vsako pismo s podatki <code>&lt;fileDesc&gt;</code> in <code>&lt;profileDesc&gt;</code> (informacije, ki so enake za vsako pismo)</li>
 																<li>Dodajanje oznak <code>&lt;div type=”letter”&gt;</code> in <code>&lt;p&gt;</code> za predstavitev oblike pisma</li>
 																<li>Odstranjevanje ponavljajočega se <code>&lt;facsimile tag&gt;</code> in kopiranje njegovega atributa xml:id v oznako <code>&lt;surface&gt;</code> za vsako .jpg datoteko</li>
 															</ul>
@@ -513,7 +513,7 @@
 														<li>
 															<h2>Ročno označevanje (annotating)</h2>
 															<p>
-																Kot priemre dobirh praks so se prelgedale sledeče edicije:
+																Kot primer dobrih praks so se pregledale sledeče edicije:
 																<ul>
 																	<li><a href="https://ride.i-d-e.de/issues/issue-10/">ride.i-d-e.de</a></li>
 																	<li><a href="https://encoding-correspondence.bbaw.de/v1/">encoding-correspondence.bbaw.de</a></li>
@@ -530,7 +530,7 @@
 														<li>
 															<h2>Objava</h2>
 															<p>
-																Edicija je objavljena v okviru infrastrukture <a href="https://gams.uni-graz.at/">GAMS</a>. Za pomoč se na tem mestu zahvaljujem Prof. Dr.phil. M.A. Georg Vogelerju in Elisabeth Raunig BA. MA., za pomoč pri XML in XSLT prilagoditvah. 
+																Edicija je objavljena v okviru infrastrukture <a href="https://gams.uni-graz.at/">GAMS</a>. Za pomoč in usmeritvah pri XML, XSLT prilagoditvah se na tem mestu zahvaljujem Prof. Dr.phil. M.A. Georg Vogelerju in Elisabeth Raunig BA. MA. 
 															</p>
 														</li>
 													</ol>
