@@ -384,11 +384,10 @@
 												<div class="card-body">
 													<h2>Projekt</h2>
 													<ul class="toc">
+														<li><a href="project">O projektu</a></li>
 														<li><a href="#materials">O gradivu</a></li>														
 														<li><a href="#goal">Cilji projekta</a></li>
 														<li><a href="#workflow">Delovni proces</a></li>
-														<li><a href="#fm">Upravljanje z datotekami</a></li>
-														<li><a href="#access">Dostopnost</a></li>
 													</ul>
 												</div>
 											</div>
@@ -396,28 +395,33 @@
 										<article class="col-md-8">
 											<div class="card" data-mh="group1">
 												<div class="card-body">
-													<div id="materials">	
-														<h3>O gradivu</h3>												
-														<p> <a href="https://www.zal-lj.si/">Zgodovinski arhiv Ljubljana</a> hrani fond Graščine Fužine (SI_ZAL_LJU/0296 (1616-1925); nemško Herrschaft Fužine). Del tega fonda je korespondenca članov družine Terpinc in njihovega družabnega kroga. Zbirka 319 pisem in 2 potovalnih dnevnikov iz 19. stoletja, je bila ob drugi svetovni vojni razbita in raztresena, ponovno pa je bila po združena s strani arhiva. Pisemska zbirka je datirana med letoma 1825-1858, pisana v stari gotici in nemškem jeziku. Kot primarni zgodovinski viri zbirka pokriva lokalno zgodovino mesta Ljubljana sredi 19. stoletja. Večina pisem je korespondenca med zakoncema Fidelijem in Josephino Terpinc (rojena Češko).</p>
-														<p>Korespondenca je bila že fizično objavljena v (<a href="http://www.arhivsko-drustvo.si/wp-content/uploads/2019/01/Viri-št.-41.pdf">Viri št. 41</a>). Ta zajema prvi del korespondence, večinoma gre za pisma med zakoncema Terpinc ter sorodniki in prijatelji, le nekaj malega je poslovnih pisem. Glavnina pisem je urejena v škatlah 35 in 35a v 12 ovojih.</p>
-														<p>Zaradi obsežnosti je korespondenca vsebinsko razdeljena na družinsko (primarno) in ostalo (sekundarno). Primarna je pomembnejša, ker je nastala znotraj (sorodstveno) tesneje povezanega kroga ljudi, v ospredju pa so način komunikacije, teme »pogovorov« in osebnostne značilnosti ter nagnjenja posameznikov, ki so na ta način jasneje in bolj osebno predstavljeni. Sekundarna korespondenca (pisma prijateljev in znancev) je časovno bolj razpršena, saj obsega daljše obdobje (1823–1875), pogosto nima »rdeče niti« pogovorov oz. dogodkov, korespondenti pa so med seboj v različno intenzivnih stikih. Ta pisma bodo počakala na objavo v prihodnje.</p>
-														<p>Transkripcije pisem v publikaciji Viri so označene z zaporednimi številkami, ki se ujemajo z digitalizati originalov na tej spletni strani. Oboji si sledijo kronološko, medtem ko je originalno gradivo v fondu Graščina Fužine urejeno glede na korespondente. Transkripcijo pisme je opravila Nataša Budna Kodrič</p>
-													</div>															
-													<div id="goal">	
-														<h3>Cilji projekta</h3> 
-														<ol>
-															<li>
-																<h4>Objavljanje arhivskega gradiva</h4>
-																<p>
-																	Zaradi obstoja delne tiskane izdaje pisem se je pojavila ideja o ustvarjanju digitalne različice zbirke pisem.
-																</p>
-																<p>
-																	Z ustvarjanjem digitalne izdaje si prizadevamo, da bi arhivsko gradivo postalo širše dostopno raziskovalcem, znanstvenikom, navdušencem in študentom prek novih digitalnih medijev. Novi digitalni mediji v pirmerjavi z tiskano digitalno iizdajo omogočajo, da besedilu  dodamo dodatne interaktivne informacije, ki pomagajo bolje razumeti besedilo v kontesktu današnjega časa (razlaga kratic, informacije o vsebini, definiranje omenjene osebe, opise in določitev krajev z različnimi imeni). Obstaja tudi "problem biti izgubljen v množici". Če arhivsko gradivo ni pravilno opisano in opremljeno z ustreznimi metapodatki, ga je mogoče enostavno spregledati pri iskanju. Lahko celo rečemo, da "ne obstaja". To je način, da pomembnemu gradivu damo več pozornosti.
-																</p>
-																<p>
-																	Cilj je uporabniku ponuditi facsimile pisma z transkripcijo opremljenega besedila. S tem ponuditi bralcu dodatne informacije za lažje razumevanje vsebine v okviru zgodovinske razdalje ter pismo predstaviti skozi prizmo časa, prostora in vpletenih ljudi.
-																</p>
-																<figure class="bg-white p-3 rounded" style="border-left: .25rem solid #f68e9d;">
+													<div id="project">	
+														<h3>O projektu</h3>
+														<p>Sam projekt je bil izdelan v okviru izdelave zaključne naloge magisterska študija digitalne humanistike na Karl-Franzens-Universität Graz (Avstrija). Avtor, Jože Glavič, sem poleg same teoretičnega pisnega dela magistrske naloge poskrbel tudi za praktični del - ta vsebuje idelavo xml datotek pisem, izdelavo modela za transkribiranje v orodju Transkribus, xslt pretvorbo pisem za objavo v okviru GAMS infrastrukture. Poleg tega pa tudi prilagoditev in izdelavo spletne strani na podlagi GAMS predlog. Več o postopku pod poglavjem <a href="#workflow">"D"elovni proces"</a>. Naloga je bila izvedena pod mentorstvom Univ.-Prof. Dr.phil. M.A. Georg Vogelerja (Institut Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities). Trenutno je objavljeno le del pisem. Korpus pisem se bo postopoma dopolnjeval.														
+													</p>
+												</div>	
+												<div id="materials">	
+													<h3>O gradivu</h3>												
+													<p> <a href="https://www.zal-lj.si/">Zgodovinski arhiv Ljubljana</a> hrani fond Graščine Fužine (SI_ZAL_LJU/0296 (1616-1925); nemško Herrschaft Fužine). Del tega fonda je korespondenca članov družine Terpinc in njihovega družabnega kroga. Zbirka 319 pisem in 2 potovalnih dnevnikov iz 19. stoletja, je bila ob drugi svetovni vojni razbita in raztresena, ponovno pa je bila po združena s strani arhiva. Pisemska zbirka je datirana med letoma 1825-1858, pisana v stari gotici in nemškem jeziku. Kot primarni zgodovinski viri zbirka pokriva lokalno zgodovino mesta Ljubljana sredi 19. stoletja. Večina pisem je korespondenca med zakoncema Fidelijem in Josephino Terpinc (rojena Češko).</p>
+													<p>Korespondenca je bila že fizično objavljena v (<a href="http://www.arhivsko-drustvo.si/wp-content/uploads/2019/01/Viri-št.-41.pdf">Viri št. 41</a>). Ta zajema prvi del korespondence, večinoma gre za pisma med zakoncema Terpinc ter sorodniki in prijatelji, le nekaj malega je poslovnih pisem. Glavnina pisem je urejena v škatlah 35 in 35a v 12 ovojih.</p>
+													<p>Zaradi obsežnosti je korespondenca vsebinsko razdeljena na družinsko (primarno) in ostalo (sekundarno). Primarna je pomembnejša, ker je nastala znotraj (sorodstveno) tesneje povezanega kroga ljudi, v ospredju pa so način komunikacije, teme »pogovorov« in osebnostne značilnosti ter nagnjenja posameznikov, ki so na ta način jasneje in bolj osebno predstavljeni. Sekundarna korespondenca (pisma prijateljev in znancev) je časovno bolj razpršena, saj obsega daljše obdobje (1823–1875), pogosto nima »rdeče niti« pogovorov oz. dogodkov, korespondenti pa so med seboj v različno intenzivnih stikih. Ta pisma bodo počakala na objavo v prihodnje.</p>
+													<p>Transkripcije pisem v publikaciji Viri so označene z zaporednimi številkami, ki se ujemajo z digitalizati originalov na tej spletni strani. Oboji si sledijo kronološko, medtem ko je originalno gradivo v fondu Graščina Fužine urejeno glede na korespondente. Transkripcijo pisme je opravila Nataša Budna Kodrič.</p>
+												</div>															
+												<div id="goal">	
+													<h3>Cilji projekta</h3> 
+													<ol>
+														<li>
+															<h4>Objavljanje arhivskega gradiva</h4>
+															<p>
+																Zaradi obstoja delne tiskane izdaje pisem se je pojavila ideja o ustvarjanju digitalne različice zbirke pisem.
+															</p>
+															<p>
+																Z ustvarjanjem digitalne izdaje si prizadevamo, da bi arhivsko gradivo postalo širše dostopno raziskovalcem, znanstvenikom, navdušencem in študentom prek novih digitalnih medijev. Novi digitalni mediji v pirmerjavi z tiskano digitalno iizdajo omogočajo, da besedilu  dodamo dodatne interaktivne informacije, ki pomagajo bolje razumeti besedilo v kontesktu današnjega časa (razlaga kratic, informacije o vsebini, definiranje omenjene osebe, opise in določitev krajev z različnimi imeni). Obstaja tudi "problem biti izgubljen v množici". Če arhivsko gradivo ni pravilno opisano in opremljeno z ustreznimi metapodatki, ga je mogoče enostavno spregledati pri iskanju. Lahko celo rečemo, da "ne obstaja". To je način, da pomembnemu gradivu damo več pozornosti.
+															</p>
+															<p>
+																Cilj je uporabniku ponuditi facsimile pisma z transkripcijo opremljenega besedila. S tem ponuditi bralcu dodatne informacije za lažje razumevanje vsebine v okviru zgodovinske razdalje ter pismo predstaviti skozi prizmo časa, prostora in vpletenih ljudi.
+															</p>
+															<figure class="bg-white p-3 rounded" style="border-left: .25rem solid #f68e9d;">
 																<blockquote class="blockquote pb-2 text-center">
 																	<p>"Glavni cilj opomb je premostiti zgodovinsko razdaljo med sedanjim bralcem in avtorjem ter prejemniki pisem, da je besedilo razumljivo in berljivo. Opombe se osredotočajo na zapolnitev morebitnih vrzeli v znanju bralcev te izdaje. Pri pisanju opomb smo upoštevali, kaj so naši predhodniki storili s pisem."</p>
 																</blockquote>
@@ -465,53 +469,51 @@
 													</ol>
 												</div>											
 												<div id="workflow">	
-													<h3>Workflow</h3>
+													<h3>Delovni postopek</h3>
+													<p>Več o samem postopku si lahko preberete tudi v članku <a href="http://www.arhivsko-drustvo.si/wp-content/uploads/2022/01/Arhivi_2021-2_intrenet.pdf">Arhivsko gradivo skozi prizmo digitalnih izdaj – primer izdelave digitalne izdaje Korespondence Jožefine in Fidelija Terpinc (1825–1858)</a>, ki je bil objavljen v glasilu Arhivskega društva in arhivov Slovenije, Arhivi, letnik 44, št. 2.</p>
 													<ol>
 														<li>
-															<h2>Digitization</h2>
+															<h2>Digitalizacija</h2>
 															<p>
-																The letters were digitized in-house with a scanner EPSON DS-50000 in .tiff format with 300 dpi.
+																Pisma so bila digitalizirana interno v Zgodovinskem arhivu Ljubljana s skenerjem EPSON DS-50000 v formatu .tiff z 300 dpi. Digitalizati so shranjeni v TIFF-formatu, kar je tudi v skladu z aktualnim Pravilnikom o enotnih tehnoloških zahtevah za zajem in hrambo gradiva v digitalni obliki.25 Skupno je nastalo 1.142 TIFF-datotek (eno	pismo ima lahko več strani).
 															</p>
 														</li>
 														<li>
-															<h2>Transcribing</h2>
+															<h2>Transkripcija</h2>
 															<p>
-																As the letters are written in old gothic font, they were transcribed for the first part of the published printed edition. Those transcribed letters were then used to build an HTR model with the software Transkribus (<a href="https://transkribus.eu/Transkribus/">transkribus.eu</a>). The letters were imported into the program with the built-in import tool. Each letter was run through layout analysis (which defines the text area of the digitized letter), and the transcribed text was then copy-pasted to the connected letter and checked.
+																Ker so pisma napisana v stari gotici (19. stoletje), so bila transkribirana s strani Nataše Budne Kodrič in objavljenja v tiskani izdaji. Transkribirana besedila pisem so bila nato uporabljena za izgradnjo modela HTR z uporabo programske opreme Transkribus (<a href="https://transkribus.eu/Transkribus/">transkribus.eu</a>). Digitalizati in besedila pisem so bila uvožena v program s pripadajočim orodjem za uvoz.
+															</p>															
+														</li>
+														<li>
+															<h2>Izvoz pisem v TEI XML</h2>
+															<p>
+																Transkribus ponuja prilagodljive možnosti izvoza. Glavni možnosti sta "strežniški izvoz" in "izvoz klienta". Obe možnosti ponujata izvoze .pdf, TEI, DOCX, preprosti izvozi TXT. Razlika je v izvozu TEI (kar je bilo pomembno za izvozni proces v tem projektu). "Strežniški izvoz" ne dovoljuje nobenih sprememb nastavitev za izvoz TEI, medtem ko "izvoz klienta" omogoča spremembe oznak območja (določanje, katero območje uporabiti, ali območje, vrstico, besedo ali brez območja) in tudi oznak za prelom vrstice (možnost med oznakama <code>&lt;l&gt;</code> in <code>&lt;lb&gt;</code>). Obstaja tudi možnost, da se ime slike vključi kot atribut xml:id v oznaki <code>&lt;pb&gt;</code>.
 															</p>
 															<p>
-																The HTR model was built for automatic transcription using 65 letters (21,189 words). The CER (Character Error Rate) is recorded at 5.06%. We can advocate the invested time for building a model with the time savings when transcribing the "still not transcribed letters." The first is the automatic transcription of the letter with the HTR model. Then the letter is manually checked and corrected, a so-called semi-automatic transcribing. With additional letters transcribed and manually checked, we can then develop a better and more efficient HTR model.
+																Pri uporabi "strežniškega izvoza" je orodje za izvoz včasih zagotavljalo nedokončane rezultate (prazne .xml datoteke, razlog, zakaj ni bil odkrit). V projektu je bil izvoz opravljen z možnostjo "izvoz klienta", pismo po pismo s predhodno določenimi možnostmi (Območje na vrstico; Imena slik kot atribut <code>&lt;pb&gt;</code> xml:id; Prekinitve vrstic <code>&lt;lb&gt;</code>).
 															</p>
 														</li>
 														<li>
-															<h2>Exporting TEI XML</h2>
+															<h2>Prilagoditev izvoženih XML datotek</h2>
 															<p>
-																Transkribus offers customizable export options. Main options are "Server export" and "Client export". Both options offer .pdf, TEI, DOCX, simple TXT exports. One difference is in TEI export (which was important for the export process in this project). "Server export" doesn’t allow any preference changes to TEI export, on the other hand, "Client export" allows changes to zone tags (defining which zone to use, either region, line, word, or no zone) and also tags for a line break (option between <code>&lt;l&gt;</code> and <code>&lt;lb&gt;</code> tag). There is also an option to include the image name as the xml:id attribute in the <code>&lt;pb&gt;</code> tag.
+																Izvoženi .xml je bil skladen s TEI, vendar je bilo potrebno nekaj prilagoditev za pridobitev želene oblike.
 															</p>
 															<p>
-																When using "server export," the export tool sometimes provided unfinished results (empty .xml files, the reason why was not discovered). In the project, the export was done with the "client export" option, letter by letter with predefined options (Zone per line; Image names as <code>&lt;pb&gt;</code> xml:id; Line breaks <code>&lt;lb&gt;</code>).
-															</p>
-														</li>
-														<li>
-															<h2>Adapting the XML File</h2>
-															<p>
-																The exported .xml was TEI compliant; however, some adjustments were needed to be done to become the desired form of a letter, which affects the end process of publishing the letters online.
+																Bil je ustvarjen xml_modification.xsl za uporabo transformacije XSLT. 
 															</p>
 															<p>
-																The xml_modification.xsl was created to use XSLT transformation. The file is available in materials and it is commented for understanding.
-															</p>
-															<p>
-																Main adjustments of the xml_modification.xsl are:
+																Glavne prilagoditve xml_modification.xsl so:
 															</p>
 															<ul>
-																<li>Copying the prepared external header in each letter with <code>&lt;fileDesc&gt;</code> and <code>&lt;profileDesc&gt;</code> information (the information that are the same for each letter)</li>
-																<li>Adding <code>&lt;div type=”letter”&gt;</code> and <code>&lt;p&gt;</code> tags to represent the letter form</li>
-																<li>Removing the repeating <code>&lt;facsimile tag&gt;</code> and copying its xml:id attribute into <code>&lt;surface&gt;</code> tag for each .jpg file</li>
+																<li>Vstavljanje pripravljenega zunanje glave v vsako pismo s podatki <code>&lt;fileDesc&gt;</code> in <code>&lt;profileDesc&gt;</code> (informacije, ki so enake za vsako pismo)</li>
+																<li>Dodajanje oznak <code>&lt;div type=”letter”&gt;</code> in <code>&lt;p&gt;</code> za predstavitev oblike pisma</li>
+																<li>Odstranjevanje ponavljajočega se <code>&lt;facsimile tag&gt;</code> in kopiranje njegovega atributa xml:id v oznako <code>&lt;surface&gt;</code> za vsako .jpg datoteko</li>
 															</ul>
 														</li>
 														<li>
-															<h2>Manual Annotating</h2>
+															<h2>Ročno označevanje (annotating)</h2>
 															<p>
-																Examples of already published digital edition were researched. Main sources:
+																Kot priemre dobirh praks so se prelgedale sledeče edicije:
 																<ul>
 																	<li><a href="https://ride.i-d-e.de/issues/issue-10/">ride.i-d-e.de</a></li>
 																	<li><a href="https://encoding-correspondence.bbaw.de/v1/">encoding-correspondence.bbaw.de</a></li>
@@ -522,26 +524,17 @@
 																</ul>
 															</p>
 															<p>
-																A standalone document (Annotation.docx; part of materials) was created as an internal guideline. In the document are noted the main used annotations, examples, and rules on how to use them.
-															</p>
-															<p>
-																Here ends the step that was done for the project.
-															</p>
+																Bil je ustvarjen samostojen dokument (Annotation.docx) kot interne smernice. V dokumentu so opisane glavne uporabljene oznake, primeri in pravila za njihovo uporabo.
+															</p>															
 														</li>
 														<li>
-															<h2>Publishing</h2>
+															<h2>Objava</h2>
 															<p>
-																The next step is the form and means of how to publish the letters. That part still needs to be put into a practical example.
+																Edicija je objavljena v okviru infrastrukture <a href="https://gams.uni-graz.at/">GAMS</a>. Za pomoč se na tem mestu zahvaljujem Prof. Dr.phil. M.A. Georg Vogelerju in Elisabeth Raunig BA. MA., za pomoč pri XML in XSLT prilagoditvah. 
 															</p>
 														</li>
 													</ol>
-												</div>
-												<div id="fm">	
-													<h3>Files Managment</h3> 
-												</div>
-												<div id="access">	
-													<h3>Accesibility</h3> 
-												</div>											
+												</div>																																			
 											</div>
 										</div>
 									</article>
