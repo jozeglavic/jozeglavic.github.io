@@ -48,7 +48,56 @@
                 <xsl:apply-templates select="//tei:text"/>
             </div> 
         </section>
+        
+        
+        <xsl:if test="$mode = 'view:editionobject' or $mode = ''">
+            <section class="row">
+                <!-- First Column -->
+                <article class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <xsl:apply-templates select="//t:body"/>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Second Column -->
+                <article class="col-md-6" style="margin-top:30px;">
+                    <div class="sticky-top" style="top:67px; z-index:100;">
+                        <div id="vwr-content" class="toc" style="background-color: #E8E8E8; height:700px;">
+                            <xsl:text> </xsl:text>
+                        </div>
+                        <div class="MsInfo">
+                            <!-- Manuscript Information -->
+                        </div>
+                    </div>
+                    
+                    <!-- JavaScript Libraries -->
+                    <script type="text/javascript" src="{$gamsAssetsRootPath}/lib/editionviewer/openseadragon.js">
+                        <xsl:text> </xsl:text>
+                    </script>
+                    <script type="text/javascript" src="{$gamsAssetsRootPath}/lib/editionviewer/bs-scroll-the-edition.js">
+                        <xsl:text> </xsl:text>
+                    </script>
+                    <script type="text/javascript" src="{$gamsAssetsRootPath}/lib/editionviewer/gamsEdition.js">
+                        <xsl:text> </xsl:text>
+                    </script>
+                    
+                    <!-- JavaScript Initialization -->
+                    <script type="text/javascript">
+                        gamsOsd({
+                        // Viewer Configuration Options
+                        });
+                    </script>
+                    <!-- ATTENTION: Watch out for line breaks in the last line. -->
+                </article>
+            </section>
+        </xsl:if>
     </xsl:template>  
+    
+   
+    
+    
     
     
     
