@@ -40,13 +40,7 @@
                 <xsl:apply-templates select="//tei:correspAction[@type='received']/tei:placeName"/>
                 prejeto: 
                 <xsl:apply-templates select="//tei:correspAction[@type='received']/tei:date"/>
-            </div>   
-            <div class="col-7">
-                <xsl:apply-templates select="//tei:text"/>
-		    </div>  
-            <div class="col">
-                <xsl:apply-templates select="//tei:text"/>
-            </div> 
+            </div>               
         </section>
         
         

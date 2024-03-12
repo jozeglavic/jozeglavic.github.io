@@ -1,3 +1,4 @@
+
 <xsl:stylesheet xmlns:mets="http://www.loc.gov/METS/" xmlns:t="http://www.tei-c.org/ns/1.0" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0">
     <xsl:output indent="yes"></xsl:output>
     <xd:doc>
