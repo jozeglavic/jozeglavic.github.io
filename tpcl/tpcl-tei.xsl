@@ -90,7 +90,8 @@
         </script>
         <script type="text/javascript">
             gamsOsd({
-            
+            id: "vwr-content", 
+            pid:"<xsl:value-of select="$pid"/>" 
             });
         </script>
     </xsl:template> 
