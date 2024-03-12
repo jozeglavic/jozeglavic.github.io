@@ -64,9 +64,9 @@
                         <div class="MsInfo">
                             <!-- Manuscript Information -->
                         </div>
-                        <xsl:call-template name="gamsOsd">
+                        <div><xsl:call-template name="gamsOsd">
                             <xsl:with-param name="pid" select="concat('/', $teipid)"/>
-                        </xsl:call-template>
+                        </xsl:call-template></div>
                     </div>
                     
                     <!-- JavaScript Libraries -->
@@ -81,7 +81,7 @@
                     </script>
                     
                     <!-- JavaScript Initialization -->
-                    
+                   
                     <!-- ATTENTION: Watch out for line breaks in the last line. -->
                 </article>
             </section>
@@ -89,7 +89,7 @@
     </xsl:template> 
     
     <xsl:template name="gamsOsd">
-        <xsl:param name="teipid"/>
+        <xsl:param name="pid"/>
         <script type="text/javascript" src="/editionviewer/gamsEdition.js"><xsl:text> </xsl:text></script>
         <script type="text/javascript">
             gamsOsd({
