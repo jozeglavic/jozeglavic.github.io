@@ -62,7 +62,7 @@
                             <xsl:text> </xsl:text>
                         </div>                       
                         <div><xsl:call-template name="gamsOsd">
-                            <xsl:with-param name="teipid" select="concat('/', $teipid)"/>
+                            <xsl:with-param name="pid" select="concat('/', $teipid)"/>
                         </xsl:call-template></div>
                     </div>
                     
@@ -78,7 +78,7 @@
     </xsl:template> 
     
     <xsl:template name="gamsOsd">
-        <xsl:param name="teipid"/>
+        <xsl:param name="pid"/>
         <script type="text/javascript" src="{$gamsAssetsRootPath}/lib/editionviewer/openseadragon.js">
             <xsl:text> </xsl:text>
         </script>
