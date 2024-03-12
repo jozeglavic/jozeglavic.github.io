@@ -70,15 +70,7 @@
                     </div>
                     
                     <!-- JavaScript Libraries -->
-                    <script type="text/javascript" src="{$gamsAssetsRootPath}/lib/editionviewer/openseadragon.js">
-                        <xsl:text> </xsl:text>
-                    </script>
-                    <script type="text/javascript" src="{$gamsAssetsRootPath}/lib/editionviewer/bs-scroll-the-edition.js">
-                        <xsl:text> </xsl:text>
-                    </script>
-                    <script type="text/javascript" src="{$gamsAssetsRootPath}/lib/editionviewer/gamsEdition.js">
-                        <xsl:text> </xsl:text>
-                    </script>
+               
                     
                     <!-- JavaScript Initialization -->
                    
@@ -90,7 +82,15 @@
     
     <xsl:template name="gamsOsd">
         <xsl:param name="pid"/>
-        <script type="text/javascript" src="/editionviewer/gamsEdition.js"><xsl:text> </xsl:text></script>
+        <script type="text/javascript" src="{$gamsAssetsRootPath}/lib/editionviewer/openseadragon.js">
+            <xsl:text> </xsl:text>
+        </script>
+        <script type="text/javascript" src="{$gamsAssetsRootPath}/lib/editionviewer/bs-scroll-the-edition.js">
+            <xsl:text> </xsl:text>
+        </script>
+        <script type="text/javascript" src="{$gamsAssetsRootPath}/lib/editionviewer/gamsEdition.js">
+            <xsl:text> </xsl:text>
+        </script>
         <script type="text/javascript">
             gamsOsd({
             id: "vwr-content",
