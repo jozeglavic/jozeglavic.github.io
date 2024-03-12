@@ -87,11 +87,7 @@
         </script>
         <script type="text/javascript" src="{$gamsAssetsRootPath}/lib/editionviewer/gamsEdition.js">
             <xsl:text> </xsl:text>
-        </script>
-        <script type="text/javascript" src="/osdviewer/openseadragon.js"><xsl:text> </xsl:text></script>
-        <script type="text/javascript" src="/osdviewer/gamsOsd.js"><xsl:text> </xsl:text></script>
-        <script type="text/javascript" src="/osdviewer/openseadragon.js"><xsl:text> </xsl:text></script>
-        <script type="text/javascript" src="/osdviewer/gamsOsd.js"><xsl:text> </xsl:text></script>
+        </script>  
         <script type="text/javascript">
             gamsOsd({
             id: "vwr-content",
@@ -102,7 +98,7 @@
             showRotationControl: true,
             showIiifLabels: false,
             referenceStripScroll: "horizontal",
-            pid: "<xsl:value-of select="$teipid"/>",
+            pid: "<xsl:value-of select="concat('/', $teipid)"/>",
             });
         </script>
     </xsl:template> 
