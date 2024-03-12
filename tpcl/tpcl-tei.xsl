@@ -91,16 +91,14 @@
         <script type="text/javascript">
             gamsOsd({
             id: "vwr-content",
-            prefixUrl: "/osdviewer/images/",        
-            
+            prefixUrl: "/osdviewer/images/",
+            showNavigator: true,
             sequenceMode: true,
-            <!--            initialPage: 1,-->
-            defaultZoomLevel: 0,
-            showSequenceControl: true,
-            showReferenceStrip: false,
-            showRotationControl: false,
-            referenceStripScroll: "horizontal",        
-            pid:"<xsl:value-of select="$teipid"/>"
+            showReferenceStrip: true,
+            showRotationControl: true,
+            showIiifLabels: false,
+            referenceStripScroll: "horizontal",
+            pid: "<xsl:value-of select="$pid"/>",
             });
         </script>
     </xsl:template> 
