@@ -90,15 +90,7 @@
         </script>
         <script type="text/javascript">
             gamsOsd({
-            id: "vwr-content",
-            prefixUrl: "/osdviewer/images/",
-            showNavigator: true,
-            sequenceMode: true,
-            showReferenceStrip: true,
-            showRotationControl: true,
-            showIiifLabels: false,
-            referenceStripScroll: "horizontal",
-            pid: "<xsl:value-of select="$pid"/>",
+            
             });
         </script>
     </xsl:template> 
