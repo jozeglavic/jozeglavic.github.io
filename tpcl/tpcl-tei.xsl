@@ -88,6 +88,10 @@
         <script type="text/javascript" src="{$gamsAssetsRootPath}/lib/editionviewer/gamsEdition.js">
             <xsl:text> </xsl:text>
         </script>
+        <script type="text/javascript" src="/osdviewer/openseadragon.js"><xsl:text> </xsl:text></script>
+        <script type="text/javascript" src="/osdviewer/gamsOsd.js"><xsl:text> </xsl:text></script>
+        <script type="text/javascript" src="/osdviewer/openseadragon.js"><xsl:text> </xsl:text></script>
+        <script type="text/javascript" src="/osdviewer/gamsOsd.js"><xsl:text> </xsl:text></script>
         <script type="text/javascript">
             gamsOsd({
             id: "vwr-content",
