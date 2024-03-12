@@ -60,12 +60,9 @@
                     <div class="sticky-top" style="top:67px; z-index:100;">
                         <div id="vwr-content" class="toc" style="background-color: #E8E8E8; height:700px;">
                             <xsl:text> </xsl:text>
-                        </div>
-                        <div class="MsInfo">
-                            <!-- Manuscript Information -->
-                        </div>
+                        </div>                       
                         <div><xsl:call-template name="gamsOsd">
-                            <xsl:with-param name="pid" select="concat('/', $teipid)"/>
+                            <xsl:with-param name="teipid" select="concat('/', $teipid)"/>
                         </xsl:call-template></div>
                     </div>
                     
@@ -81,7 +78,7 @@
     </xsl:template> 
     
     <xsl:template name="gamsOsd">
-        <xsl:param name="pid"/>
+        <xsl:param name="teipid"/>
         <script type="text/javascript" src="{$gamsAssetsRootPath}/lib/editionviewer/openseadragon.js">
             <xsl:text> </xsl:text>
         </script>
