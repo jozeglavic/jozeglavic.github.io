@@ -23,6 +23,7 @@
     
     
     <xsl:template name="content">
+        <xsl:param name="pid"/>
         <section class="row">
             
             
@@ -67,6 +68,7 @@
                     </div>
                     
                     <!-- JavaScript Libraries -->
+                    
                     <script type="text/javascript" src="{$gamsAssetsRootPath}/lib/editionviewer/openseadragon.js">
                         <xsl:text> </xsl:text>
                     </script>
@@ -78,9 +80,21 @@
                     </script>
                     
                     <!-- JavaScript Initialization -->
+                    
                     <script type="text/javascript">
+                        
                         gamsOsd({
-                        // Viewer Configuration Options
+                        id: "vwr-content",
+                        prefixUrl: "/osdviewer/images/",        
+                        
+                        sequenceMode: true,
+                        <!--            initialPage: 1,-->
+                        defaultZoomLevel: 0,
+                        showSequenceControl: true,
+                        showReferenceStrip: false,
+                        showRotationControl: false,
+                        referenceStripScroll: "horizontal",        
+                        pid:"<xsl:value-of select="$pid"/>"
                         });
                     </script>
                     <!-- ATTENTION: Watch out for line breaks in the last line. -->
