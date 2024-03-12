@@ -91,7 +91,7 @@
         <script type="text/javascript">
             gamsOsd({
             id: "vwr-content",
-            prefixUrl: "/osdviewer/images/",        
+            prefixUrl: "{$gamsAssetsRootPath}/lib//osdviewer/images/",        
             
             sequenceMode: true,
             <!--            initialPage: 1,-->
