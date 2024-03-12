@@ -79,19 +79,14 @@
     
     <xsl:template name="gamsOsd">
         <xsl:param name="pid"/>
-        <script type="text/javascript" src="{$gamsAssetsRootPath}/lib/editionviewer/openseadragon.js">
-            <xsl:text> </xsl:text>
-        </script>
-        <script type="text/javascript" src="{$gamsAssetsRootPath}/lib/editionviewer/bs-scroll-the-edition.js">
-            <xsl:text> </xsl:text>
-        </script>
+        
         <script type="text/javascript" src="{$gamsAssetsRootPath}/lib/editionviewer/gamsEdition.js">
             <xsl:text> </xsl:text>
         </script>
         <script type="text/javascript">
             gamsOsd({
             id: "vwr-content",
-            prefixUrl: "{$gamsAssetsRootPath}/lib/osdviewer/images/",        
+            prefixUrl: "/osdviewer/images/",        
             
             sequenceMode: true,
             <!--            initialPage: 1,-->
