@@ -61,9 +61,9 @@
                         <div id="vwr-content" class="toc" style="background-color: #E8E8E8; height:700px;">
                             <xsl:text> </xsl:text>
                         </div>                       
-                        <div><xsl:call-template name="gamsOsd">
+                        <xsl:call-template name="gamsOsd">
                             <xsl:with-param name="pid" select="concat('/', $teipid)"/>
-                        </xsl:call-template></div>
+                        </xsl:call-template>
                     </div>
                     
                     <!-- JavaScript Libraries -->
@@ -79,7 +79,12 @@
     
     <xsl:template name="gamsOsd">
         <xsl:param name="pid"/>
-        
+        <script type="text/javascript" src="{$gamsAssetsRootPath}/lib/editionviewer/openseadragon.js">
+            <xsl:text> </xsl:text>
+        </script>
+        <script type="text/javascript" src="{$gamsAssetsRootPath}/lib/editionviewer/bs-scroll-the-edition.js">
+            <xsl:text> </xsl:text>
+        </script>
         <script type="text/javascript" src="{$gamsAssetsRootPath}/lib/editionviewer/gamsEdition.js">
             <xsl:text> </xsl:text>
         </script>
