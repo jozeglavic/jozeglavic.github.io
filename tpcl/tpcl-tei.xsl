@@ -23,7 +23,6 @@
     
     
     <xsl:template name="content">
-        <xsl:param name="pid"/>
         <section class="row">
             
             
@@ -65,10 +64,12 @@
                         <div class="MsInfo">
                             <!-- Manuscript Information -->
                         </div>
+                        <xsl:call-template name="gamsOsd">
+                            <xsl:with-param name="pid" select="concat('/', $teipid)"/>
+                        </xsl:call-template>
                     </div>
                     
                     <!-- JavaScript Libraries -->
-                    
                     <script type="text/javascript" src="{$gamsAssetsRootPath}/lib/editionviewer/openseadragon.js">
                         <xsl:text> </xsl:text>
                     </script>
@@ -80,28 +81,37 @@
                     </script>
                     
                     <!-- JavaScript Initialization -->
-                    
                     <script type="text/javascript">
-                        
                         gamsOsd({
-                        id: "vwr-content",
-                        prefixUrl: "/osdviewer/images/",        
-                        
-                        sequenceMode: true,
-                        <!--            initialPage: 1,-->
-                        defaultZoomLevel: 0,
-                        showSequenceControl: true,
-                        showReferenceStrip: false,
-                        showRotationControl: false,
-                        referenceStripScroll: "horizontal",        
-                        pid:"<xsl:value-of select="$pid"/>"
+                        // Viewer Configuration Options
                         });
                     </script>
                     <!-- ATTENTION: Watch out for line breaks in the last line. -->
                 </article>
             </section>
         </xsl:if>
-    </xsl:template>  
+    </xsl:template> 
+    
+    <xsl:template name="gamsOsd">
+        <xsl:param name="pid"/>
+        <script type="text/javascript" src="/editionviewer/gamsEdition.js"><xsl:text> </xsl:text></script>
+        <script type="text/javascript">
+            gamsOsd({
+            id: "vwr-content",
+            prefixUrl: "/osdviewer/images/",        
+            
+            sequenceMode: true,
+            <!--            initialPage: 1,-->
+            defaultZoomLevel: 0,
+            showSequenceControl: true,
+            showReferenceStrip: false,
+            showRotationControl: false,
+            referenceStripScroll: "horizontal",        
+            pid:"<xsl:value-of select="$teipid"/>"
+            });
+        </script>
+    </xsl:template>
+    
     
    
     
