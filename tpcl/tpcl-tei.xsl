@@ -81,11 +81,7 @@
                     </script>
                     
                     <!-- JavaScript Initialization -->
-                    <script type="text/javascript">
-                        gamsOsd({
-                        // Viewer Configuration Options
-                        });
-                    </script>
+                    
                     <!-- ATTENTION: Watch out for line breaks in the last line. -->
                 </article>
             </section>
@@ -93,7 +89,7 @@
     </xsl:template> 
     
     <xsl:template name="gamsOsd">
-        <xsl:param name="pid"/>
+        <xsl:param name="teipid"/>
         <script type="text/javascript" src="/editionviewer/gamsEdition.js"><xsl:text> </xsl:text></script>
         <script type="text/javascript">
             gamsOsd({
@@ -110,12 +106,7 @@
             pid:"<xsl:value-of select="$teipid"/>"
             });
         </script>
-    </xsl:template>
-    
-    
-   
-    
-    
+    </xsl:template> 
     
     
     
