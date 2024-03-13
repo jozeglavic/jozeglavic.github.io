@@ -155,6 +155,12 @@
         </span> 
     </xsl:template>    
     
+    <xsl:template match="tei:lb">         
+        <span class="lb" >
+            <xsl:apply-templates/>
+        </span> 
+    </xsl:template>   
+    
    
     
     
