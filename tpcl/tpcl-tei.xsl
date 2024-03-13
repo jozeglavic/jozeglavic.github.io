@@ -156,12 +156,8 @@
     </xsl:template>    
     
     <xsl:template match="tei:lb"> 
-        <xsl:for-each select=".">
-            <br/>           
-            <h3 class="mb-2" id="{@facs}">
-                <xsl:value-of select="@n"/>
-            </h3>
-            <p><xsl:apply-templates/></p>
+        <xsl:for-each select=".">                            
+            <p><xsl:apply-templates/></p><br/> 
         </xsl:for-each>
     </xsl:template>   
     
