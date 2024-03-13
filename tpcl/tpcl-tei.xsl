@@ -28,13 +28,14 @@
             <!--////////////Letter sender and reciever - correspDesc//////--> 
             
             <div class="callout callout-primary"> 
-                <div class="p-2 bg-light border">Od:               
+                <div class="p-2 bg-light border">
+                    <p><i class="bi bi-person-fill-up"></i>Od:               
                 <xsl:apply-templates select="//tei:correspAction[@type='sent']/tei:persName"/> 
                 iz: 
                 <xsl:apply-templates select="//tei:correspAction[@type='sent']/tei:placeName"/>
-                    poslano: <xsl:apply-templates select="//tei:correspAction[@type='sent']/tei:date/@when"/>
+                    poslano: <xsl:apply-templates select="//tei:correspAction[@type='sent']/tei:date/@when"/></p>
             </div>  
-            <div>Od:              
+               <div class="p-2 bg-light border">Od:              
                 <xsl:apply-templates select="//tei:correspAction[@type='received']/tei:persName"/> 
                 iz: 
                 <xsl:apply-templates select="//tei:correspAction[@type='received']/tei:placeName"/>
