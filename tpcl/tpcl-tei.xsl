@@ -110,24 +110,7 @@
     
     <!--after content-->
     <!--tooltip-->
-    <xsl:template match="tei:name[@type = 'place']">
-        <a id="highlightpl" style="color:#E56512" data-toggle="tooltip" data-placement="right"
-            data-original-title="Tooltip on right" aria-describedby="tooltip759877">
-            <!--Text im Tooltip-->
-            <xsl:attribute name="title">
-                <xsl:for-each select="./@ref">
-                    <xsl:variable name="current" select="."/>
-                    <xsl:for-each select="//tei:place">
-                        <xsl:if test="concat('#', ./@xml:id) = $current">
-                            <xsl:value-of select="./tei:placeName"/>
-                        </xsl:if>
-                    </xsl:for-each>
-                </xsl:for-each>
-            </xsl:attribute>                       
-            <xsl:apply-templates/>
-        </a>
-    </xsl:template>
-    
+
     
     
     
