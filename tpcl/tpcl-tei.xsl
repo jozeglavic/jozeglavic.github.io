@@ -152,11 +152,7 @@
         </span> 
     </xsl:template>    
     
-    <xsl:template match="@when">         
-        <span class="date" >
-            <xsl:apply-templates/>
-        </span> 
-    </xsl:template>    
+   
     
     
     
