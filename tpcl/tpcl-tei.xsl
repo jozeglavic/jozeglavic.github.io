@@ -161,6 +161,7 @@
             <h3 class="mb-2" id="{@facs}">
                 <xsl:value-of select="@n"/>
             </h3>
+            <p><xsl:apply-templates/></p>
         </xsl:for-each>
     </xsl:template>   
     
