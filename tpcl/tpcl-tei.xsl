@@ -29,7 +29,7 @@
             
             <div class="callout callout-primary"> 
                 <div class="p-2 bg-light border">
-                    <p><i class="bi bi-person-fill-up"></i>Od:               
+                    <p>Od:               
                 <xsl:apply-templates select="//tei:correspAction[@type='sent']/tei:persName"/> 
                 iz: 
                 <xsl:apply-templates select="//tei:correspAction[@type='sent']/tei:placeName"/>
