@@ -28,7 +28,7 @@
             <!--////////////Letter sender and reciever - correspDesc//////--> 
             
             <article class="col-md-12">
-                <div class="card-body"> 
+                <div class="card"><div class="card-body"> 
                 <div class="p-3">
                     Od:               
                 <xsl:apply-templates select="//tei:correspAction[@type='sent']/tei:persName"/> 
@@ -43,7 +43,7 @@
                 prejeto: <xsl:apply-templates select="//tei:correspAction[@type='received']/tei:date/@when"/>
             </div>
                 <hr />
-           </div></article>         
+           </div></div></article>         
         </section>
         
         
