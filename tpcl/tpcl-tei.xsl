@@ -52,7 +52,7 @@
                 <!-- First Column -->
                 <article class="col-md-6">
                     <div class="card">
-                        <div class="card-body">
+                        <div class="card-body text-justify">
                             <xsl:apply-templates select="//t:body"/>
                         </div>
                     </div>
