@@ -27,8 +27,8 @@
             
             <!--////////////Letter sender and reciever - correspDesc//////--> 
             
-            <div class="bd-callout bd-callout-warning"> 
-                <div>Od:               
+            <div class="bs-callout bs-callout-warning d-grid gap-3"> 
+                <div class="p-2 bg-light border">Od:               
                 <xsl:apply-templates select="//tei:correspAction[@type='sent']/tei:persName"/> 
                 iz: 
                 <xsl:apply-templates select="//tei:correspAction[@type='sent']/tei:placeName"/>
