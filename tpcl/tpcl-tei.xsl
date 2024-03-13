@@ -32,14 +32,13 @@
                 <xsl:apply-templates select="//tei:correspAction[@type='sent']/tei:persName"/> 
                 iz: 
                 <xsl:apply-templates select="//tei:correspAction[@type='sent']/tei:placeName"/>
-                    poslano:<xsl:apply-templates select="//tei:correspAction[@type='sent']/tei:date/@when"/>
+                    poslano: <xsl:apply-templates select="//tei:correspAction[@type='sent']/tei:date/@when"/>
             </div>  
             <div>Od:              
                 <xsl:apply-templates select="//tei:correspAction[@type='received']/tei:persName"/> 
                 iz: 
                 <xsl:apply-templates select="//tei:correspAction[@type='received']/tei:placeName"/>
-                prejeto: 
-                <xsl:apply-templates select="//tei:correspAction[@type='received']/tei:date/@when"/>
+                prejeto: <xsl:apply-templates select="//tei:correspAction[@type='received']/tei:date/@when"/>
             </div>      
            </div>         
         </section>
@@ -149,6 +148,12 @@
     
     <xsl:template match="tei:persName">         
         <span class="persname" >
+            <xsl:apply-templates/>
+        </span> 
+    </xsl:template>    
+    
+    <xsl:template match="tei:date/@when">         
+        <span class="date" >
             <xsl:apply-templates/>
         </span> 
     </xsl:template>    
