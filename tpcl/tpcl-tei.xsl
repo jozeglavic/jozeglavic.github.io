@@ -27,7 +27,8 @@
             
             <!--////////////Letter sender and reciever - correspDesc//////--> 
             
-            <article class="col-md-6"><div> 
+            <article class="col-md-12">
+                <div class="card-body"> 
                 <div class="p-3">
                     Od:               
                 <xsl:apply-templates select="//tei:correspAction[@type='sent']/tei:persName"/> 
