@@ -23,11 +23,12 @@
     
     
     <xsl:template name="content">
-        <section class="row">       
+        <article>
+            <section class="row">       
             
             <!--////////////Letter sender and reciever - correspDesc//////--> 
             
-            <div class="bs-callout bs-callout-warning d-grid gap-3"> 
+            <div class="callout callout-primary"> 
                 <div class="p-2 bg-light border">Od:               
                 <xsl:apply-templates select="//tei:correspAction[@type='sent']/tei:persName"/> 
                 iz: 
@@ -39,7 +40,8 @@
                 iz: 
                 <xsl:apply-templates select="//tei:correspAction[@type='received']/tei:placeName"/>
                 prejeto: <xsl:apply-templates select="//tei:correspAction[@type='received']/tei:date/@when"/>
-            </div>      
+            </div>
+                <hr />
            </div>         
         </section>
         
@@ -75,6 +77,7 @@
                 </article>
             </section>
         </xsl:if>
+        </article>
     </xsl:template> 
     
     <xsl:template name="gamsOsd">
