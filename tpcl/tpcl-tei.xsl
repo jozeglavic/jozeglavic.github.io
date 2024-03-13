@@ -130,13 +130,15 @@
      
     <!--letter styling based on the tei encoding-->
     
-    <xsl:template match="tei:opener">         
+    <xsl:template match="tei:opener">
         <div class="opener-{@rend}" >            
             <xsl:apply-templates/>
         </div> 
+        <br/> 
     </xsl:template> 
     
-    <xsl:template match="tei:closer">         
+    <xsl:template match="tei:closer"> 
+        <br/>         
         <div class="closer-{@rend}" >            
             <xsl:apply-templates/>
         </div> 
@@ -157,7 +159,7 @@
     
     <xsl:template match="tei:lb"> 
         <xsl:for-each select=".">                            
-            <p><xsl:apply-templates/></p><br/> 
+            <span><xsl:apply-templates/></span><br/> 
         </xsl:for-each>
     </xsl:template>   
     
