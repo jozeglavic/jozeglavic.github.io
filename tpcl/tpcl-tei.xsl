@@ -23,7 +23,8 @@
     
     
     <xsl:template name="content">
-        <section class="row">
+        <div class="card">
+            <section class="row">
             
             
             <!--////////////Letter sender and reciever - correspDesc//////--> 
@@ -75,6 +76,7 @@
                 </article>
             </section>
         </xsl:if>
+        </div>
     </xsl:template> 
     
     <xsl:template name="gamsOsd">
