@@ -23,25 +23,25 @@
     
     
     <xsl:template name="content">
-        <div class="card">
-            <section class="row">
-            
+        <section class="row">       
             
             <!--////////////Letter sender and reciever - correspDesc//////--> 
             
-            <div>Od:               
+            <div class="bd-callout bd-callout-warning"> 
+                <div>Od:               
                 <xsl:apply-templates select="//tei:correspAction[@type='sent']/tei:persName"/> 
                 iz: 
                 <xsl:apply-templates select="//tei:correspAction[@type='sent']/tei:placeName"/>
-                poslano:<xsl:apply-templates select="//tei:correspAction[@type='sent']/tei:date"/>
+                    poslano:<xsl:apply-templates select="//tei:correspAction[@type='sent']/tei:date/@when"/>
             </div>  
             <div>Od:              
                 <xsl:apply-templates select="//tei:correspAction[@type='received']/tei:persName"/> 
                 iz: 
                 <xsl:apply-templates select="//tei:correspAction[@type='received']/tei:placeName"/>
                 prejeto: 
-                <xsl:apply-templates select="//tei:correspAction[@type='received']/tei:date"/>
-            </div>               
+                <xsl:apply-templates select="//tei:correspAction[@type='received']/tei:date/@when"/>
+            </div>      
+           </div>         
         </section>
         
         
@@ -76,7 +76,6 @@
                 </article>
             </section>
         </xsl:if>
-        </div>
     </xsl:template> 
     
     <xsl:template name="gamsOsd">
