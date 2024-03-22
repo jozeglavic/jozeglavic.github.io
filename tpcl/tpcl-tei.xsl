@@ -166,9 +166,9 @@
     
     <xsl:template match="tei:listPlace/tei:place">        
             <div class="place" id="{@xml:id}">                
-                <h2># <xsl:value-of select="@xml:id"/></h2>                        
-                 
-                               
+                <h2># <xsl:value-of select="@xml:id"/></h2>
+                
+                
                 <xsl:for-each select="placeName[@xml:lang='sl']">
                     <xsl:text>Slovensko ime: </xsl:text>
                     <xsl:apply-templates/>
