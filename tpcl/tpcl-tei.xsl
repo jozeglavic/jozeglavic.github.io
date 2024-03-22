@@ -11,6 +11,7 @@
     xmlns:tei="http://www.tei-c.org/ns/1.0"
     xmlns:oai="http://www.openarchives.org/OAI/2.0/" exclude-result-prefixes="#all">
     
+    
     <xsl:include href="tpcl-static.xsl"/>
     
     
@@ -19,6 +20,19 @@
     <!--///////////////////////////////////////////////////////////////////--> 
     
     <xsl:output method="xml" indent="yes" encoding="UTF-8"/>
+    
+    
+    <xsl:template match="/">
+        <html>
+            <head>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+            </head>
+            <body>
+                <xsl:call-template name="content"/>
+            </body>
+        </html>
+    </xsl:template>
+    
     
     
     
@@ -30,19 +44,20 @@
             
             <article class="col-md-12">
                 <div class="card-body"> 
-                    <div class="p-3">            
+                    <div class="p-3">   
+                        <span class="mail-icon">&#9993;</span>
                         <xsl:text>Od: </xsl:text>           
                         <xsl:apply-templates select="//tei:correspAction[@type='sent']/tei:persName"/> 
-                        <xsl:text>Iz: </xsl:text> 
+                        <xsl:text> Poslano: </xsl:text> 
                         <xsl:apply-templates select="//tei:correspAction[@type='sent']/tei:placeName"/>
-                        <xsl:text>Poslano: </xsl:text> <xsl:apply-templates select="//tei:correspAction[@type='sent']/tei:date/@when"/>
+                        <xsl:text>, </xsl:text> <xsl:apply-templates select="//tei:correspAction[@type='sent']/tei:date/@when"/>
                     </div>  
                     
-                    <div class="p-3"><xsl:text>Od: </xsl:text>               
+                    <div class="p-3"><xsl:text>Za: </xsl:text>               
                         <xsl:apply-templates select="//tei:correspAction[@type='received']/tei:persName"/> 
-                        <xsl:text>Iz: </xsl:text> 
+                        <xsl:text> Prejeto: </xsl:text> 
                         <xsl:apply-templates select="//tei:correspAction[@type='received']/tei:placeName"/>
-                        <xsl:text>Prejeto: </xsl:text>  <xsl:apply-templates select="//tei:correspAction[@type='received']/tei:date/@when"/>
+                        <xsl:text>, </xsl:text>  <xsl:apply-templates select="//tei:correspAction[@type='received']/tei:date/@when"/>
                     </div>
                     
                     
@@ -134,11 +149,10 @@
     
     
     <xsl:template match="tei:date/@when">
-        <!-- Format the date with full month name -->
-        <h2>
-            <span class="mail-icon">&#9993;</span> <!-- Calendar glyph -->
+        <!-- Format the date with full month name -->        
+            
+            <xsl:text> </xsl:text><!-- Calendar glyph -->
             <xsl:value-of select="format-date(., '[D01] [MN] [Y]')"/>
-        </h2>
     </xsl:template>
     
     
