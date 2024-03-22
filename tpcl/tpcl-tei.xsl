@@ -175,15 +175,15 @@
                 <xsl:for-each select="tei:settlement">
                     <xsl:text>Naselje: </xsl:text>
                     <xsl:apply-templates/>
-                    
-                </xsl:for-each><br/>
+                    <br/>                    
+                </xsl:for-each>
                 
                 
                 <xsl:for-each select="tei:country">
                     <xsl:text>Država: </xsl:text>
                     <xsl:apply-templates/>
-                    
-                </xsl:for-each><br/>
+                    <br/>
+                </xsl:for-each>
                 
                 
                 <xsl:for-each select="tei:idno">
