@@ -23,28 +23,7 @@
     
     
     <xsl:template name="content">
-        <section class="row">       
-            
-            <!--////////////Letter sender and reciever - correspDesc//////--> 
-            
-            <article class="col-md-12">
-                <div class="card-body"> 
-                <div class="p-3">            
-                Od:             
-                <xsl:apply-templates select="//tei:correspAction[@type='sent']/tei:persName"/> 
-                iz: 
-                <xsl:apply-templates select="//tei:correspAction[@type='sent']/tei:placeName"/>
-                    poslano: <xsl:apply-templates select="//tei:correspAction[@type='sent']/tei:date/@when"/>
-            </div>  
-               <div class="p-3">Za:              
-                <xsl:apply-templates select="//tei:correspAction[@type='received']/tei:persName"/> 
-                iz: 
-                <xsl:apply-templates select="//tei:correspAction[@type='received']/tei:placeName"/>
-                prejeto: <xsl:apply-templates select="//tei:correspAction[@type='received']/tei:date/@when"/>
-            </div>
-              
-           </div></article>         
-        </section>
+        
         
         
         <xsl:if test="$mode = 'view:editionobject' or $mode = ''">
