@@ -147,13 +147,13 @@
     
     
     <xsl:template match="tei:placeName">         
-        <span class="placename" >
+        <span class="placename" id="{@ref}">
             <xsl:apply-templates/>
         </span> 
     </xsl:template> 
     
     <xsl:template match="tei:persName">         
-        <span class="persname" >
+        <span class="persname" id="{@ref}">
             <xsl:apply-templates/>
         </span> 
     </xsl:template>    
