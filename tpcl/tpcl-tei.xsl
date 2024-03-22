@@ -164,8 +164,7 @@
         </xsl:for-each>
     </xsl:template>   
     
-    <xsl:template match="tei:listPlace/tei:place">
-        <xsl:for-each select="tei:place">   
+    <xsl:template match="tei:listPlace/tei:place">        
             <div class="place" id="{@xml:id}">                
                 <h2># <xsl:value-of select="@xml:id"/></h2>                        
                 <p><xsl:value-of select="tei:placeName"/><br/>
@@ -176,7 +175,6 @@
             </div>
             <hr class="hr hr-blurry" />
             
-        </xsl:for-each>     
         
         
         
