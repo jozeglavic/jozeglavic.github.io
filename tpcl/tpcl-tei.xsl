@@ -168,9 +168,13 @@
             <div class="place" id="{@xml:id}">                
                 <h2># <xsl:value-of select="@xml:id"/></h2>                        
                  
-                <xsl:if test="tei:placeName/@xml:lang='sl'"><xsl:text>Slovensko ime: </xsl:text><xsl:value-of select="tei:placeName/@xml:lang='sl'"/><br/></xsl:if>
-                    <xsl:if test="tei:placeName/@xml:lang='de'"><xsl:text>Nemško ime: </xsl:text><xsl:value-of select="tei:placeName/@xml:lang"/><br/></xsl:if>
-                  
+                               
+                <xsl:for-each select="tei:placeName">
+                    <xsl:text>Slovensko ime22: </xsl:text>
+                    <xsl:apply-templates/>
+                    <br/>                    
+                </xsl:for-each>
+                
                 
                 <xsl:for-each select="tei:settlement">
                     <xsl:text>Naselje: </xsl:text>
