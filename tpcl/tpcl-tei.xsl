@@ -176,8 +176,23 @@
                 
                 
                 <xsl:for-each select="tei:placeName">
-                    <xsl:if test="tei:placeName[@xml:lang]='si'"><xsl:text>Slovensko ime: </xsl:text><xsl:value-of select="tei:placeName[@xml:lang]='si'"/><br/></xsl:if>
-                    <xsl:if test="tei:placeName[@xml:lang]='de'"><xsl:text>Nemško ime: </xsl:text><xsl:value-of select="tei:placeName[@xml:lang]='de'"/><br/></xsl:if>
+                  
+                     
+                     
+                    <xsl:if test="@xml:lang">
+                        <!-- Output placeName value with its language -->
+                        <li>
+                            <xsl:value-of select="concat(@xml:lang, ': ', .)"/>
+                        </li>
+                    </xsl:if>
+                    
+                    
+                    
+                 <xsl:for-each select="tei:placeName">
+                 
+                        
+              
+                     
                      
                     
                 </xsl:for-each>
