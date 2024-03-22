@@ -171,12 +171,7 @@
                 
               
                 
-                <xsl:for-each select="tei:placeName">                    
-                    <xsl:text>Slovensko ime222: </xsl:text>
-                    <xsl:apply-templates/>
-                    <br/>  
-                    
-                </xsl:for-each>
+                
                 
                 <xsl:for-each select="tei:placeName">
                     <xsl:if test="tei:placeName/@xml:lang='sl'"><xsl:text>Slovensko ime: </xsl:text><xsl:value-of select="tei:placeName[@xml:lang]='si'"/><br/></xsl:if>
