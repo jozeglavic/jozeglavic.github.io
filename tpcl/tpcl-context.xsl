@@ -8,10 +8,7 @@
     xmlns:i18n="http://apache.org/cocoon/i18n/2.1"
     xmlns:s="http://www.w3.org/2001/sw/DataAccess/rf1/result" xmlns="http://www.w3.org/1999/xhtml"
     xmlns:t="http://www.tei-c.org/ns/1.0" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
-    xmlns:dc="http://purl.org/dc/elements/1.1/" exclude-result-prefixes="#all"
-    xmlns:teix="http://www.tei-c.org/ns/Examples"
-    xmlns:tei="http://www.tei-c.org/ns/1.0">
-    
+    xmlns:dc="http://purl.org/dc/elements/1.1/" exclude-result-prefixes="#all">
 
     <!--<xsl:output method="xml" doctype-system="about:legacy-compat" encoding="UTF-8" indent="no"/>-->
 
@@ -373,17 +370,5 @@
             </li>
         </xsl:for-each>
     </xsl:template>
-
-
-    <xsl:template name="seznam_oseb" match="//tei:listPlace/tei:place">
-        
-        <h3><xsl:value-of select="/s:sparql/s:results/s:result[1]/s:container"/></h3>
-        <p>Anzahl der gefundenen Einträge: <xsl:value-of select="count(s:sparql/s:results/s:result)"/></p>
-        
-      
-       
-                    
-    </xsl:template>
-    
 
 </xsl:stylesheet>

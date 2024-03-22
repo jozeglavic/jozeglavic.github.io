@@ -175,10 +175,7 @@
 													href="/archive/objects/context:{$projectAbbr}/methods/sdef:Context/get?mode=kraji"
 													>Lokacije</a>
 												</li>
-								<!--
-									
-									
-								<li class="nav-item">
+								<!--<li class="nav-item">
 									<xsl:if test="$mode = (concat('context:', $projectAbbr))">
 										<xsl:attribute name="class">nav-item active</xsl:attribute>
 									</xsl:if>
@@ -563,8 +560,7 @@
 									<article class="col-md-12 ">
 										<div class="card">
 											<div class="card-body">
-												<p>TEST osebe2</p>
-												<xsl:call-template name="seznam_oseb"/>
+												<p>TEST osebe</p>
 											</div>
 										</div>
 									</article>													
@@ -575,7 +571,7 @@
 									<article class="col-md-12 ">
 										<div class="card">
 											<div class="card-body">
-												<p>TEST kraji2</p>
+												<p>TEST kraji</p>
 											</div>
 										</div>
 									</article>													
