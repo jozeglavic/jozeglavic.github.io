@@ -188,10 +188,8 @@
                     
                     
                     
-                 <xsl:for-each select="tei:placeName">
-                 
-                        
-              
+                    
+                     
                      
                      
                     
