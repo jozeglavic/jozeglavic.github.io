@@ -171,14 +171,14 @@
                 
                 <xsl:for-each select="placeName[@xml:lang='sl']">
                     <xsl:text>Slovensko ime: </xsl:text>
-                    <xsl:apply-templates/>
+                    <xsl:value-of select="."/>
                     <br/>
                         
                 </xsl:for-each>
                 
                 <xsl:for-each select="placeName[@xml:lang='de']">
                     <xsl:text>Nemško ime: </xsl:text>
-                    <xsl:apply-templates/>
+                    <xsl:value-of select="."/>
                     <br/>
                     
                 </xsl:for-each>
