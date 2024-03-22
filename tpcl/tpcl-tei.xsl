@@ -170,18 +170,13 @@
                 <p><xsl:value-of select="tei:placeName"/><br/>
                     <xsl:value-of select="tei:settlement"/><br/>
                     <xsl:value-of select="tei:country"/><br/>
-                    <xsl:value-of select="tei:idno"/><br/> 
+                    <a href="tei:idno"><xsl:value-of select="tei:idno"/></a>
+                    <br/> 
                 </p>                    
             </div>
-            <hr class="hr hr-blurry" />
-            
-        
-        
-        
+            <hr class="hr hr-blurry" />     
     </xsl:template>
-    
-   
-    
-    
-    
+
+
+
 </xsl:stylesheet>
