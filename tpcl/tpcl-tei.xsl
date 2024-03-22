@@ -23,6 +23,7 @@
     
     
     <xsl:template name="content">
+        <xsl:if test="not(//listPlace)">
         <section class="row">       
             
             <!--////////////Letter sender and reciever - correspDesc//////--> 
@@ -47,7 +48,7 @@
                 </div>
             </article>         
         </section>
-        
+        </xsl:if>
         
         <xsl:if test="$mode = 'view:editionobject' or $mode = ''">
             <section class="row">
@@ -176,11 +177,11 @@
                     <xsl:choose>
                         <!-- Check if language is "sl" -->
                         <xsl:when test="@xml:lang = 'sl'">
-                            <xsl:text>Slovenija: </xsl:text>
+                            <xsl:text>Slovensko ime: </xsl:text>
                         </xsl:when>
                         <!-- Check if language is "de" -->
                         <xsl:when test="@xml:lang = 'de'">
-                            <xsl:text>Nemčija: </xsl:text>
+                            <xsl:text>Nemško ime: </xsl:text>
                         </xsl:when>
                         <!-- Default case -->
                         <xsl:otherwise>
