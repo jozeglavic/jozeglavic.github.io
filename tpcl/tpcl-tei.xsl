@@ -137,7 +137,7 @@
         <!-- Format the date with full month name in Slovenian -->
         <h2>
             <span class="calendar-icon">&#128197;</span> <!-- Calendar glyph -->
-            <xsl:value-of select="format-date(., '[D01] [MN,*-3,month-names-sl] [Y]')"/>
+            <xsl:value-of select="format-date(., '[D01] [MN] [Y]')"/>
         </h2>
     </xsl:template>
     
