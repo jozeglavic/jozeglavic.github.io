@@ -170,16 +170,15 @@
                  
                     <xsl:if test="tei:placeName/@xml:lang='sl'"><xsl:text>Slovensko ime: </xsl:text><xsl:value-of select="tei:placeName/@xml:lang"/><br/></xsl:if>
                     <xsl:if test="tei:placeName/@xml:lang='de'"><xsl:text>Nemško ime: </xsl:text><xsl:value-of select="tei:placeName/@xml:lang"/><br/></xsl:if>
-                    <xsl:text>Permalink: </xsl:text><xsl:value-of select="tei:placeName"/><br/>
                     <xsl:text>Naselje: </xsl:text><xsl:value-of select="tei:settlement"/><br/>
                     <xsl:text>Država: </xsl:text><xsl:value-of select="tei:country"/><br/>
                 <xsl:for-each select="tei:idno">
                     <xsl:text>GeoNames povezava: </xsl:text>
                     <a>
                         <xsl:attribute name="href">
-                            <xsl:value-of select="tei:idno"/> 
+                            <xsl:apply-templates/>
                         </xsl:attribute>
-                        <xsl:value-of select="tei:idno"/> 
+                        <xsl:apply-templates/>
                     </a>
                     <br/> <br/> 
                 </xsl:for-each>
