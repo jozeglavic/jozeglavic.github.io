@@ -45,6 +45,7 @@
                         prejeto: <xsl:apply-templates select="//tei:correspAction[@type='received']/tei:date/@when"/>
                     </div>
                     
+                    
                 </div>
             </article>         
         </section>
@@ -132,7 +133,12 @@
     
     
     
-    
+    <xsl:template match="tei:date/@when">
+        <!-- Format the date as 'dd mm yyyy' -->
+        <h2>
+            <xsl:value-of select="format-date(., '[D01] [MN,*-3] [Y]')"/>
+        </h2>
+    </xsl:template>
     
     
     <!--Page number of a letter-->
