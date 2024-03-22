@@ -571,7 +571,7 @@
 									<article class="col-md-12 ">
 										<div class="card">
 											<div class="card-body">
-												<p>TEST kraji3</p>
+												<p>TEST kraji4</p>
 											</div>
 										</div>
 									</article>													

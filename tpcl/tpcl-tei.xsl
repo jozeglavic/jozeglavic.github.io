@@ -165,31 +165,22 @@
     </xsl:template>   
     
     <xsl:template match="tei:listPlace/tei:place">
-        <xsl:for-each select="tei:place">
-            
-            <span>span place</span>
-            <p>test new</p>
+        <xsl:for-each select="tei:place">   
+            <div class="place" id="{@xml:id}">
+                <xsl:value-of select="@n"/>
+                <h2># <xsl:value-of select="@xml:id"/></h2>                        
+                <p><xsl:value-of select="tei:placeName"/><br/>
+                    <xsl:value-of select="tei:settlement"/><br/>
+                    <xsl:value-of select="tei:country"/><br/>
+                    <xsl:value-of select="tei:idno"/><br/> 
+                </p>                    
+            </div>
+            <hr class="hr hr-blurry" />
             
         </xsl:for-each>     
         
         
-        <div class="place" id="{@xml:id}">
-            <ul>
-                <li>
-                    <p>test new</p>
-                    <xsl:value-of select="tei:placeName"/>
-                </li>
-                <li>
-                    <xsl:value-of select="tei:settlement"/>
-                </li>
-                <li>
-                    <xsl:value-of select="tei:country"/>
-                </li>
-                <li>
-                    <xsl:value-of select="tei:idno"/>
-                </li>
-            </ul>
-        </div>
+        
     </xsl:template>
     
    
