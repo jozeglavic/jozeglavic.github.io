@@ -173,16 +173,15 @@
                     <xsl:text>Permalink: </xsl:text><xsl:value-of select="tei:placeName"/><br/>
                     <xsl:text>Naselje: </xsl:text><xsl:value-of select="tei:settlement"/><br/>
                     <xsl:text>Država: </xsl:text><xsl:value-of select="tei:country"/><br/>
-                    <xsl:text>GeoNames povezava: </xsl:text><a>
-                        <xsl:attribute name="href">
-                            <xsl:value-of select="tei:idno"/>                            
-                        </xsl:attribute>
-                        
-                        <xsl:value-of select="tei:idno"/></a>
-                    <br/> 
                     
-                    <xsl:for-each select="tei:idno">                            
-                        <span><xsl:apply-templates/></span><br/> 
+                    
+                    <xsl:for-each select="tei:idno">
+                        <xsl:text>GeoNames povezava: </xsl:text><a>
+                            <xsl:attribute name="href">
+                                <xsl:apply-templates/>                            
+                            </xsl:attribute>                            
+                            <xsl:value-of select="tei:idno"/></a>
+                        <br/> <br/> 
                     </xsl:for-each>
                     
                 </p>                    
