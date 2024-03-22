@@ -189,17 +189,7 @@
                     </xsl:choose>
                     <!-- Output placeName value -->
                     <xsl:value-of select="."/>
-                  
-                     
-                     
-                    
-                    
-                    
-                    
-                    
-                     
-                     
-                     
+                    <br/>
                     
                 </xsl:for-each>
                 
