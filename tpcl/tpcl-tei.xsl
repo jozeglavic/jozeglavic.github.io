@@ -23,7 +23,7 @@
     
     
     <xsl:template name="content">
-        <xsl:if test="not(//tei:listPlace)">
+        <xsl:if test="//tei:correspDesc">
         <section class="row">       
             
             <!--////////////Letter sender and reciever - correspDesc//////--> 
@@ -81,6 +81,21 @@
                 </article>
             </section>
         </xsl:if>
+        
+        <xsl:if test="//tei:listPlace">
+            <section class="row">
+                <!-- First Column -->
+                <article class="col-md-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <xsl:apply-templates select="//t:body"/>
+                        </div>
+                    </div>
+                </article>               
+                
+            </section>
+        </xsl:if>
+        
     </xsl:template> 
     
     <xsl:template name="gamsOsd">
