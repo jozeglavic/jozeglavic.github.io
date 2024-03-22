@@ -21,18 +21,7 @@
     
     <xsl:output method="xml" indent="yes" encoding="UTF-8"/>
     
-    
-    <xsl:template match="/">
-        <html>
-            <head>
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
-            </head>
-            <body>
-                <xsl:call-template name="content"/>
-            </body>
-        </html>
-    </xsl:template>
-    
+     
     
     
     
@@ -45,7 +34,7 @@
             <article class="col-md-12">
                 <div class="card-body"> 
                     <div class="p-3">   
-                        
+                        <span class="mail-icon">&#9993;</span>
                         <xsl:text>Od: </xsl:text>           
                         <xsl:apply-templates select="//tei:correspAction[@type='sent']/tei:persName"/> 
                         <xsl:text> Poslano: </xsl:text> 
