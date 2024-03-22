@@ -46,7 +46,7 @@
                         <xsl:apply-templates select="//tei:correspAction[@type='received']/tei:persName"/> 
                         <xsl:text> Prejeto: </xsl:text> 
                         <xsl:apply-templates select="//tei:correspAction[@type='received']/tei:placeName"/>
-                        <xsl:text>, </xsl:text>  <xsl:apply-templates select="//tei:correspAction[@type='received']/tei:date/@when"/>
+                        <xsl:for-each select="//tei:correspAction[@type='received']/tei:date/@when"><xsl:text>, </xsl:text>  <xsl:apply-templates select="//tei:correspAction[@type='received']/tei:date/@when"/></xsl:for-each>
                     </div>
                     
                     
