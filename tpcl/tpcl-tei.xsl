@@ -167,10 +167,17 @@
     <xsl:template match="tei:listPlace/tei:place">        
             <div class="place" id="{@xml:id}">                
                 <h2># <xsl:value-of select="@xml:id"/></h2>                        
-                <p><xsl:value-of select="tei:placeName"/><br/>
+                <p><xsl:value-of select="tei:placeName/@xml:lang=sl"/><br/>
+                    <xsl:value-of select="tei:placeName/@xml:lang=de"/><br/>
+                    <xsl:value-of select="tei:placeName"/><br/>
                     <xsl:value-of select="tei:settlement"/><br/>
                     <xsl:value-of select="tei:country"/><br/>
-                    <a href="tei:idno"><xsl:value-of select="tei:idno"/></a>
+                    <a>
+                        <xsl:attribute name="href">
+                            <xsl:value-of select="tei:idno"/>                            
+                        </xsl:attribute>
+                        
+                        <xsl:value-of select="tei:idno"/></a>
                     <br/> 
                 </p>                    
             </div>
