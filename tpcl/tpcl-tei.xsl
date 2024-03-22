@@ -23,7 +23,7 @@
     
     
     <xsl:template name="content">
-        <xsl:if test="not(//listPlace)">
+        <xsl:if test="not(//tei:listPlace)">
         <section class="row">       
             
             <!--////////////Letter sender and reciever - correspDesc//////--> 
