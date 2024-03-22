@@ -168,7 +168,7 @@
             <div class="place" id="{@xml:id}">                
                 <h2># <xsl:value-of select="@xml:id"/></h2>                        
                 <p> <xsl:choose>
-                    <xsl:when test="tei:placeName/@xml:lang='sl'"><xsl:text>Slovensko ime: </xsl:text><xsl:value-of select="tei:placeName"/><br/></xsl:when>
+                    <xsl:when test="tei:placeName/@xml:lang='sl'"><xsl:text>Slovensko1 ime: </xsl:text><xsl:value-of select="tei:placeName"/><br/></xsl:when>
                     <xsl:when test="tei:placeName/@xml:lang='de'"><xsl:text>Nemško ime: </xsl:text><xsl:value-of select="tei:placeName"/><br/></xsl:when></xsl:choose>
                     <xsl:text>Permalink: </xsl:text><xsl:value-of select="tei:placeName"/><br/>
                     <xsl:text>Naselje: </xsl:text><xsl:value-of select="tei:settlement"/><br/>
