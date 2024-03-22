@@ -53,7 +53,7 @@
                 <article class="col-md-6">
                     <div class="card">
                         <div class="card-body">
-                            <p><xsl:apply-templates select="//t:body"/></p>
+                            <xsl:apply-templates select="//t:body"/>
                         </div>
                     </div>
                 </article>
@@ -174,8 +174,8 @@
                 
                 
                 <xsl:for-each select="tei:placeName">
-                    <xsl:if test="tei:placeName/@xml:lang='sl'"><xsl:text>Slovensko ime: </xsl:text><xsl:value-of select="tei:placeName[@xml:lang]='si'"/><br/></xsl:if>
-                    <xsl:if test="tei:placeName/@xml:lang='de'"><xsl:text>Nemško ime: </xsl:text><xsl:value-of select="tei:placeName[@xml:lang]='de'"/><br/></xsl:if>
+                    <xsl:if test="tei:placeName[@xml:lang]='si'"><xsl:text>Slovensko ime: </xsl:text><xsl:value-of select="tei:placeName[@xml:lang]='si'"/><br/></xsl:if>
+                    <xsl:if test="tei:placeName[@xml:lang]='de'"><xsl:text>Nemško ime: </xsl:text><xsl:value-of select="tei:placeName[@xml:lang]='de'"/><br/></xsl:if>
                      
                     
                 </xsl:for-each>
