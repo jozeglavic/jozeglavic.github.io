@@ -179,10 +179,11 @@
                         <xsl:text>GeoNames povezava: </xsl:text>
                         <a>
                             <xsl:attribute name="href">
-                                <xsl:value-of select="tei:idno"/>   
+                                <xsl:value-of select="tei:idno"/>
+                                <xsl:apply-templates/>
                                 
                             </xsl:attribute>
-                            
+                            <xsl:value-of select="tei:idno"/> 
                         </a>
                         a<br/> <br/> 
                     </xsl:for-each>
