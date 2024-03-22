@@ -180,6 +180,11 @@
                         
                         <xsl:value-of select="tei:idno"/></a>
                     <br/> 
+                    
+                    <xsl:for-each select="tei:idno">                            
+                        <span><xsl:apply-templates/></span><br/> 
+                    </xsl:for-each>
+                    
                 </p>                    
             </div>
             <hr class="hr hr-blurry" />     
