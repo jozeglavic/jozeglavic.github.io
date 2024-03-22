@@ -50,7 +50,7 @@
         </section>
         </xsl:if>
         
-        <xsl:if test="$mode = 'view:editionobject' or $mode = ''">
+        <xsl:if test="not(//tei:listPlace) and ($mode = 'view:editionobject' or $mode = '')">
             <section class="row">
                 <!-- First Column -->
                 <article class="col-md-6">
