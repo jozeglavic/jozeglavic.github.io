@@ -167,8 +167,8 @@
     <xsl:template match="tei:listPlace/tei:place">        
             <div class="place" id="{@xml:id}">                
                 <h2># <xsl:value-of select="@xml:id"/></h2>                        
-                <p> 
-                    <xsl:text>Nemško ime: </xsl:text><xsl:value-of select="tei:placeName/@xml:lang=de"/><br/>
+                <p> <xsl:text>Slovensko ime: </xsl:text><xsl:if test="@xml:lang='sl'"><xsl:value-of select="tei:placeName"/></xsl:if><br/>
+                    <xsl:text>Nemško ime: </xsl:text><xsl:if test="@xml:lang='de'"><xsl:value-of select="tei:placeName"/></xsl:if><br/>
                     <xsl:text>Permalink: </xsl:text><xsl:value-of select="tei:placeName"/><br/>
                     <xsl:text>Naselje: </xsl:text><xsl:value-of select="tei:settlement"/><br/>
                     <xsl:text>Država: </xsl:text><xsl:value-of select="tei:country"/><br/>
