@@ -179,8 +179,9 @@
                             <xsl:apply-templates/>
                         </xsl:attribute>
                         <xsl:apply-templates/>
+                        
                     </a>
-                    <br/> <br/> 
+                   
                 </xsl:for-each>
                     
                     
