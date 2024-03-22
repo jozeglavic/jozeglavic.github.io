@@ -170,17 +170,20 @@
                  
                     <xsl:if test="tei:placeName/@xml:lang='sl'"><xsl:text>Slovensko ime: </xsl:text><xsl:value-of select="tei:placeName/@xml:lang"/><br/></xsl:if>
                     <xsl:if test="tei:placeName/@xml:lang='de'"><xsl:text>Nemško ime: </xsl:text><xsl:value-of select="tei:placeName/@xml:lang"/><br/></xsl:if>
-                    <xsl:text>Naselje: </xsl:text><xsl:value-of select="tei:settlement"/><br/>
+                  
+                
+                <xsl:for-each select="tei:settlement">
+                    <xsl:text>Naselje: </xsl:text>
+                    <xsl:apply-templates/>
                     
-                
-                
+                </xsl:for-each><br/>
                 
                 
                 <xsl:for-each select="tei:country">
                     <xsl:text>Država: </xsl:text>
                     <xsl:apply-templates/>
                     
-                </xsl:for-each>
+                </xsl:for-each><br/>
                 
                 
                 <xsl:for-each select="tei:idno">
