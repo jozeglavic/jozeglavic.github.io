@@ -183,6 +183,13 @@
                     
                 </xsl:for-each>
                 
+                <xsl:for-each select="tei:placeName">
+                    <xsl:text>Slovensko ime: </xsl:text>
+                    <xsl:apply-templates/>
+                    <br/>  
+                    
+                </xsl:for-each>
+                
                 
                 <xsl:for-each select="tei:settlement">
                     <xsl:text>Naselje: </xsl:text>
