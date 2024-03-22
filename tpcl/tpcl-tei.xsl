@@ -136,8 +136,8 @@
     <xsl:template match="tei:date/@when">
         <!-- Format the date with full month name in Slovenian -->
         <h2>
-            <span class="calendar-icon">&#128197;</span> <!-- Calendar glyph -->
-            <xsl:value-of select="format-date(., '[D01] [MN] [Y]')"/>
+            <span class="calendar-icon">&#9993;</span> <!-- Calendar glyph -->
+            <xsl:value-of select="format-date(., '[D01] [MN, month-names-sl] [Y]')"/>
         </h2>
     </xsl:template>
     
