@@ -169,10 +169,18 @@
                 <h2># <xsl:value-of select="@xml:id"/></h2>                        
                  
                                
-                <xsl:for-each select="tei:placeName">
-                    <xsl:text>Slovensko ime22: </xsl:text>
+                <xsl:for-each select="placeName[@xml:lang='sl']">
+                    <xsl:text>Slovensko ime: </xsl:text>
                     <xsl:apply-templates/>
-                    <br/>                    
+                    <br/>
+                        
+                </xsl:for-each>
+                
+                <xsl:for-each select="placeName[@xml:lang='de']">
+                    <xsl:text>Nemško ime: </xsl:text>
+                    <xsl:apply-templates/>
+                    <br/>
+                    
                 </xsl:for-each>
                 
                 
