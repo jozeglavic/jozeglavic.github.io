@@ -171,20 +171,28 @@
                 <h2># <xsl:value-of select="@xml:id"/></h2>
                 
                 
-              
-                
-                
-                
                 <xsl:for-each select="tei:placeName">
+                    
+                    <xsl:choose>
+                        <!-- Check if language is "sl" -->
+                        <xsl:when test="@xml:lang = 'sl'">
+                            <xsl:text>Slovenija: </xsl:text>
+                        </xsl:when>
+                        <!-- Check if language is "de" -->
+                        <xsl:when test="@xml:lang = 'de'">
+                            <xsl:text>Nemčija: </xsl:text>
+                        </xsl:when>
+                        <!-- Default case -->
+                        <xsl:otherwise>
+                            <xsl:text>Unknown: </xsl:text>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                    <!-- Output placeName value -->
+                    <xsl:value-of select="."/>
                   
                      
                      
-                    <xsl:if test="@xml:lang">
-                        <!-- Output placeName value with its language -->
-                        <li>
-                            <xsl:value-of select="concat(@xml:lang, ': ', .)"/>
-                        </li>
-                    </xsl:if>
+                    
                     
                     
                     
