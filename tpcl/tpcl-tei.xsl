@@ -169,24 +169,19 @@
                 <h2># <xsl:value-of select="@xml:id"/></h2>
                 
                 
-                <xsl:for-each select="//placeName[@xml:lang='sl']">
-                    <xsl:text>Slovensko ime: </xsl:text>
-                    <xsl:value-of select="."/>
-                    <br/>
-                        
-                </xsl:for-each>
+              
                 
-                <xsl:for-each select="//placeName[@xml:lang='de']">
-                    <xsl:text>Nemško ime: </xsl:text>
-                    <xsl:value-of select="."/>
-                    <br/>
+                <xsl:for-each select="tei:placeName">                    
+                    <xsl:text>Slovensko ime222: </xsl:text>
+                    <xsl:apply-templates/>
+                    <br/>  
                     
                 </xsl:for-each>
                 
                 <xsl:for-each select="tei:placeName">
-                    <xsl:text>Slovensko ime: </xsl:text>
-                    <xsl:apply-templates/>
-                    <br/>  
+                    <xsl:if test="tei:placeName/@xml:lang='sl'"><xsl:text>Slovensko ime: </xsl:text><xsl:value-of select="tei:placeName[@xml:lang]='si'"/><br/></xsl:if>
+                    <xsl:if test="tei:placeName/@xml:lang='de'"><xsl:text>Nemško ime: </xsl:text><xsl:value-of select="tei:placeName[@xml:lang]='de'"/><br/></xsl:if>
+                     
                     
                 </xsl:for-each>
                 
