@@ -117,7 +117,7 @@
                                 link do geonames.org (kot geografsko bazo podprto z licenco Creative
                                 Commons) pod oznako <code>&lt;idno type="GEONAMES"&gt;</code></p>
                             
-                            <p>Datoteka seznamov lokacij z dodatnimi metapodatki, je nastala z
+                            <p>Datoteka seznama lokacij z dodatnimi metapodatki, je nastala z
                                 namenom osmisliti in razložiti dodatne informacije o omenjenih
                                 lokacijah. Seznam je le berljiv prikaz ustvarjene datoteke, končni
                                 namen pa je uporabiti tako strukturirane podatke za kreiranje
@@ -147,23 +147,22 @@
                     <div class="card-body">
                         <div id="uvod">
                             <h3>Seznam oseb omenjenih v pismih</h3>
-                            <p class="text-justify">Pred vami je seznam lokacij, katere so posredno ali neposredno
+                            <p class="text-justify">Pred vami je seznam oseb, katere so posredno ali neposredno
                                 omenjene v pismih. Seznam je nastajal kot samostojna datoteka pri
                                 ročnem označevanju (anotaciji) metapodatkov v pismih. Za vsako
-                                unikatno omembo lokacije se je vodil seznam pod oznako
-                                <code>&lt;listPlace&gt;</code>. Vsaka lokacija vodena pod
-                                <code>&lt;place&gt;</code> vsebuje unikatni atribut (primer:
-                                <code>&lt;xml:id="fuzine"&gt;</code>) ter podatke o slovenskem
+                                unikatno omembo osebo se je vodil seznam pod oznako
+                                <code>&lt;listPerson&gt;</code>. Vsaka oseba vodena pod
+                                <code>&lt;person&gt;</code> in vsebuje unikatni atribut (primer:
+                                <code>&lt;xml:id="fidelij"&gt;</code>) ter podatke o slovenskem
                                 imenu, nemškem imenu, naselju in državi. Za jasnost pa je doda tudi
                                 link do geonames.org (kot geografsko bazo podprto z licenco Creative
                                 Commons) pod oznako <code>&lt;idno type="GEONAMES"&gt;</code></p>
                             
-                            <p>Datoteka seznamov lokacij z dodatnimi metapodatki, je nastala z
+                            <p>Datoteka seznama oseb z dodatnimi metapodatki, je nastala z
                                 namenom osmisliti in razložiti dodatne informacije o omenjenih
-                                lokacijah. Seznam je le berljiv prikaz ustvarjene datoteke, končni
+                                osebah. Seznam je le berljiv prikaz ustvarjene datoteke, končni
                                 namen pa je uporabiti tako strukturirane podatke za kreiranje
-                                indeksa pojavljanja posamezne lokacije v posamičnem pismu. Na tak
-                                način nastane indeks s povezavami krajev in omenjenih pisem.
+                                indeksa pojavljanja posamezne osebe v posamičnem pismu. Na tak način lahko pridobimo seznam določene osebe in vse kje se pojavlja.
                                 Implementacija izdelave takega indeksa je načrtovana v
                                 prihodnje.</p>
                         </div>
