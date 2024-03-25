@@ -319,7 +319,7 @@
             
             
             <xsl:for-each select="tei:idno">
-                <xsl:text>GeoNames povezava: </xsl:text>
+                <xsl:text>GeoNames povezava1: </xsl:text>
                 <a>
                     <xsl:attribute name="href">
                         <xsl:apply-templates/>
