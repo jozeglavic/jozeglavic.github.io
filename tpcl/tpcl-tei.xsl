@@ -337,14 +337,11 @@
         <hr class="hr hr-blurry"/>
     </xsl:template>
     
-    <xsl:template match="/">
-        <xsl:for-each select="//tei:person">
-            <xsl:call-template name="person-info"/>
-        </xsl:for-each>
-    </xsl:template>
     
-    <xsl:template name="person-info">
-        <xsl:variable name="slovenianName" select="tei:persName[@xml:lang='sl']"/>
+    
+    <xsl:template match="tei:listPerson/tei:person">
+        <xsl:for-each select="//tei:person">
+         <xsl:variable name="slovenianName" select="tei:persName[@xml:lang='sl']"/>
         <xsl:variable name="germanName" select="tei:persName[@xml:lang='de']"/>
         <xsl:text>Slovenski ime: </xsl:text>
         <xsl:value-of select="$slovenianName/tei:forename"/>
@@ -374,7 +371,7 @@
         <xsl:value-of select="tei:death/@when"/>
         <xsl:text> </xsl:text>
         <xsl:value-of select="tei:death/tei:placeName"/>
-        <xsl:text>&#10;&#10;</xsl:text>
+        <xsl:text>&#10;&#10;</xsl:text></xsl:for-each>
     </xsl:template> 
     
     
