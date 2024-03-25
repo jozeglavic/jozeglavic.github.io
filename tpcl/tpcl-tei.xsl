@@ -117,8 +117,16 @@
                                     <code>&lt;xml:id="fuzine"&gt;</code>) ter podatke o slovenskem
                                 imenu, nemškem imenu, naselju, državi. Za jasnost pa je doda tudi
                                 link do geonames.org (kot geografsko bazo podprto z licenco Creative
-                                Commons) pod oznako <code>&lt;idno type="GEONAMES"&gt;</code> Plan
-                                za naprej oz kaj je bilo mišljeno</p>
+                                Commons) pod oznako <code>&lt;idno type="GEONAMES"&gt;</code></p>
+
+                            <p>Datoteka seznamov lokacij z dodatnimi metapodatki, je nastala z
+                                namenom osmilsiti in razložiti dodatne informacije o omenjenih
+                                lokacijah. Seznam je le berljiv prikaz ustvarjene datoteke, končni
+                                namen pa je uporabiti tako strukturirane podatke za kreiranje
+                                indeksa pojavljanja posamezne lokacije v posamičnem pismu. Na tak
+                                način nastane indeks s povezavami krajev in omenjenih pisem.
+                                Implementacija izdelave takega indeksa je načrtovana v
+                                prihodnje.</p>
                         </div>
                     </div>
                 </article>
