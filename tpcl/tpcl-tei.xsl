@@ -345,13 +345,6 @@
             
                 <!-- Slovensko ime -->
             
-            
-            
-            
-            
-            
-            
-            
             <!-- Output birth details -->
             <xsl:for-each select="tei:birth">
                 <xsl:text>Rojstvo: </xsl:text>
