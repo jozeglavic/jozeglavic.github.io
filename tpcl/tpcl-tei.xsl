@@ -341,32 +341,30 @@
         <div class="person" id="{@xml:id}">
             <h2># <xsl:value-of select="@xml:id"/></h2>
             
-            <!-- Loop through each persName element -->
-            <xsl:for-each select="tei:persName">
-                <!-- Slovensko ime -->
-                <xsl:text>Slovensko ime: </xsl:text>
-                <xsl:value-of select="tei:forename"/>
-                <xsl:text> </xsl:text>
-                <xsl:value-of select="tei:surname"/>
-                <!-- Check if there's a surname with attribute "born" -->
-                <xsl:if test="tei:surname[@type='born']">
-                    <xsl:text> r. </xsl:text>
-                    <xsl:value-of select="tei:surname[@type='born']"/>
-                </xsl:if>
-                <br/>
-                
-                <!-- Nemška verzija -->
-                <xsl:text>Nemška verzija: </xsl:text>
-                <xsl:value-of select="tei:forename"/>
-                <xsl:text> </xsl:text>
-                <xsl:value-of select="tei:surname"/>
-                <!-- Check if there's a surname with attribute "born" -->
-                <xsl:if test="tei:surname[@type='born']">
-                    <xsl:text> geb. </xsl:text>
-                    <xsl:value-of select="tei:surname[@type='born']"/>
-                </xsl:if>
-                <br/>
-            </xsl:for-each>
+            <!-- Process the first persName element -->
+            <xsl:variable name="firstPersName" select="persName[1]" />
+            
+            <!-- Slovensko ime -->
+            <xsl:text>Slovensko ime: </xsl:text>
+            <xsl:value-of select="$firstPersName/tei:forename"/>
+            <xsl:text> </xsl:text>
+            <xsl:value-of select="$firstPersName/tei:surname"/>
+            <!-- Check if there's a surname with attribute "born" -->
+            <xsl:if test="$firstPersName/tei:surname[@type='born']">
+                <xsl:text> r. </xsl:text>
+                <xsl:value-of select="$firstPersName/tei:surname[@type='born']"/>
+            </xsl:if>                
+            
+            <!-- Nemška verzija -->
+            <xsl:text>Nemška verzija: </xsl:text>
+            <xsl:value-of select="$firstPersName/tei:forename"/>
+            <xsl:text> </xsl:text>
+            <xsl:value-of select="$firstPersName/tei:surname"/>
+            <!-- Check if there's a surname with attribute "born" -->
+            <xsl:if test="$firstPersName/tei:surname[@type='born']">
+                <xsl:text> geb. </xsl:text>
+                <xsl:value-of select="$firstPersName/tei:surname[@type='born']"/>
+            </xsl:if>                
             
             <!-- Output birth details -->
             <xsl:for-each select="tei:birth">
@@ -382,7 +380,7 @@
                 <br/>
             </xsl:for-each>
             
-            <!-- Output idno link -->
+            <!-- Output idno link -->            
             <xsl:for-each select="tei:idno">
                 <xsl:text>Biografska povezava: </xsl:text>
                 <a>
@@ -391,18 +389,11 @@
                     </xsl:attribute>
                     <xsl:apply-templates/>
                 </a>
+                <br/>
             </xsl:for-each>
-            <br/>
-            <hr class="hr hr-blurry"/>
         </div>
+        <hr class="hr hr-blurry"/>
     </xsl:template>
-    
-    
-    
-    
-    
-    
-    
     
     
 </xsl:stylesheet>
