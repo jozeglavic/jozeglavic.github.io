@@ -345,31 +345,7 @@
             
                 <!-- Slovensko ime -->
             
-                <xsl:for-each select="tei:person">
-                    <!-- Slovensko ime -->
-                    <xsl:text>Slovensko ime: </xsl:text>
-                    <xsl:value-of select="tei:persName[@xml:lang='sl']/tei:forename"/>
-                    <xsl:text> </xsl:text>
-                    <xsl:value-of select="tei:persName[@xml:lang='sl']/tei:surname"/>
-                    <!-- Check if there's a surname with attribute "born" -->
-                    <xsl:if test="tei:persName[@xml:lang='sl']/tei:surname[@type='born']">
-                        <xsl:text> r. </xsl:text>
-                        <xsl:value-of select="tei:persName[@xml:lang='sl']/tei:surname[@type='born']"/>
-                    </xsl:if>
-                    
-                    
-                    <!-- Nemška verzija -->
-                    <xsl:text>Nemška verzija: </xsl:text>
-                    <xsl:value-of select="tei:persName[@xml:lang='de']/tei:forename"/>
-                    <xsl:text> </xsl:text>
-                    <xsl:value-of select="tei:persName[@xml:lang='de']/tei:surname"/>
-                    <!-- Check if there's a surname with attribute "born" -->
-                    <xsl:if test="tei:persName[@xml:lang='de']/tei:surname[@type='born']">
-                        <xsl:text> geb. </xsl:text>
-                        <xsl:value-of select="tei:persName[@xml:lang='de']/tei:surname[@type='born']"/>
-                    </xsl:if>
-                    
-                </xsl:for-each>
+            
             
             
             
