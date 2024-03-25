@@ -34,12 +34,7 @@
             <article class="col-md-12">
                 <div class="card-body"> 
                     <div class="p-3">   
-                        <span class="mail-icon">&#9993;</span>
-                        <span class="mail-test">Envelope: &#x2709;</span>
-                        <span class="mail-icon">&#x1F4E8;</span>
-                        <span class="mail-icon">&#9993;</span>
-                        
-                        
+                        <span class="mail-icon">&#9993;</span>       
                         <xsl:text> Od: </xsl:text>           
                         <xsl:apply-templates select="//tei:correspAction[@type='sent']/tei:persName"/> 
                         <xsl:text> Poslano: </xsl:text> 
