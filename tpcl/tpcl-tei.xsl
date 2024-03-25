@@ -373,7 +373,7 @@
                                 </xsl:when>
                             </xsl:choose>
                             <xsl:value-of select="tei:surname[@type!='born']"/>
-                            <xsl:text>rojena </xsl:text>
+                            <xsl:text> rojena </xsl:text>
                             <xsl:value-of select="tei:surname[@type='born']"/>
                         </xsl:when>
                         <xsl:otherwise>
