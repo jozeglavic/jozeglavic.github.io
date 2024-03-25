@@ -159,20 +159,14 @@
 											href="/archive/objects/context:{$projectAbbr}/methods/sdef:Context/get?mode=list_letters"
 											>Pisma</a>
 										</li>
-										<li class="nav-item">	
-											<xsl:if test="$mode = 'osebe'">
-												<xsl:attribute name="class">nav-item active</xsl:attribute>
-											</xsl:if>								
+										<li class="nav-item">																			
 											<a class="nav-link"
-												href="/archive/objects/context:{$projectAbbr}/methods/sdef:Context/get?mode=osebe"
+												href="/o:{$projectAbbr}/persName"
 												>Osebe</a>
 											</li>
-											<li class="nav-item">	
-												<xsl:if test="$mode = 'kraji'">
-													<xsl:attribute name="class">nav-item active</xsl:attribute>
-												</xsl:if>
+											<li class="nav-item">												
 												<a class="nav-link"
-													href="/archive/objects/context:{$projectAbbr}/methods/sdef:Context/get?mode=kraji"
+													href="/o:{$projectAbbr}/placeName"
 													>Lokacije</a>
 												</li>
 								<!--<li class="nav-item">
@@ -182,6 +176,15 @@
 									<a class="nav-link"
 										href="/o:tpcl.1"
 										>primer pisma</a>
+										
+										<li class="nav-item">	
+												<xsl:if test="$mode = 'kraji'">
+													<xsl:attribute name="class">nav-item active</xsl:attribute>
+												</xsl:if>
+												<a class="nav-link"
+													href="/archive/objects/context:{$projectAbbr}/methods/sdef:Context/get?mode=kraji"
+													>Lokacije</a>
+												</li>
 									</li>	-->
 								</ul>						
 							</div>
