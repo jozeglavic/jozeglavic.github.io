@@ -107,7 +107,7 @@
                 <article class="col-mc-12">
                     <div class="card-body">
                         <div id="uvod">
-                            <h3>Seznam lokacij v pismih</h3>
+                            <h3>Seznam lokacij omenjenih v pismih</h3>
                             <p class="text-justify">Pred vami je seznam lokacij, katere so posredno ali neposredno
                                 omenjene v pismih. Seznam je nastajal kot samostojna datoteka pri
                                 ročnem označevanju (anotaciji) metapodatkov v pismih. Za vsako
@@ -138,6 +138,47 @@
                     </div>
                 </article>
 
+            </section>
+        </xsl:if>
+        
+        <xsl:if test="//tei:listPerson">
+            <section class="row">
+                <!-- First Column -->
+                
+                <article class="col-mc-12">
+                    <div class="card-body">
+                        <div id="uvod">
+                            <h3>Seznam oseb omenjenih v pismih</h3>
+                            <p>Pred vami je seznam lokacij, katere so posredno ali neposredno
+                                omenjene v pismih. Seznam je nastajal kot samostojna datoteka pri
+                                ročnem označevanju (anotaciji) metapodatkov v pismih. Za vsako
+                                unikatno omembo lokacije se je vodil seznam pod oznako
+                                <code>&lt;listPlace&gt;</code>. Vsaka lokacija vodena pod
+                                <code>&lt;place&gt;</code> vsebuje unikatni atribut (primer:
+                                <code>&lt;xml:id="fuzine"&gt;</code>) ter podatke o slovenskem
+                                imenu, nemškem imenu, naselju in državi. Za jasnost pa je doda tudi
+                                link do geonames.org (kot geografsko bazo podprto z licenco Creative
+                                Commons) pod oznako <code>&lt;idno type="GEONAMES"&gt;</code></p>
+                            
+                            <p>Datoteka seznamov lokacij z dodatnimi metapodatki, je nastala z
+                                namenom osmisliti in razložiti dodatne informacije o omenjenih
+                                lokacijah. Seznam je le berljiv prikaz ustvarjene datoteke, končni
+                                namen pa je uporabiti tako strukturirane podatke za kreiranje
+                                indeksa pojavljanja posamezne lokacije v posamičnem pismu. Na tak
+                                način nastane indeks s povezavami krajev in omenjenih pisem.
+                                Implementacija izdelave takega indeksa je načrtovana v
+                                prihodnje.</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-md-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <xsl:apply-templates select="//t:body"/>
+                        </div>
+                    </div>
+                </article>
+                
             </section>
         </xsl:if>
 
@@ -293,6 +334,51 @@
 
 
 
+        </div>
+        <hr class="hr hr-blurry"/>
+    </xsl:template>
+    
+    <xsl:template match="listPerson/person">
+        <div class="person" id="{@xml:id}">
+            <h2># <xsl:value-of select="@xml:id"/></h2>
+            
+            <!-- Loop through each persName element -->
+            <xsl:for-each select="persName">
+                <!-- Check the language and display accordingly -->
+                <xsl:choose>
+                    <xsl:when test="@xml:lang = 'sl'">
+                        <xsl:text>Slovensko ime: </xsl:text>
+                    </xsl:when>
+                    <xsl:when test="@xml:lang = 'de'">
+                        <xsl:text>Nemško ime: </xsl:text>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:text>Unknown: </xsl:text>
+                    </xsl:otherwise>
+                </xsl:choose>
+                <!-- Output forename and surname -->
+                <xsl:value-of select="forename"/> <xsl:value-of select="surname"/>
+                <br/>
+            </xsl:for-each>
+            
+            <!-- Output birth details -->
+            <xsl:text>Rojstvo: </xsl:text>
+            <xsl:value-of select="concat(birth/@when, ' ', birth/placeName)"/>
+            <br/>
+            
+            <!-- Output death details -->
+            <xsl:text>Smrt: </xsl:text>
+            <xsl:value-of select="concat(death/@when, ' ', death/placeName)"/>
+            <br/>
+            
+            <!-- Output idno link -->
+            <xsl:text>Biografska povezava: </xsl:text>
+            <a>
+                <xsl:attribute name="href">
+                    <xsl:value-of select="idno"/>
+                </xsl:attribute>
+                <xsl:value-of select="idno"/>
+            </a>
         </div>
         <hr class="hr hr-blurry"/>
     </xsl:template>
