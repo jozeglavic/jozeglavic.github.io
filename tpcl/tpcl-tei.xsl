@@ -337,42 +337,47 @@
         <hr class="hr hr-blurry"/>
     </xsl:template>
     
-    <xsl:for-each select="tei:persName">
-        <!-- Check the language and display accordingly -->
-        <xsl:choose>
-            <xsl:when test="@xml:lang = 'sl'">
-                <xsl:text>Slovensko ime: </xsl:text>
-            </xsl:when>
-            <xsl:when test="@xml:lang = 'de'">
-                <xsl:text>Nemška verzija: </xsl:text>
-            </xsl:when>
-            <xsl:otherwise>
-                <xsl:text>Unknown: </xsl:text>
-            </xsl:otherwise>
-        </xsl:choose>
-        <!-- Output forename -->
-        <xsl:value-of select="tei:forename"/>
-        <xsl:text> </xsl:text>
-        <!-- Output last name -->
-        <xsl:variable name="lastName">
-            <!-- Check if surname has attribute born -->
-            <xsl:choose>
-                <xsl:when test="tei:surname[@type='born']">
-                    <!-- If surname has attribute born, output both original and born surnames -->
-                    <xsl:value-of select="tei:surname[@type!='born']"/>
-                    <xsl:text> rojena </xsl:text>
-                    <xsl:value-of select="tei:surname[@type='born']"/>
-                </xsl:when>
-                <xsl:otherwise>
-                    <!-- If surname doesn't have attribute born, output only the surname -->
-                    <xsl:value-of select="tei:surname"/>
-                </xsl:otherwise>
-            </xsl:choose>
-        </xsl:variable>
-        <xsl:value-of select="$lastName"/>
-        <br/>
-    </xsl:for-each>
-    
+    <xsl:template match="tei:listPerson/tei:person">
+        <div class="person" id="{@xml:id}">
+            <h2># <xsl:value-of select="@xml:id"/></h2>
+            
+            <!-- Loop through each persName element -->
+            <xsl:for-each select="tei:persName">
+                <!-- Check the language and display accordingly -->
+                <xsl:choose>
+                    <xsl:when test="@xml:lang = 'sl'">
+                        <xsl:text>Slovensko ime: </xsl:text>
+                    </xsl:when>
+                    <xsl:when test="@xml:lang = 'de'">
+                        <xsl:text>Nemška verzija: </xsl:text>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:text>Unknown: </xsl:text>
+                    </xsl:otherwise>
+                </xsl:choose>
+                <!-- Output forename -->
+                <xsl:value-of select="tei:forename"/>
+                <xsl:text> </xsl:text>
+                <!-- Output last name -->
+                <xsl:variable name="lastName">
+                    <!-- Check if surname has attribute born -->
+                    <xsl:choose>
+                        <xsl:when test="tei:surname[@type='born']">
+                            <!-- If surname has attribute born, output both original and born surnames -->
+                            <xsl:value-of select="tei:surname[@type!='born']"/>
+                            <xsl:text> rojena </xsl:text>
+                            <xsl:value-of select="tei:surname[@type='born']"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <!-- If surname doesn't have attribute born, output only the surname -->
+                            <xsl:value-of select="tei:surname"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:variable>
+                <xsl:value-of select="$lastName"/>
+                <br/>
+            </xsl:for-each>
+            
             
             
             
