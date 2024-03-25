@@ -355,10 +355,38 @@
                         <xsl:text>Unknown: </xsl:text>
                     </xsl:otherwise>
                 </xsl:choose>
-                <!-- Output forename and surname -->
-                <xsl:value-of select="tei:forename"/><xsl:text> </xsl:text> <xsl:value-of select="tei:surname"/>
+                <!-- Output forename -->
+                <xsl:value-of select="tei:forename"/>
+                <xsl:text> </xsl:text>
+                <!-- Output last name -->
+                <xsl:variable name="lastName">
+                    <!-- Check if surname has attribute born -->
+                    <xsl:choose>
+                        <xsl:when test="tei:surname[@type='born']">
+                            <!-- If surname has attribute born, output both original and born surnames -->
+                            <xsl:choose>
+                                <xsl:when test="@xml:lang = 'sl'">
+                                    <xsl:text>r. </xsl:text>
+                                </xsl:when>
+                                <xsl:when test="@xml:lang = 'de'">
+                                    <xsl:text>geb. </xsl:text>
+                                </xsl:when>
+                            </xsl:choose>
+                            <xsl:value-of select="tei:surname[@type!='born']"/>
+                            <xsl:text>rojena </xsl:text>
+                            <xsl:value-of select="tei:surname[@type='born']"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <!-- If surname doesn't have attribute born, output only the surname -->
+                            <xsl:value-of select="tei:surname"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:variable>
+                <xsl:value-of select="$lastName"/>
                 <br/>
             </xsl:for-each>
+            
+            
             
             <!-- Output birth details -->
             <xsl:for-each select="tei:birth">
