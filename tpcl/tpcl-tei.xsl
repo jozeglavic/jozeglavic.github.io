@@ -342,10 +342,7 @@
             <h2># <xsl:value-of select="@xml:id"/></h2>
             
             <!-- Loop through each persName element -->
-            
-                <!-- Slovensko ime -->
-            
-            <xsl:for-each select="persName">
+            <xsl:for-each select="tei:persName">
                 <!-- Slovensko ime -->
                 <xsl:text>Slovensko ime: </xsl:text>
                 <xsl:value-of select="tei:forename"/>
@@ -355,7 +352,8 @@
                 <xsl:if test="tei:surname[@type='born']">
                     <xsl:text> r. </xsl:text>
                     <xsl:value-of select="tei:surname[@type='born']"/>
-                </xsl:if>                
+                </xsl:if>
+                <br/>
                 
                 <!-- Nemška verzija -->
                 <xsl:text>Nemška verzija: </xsl:text>
@@ -366,43 +364,41 @@
                 <xsl:if test="tei:surname[@type='born']">
                     <xsl:text> geb. </xsl:text>
                     <xsl:value-of select="tei:surname[@type='born']"/>
-                </xsl:if>                
+                </xsl:if>
+                <br/>
             </xsl:for-each>
-            
-            
-            
-            
-            
             
             <!-- Output birth details -->
             <xsl:for-each select="tei:birth">
                 <xsl:text>Rojstvo: </xsl:text>
                 <xsl:apply-templates/>
-            <br/></xsl:for-each>
+                <br/>
+            </xsl:for-each>
             
             <!-- Output death details -->
             <xsl:for-each select="tei:death">
-            <xsl:text>Smrt: </xsl:text>
+                <xsl:text>Smrt: </xsl:text>
                 <xsl:apply-templates/>
-            <br/></xsl:for-each>
+                <br/>
+            </xsl:for-each>
             
-            <!-- Output idno link -->            
-             <xsl:for-each select="tei:idno">
-            <xsl:text>Biografska povezava: </xsl:text>
-            <a>
-                <xsl:attribute name="href">
+            <!-- Output idno link -->
+            <xsl:for-each select="tei:idno">
+                <xsl:text>Biografska povezava: </xsl:text>
+                <a>
+                    <xsl:attribute name="href">
+                        <xsl:apply-templates/>
+                    </xsl:attribute>
                     <xsl:apply-templates/>
-                </xsl:attribute>
-                <xsl:apply-templates/>
-                
-            </a>
-            
-        </xsl:for-each>
-        
-        
+                </a>
+            </xsl:for-each>
+            <br/>
+            <hr class="hr hr-blurry"/>
         </div>
-        <hr class="hr hr-blurry"/>
     </xsl:template>
+    
+    
+    
     
     
     
