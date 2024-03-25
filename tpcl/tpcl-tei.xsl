@@ -351,24 +351,19 @@
                     <!-- Check if language is "sl" -->
                     <xsl:when test="@xml:lang = 'sl'">
                         <xsl:text>Slovensko ime: </xsl:text>
-                        <xsl:value-of select="tei:forename"/>
-                        <xsl:text> </xsl:text>
-                        <xsl:value-of select="tei:surname"/>
-                        
                     </xsl:when>
                     <!-- Check if language is "de" -->
                     <xsl:when test="@xml:lang = 'de'">
-                        <xsl:value-of select="tei:forename"/>
-                        <xsl:text> </xsl:text>
-                        <xsl:value-of select="tei:surname"/>
+                        <xsl:text>Nemška verzija: </xsl:text>
                     </xsl:when>
                     <!-- Default case -->
                     <xsl:otherwise>
-                        <xsl:value-of select="tei:forename"/>
-                        <xsl:text> </xsl:text>
-                        <xsl:value-of select="tei:surname"/>
+                        <xsl:text>Unknown: </xsl:text>
                     </xsl:otherwise>
                 </xsl:choose>
+                <xsl:value-of select="tei:forename"/>
+                <xsl:text> </xsl:text>
+                <xsl:value-of select="tei:surname"/>
                 <!-- Output placeName value -->
                 
                 <br/>
