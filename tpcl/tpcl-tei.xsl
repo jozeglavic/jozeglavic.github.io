@@ -36,7 +36,7 @@
                     <div class="p-3">   
                         <span class="mail-icon">&#9993;</span>
                         <span class="mail-test">Envelope: &#x2709;</span>
-                        <span class="mail-icon">&#9993;</span>
+                        <span class="mail-icon">&#x1F4E8;</span>
                         <span class="mail-icon">&#9993;</span>
                         
                         
