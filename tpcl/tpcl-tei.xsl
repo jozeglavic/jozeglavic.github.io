@@ -372,16 +372,21 @@
             <xsl:value-of select="concat(tei:death/@when, ', ', tei:death/tei:placeName)"/>
             <br/></xsl:for-each>
             
-            <!-- Output idno link -->
-            <xsl:for-each select="tei:idno">
+            <!-- Output idno link -->            
+             <xsl:for-each select="tei:idno">
             <xsl:text>Biografska povezava: </xsl:text>
             <a>
                 <xsl:attribute name="href">
-                    <xsl:value-of select="tei:idno"/>
+                    <xsl:apply-templates/>
                 </xsl:attribute>
-                <xsl:value-of select="tei:idno"/>
-            </a></xsl:for-each>
-        </div>
+                <xsl:apply-templates/>
+                
+            </a>
+            
+        </xsl:for-each>
+        
+        
+        
         <hr class="hr hr-blurry"/>
     </xsl:template>
     
