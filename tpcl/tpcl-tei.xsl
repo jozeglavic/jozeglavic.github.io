@@ -338,6 +338,51 @@
         <hr class="hr hr-blurry"/>
     </xsl:template>
     
+    <xsl:template match="listPerson/person">
+        <div class="person" id="{@xml:id}">
+            <h2># <xsl:value-of select="@xml:id"/></h2>
+            
+            <!-- Loop through each persName element -->
+            <xsl:for-each select="persName">
+                <!-- Check the language and display accordingly -->
+                <xsl:choose>
+                    <xsl:when test="@xml:lang = 'sl'">
+                        <xsl:text>Slovensko ime: </xsl:text>
+                    </xsl:when>
+                    <xsl:when test="@xml:lang = 'de'">
+                        <xsl:text>Nemško ime: </xsl:text>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:text>Unknown: </xsl:text>
+                    </xsl:otherwise>
+                </xsl:choose>
+                <!-- Output forename and surname -->
+                <xsl:value-of select="forename"/> <xsl:value-of select="surname"/>
+                <br/>
+            </xsl:for-each>
+            
+            <!-- Output birth details -->
+            <xsl:text>Rojstvo: </xsl:text>
+            <xsl:value-of select="concat(birth/@when, ' ', birth/placeName)"/>
+            <br/>
+            
+            <!-- Output death details -->
+            <xsl:text>Smrt: </xsl:text>
+            <xsl:value-of select="concat(death/@when, ' ', death/placeName)"/>
+            <br/>
+            
+            <!-- Output idno link -->
+            <xsl:text>Biografska povezava: </xsl:text>
+            <a>
+                <xsl:attribute name="href">
+                    <xsl:value-of select="idno"/>
+                </xsl:attribute>
+                <xsl:value-of select="idno"/>
+            </a>
+        </div>
+        <hr class="hr hr-blurry"/>
+    </xsl:template>
+    
     
     
     
