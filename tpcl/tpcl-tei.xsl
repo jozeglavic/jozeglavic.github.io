@@ -114,8 +114,8 @@
                                 <code>&lt;place&gt;</code> vsebuje unikatni atribut (primer:
                                 <code>&lt;xml:id="fuzine"&gt;</code>) ter podatke o slovenskem
                                 imenu, nemškem imenu, naselju in državi. Za jasnost pa je doda tudi
-                                link do geonames.org (kot geografsko bazo podprto z licenco Creative
-                                Commons) pod oznako <code>&lt;idno type="GEONAMES"&gt;</code></p>
+                                link do <a href="https://www.geonames.org/">GeoNames.org/</a> (kot geografsko bazo podprto z licenco Creative
+                                Commons) pod oznako <code>&lt;idno type="GEONAMES"&gt;</code>.</p>
                             
                             <p>Datoteka seznama lokacij z dodatnimi metapodatki, je nastala z
                                 namenom osmisliti in razložiti dodatne informacije o omenjenih
@@ -155,8 +155,8 @@
                                 <code>&lt;person&gt;</code> in vsebuje unikatni atribut (primer:
                                 <code>&lt;xml:id="fidelij"&gt;</code>) ter podatke o slovenskem
                                 imenu, nemškem imenu, naselju in državi. Za jasnost pa je doda tudi
-                                link do geonames.org (kot geografsko bazo podprto z licenco Creative
-                                Commons) pod oznako <code>&lt;idno type="GEONAMES"&gt;</code></p>
+                                dodan link do online portala <a href="https://www.slovenska-biografija.si/">Slovenska biografija</a> 
+                                pod oznako <code>&lt;idno type="SIBIO"&gt;</code>.</p>
                             
                             <p>Datoteka seznama oseb z dodatnimi metapodatki, je nastala z
                                 namenom osmisliti in razložiti dodatne informacije o omenjenih
@@ -349,7 +349,7 @@
                         <xsl:text>Slovensko ime: </xsl:text>
                     </xsl:when>
                     <xsl:when test="@xml:lang = 'de'">
-                        <xsl:text>Nemško ime: </xsl:text>
+                        <xsl:text>Nemško verzija: </xsl:text>
                     </xsl:when>
                     <xsl:otherwise>
                         <xsl:text>Unknown: </xsl:text>
@@ -361,23 +361,26 @@
             </xsl:for-each>
             
             <!-- Output birth details -->
-            <xsl:text>Rojstvo: </xsl:text>
+            <xsl:for-each select="tei:birth">
+                <xsl:text>Rojstvo: </xsl:text>
             <xsl:value-of select="concat(tei:birth/@when, ' ', tei:birth/tei:placeName)"/>
-            <br/>
+            <br/></xsl:for-each>
             
             <!-- Output death details -->
+            <xsl:for-each select="tei:death">
             <xsl:text>Smrt: </xsl:text>
             <xsl:value-of select="concat(tei:death/@when, ' ', tei:death/tei:placeName)"/>
-            <br/>
+            <br/></xsl:for-each>
             
             <!-- Output idno link -->
+            <xsl:for-each select="tei:idno">
             <xsl:text>Biografska povezava: </xsl:text>
             <a>
                 <xsl:attribute name="href">
                     <xsl:value-of select="tei:idno"/>
                 </xsl:attribute>
                 <xsl:value-of select="tei:idno"/>
-            </a>
+            </a></xsl:for-each>
         </div>
         <hr class="hr hr-blurry"/>
     </xsl:template>
