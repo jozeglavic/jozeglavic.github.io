@@ -340,39 +340,44 @@
     
     
     <xsl:template match="tei:listPerson/tei:person">
-        <xsl:for-each select="//tei:person">
-         <xsl:variable name="slovenianName" select="tei:persName[@xml:lang='sl']"/>
-        <xsl:variable name="germanName" select="tei:persName[@xml:lang='de']"/>
-        <xsl:text>Slovenski ime: </xsl:text>
-        <xsl:value-of select="$slovenianName/tei:forename"/>
-        <xsl:text> </xsl:text>
-        <xsl:value-of select="$slovenianName/tei:surname"/>
-        <xsl:if test="$slovenianName/tei:surname[@type='born']">
-            <xsl:text> r. </xsl:text>
-            <xsl:value-of select="$slovenianName/tei:surname[@type='born']"/>
-        </xsl:if>
-        <xsl:text>&#10;</xsl:text>
-        
-        <xsl:text>Nemška verzija: </xsl:text>
-        <xsl:value-of select="$germanName/tei:forename"/>
-        <xsl:text> </xsl:text>
-        <xsl:value-of select="$germanName/tei:surname"/>
-        <xsl:if test="$germanName/tei:surname[@type='born']">
-            <xsl:text> geb. </xsl:text>
-            <xsl:value-of select="$germanName/tei:surname[@type='born']"/>
-        </xsl:if>
-        <xsl:text>&#10;</xsl:text>
-        
-        <xsl:text>Rojstvo: </xsl:text>
-        <xsl:value-of select="tei:birth/@when"/>
-        <xsl:text>&#10;</xsl:text>
-        
-        <xsl:text>Smrt: </xsl:text>
-        <xsl:value-of select="tei:death/@when"/>
-        <xsl:text> </xsl:text>
-        <xsl:value-of select="tei:death/tei:placeName"/>
-        <xsl:text>&#10;&#10;</xsl:text></xsl:for-each>
-    </xsl:template> 
+        <div class="person" id="{@xml:id}">
+            <h2># <xsl:value-of select="@xml:id"/></h2>
+            
+            <!-- Loop through each persName element -->
+            
+            
+            
+            
+            
+            <!-- Output birth details -->
+            <xsl:for-each select="tei:birth">
+                <xsl:text>Rojstvo: </xsl:text>
+                <xsl:apply-templates/>
+                <br/></xsl:for-each>
+            
+            <!-- Output death details -->
+            <xsl:for-each select="tei:death">
+                <xsl:text>Smrt: </xsl:text>
+                <xsl:apply-templates/>
+                <br/></xsl:for-each>
+            
+            <!-- Output idno link -->            
+            <xsl:for-each select="tei:idno">
+                <xsl:text>Biografska povezava: </xsl:text>
+                <a>
+                    <xsl:attribute name="href">
+                        <xsl:apply-templates/>
+                    </xsl:attribute>
+                    <xsl:apply-templates/>
+                    
+                </a>
+                
+            </xsl:for-each>
+            
+            
+        </div>
+        <hr class="hr hr-blurry"/>
+    </xsl:template>
     
     
     
