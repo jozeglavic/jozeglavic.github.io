@@ -28,22 +28,39 @@
             <!--////////////Letter sender and reciever - correspDesc//////--> 
             
             <article class="col-md-12">
-                <div class="card-body"> 
-                    <div class="p-3">            
-                        Od:             
-                        <xsl:apply-templates select="//tei:correspAction[@type='sent']/tei:persName"/> 
-                        iz: 
-                        <xsl:apply-templates select="//tei:correspAction[@type='sent']/tei:placeName"/>
-                        poslano: <xsl:apply-templates select="//tei:correspAction[@type='sent']/tei:date/@when"/>
-                    </div>  
-                    <div class="p-3">Za:              
-                        <xsl:apply-templates select="//tei:correspAction[@type='received']/tei:persName"/> 
-                        iz: 
-                        <xsl:apply-templates select="//tei:correspAction[@type='received']/tei:placeName"/>
-                        prejeto: <xsl:apply-templates select="//tei:correspAction[@type='received']/tei:date/@when"/>
+                <div class="card-body">
+                    <div class="p-3">
+                        <span class="mail-icon">&#9993;</span>
+                        <xsl:text> Od: </xsl:text>
+                        <xsl:apply-templates
+                            select="//tei:correspAction[@type = 'sent']/tei:persName"/>
+                        <xsl:text> Poslano: </xsl:text>
+                        <xsl:apply-templates
+                            select="//tei:correspAction[@type = 'sent']/tei:placeName"/>
+                        <xsl:text>, </xsl:text>
+                        <xsl:apply-templates
+                            select="//tei:correspAction[@type = 'sent']/tei:date/@when"/>
                     </div>
                     
-                </div></article>         
+                    <div class="p-3">
+                        <xsl:text>Za: </xsl:text>
+                        <xsl:apply-templates
+                            select="//tei:correspAction[@type = 'received']/tei:persName"/>
+                        <xsl:text> Prejeto: </xsl:text>
+                        <xsl:apply-templates
+                            select="//tei:correspAction[@type = 'received']/tei:placeName"/>
+                        <xsl:for-each
+                            select="//tei:correspAction[@type = 'received']/tei:date/@when">
+                            <xsl:text>, </xsl:text>
+                            <xsl:apply-templates
+                                select="//tei:correspAction[@type = 'received']/tei:date/@when"
+                            />
+                        </xsl:for-each>
+                    </div>
+                    
+                    
+                </div>
+            </article>    
         </section>
         
         
