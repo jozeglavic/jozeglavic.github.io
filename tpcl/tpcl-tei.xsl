@@ -356,7 +356,7 @@
                     </xsl:otherwise>
                 </xsl:choose>
                 <!-- Output forename and surname -->
-                <xsl:value-of select="concat(tei:forename,', ', tei:surname)"/>
+                <xsl:value-of select="forename"/> <xsl:value-of select="surname"/>
                 <br/>
             </xsl:for-each>
             
