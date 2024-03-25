@@ -343,34 +343,36 @@
             
             <!-- Loop through each persName element -->
             
-                <!-- Slovensko ime -->
+            
+            
+            
             
             <!-- Output birth details -->
             <xsl:for-each select="tei:birth">
                 <xsl:text>Rojstvo: </xsl:text>
                 <xsl:apply-templates/>
-            <br/></xsl:for-each>
+                <br/></xsl:for-each>
             
             <!-- Output death details -->
             <xsl:for-each select="tei:death">
-            <xsl:text>Smrt: </xsl:text>
+                <xsl:text>Smrt: </xsl:text>
                 <xsl:apply-templates/>
-            <br/></xsl:for-each>
+                <br/></xsl:for-each>
             
             <!-- Output idno link -->            
-             <xsl:for-each select="tei:idno">
-            <xsl:text>Biografska povezava: </xsl:text>
-            <a>
-                <xsl:attribute name="href">
+            <xsl:for-each select="tei:idno">
+                <xsl:text>Biografska povezava: </xsl:text>
+                <a>
+                    <xsl:attribute name="href">
+                        <xsl:apply-templates/>
+                    </xsl:attribute>
                     <xsl:apply-templates/>
-                </xsl:attribute>
-                <xsl:apply-templates/>
+                    
+                </a>
                 
-            </a>
+            </xsl:for-each>
             
-        </xsl:for-each>
-        
-        
+            
         </div>
         <hr class="hr hr-blurry"/>
     </xsl:template>
