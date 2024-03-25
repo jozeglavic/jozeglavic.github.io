@@ -297,7 +297,7 @@
     <xsl:template name="results">
         
         <h3><xsl:value-of select="/s:sparql/s:results/s:result[1]/s:container"/></h3>
-        <p>Anzahl der gefundenen Einträge: <xsl:value-of select="count(s:sparql/s:results/s:result)"
+        <p>Število najdenih vnosov: <xsl:value-of select="count(s:sparql/s:results/s:result)"
             /></p>
         <xsl:for-each select="s:sparql/s:results/s:result">
             
