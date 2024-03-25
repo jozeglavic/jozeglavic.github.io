@@ -159,14 +159,20 @@
 											href="/archive/objects/context:{$projectAbbr}/methods/sdef:Context/get?mode=list_letters"
 											>Pisma</a>
 										</li>
-										<li class="nav-item">																			
+										<li class="nav-item">	
+											<xsl:if test="$mode = 'osebe'">
+												<xsl:attribute name="class">nav-item active</xsl:attribute>
+											</xsl:if>								
 											<a class="nav-link"
-												href="/o:{$projectAbbr}/persName"
+												href="/o:{$projectAbbr}.persName"
 												>Osebe</a>
 											</li>
-											<li class="nav-item">												
+											<li class="nav-item">	
+												<xsl:if test="$mode = 'kraji'">
+													<xsl:attribute name="class">nav-item active</xsl:attribute>
+												</xsl:if>
 												<a class="nav-link"
-													href="/o:{$projectAbbr}/placeName"
+													href="/o:{$projectAbbr}.placeName"
 													>Lokacije</a>
 												</li>
 								<!--<li class="nav-item">
