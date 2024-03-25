@@ -356,14 +356,14 @@
                     </xsl:otherwise>
                 </xsl:choose>
                 <!-- Output forename and surname -->
-                <xsl:value-of select="tei:forename"/> <xsl:value-of select="tei:surname"/>
+                <xsl:value-of select="tei:forename"/><xsl:text> </xsl:text> <xsl:value-of select="tei:surname"/>
                 <br/>
             </xsl:for-each>
             
             <!-- Output birth details -->
             <xsl:for-each select="tei:birth">
                 <xsl:text>Rojstvo: </xsl:text>
-            <xsl:value-of select="concat(tei:birth/@when, ', ', tei:birth/tei:placeName)"/>
+            <xsl:value-of select="concat(birth/@when, ', ', tei:birth/tei:placeName)"/>
             <br/></xsl:for-each>
             
             <!-- Output death details -->
