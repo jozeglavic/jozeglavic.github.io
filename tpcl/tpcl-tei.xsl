@@ -349,14 +349,14 @@
                         <xsl:text>Slovensko ime: </xsl:text>
                     </xsl:when>
                     <xsl:when test="@xml:lang = 'de'">
-                        <xsl:text>Nemško verzija: </xsl:text>
+                        <xsl:text>Nemška verzija: </xsl:text>
                     </xsl:when>
                     <xsl:otherwise>
                         <xsl:text>Unknown: </xsl:text>
                     </xsl:otherwise>
                 </xsl:choose>
                 <!-- Output forename and surname -->
-                <xsl:value-of select="forename"/> <xsl:value-of select="surname"/>
+                <xsl:value-of select="tei:forename"/> <xsl:value-of select="tei:surname"/>
                 <br/>
             </xsl:for-each>
             
