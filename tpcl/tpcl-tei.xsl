@@ -363,13 +363,13 @@
             <!-- Output birth details -->
             <xsl:for-each select="tei:birth">
                 <xsl:text>Rojstvo: </xsl:text>
-            <xsl:value-of select="concat(birth/@when, ', ', tei:birth/tei:placeName)"/>
+                <xsl:apply-templates/>
             <br/></xsl:for-each>
             
             <!-- Output death details -->
             <xsl:for-each select="tei:death">
             <xsl:text>Smrt: </xsl:text>
-            <xsl:value-of select="concat(tei:death/@when, ', ', tei:death/tei:placeName)"/>
+                <xsl:apply-templates/>
             <br/></xsl:for-each>
             
             <!-- Output idno link -->            
