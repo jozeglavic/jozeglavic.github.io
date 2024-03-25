@@ -108,19 +108,19 @@
                     <div class="card-body">
                         <div id="uvod">
                             <h3>Seznam lokacij v pismih</h3>
-                            <p>Pred vami je seznam lokacij, katere so posredno ali neposredno
+                            <p class="text-justify">Pred vami je seznam lokacij, katere so posredno ali neposredno
                                 omenjene v pismih. Seznam je nastajal kot samostojna datoteka pri
                                 ročnem označevanju (anotaciji) metapodatkov v pismih. Za vsako
                                 unikatno omembo lokacije se je vodil seznam pod oznako
                                     <code>&lt;listPlace&gt;</code>. Vsaka lokacija vodena pod
                                     <code>&lt;place&gt;</code> vsebuje unikatni atribut (primer:
                                     <code>&lt;xml:id="fuzine"&gt;</code>) ter podatke o slovenskem
-                                imenu, nemškem imenu, naselju, državi. Za jasnost pa je doda tudi
+                                imenu, nemškem imenu, naselju in državi. Za jasnost pa je doda tudi
                                 link do geonames.org (kot geografsko bazo podprto z licenco Creative
                                 Commons) pod oznako <code>&lt;idno type="GEONAMES"&gt;</code></p>
 
                             <p>Datoteka seznamov lokacij z dodatnimi metapodatki, je nastala z
-                                namenom osmilsiti in razložiti dodatne informacije o omenjenih
+                                namenom osmisliti in razložiti dodatne informacije o omenjenih
                                 lokacijah. Seznam je le berljiv prikaz ustvarjene datoteke, končni
                                 namen pa je uporabiti tako strukturirane podatke za kreiranje
                                 indeksa pojavljanja posamezne lokacije v posamičnem pismu. Na tak
