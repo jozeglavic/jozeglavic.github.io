@@ -47,7 +47,7 @@
         </section>
         
         
-        <xsl:if test="$mode = 'view:editionobject' or $mode = ''">
+        <xsl:if test="not(//tei:listPlace) and ($mode = 'view:editionobject' or $mode = '')">
             <section class="row">
                 <!-- First Column -->
                 <article class="col-md-6">
@@ -78,7 +78,10 @@
                 </article>
             </section>
         </xsl:if>
+        
     </xsl:template> 
+    
+    
     
     <xsl:template name="gamsOsd">
         <xsl:param name="pid"/>
@@ -110,6 +113,15 @@
     
     <!--after content-->
     <!--tooltip-->
+    
+    <xsl:template match="tei:date/@when">
+        <!-- Format the date with full month name -->
+        
+        <xsl:text> </xsl:text>
+        <!-- Calendar glyph -->
+        <xsl:value-of select="format-date(., '[D01] [MN] [Y]')"/>
+    </xsl:template>
+    
     
     
     
@@ -163,6 +175,68 @@
             <span><xsl:apply-templates/></span><br/> 
         </xsl:for-each>
     </xsl:template>   
+    
+    <xsl:template match="tei:listPlace/tei:place">
+        <div class="place" id="{@xml:id}">
+            <h2># <xsl:value-of select="@xml:id"/></h2>
+            
+            
+            <xsl:for-each select="tei:placeName">
+                
+                <xsl:choose>
+                    <!-- Check if language is "sl" -->
+                    <xsl:when test="@xml:lang = 'sl'">
+                        <xsl:text>Slovensko ime: </xsl:text>
+                    </xsl:when>
+                    <!-- Check if language is "de" -->
+                    <xsl:when test="@xml:lang = 'de'">
+                        <xsl:text>Nemško ime: </xsl:text>
+                    </xsl:when>
+                    <!-- Default case -->
+                    <xsl:otherwise>
+                        <xsl:text>Unknown: </xsl:text>
+                    </xsl:otherwise>
+                </xsl:choose>
+                <!-- Output placeName value -->
+                <xsl:value-of select="."/>
+                <br/>
+                
+            </xsl:for-each>
+            
+            
+            <xsl:for-each select="tei:settlement">
+                <xsl:text>Naselje: </xsl:text>
+                <xsl:apply-templates/>
+                <br/>
+            </xsl:for-each>
+            
+            
+            <xsl:for-each select="tei:country">
+                <xsl:text>Država: </xsl:text>
+                <xsl:apply-templates/>
+                <br/>
+            </xsl:for-each>
+            
+            
+            <xsl:for-each select="tei:idno">
+                <xsl:text>GeoNames povezava: </xsl:text>
+                <a>
+                    <xsl:attribute name="href">
+                        <xsl:apply-templates/>
+                    </xsl:attribute>
+                    <xsl:apply-templates/>
+                    
+                </a>
+                
+            </xsl:for-each>
+            
+            
+            
+            
+        </div>
+        <hr class="hr hr-blurry"/>
+    </xsl:template>
+    
     
     
     
