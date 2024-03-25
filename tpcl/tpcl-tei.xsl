@@ -23,45 +23,47 @@
     
     
     <xsl:template name="content">
-        <section class="row">       
-            
-            <!--////////////Letter sender and reciever - correspDesc//////--> 
-            
-            <article class="col-md-12">
-                <div class="card-body">
-                    <div class="p-3">
-                        <span class="mail-icon">&#9993;</span>
-                        <xsl:text> Od: </xsl:text>
-                        <xsl:apply-templates
-                            select="//tei:correspAction[@type = 'sent']/tei:persName"/>
-                        <xsl:text> Poslano: </xsl:text>
-                        <xsl:apply-templates
-                            select="//tei:correspAction[@type = 'sent']/tei:placeName"/>
-                        <xsl:text>, </xsl:text>
-                        <xsl:apply-templates
-                            select="//tei:correspAction[@type = 'sent']/tei:date/@when"/>
-                    </div>
-                    
-                    <div class="p-3">
-                        <xsl:text>Za: </xsl:text>
-                        <xsl:apply-templates
-                            select="//tei:correspAction[@type = 'received']/tei:persName"/>
-                        <xsl:text> Prejeto: </xsl:text>
-                        <xsl:apply-templates
-                            select="//tei:correspAction[@type = 'received']/tei:placeName"/>
-                        <xsl:for-each
-                            select="//tei:correspAction[@type = 'received']/tei:date/@when">
+        <xsl:if test="//tei:correspDesc">
+            <section class="row">
+                
+                <!--////////////Letter sender and reciever - correspDesc//////-->
+                
+                <article class="col-md-12">
+                    <div class="card-body">
+                        <div class="p-3">
+                            <span class="mail-icon">&#9993;</span>
+                            <xsl:text> Od: </xsl:text>
+                            <xsl:apply-templates
+                                select="//tei:correspAction[@type = 'sent']/tei:persName"/>
+                            <xsl:text> Poslano: </xsl:text>
+                            <xsl:apply-templates
+                                select="//tei:correspAction[@type = 'sent']/tei:placeName"/>
                             <xsl:text>, </xsl:text>
                             <xsl:apply-templates
-                                select="//tei:correspAction[@type = 'received']/tei:date/@when"
-                            />
-                        </xsl:for-each>
+                                select="//tei:correspAction[@type = 'sent']/tei:date/@when"/>
+                        </div>
+                        
+                        <div class="p-3">
+                            <xsl:text>Za: </xsl:text>
+                            <xsl:apply-templates
+                                select="//tei:correspAction[@type = 'received']/tei:persName"/>
+                            <xsl:text> Prejeto: </xsl:text>
+                            <xsl:apply-templates
+                                select="//tei:correspAction[@type = 'received']/tei:placeName"/>
+                            <xsl:for-each
+                                select="//tei:correspAction[@type = 'received']/tei:date/@when">
+                                <xsl:text>, </xsl:text>
+                                <xsl:apply-templates
+                                    select="//tei:correspAction[@type = 'received']/tei:date/@when"
+                                />
+                            </xsl:for-each>
+                        </div>
+                        
+                        
                     </div>
-                    
-                    
-                </div>
-            </article>    
-        </section>
+                </article>
+            </section>
+        </xsl:if>
         
         
         <xsl:if test="not(//tei:listPlace) and ($mode = 'view:editionobject' or $mode = '')">
@@ -93,6 +95,47 @@
                     
                     <!-- ATTENTION: Watch out for line breaks in the last line. -->
                 </article>
+            </section>
+        </xsl:if>
+        
+        <xsl:if test="//tei:listPlace">
+            <section class="row">
+                <!-- First Column -->
+                
+                <article class="col-mc-12">
+                    <div class="card-body">
+                        <div id="uvod">
+                            <h3>Seznam lokacij omenjenih v pismih</h3>
+                            <p class="text-justify">Pred vami je seznam lokacij, katere so posredno ali neposredno
+                                omenjene v pismih. Seznam je nastajal kot samostojna datoteka pri
+                                ročnem označevanju (anotaciji) metapodatkov v pismih. Za vsako
+                                unikatno omembo lokacije se je vodil seznam pod oznako
+                                <code>&lt;listPlace&gt;</code>. Vsaka lokacija vodena pod
+                                <code>&lt;place&gt;</code> vsebuje unikatni atribut (primer:
+                                <code>&lt;xml:id="fuzine"&gt;</code>) ter podatke o slovenskem
+                                imenu, nemškem imenu, naselju in državi. Za jasnost pa je doda tudi
+                                link do geonames.org (kot geografsko bazo podprto z licenco Creative
+                                Commons) pod oznako <code>&lt;idno type="GEONAMES"&gt;</code></p>
+                            
+                            <p>Datoteka seznamov lokacij z dodatnimi metapodatki, je nastala z
+                                namenom osmisliti in razložiti dodatne informacije o omenjenih
+                                lokacijah. Seznam je le berljiv prikaz ustvarjene datoteke, končni
+                                namen pa je uporabiti tako strukturirane podatke za kreiranje
+                                indeksa pojavljanja posamezne lokacije v posamičnem pismu. Na tak
+                                način nastane indeks s povezavami krajev in omenjenih pisem.
+                                Implementacija izdelave takega indeksa je načrtovana v
+                                prihodnje.</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-md-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <xsl:apply-templates select="//t:body"/>
+                        </div>
+                    </div>
+                </article>
+                
             </section>
         </xsl:if>
         
