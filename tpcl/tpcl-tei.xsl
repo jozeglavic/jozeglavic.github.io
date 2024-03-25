@@ -90,6 +90,17 @@
         <xsl:if test="//tei:listPlace">
             <section class="row">
                 <!-- First Column -->
+                
+                <article class="col-mc-12">
+                    <div class="card-body">
+                        <div id="uvod">	
+                            <h3>Seznam lokacij v pismih</h3>
+                            <p>Pred vami je seznam lokacij, katere so posredno ali neposredno omenjene v pismih. Seznam je nastajal kot samostojna datoteka pri ročnem ozančevanju (anotaciji) metapodatkov v pismih. Za vsako unikatno omembo lokacije se je vodil seznam pod oznako <code> <listPlace></listPlace></code>. Vsaka lokacija vodena pod <code><place></place></code> vsebuje unikatni attribut (primer: <code xml:id="fuzine"> </code>) ter podake o slovenskem imenu, nemškem imenu, nasleju, državi. Za jasnmost pa je doda tudi link od genames pod oznako <code> <idno type="GEONAMES"> </code>
+                            
+                            Plan za naprej oz kaj je bilo mišljeno</p>
+                        </div>
+                    </div>    
+                </article>
                 <article class="col-md-12">
                     <div class="card">
                         <div class="card-body">
