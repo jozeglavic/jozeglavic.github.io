@@ -315,102 +315,89 @@
         
         <!-- <h3><xsl:value-of select="/s:sparql/s:results/s:result[1]/s:container"/></h3>-->
         <h3>Seznam pisem družine Trepinc</h3>
-        <p>Tu je objavljen seznam pisem s povezavam do transkripcij in digitalnih faksimilov. Seznam vsebuje vsa vključena pisma. Pisma so poimenovana glede na arhivsko signaturo, hkrati pa je priložena tudi predogledna sličica. S klikom na povezavo se odpre posamično pismo.<br/> 
-            Posamično pismo vsebuje na začetku metapodatke o pošiljatelju in prejemniku, na desni strani je v tekstovni obliki predstavljena transkripcija pisma po posamični strani. Poleg tega vsebuje tudi označbe krajev imen v posebnih barvah za lažje razpoznavanje. Označene so tudi ostale posebnosti pisma kot so pozdravna in poslovilna vrstica, datumska vrstica ter okrajšave in napake. Na desni strani je izpostavljen pregledovalnik digitalnih faksimilov pisma.<br/> 
-            Glede zbirke: V fondu SI_ZAL_LJU/0296 Graščine Fužine (1616-1925) se hrani 319 pisem in 2 potovalna dnevnik korespondence družine Terpinc. Večino korespondence je pisana v stari gotici in nemškem jeziku. Zaradi obsežnosti je korespondenca vsebinsko razdeljena na družinsko (primarno) in ostalo (sekundarno). Primarna je pomembnejša, ker je nastala znotraj (sorodstveno) tesneje povezanega kroga ljudi, v ospredju pa so način komunikacije, teme »pogovorov« in osebnostne značilnosti ter nagnjenja posameznikov, ki so na ta način jasneje in bolj osebno predstavljeni. Sekundarna korespondenca (pisma prijateljev in znancev) je časovno bolj razpršena, saj obsega daljše obdobje (1823–1875), pogosto nima »rdeče niti« pogovorov oz. dogodkov, korespondenti pa so med seboj v različno intenzivnih stikih. Ta pisma bodo počakala na objavo v prihodnje.<br/>  
-            Pisma so v fondu razdeljena v ovoje, ki so nastali na podlagi razmerja korespondentov pošiljatelj-prejemnik. Skupno je 12 ovojev označenih z rimsko številko.<br/>  
-            Zbirka se sproti dopolnjuje, trenutno je stanje objav sledeče:
-        </p>
+        <p>Tu je objavljen seznam pisem s povezavam do transkripcij in digitalnih faksimilov. Seznam vsebuje vsa vključena pisma. Pisma so poimenovana glede na arhivsko signaturo, hkrati pa je priložena tudi predogledna sličica. S klikom na povezavo se odpre posamično pismo.</p>
+        <p>Posamično pismo vsebuje na začetku metapodatke o pošiljatelju in prejemniku, na desni strani je v tekstovni obliki predstavljena transkripcija pisma po posamični strani. Poleg tega vsebuje tudi označbe krajev imen v posebnih barvah za lažje razpoznavanje. Označene so tudi ostale posebnosti pisma kot so pozdravna in poslovilna vrstica, datumska vrstica ter okrajšave in napake. Na desni strani je izpostavljen pregledovalnik digitalnih faksimilov pisma.</p>
+        <p>Glede zbirke: V fondu SI_ZAL_LJU/0296 Graščine Fužine (1616-1925) se hrani 319 pisem in 2 potovalna dnevnik korespondence družine Terpinc. Večino korespondence je pisana v stari gotici in nemškem jeziku. Zaradi obsežnosti je korespondenca vsebinsko razdeljena na družinsko (primarno) in ostalo (sekundarno). Primarna je pomembnejša, ker je nastala znotraj (sorodstveno) tesneje povezanega kroga ljudi, v ospredju pa so način komunikacije, teme »pogovorov« in osebnostne značilnosti ter nagnjenja posameznikov, ki so na ta način jasneje in bolj osebno predstavljeni. Sekundarna korespondenca (pisma prijateljev in znancev) je časovno bolj razpršena, saj obsega daljše obdobje (1823–1875), pogosto nima »rdeče niti« pogovorov oz. dogodkov, korespondenti pa so med seboj v različno intenzivnih stikih. Ta pisma bodo počakala na objavo v prihodnje.</p>
+        <p>Pisma so v fondu razdeljena v ovoje, ki so nastali na podlagi razmerja korespondentov pošiljatelj-prejemnik. Skupno je 12 ovojev označenih z rimsko številko.</p>
+        <p>Zbirka se sproti dopolnjuje, trenutno je stanje objav sledeče:</p>
         
         <div>
             <table style="width: 100%; border-collapse: collapse;">
                 <thead>
                     <tr>
                         <th style="border: 1px solid black; padding: 8px; background-color: #f2f2f2;">Ovoj</th>
-                        <th style="border: 1px solid black; padding: 8px; background-color: #f2f2f2;">Razmerje</th>
-                        <th style="border: 1px solid black; padding: 8px; background-color: #f2f2f2;">Oseba</th>
-                        <th style="border: 1px solid black; padding: 8px; background-color: #f2f2f2;">Povezava</th>
+                        <th style="border: 1px solid black; padding: 8px; background-color: #f2f2f2;">Objavljeno</th>
+                        <th style="border: 1px solid black; padding: 8px; background-color: #f2f2f2;">Korespondenti</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td style="border: 1px solid black; padding: 8px;">Ovoj I</td>
                         <td style="border: 1px solid black; padding: 8px;">28/86</td>
-                        <td style="border: 1px solid black; padding: 8px;">Fidelij Trepinz</td>
-                        <td style="border: 1px solid black; padding: 8px;">Jožefina Terpinc r. Češko</td>
+                        <td style="border: 1px solid black; padding: 8px;">Fidelij Trepinz - Jožefina Terpinc r. Češko</td>
                     </tr>
                     <tr>
                         <td style="border: 1px solid black; padding: 8px;">Ovoj II</td>
                         <td style="border: 1px solid black; padding: 8px;">0/71</td>
-                        <td style="border: 1px solid black; padding: 8px;">Valentin Češko</td>
-                        <td style="border: 1px solid black; padding: 8px;">Fidelij Terpinc</td>
+                        <td style="border: 1px solid black; padding: 8px;">Valentin Češko - Fidelij Terpinc</td>
                     </tr>
                     <tr>
                         <td style="border: 1px solid black; padding: 8px;">Ovoj III</td>
                         <td style="border: 1px solid black; padding: 8px;">0/27</td>
-                        <td style="border: 1px solid black; padding: 8px;">Franc Češko</td>
-                        <td style="border: 1px solid black; padding: 8px;">Jožefina Terpinc r. Češko</td>
+                        <td style="border: 1px solid black; padding: 8px;">Franc Češko - Jožefina Terpinc r. Češko</td>
                     </tr>
                     <tr>
                         <td style="border: 1px solid black; padding: 8px;">Ovoj IV</td>
                         <td style="border: 1px solid black; padding: 8px;">0/3</td>
-                        <td style="border: 1px solid black; padding: 8px;">Janez Terpinc</td>
-                        <td style="border: 1px solid black; padding: 8px;">zakoncem Trepinz</td>
+                        <td style="border: 1px solid black; padding: 8px;">Janez Terpinc - zakoncem Trepinz</td>
                     </tr>
                     <tr>
                         <td style="border: 1px solid black; padding: 8px;">Ovoj V</td>
                         <td style="border: 1px solid black; padding: 8px;">0/7</td>
-                        <td style="border: 1px solid black; padding: 8px;">Blaž Terpinc</td>
-                        <td style="border: 1px solid black; padding: 8px;">Fidelij Trepinz</td>
+                        <td style="border: 1px solid black; padding: 8px;">Blaž Terpinc - Fidelij Trepinz</td>
                     </tr>
                     <tr>
                         <td style="border: 1px solid black; padding: 8px;">Ovoj VI</td>
                         <td style="border: 1px solid black; padding: 8px;">0/15</td>
-                        <td style="border: 1px solid black; padding: 8px;">Fidelijevi prijatelji</td>
-                        <td style="border: 1px solid black; padding: 8px;">Fidelij Trepinz</td>
+                        <td style="border: 1px solid black; padding: 8px;">Fidelijevi prijatelji - Fidelij Trepinz</td>
                     </tr>
                     <tr>
                         <td style="border: 1px solid black; padding: 8px;">Ovoj VII</td>
                         <td style="border: 1px solid black; padding: 8px;">0/8</td>
-                        <td style="border: 1px solid black; padding: 8px;">Miha Pregel</td>
-                        <td style="border: 1px solid black; padding: 8px;">Fidelij Trepinz</td>
+                        <td style="border: 1px solid black; padding: 8px;">Miha Pregel - Fidelij Trepinz</td>
                     </tr>
                     <tr>
                         <td style="border: 1px solid black; padding: 8px;">Ovoj VIII</td>
                         <td style="border: 1px solid black; padding: 8px;">0/4</td>
-                        <td style="border: 1px solid black; padding: 8px;">Alojzij Offner</td>
-                        <td style="border: 1px solid black; padding: 8px;">Jožefina Terpinc r. Češko</td>
+                        <td style="border: 1px solid black; padding: 8px;">Alojzij Offner - Jožefina Terpinc r. Češko</td>
                     </tr>
                     <tr>
                         <td style="border: 1px solid black; padding: 8px;">Ovoj IX</td>
                         <td style="border: 1px solid black; padding: 8px;">0/12</td>
-                        <td style="border: 1px solid black; padding: 8px;">B. Fende</td>
-                        <td style="border: 1px solid black; padding: 8px;">zakoncem Trepinz</td>
+                        <td style="border: 1px solid black; padding: 8px;">B. Fende - zakonca Trepinz</td>
                     </tr>
                     <tr>
                         <td style="border: 1px solid black; padding: 8px;">Ovoj X</td>
                         <td style="border: 1px solid black; padding: 8px;">0/13</td>
-                        <td style="border: 1px solid black; padding: 8px;">Janez N. Urbančič in njegova žena Josipina</td>
-                        <td style="border: 1px solid black; padding: 8px;">Jožefina Terpinc r. Češko</td>
+                        <td style="border: 1px solid black; padding: 8px;">Janez N. Urbančič in njegova žena Josipina - Jožefina Terpinc r. Češko</td>
                     </tr>
                     <tr>
                         <td style="border: 1px solid black; padding: 8px;">Ovoj XI</td>
                         <td style="border: 1px solid black; padding: 8px;">0/73</td>
-                        <td style="border: 1px solid black; padding: 8px;">Jožefinini prijatelji</td>
-                        <td style="border: 1px solid black; padding: 8px;">Jožefina Terpinc r. Češko</td>
+                        <td style="border: 1px solid black; padding: 8px;">Jožefinini prijatelji - Jožefina Terpinc r. Češko</td>
                     </tr>
                     <tr>
                         <td style="border: 1px solid black; padding: 8px;">Ovoj XII</td>
                         <td style="border: 1px solid black; padding: 8px;">0/9</td>
-                        <td style="border: 1px solid black; padding: 8px;">Fidelij Trepinz</td>
-                        <td style="border: 1px solid black; padding: 8px;">Tomanu</td>
+                        <td style="border: 1px solid black; padding: 8px;">Fidelij Trepinz - Tomanu</td>
                     </tr>
-                </tbody>
+                </tbody>                
             </table>
         
             
             
         </div>
+        <hr class="hr hr-blurry"/>
         <p>Število najdenih vnosov: <xsl:value-of select="count(s:sparql/s:results/s:result)"
             /></p>
         
