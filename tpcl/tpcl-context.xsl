@@ -321,6 +321,95 @@
         </p>
         <p>Število najdenih vnosov: <xsl:value-of select="count(s:sparql/s:results/s:result)"
             /></p>
+        
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ovoj</th>
+                        <th>Razmerje</th>
+                        <th>Oseba</th>
+                        <th>Povezava</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ovoj I</td>
+                        <td>28/86</td>
+                        <td>Fidelij Trepinz</td>
+                        <td>Jožefina Terpinc r. Češko</td>
+                    </tr>
+                    <tr>
+                        <td>Ovoj II</td>
+                        <td>0/71</td>
+                        <td>Valentin Češko</td>
+                        <td>Fidelij Terpinc</td>
+                    </tr>
+                    <tr>
+                        <td>Ovoj III</td>
+                        <td>0/27</td>
+                        <td>Franc Češko</td>
+                        <td>Jožefina Terpinc r. Češko</td>
+                    </tr>
+                    <tr>
+                        <td>Ovoj IV</td>
+                        <td>0/3</td>
+                        <td>Janez Terpinc</td>
+                        <td>zakoncem Trepinz</td>
+                    </tr>
+                    <tr>
+                        <td>Ovoj V</td>
+                        <td>0/7</td>
+                        <td>Blaž Terpinc</td>
+                        <td>Fidelij Trepinz</td>
+                    </tr>
+                    <tr>
+                        <td>Ovoj VI</td>
+                        <td>0/15</td>
+                        <td>Fidelijevi prijatelji</td>
+                        <td>Fidelij Trepinz</td>
+                    </tr>
+                    <tr>
+                        <td>Ovoj VII</td>
+                        <td>0/8</td>
+                        <td>Miha Pregel</td>
+                        <td>Fidelij Trepinz</td>
+                    </tr>
+                    <tr>
+                        <td>Ovoj VIII</td>
+                        <td>0/4</td>
+                        <td>Alojzij Offner</td>
+                        <td>Jožefina Terpinc r. Češko</td>
+                    </tr>
+                    <tr>
+                        <td>Ovoj IX</td>
+                        <td>0/12</td>
+                        <td>B. Fende</td>
+                        <td>zakoncem Trepinz</td>
+                    </tr>
+                    <tr>
+                        <td>Ovoj X</td>
+                        <td>0/13</td>
+                        <td>Janez N. Urbančič in njegova žena Josipina</td>
+                        <td>Jožefina Terpinc r. Češko</td>
+                    </tr>
+                    <tr>
+                        <td>Ovoj XI</td>
+                        <td>0/73</td>
+                        <td>Jožefinini prijatelji</td>
+                        <td>Jožefina Terpinc r. Češko</td>
+                    </tr>
+                    <tr>
+                        <td>Ovoj XII</td>
+                        <td>0/9</td>
+                        <td>Fidelij Trepinz</td>
+                        <td>Tomanu</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            
+        </div>
         <xsl:for-each select="s:sparql/s:results/s:result">
             
             <li>
