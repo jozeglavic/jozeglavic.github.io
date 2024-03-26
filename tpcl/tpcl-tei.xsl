@@ -281,6 +281,16 @@
             <xsl:apply-templates select="tei:abbr"/>
         </span>
         
+        <xsl:for-each select="tei:abbr">
+            <!-- Use <span> or any other suitable element for tooltip -->
+            <i data-toggle="tooltip" data-placement="right" data-original-title="Tooltip on right" aria-describedby="tooltip759877">
+                <xsl:attribute name="title">
+                    <xsl:value-of select="concat('razširjeno: ', following-sibling::tei:expan)"/>
+                </xsl:attribute>
+                <!-- You can add an icon or any content for the tooltip trigger here -->
+            </i>      
+        </xsl:for-each> 
+        
     </xsl:template>
     
     
