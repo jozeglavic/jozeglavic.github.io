@@ -403,62 +403,56 @@
         
         
         <xsl:for-each select="s:sparql/s:results/s:result">
+            <!-- Extracting "title" and "ovoj" -->
             <xsl:variable name="title" select="./s:title"/>
             <xsl:variable name="ovoj" select="substring-before(substring-after($title, '_ovoj '), '_pismo')"/>
-            <div class="accordion-item" id="{normalize-space($ovoj)}"> <!-- Adding accordion item with id -->
-                <li>
-                    <xsl:choose>
-                        <xsl:when test="position() mod 2 = 0">
-                            <xsl:attribute name="class">
-                                <xsl:text>results odd</xsl:text>
-                            </xsl:attribute>
-                        </xsl:when>
-                        <xsl:otherwise>
-                            <xsl:attribute name="class">
-                                <xsl:text>results even</xsl:text>
-                            </xsl:attribute>
-                        </xsl:otherwise>
-                    </xsl:choose>
-                    <a>
-                        <xsl:attribute name="href">
-                            <xsl:value-of select="concat('/', ./s:identifier)"/>
-                        </xsl:attribute>
-                        <img width="100" height="80" class="results">
-                            <xsl:attribute name="src">
-                                <xsl:value-of select="concat('/', ./s:identifier, '/THUMBNAIL')"/>
-                            </xsl:attribute>
-                        </img>
-                    </a>
-                    <span class="results">
-                        <a>
-                            <xsl:attribute name="href">
-                                <xsl:value-of select="concat('/', ./s:identifier)"/>
-                            </xsl:attribute>
-                            <xsl:variable name="title" select="./s:title"/>
-                            <xsl:variable name="ovoj" select="substring-before(substring-after($title, '_ovoj '), '_pismo')"/>
-                            <xsl:variable name="pismo" select="substring-after(substring-after(substring-after($title, '_'), '_'), '_')"/>
-                            <em><xsl:value-of select="$ovoj"/></em><strong><xsl:value-of select="$pismo"/></strong>
-                        </a>
-                    </span>
-                    <br/>
-                    <span class="permalink">
-                        <a>
-                            <xsl:attribute name="href">
-                                <xsl:value-of select="concat('/', ./s:identifier)"/>
-                            </xsl:attribute>
-                            <xsl:text>Permalink: </xsl:text><xsl:value-of select="concat('/', ./s:identifier)"/>
-                        </a>
-                    </span>
-                    <span class="icon-span">
-                        <a target="_blank">
-                            <xsl:attribute name="href">
-                                <xsl:value-of select="concat('/', ./s:identifier, '/TEI_SOURCE')"/>
-                            </xsl:attribute>
-                            <img src="{$gamsAssetsRootPath}/img/tei_icon.jpg" height="18" alt="TEI-Dokument" title="TEI-Dokument"/>
-                        </a>
-                    </span>
-                </li>
-            </div> <!-- Closing accordion item -->
+            <xsl:variable name="pismo" select="substring-after(substring-after($title, '_pismo '), '_')"/>
+            
+            <!-- Grouping by "ovoj" -->
+            <xsl:if test="generate-id(.) = generate-id(key('ovoj-key', $ovoj)[1])">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-heading{$ovoj}">
+                        <button class="accordion-button collapsed {$ovoj}" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse{$ovoj}" aria-expanded="false" aria-controls="flush-collapse{$ovoj}">
+                            <xsl:value-of select="$ovoj"/>
+                        </button>
+                    </h2>
+                    <div id="flush-collapse{$ovoj}" class="accordion-collapse collapse" aria-labelledby="flush-heading{$ovoj}" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <xsl:for-each select="key('ovoj-key', $ovoj)">
+                                <li>
+                                    <xsl:choose>
+                                        <xsl:when test="position() mod 2 = 0">
+                                            <xsl:attribute name="class">results odd</xsl:attribute>
+                                        </xsl:when>
+                                        <xsl:otherwise>
+                                            <xsl:attribute name="class">results even</xsl:attribute>
+                                        </xsl:otherwise>
+                                    </xsl:choose>
+                                    <a href="{concat('/', ./s:identifier)}">
+                                        <img width="100" height="80" class="results" src="{concat('/', ./s:identifier, '/THUMBNAIL')}"/>
+                                    </a>
+                                    <span class="results">
+                                        <a href="{concat('/', ./s:identifier)}">
+                                            <em><xsl:value-of select="$ovoj"/></em><strong><xsl:value-of select="$pismo"/></strong>
+                                        </a>
+                                    </span>
+                                    <br/>
+                                    <span class="permalink">
+                                        <a href="{concat('/', ./s:identifier)}">
+                                            <xsl:text>Permalink: </xsl:text><xsl:value-of select="concat('/', ./s:identifier)"/>
+                                        </a>
+                                    </span>
+                                    <span class="icon-span">
+                                        <a target="_blank" href="{concat('/', ./s:identifier, '/TEI_SOURCE')}">
+                                            <img src="{$gamsAssetsRootPath}/img/tei_icon.jpg" height="18" alt="TEI-Dokument" title="TEI-Dokument"/>
+                                        </a>
+                                    </span>
+                                </li>
+                            </xsl:for-each>
+                        </div>
+                    </div>
+                </div>
+            </xsl:if>
         </xsl:for-each>
         
     </xsl:template>
