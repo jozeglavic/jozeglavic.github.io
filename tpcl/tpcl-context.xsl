@@ -444,8 +444,8 @@
                         <xsl:variable name="title" select="./s:title"/>
                                                 
                         <!-- Extracting "ovoj I" and "pismo 1" -->
-                        <xsl:variable name="ovoj" select="substring-before(substring-after($title, '_'), '_')"/>
-                        <xsl:variable name="pismo" select="substring-after(substring-after($title, '_'), '_')"/>
+                        <xsl:variable name="ovoj" select="substring-before(substring-after($title, '_ovoj '), '_pismo')"/>
+                        <xsl:variable name="pismo" select="substring-after(substring-after(substring-after($title, '_'), '_'), '_')"/>
                         
                         <!-- Outputting with italic and bold formatting -->
                         <em><xsl:value-of select="$ovoj"/></em><strong><xsl:value-of select="$pismo"/></strong>
