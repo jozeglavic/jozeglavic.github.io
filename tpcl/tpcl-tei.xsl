@@ -287,7 +287,7 @@
                 <xsl:attribute name="title">
                     <xsl:value-of select="concat('razširjeno: ', following-sibling::tei:expan)"/>
                 </xsl:attribute>
-                <!-- You can add an icon or any content for the tooltip trigger here -->
+                <xsl:apply-templates/>                
             </i>      
         </xsl:for-each> 
         
