@@ -254,9 +254,6 @@
     
     <!--letter styling based on the tei encoding-->
     
-     
-    
-    
     <xsl:template match="tei:placeName">         
         <span class="placename" id="{@ref}">
             <xsl:apply-templates/>
@@ -315,6 +312,15 @@
                 <xsl:apply-templates/>
             </xsl:attribute>            
             <xsl:text>*</xsl:text>
+        </span>
+    </xsl:template>
+    
+    <xsl:template match="tei:unclear">
+        <span class="foreign" style="color:blue; font-weight:bold;" data-toggle="tooltip" data-placement="top" data-original-title="Tooltip on top" aria-describedby="tooltip759877" id="{@xml:lang}">
+            <xsl:attribute name="title">
+                <xsl:value-of select="concat('Nejasno. ', @resp, 'verjetnost: ' , @cert)"/>
+            </xsl:attribute>            
+            <xsl:apply-templates/>
         </span>
     </xsl:template>
     
