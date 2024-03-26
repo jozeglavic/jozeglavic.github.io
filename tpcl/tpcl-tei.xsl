@@ -269,7 +269,11 @@
         </span> 
     </xsl:template>    
     
-  
+    <xsl:template match="tei:lb"> 
+        <xsl:for-each select=".">                            
+            <xsl:apply-templates/><br/> 
+        </xsl:for-each>
+    </xsl:template>  
     
     
     <xsl:template match="tei:choice">
