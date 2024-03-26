@@ -403,83 +403,62 @@
         
         
         <xsl:for-each select="s:sparql/s:results/s:result">
-            
-            <li>
-                <xsl:choose>
-                    <xsl:when test="position() mod 2 = 0">
-                        <xsl:attribute name="class">
-                            <xsl:text>results odd</xsl:text>
-                        </xsl:attribute>
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <xsl:attribute name="class">
-                            <xsl:text>results even</xsl:text>
-                        </xsl:attribute>
-                    </xsl:otherwise>
-                </xsl:choose>
-                <a>
-                    <xsl:attribute name="href">
-                        <xsl:value-of select="concat('/', ./s:identifier)"/>
-                    </xsl:attribute>
-                    <img width="100" height="80"
-                        class="results">
-                        <xsl:attribute name="src">
-                            <xsl:value-of
-                                select="concat('/', ./s:identifier, '/THUMBNAIL')"/>
-
-                        </xsl:attribute>
-                    </img>
-                </a>
-
-                <span class="results">
-                    <a>
-                        <xsl:attribute name="href">
-
-                            <xsl:value-of select="concat('/', ./s:identifier)"/>
-
-                        </xsl:attribute>
-                        
-                        <!--<xsl:value-of select="./s:title"/> -->
-                        <!-- Assuming s:title contains the value "ZALLJU-0296_35_ovoj I_pismo 1" -->
-                        <xsl:variable name="title" select="./s:title"/>
-                                                
-                        <!-- Extracting "ovoj I" and "pismo 1" -->
-                        <xsl:variable name="ovoj" select="substring-before(substring-after($title, '_ovoj '), '_pismo')"/>
-                        <xsl:variable name="pismo" select="substring-after(substring-after(substring-after($title, '_'), '_'), '_')"/>
-                        
-                        <!-- Outputting with italic and bold formatting -->
-                        <em><xsl:value-of select="$ovoj"/></em><strong><xsl:value-of select="$pismo"/></strong>
-
-                    </a>
-                </span>
-                <br/>
-                <span class="permalink">
+            <div class="accordion-item" id="{normalize-space($ovoj)}"> <!-- Adding accordion item with id -->
+                <li>
+                    <xsl:choose>
+                        <xsl:when test="position() mod 2 = 0">
+                            <xsl:attribute name="class">
+                                <xsl:text>results odd</xsl:text>
+                            </xsl:attribute>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:attribute name="class">
+                                <xsl:text>results even</xsl:text>
+                            </xsl:attribute>
+                        </xsl:otherwise>
+                    </xsl:choose>
                     <a>
                         <xsl:attribute name="href">
                             <xsl:value-of select="concat('/', ./s:identifier)"/>
-
                         </xsl:attribute>
-                        <xsl:text>Permalink: </xsl:text><xsl:value-of select="concat('/', ./s:identifier)"/>
-
+                        <img width="100" height="80" class="results">
+                            <xsl:attribute name="src">
+                                <xsl:value-of select="concat('/', ./s:identifier, '/THUMBNAIL')"/>
+                            </xsl:attribute>
+                        </img>
                     </a>
-
-                </span>
-                <span class="icon-span">
-                    <a target="_blank">
-                        <xsl:attribute name="href">
-                            <xsl:value-of
-                                select="concat('/', ./s:identifier, '/TEI_SOURCE')"/>
-
-                        </xsl:attribute>
-                        <img src="{$gamsAssetsRootPath}/img/tei_icon.jpg" 
-                            height="18" alt="TEI-Dokument" title="TEI-Dokument"/>
-                    </a>
-                    
-                    
-                </span>
-
-            </li>
+                    <span class="results">
+                        <a>
+                            <xsl:attribute name="href">
+                                <xsl:value-of select="concat('/', ./s:identifier)"/>
+                            </xsl:attribute>
+                            <xsl:variable name="title" select="./s:title"/>
+                            <xsl:variable name="ovoj" select="substring-before(substring-after($title, '_ovoj '), '_pismo')"/>
+                            <xsl:variable name="pismo" select="substring-after(substring-after(substring-after($title, '_'), '_'), '_')"/>
+                            <em><xsl:value-of select="$ovoj"/></em><strong><xsl:value-of select="$pismo"/></strong>
+                        </a>
+                    </span>
+                    <br/>
+                    <span class="permalink">
+                        <a>
+                            <xsl:attribute name="href">
+                                <xsl:value-of select="concat('/', ./s:identifier)"/>
+                            </xsl:attribute>
+                            <xsl:text>Permalink: </xsl:text><xsl:value-of select="concat('/', ./s:identifier)"/>
+                        </a>
+                    </span>
+                    <span class="icon-span">
+                        <a target="_blank">
+                            <xsl:attribute name="href">
+                                <xsl:value-of select="concat('/', ./s:identifier, '/TEI_SOURCE')"/>
+                            </xsl:attribute>
+                            <img src="{$gamsAssetsRootPath}/img/tei_icon.jpg" height="18" alt="TEI-Dokument" title="TEI-Dokument"/>
+                        </a>
+                    </span>
+                </li>
+            </div> <!-- Closing accordion item -->
         </xsl:for-each>
+        
     </xsl:template>
 
 </xsl:stylesheet>
