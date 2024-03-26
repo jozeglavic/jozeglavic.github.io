@@ -278,7 +278,19 @@
     
     
     <xsl:template match="tei:choice">
-        <span class="choice" style="color:blue"><xsl:apply-templates select="tei:abbr"/></span>
+        <span class="choice" style="color:blue; font-weight:bold;"><xsl:apply-templates select="tei:abbr"/></span>
+    </xsl:template>
+    
+    <xsl:template match="tei:choice">
+        <i data-toggle="tooltip" data-placement="right"
+            data-original-title="Tooltip on right" aria-describedby="tooltip759877">
+            <xsl:attribute name="title">
+                <xsl:text>sic!</xsl:text>
+            </xsl:attribute>
+            <xsl:apply-templates/>
+        </i>
+        
+     
     </xsl:template>
     
     
