@@ -286,6 +286,15 @@
                 <xsl:text>[</xsl:text><xsl:apply-templates/><xsl:text>]</xsl:text>                
             </span>      
         </xsl:for-each> 
+        <xsl:for-each select="tei:sic">
+            <!-- Use <span> or any other suitable element for tooltip -->
+            <span class="choice" style="color:blue; font-weight:bold;" data-toggle="tooltip" data-placement="top" data-original-title="Tooltip on top" aria-describedby="tooltip759877">
+                <xsl:attribute name="title">
+                    <xsl:value-of select="concat('razširjeno: ', following-sibling::tei:corr)"/>
+                </xsl:attribute>
+                <xsl:text>[</xsl:text><xsl:apply-templates/><xsl:text>]</xsl:text>                
+            </span>      
+        </xsl:for-each> 
         
     </xsl:template>
     

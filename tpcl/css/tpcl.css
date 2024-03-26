@@ -472,17 +472,13 @@ margin: 10px;
 }
 
 .opener-center { 
-  color: green;
+  color: red;
   text-align: center;
 }
 
 .closer- { 
   color: blue;
   text-align: center;
-}
-
-.tooltip{
-   font-size: 3rem;
 }
 
 
