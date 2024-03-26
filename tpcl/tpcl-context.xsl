@@ -436,7 +436,7 @@
                             <xsl:variable name="ovoj" select="substring-after($title, '35_')"/>
                             
                             
-                            <em><xsl:value-of select="$ovoj"/></em>
+                            <strong><xsl:value-of select="$ovoj"/></strong>
                         </a>
                     </span>
                     <br/>
