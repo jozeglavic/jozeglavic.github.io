@@ -403,9 +403,7 @@
         
         
         <xsl:for-each select="s:sparql/s:results/s:result">
-            <xsl:variable name="title" select="./s:title"/>
-            <xsl:variable name="ovoj" select="substring-before(substring-after($title, '_ovoj '), '_pismo')"/>
-            <div class="accordion-item" id="{normalize-space($ovoj)}"> <!-- Adding accordion item with id -->
+           
                 <li>
                     <xsl:choose>
                         <xsl:when test="position() mod 2 = 0">
@@ -436,8 +434,8 @@
                             </xsl:attribute>
                             <xsl:variable name="title" select="./s:title"/>
                             <xsl:variable name="ovoj" select="substring-before(substring-after($title, '_ovoj '), '_pismo')"/>
-                            <xsl:variable name="pismo" select="substring-after(substring-after(substring-after($title, '_'), '_'), '_')"/>
-                            <em><xsl:value-of select="$ovoj"/></em><strong><xsl:value-of select="$pismo"/></strong>
+                            
+                            <em><xsl:value-of select="$ovoj"/></em>
                         </a>
                     </span>
                     <br/>
@@ -458,7 +456,7 @@
                         </a>
                     </span>
                 </li>
-            </div> <!-- Closing accordion item -->
+            
         </xsl:for-each>
         
     </xsl:template>
