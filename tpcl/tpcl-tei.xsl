@@ -279,12 +279,12 @@
     
     <xsl:template match="tei:choice">
         <span class="choice" style="color:blue; font-weight:bold;"><xsl:apply-templates select="tei:abbr"/></span>
-        <i data-toggle="tooltip" data-placement="right" data-original-title="Tooltip on right" aria-describedby="tooltip759877">
+        <xsl:for-each select="tei:abbr">
+            <i data-toggle="tooltip" data-placement="right" data-original-title="Tooltip on right" aria-describedby="tooltip759877">
             <xsl:attribute name="title">
                 <xsl:value-of select="concat('razširjeno: ', following-sibling::tei:expan)"/>
             </xsl:attribute>
-        </i>
-        
+        </i></xsl:for-each>   
         
         
         
