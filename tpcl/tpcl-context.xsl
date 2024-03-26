@@ -439,12 +439,15 @@
 
                         </xsl:attribute>
                         
-                        <xsl:value-of select="./s:title"/>
-                        
+                        <!--<xsl:value-of select="./s:title"/> -->
+                        <!-- Assuming s:title contains the value "ZALLJU-0296_35_ovoj I_pismo 1" -->
                         <xsl:variable name="title" select="./s:title"/>
+                                                
+                        <!-- Extracting "ovoj I" and "pismo 1" -->
                         <xsl:variable name="ovoj" select="substring-before(substring-after($title, '_'), '_')"/>
                         <xsl:variable name="pismo" select="substring-after(substring-after($title, '_'), '_')"/>
                         
+                        <!-- Outputting with italic and bold formatting -->
                         <em><xsl:value-of select="$ovoj"/></em><strong><xsl:value-of select="$pismo"/></strong>
 
                     </a>
