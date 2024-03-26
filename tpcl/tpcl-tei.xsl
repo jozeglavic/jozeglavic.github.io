@@ -333,6 +333,9 @@
         <xsl:if test="@rend='underlined'">
                 <xsl:attribute name="style">text-decoration: underline;</xsl:attribute>
         </xsl:if>
+        <xsl:if test="@rend='superscript'">
+                <xsl:attribute name="style">vertical-align: super;</xsl:attribute>
+        </xsl:if>
         <xsl:apply-templates/>
         </span> 
         
