@@ -244,7 +244,7 @@
     <!--letter styling based on the tei encoding-->
     
     <xsl:template match="tei:opener">
-        <div class="opener-{@rend}" >            
+        <div class="opener-{@rend}">            
             <xsl:apply-templates/>
         </div> 
         <br/> 
@@ -252,7 +252,7 @@
     
     <xsl:template match="tei:closer"> 
         <br/>         
-        <div class="closer-{@rend}" >            
+        <div class="closer-{@rend}">            
             <xsl:apply-templates/>
         </div> 
     </xsl:template> 
