@@ -276,6 +276,19 @@
         </xsl:for-each>
     </xsl:template>   
     
+    
+    <xsl:template match="tei:choice">
+        <span class="choice" style="color:blue"><xsl:apply-templates select="tei:abbr"/></span>
+    </xsl:template>
+    
+    
+    
+    
+    
+    
+    
+    <!--styling listPlace subpage-->
+    
     <xsl:template match="tei:listPlace/tei:place">
         <div class="place" id="{@xml:id}">
             <h2># <xsl:value-of select="@xml:id"/></h2>
@@ -337,7 +350,7 @@
         <hr class="hr hr-blurry"/>
     </xsl:template>
     
-    
+    <!--styling listPerson subpage-->
     
     <xsl:template match="tei:listPerson/tei:person">
         <div class="person" id="{@xml:id}">
