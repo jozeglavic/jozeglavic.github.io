@@ -438,9 +438,14 @@
                             <xsl:value-of select="concat('/', ./s:identifier)"/>
 
                         </xsl:attribute>
-
-
+                        
                         <xsl:value-of select="./s:title"/>
+                        
+                        <xsl:variable name="title" select="./s:title"/>
+                        <xsl:variable name="ovoj" select="substring-before(substring-after($title, '_'), '_')"/>
+                        <xsl:variable name="pismo" select="substring-after(substring-after($title, '_'), '_')"/>
+                        
+                        <em><xsl:value-of select="$ovoj"/></em><strong><xsl:value-of select="$pismo"/></strong>
 
                     </a>
                 </span>
