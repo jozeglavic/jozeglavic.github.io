@@ -301,6 +301,9 @@
     
     <xsl:template match="tei:foreign">
         <span class="foreign" style="color:blue; font-weight:bold;" data-toggle="tooltip" data-placement="top" data-original-title="Tooltip on top" aria-describedby="tooltip759877" id="{@xml:lang}">
+            <xsl:attribute name="title">
+                <xsl:value-of select="concat('ISO jezikovna koda: ', @xml:lang)"/>
+            </xsl:attribute>            
             <xsl:apply-templates/>
         </span>
     </xsl:template>
