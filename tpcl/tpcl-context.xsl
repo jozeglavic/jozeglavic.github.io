@@ -437,7 +437,6 @@
                             <xsl:variable name="before" select="substring-before($ovoj, '_')"/>
                             <xsl:variable name="after" select="substring-after($ovoj, '_')"/>
                             
-                            <strong><xsl:value-of select="$ovoj"/></strong>
                             <em><xsl:value-of select="$before"/></em>
                             <xsl:text> - </xsl:text>
                             <strong><xsl:value-of select="$after"/></strong>
