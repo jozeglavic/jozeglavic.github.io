@@ -309,9 +309,10 @@
     </xsl:template>
     
     <xsl:template match="tei:note">
-        <span class="foreign" style="color:blue; font-weight:bold;" data-toggle="tooltip" data-placement="top" data-original-title="Tooltip on top" aria-describedby="tooltip759877" id="{@xml:lang}">
+        <span class="foreign" style="color:blue; font-weight:bold;" data-toggle="tooltip" data-placement="top" data-original-title="Tooltip on top" aria-describedby="tooltip759877">
             <xsl:attribute name="title">
                 <xsl:value-of select="tei:note"/>
+                <xsl:apply-templates/>
             </xsl:attribute>            
             <xsl:text>*</xsl:text>
         </span>
