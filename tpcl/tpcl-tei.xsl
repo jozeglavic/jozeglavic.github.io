@@ -278,10 +278,11 @@
     
     
     <xsl:template match="tei:choice">
-        <span class="choice" style="color:blue; font-weight:bold;"><xsl:value-of select="tei:abbr"/></span>
-        <xsl:attribute name="title">
-            <xsl:value-of select="tei:expan"/>
-        </xsl:attribute>      
+        <span class="choice" style="color:blue; font-weight:bold;"><xsl:apply-templates select="tei:abbr"/></span>
+        
+        
+        
+        
     </xsl:template>
     
     
