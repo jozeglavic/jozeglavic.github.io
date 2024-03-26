@@ -326,8 +326,16 @@
     
     <xsl:template match="tei:hi">         
         <span class="hi-{@rend}">
-            <xsl:apply-templates/>
+            
+        <xsl:if test="@rend='italic'">
+                <xsl:attribute name="style">font-style: italic;</xsl:attribute>
+        </xsl:if>
+        <xsl:if test="@rend='underlined'">
+                <xsl:attribute name="style">text-decoration: underline;</xsl:attribute>
+        </xsl:if>
+        <xsl:apply-templates/>
         </span> 
+        
     </xsl:template> 
     
     
