@@ -273,16 +273,7 @@
     </xsl:template>
     
     <xsl:template match="tei:dateline">                
-        <div class="dateline-{@rend}">            
-            <xsl:if test="@rend='left'">
-                <xsl:attribute name="style">text-align: left</xsl:attribute>
-            </xsl:if>
-            <xsl:if test="@rend='right'">
-                <xsl:attribute name="style">text-align: right;</xsl:attribute>
-            </xsl:if>
-            <xsl:if test="@rend='center'">
-                <xsl:attribute name="style">text-align: center;</xsl:attribute>
-            </xsl:if>
+        <div class="dateline-{@rend}"> 
             <xsl:apply-templates/>
         </div> 
         <br/>  
@@ -378,17 +369,7 @@
     </xsl:template>
     
     <xsl:template match="tei:hi">         
-        <span class="hi-{@rend}">
-            
-        <xsl:if test="@rend='italic'">
-                <xsl:attribute name="style">font-style: italic;</xsl:attribute>
-        </xsl:if>
-        <xsl:if test="@rend='underlined'">
-                <xsl:attribute name="style">text-decoration: underline;</xsl:attribute>
-        </xsl:if>
-        <xsl:if test="@rend='superscript'">
-                <xsl:attribute name="style">vertical-align: super;</xsl:attribute>
-        </xsl:if>
+        <span class="hi-{@rend}">  
         <xsl:apply-templates/>
         </span> 
         

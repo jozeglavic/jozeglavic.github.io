@@ -486,6 +486,30 @@ margin: 10px;
   text-align: center;
 }
 
+.dateline-left {
+    text-align: left;
+}
+
+.dateline-right {
+    text-align: right;
+}
+
+.dateline-center {
+    text-align: center;
+}
+
+.hi-italic {
+    font-style: italic;
+}
+
+.hi-underlined {
+    text-decoration: underline;
+}
+
+.hi-superscript {
+    vertical-align: super;
+}
+
 
 
             
