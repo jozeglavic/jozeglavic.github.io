@@ -58,6 +58,47 @@
                             </xsl:for-each>
                         </div>
                         
+                        <div class="col-6" style="background-color:rgba(211, 211, 211, 0.3)">
+                            <p class="ml-3 mt-2" style="text-align:left">
+                                <input id="ergaenzungen" class="form-check-input" type="checkbox"
+                                    checked="checked">Ergänzungen einblenden</input>
+                            </p>
+                            <p class="ml-3">
+                                <input id="personenhighlighting" class="form-check-input"
+                                    type="checkbox" checked="checked">Personen hervorheben</input>
+                            </p>
+                            <p class="ml-3">
+                                <input id="ortehighlighting" class="form-check-input" type="checkbox"
+                                    checked="checked">Orte hervorheben</input>
+                            </p>
+                            <p class="ml-3">
+                                <input id="datumhighlighting" class="form-check-input" type="checkbox"
+                                    checked="checked">Datum hervorheben</input>
+                            </p>
+                        </div>
+                        <div class="col-6" style="background-color:rgba(211, 211, 211, 0.3)">
+                            <p class="ml-3 mt-2">
+                                <input id="changemm" class="form-check-input" type="checkbox">m̅ als mm
+                                    anzeigen</input>
+                            </p>
+                            <p class="ml-3 mt-2">
+                                <input id="showgap" class="form-check-input" checked="checked"
+                                    type="checkbox">Lücken anzeigen <small>("[...]")</small></input>
+                            </p>
+                            <p class="ml-3 mt-2">
+                                <input id="showcorr" class="form-check-input" type="checkbox">[sic]
+                                    korrigieren</input>
+                            </p>
+                            <p class="ml-3 mt-2">
+                                <input id="showline" class="form-check-input" type="checkbox">Zeilen
+                                    anzeigen</input>
+                            </p>
+                            
+                        </div>
+                        
+                        
+                        
+                        
                         
                     </div>
                 </article>
