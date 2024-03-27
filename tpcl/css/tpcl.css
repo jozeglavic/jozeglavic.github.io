@@ -467,6 +467,7 @@ margin: 10px;
 
 .not-checked {
             color: inherit;
+            font-weight: inherit;
         }
 
 

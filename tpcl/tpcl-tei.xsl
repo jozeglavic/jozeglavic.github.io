@@ -25,10 +25,11 @@
     <xsl:template name="content">
         <xsl:if test="//tei:correspDesc">
             <section class="row">
+                <div class="card">
+                    <div class="card-body">
+                        <!--////////////Letter sender and reciever - correspDesc//////-->
                 
-                <!--////////////Letter sender and reciever - correspDesc//////-->
-                
-                <article class="col-md-12">
+                <article class="col-md-6">
                     <div class="card-body">
                         <div class="p-3">                            
                             <xsl:text> Od: </xsl:text>
@@ -57,46 +58,41 @@
                                 />
                             </xsl:for-each>
                         </div>
-                        
-                        <div class="col-6" style="background-color:rgba(211, 211, 211, 0.3)">
-                            <p class="ml-3 mt-2" style="text-align:left">
-                                <input id="personenhighlighting" class="form-check-input" type="checkbox"
-                                    checked="checked">Označi osebe</input>
-                            </p>
-                            <p class="ml-3">
-                                <input id="placehighlighting" class="form-check-input"
-                                    type="checkbox" checked="checked">Označi lokacije</input>
-                            </p>
                             
-                        </div>
-                        
-                        <script>
-                            // JavaScript code
-                            document.addEventListener("DOMContentLoaded", function() {
-                            const personenCheckbox = document.getElementById("personenhighlighting");
-                            const persnameElements = document.querySelectorAll(".persname");
-                            
-                            personenCheckbox.addEventListener("change", function() {
-                            persnameElements.forEach(function(persname) {
-                            if (personenCheckbox.checked) {
-                            persname.classList.remove("not-checked");
-                            } else {
-                            persname.classList.add("not-checked");
-                            }
-                            });
-                            });
-                            });
-                        </script>
-                        
-                        
-                       
-                        
-                        
-                        
-                        
-                        
                     </div>
                 </article>
+                <article class="col-md-6">
+                    <div class="col-6" style="background-color:rgba(211, 211, 211, 0.3)">
+                        <p class="ml-3 mt-2" style="text-align:left">
+                            <input id="personenhighlighting" class="form-check-input" type="checkbox"
+                                checked="checked">Označi osebe</input>
+                        </p>
+                        <p class="ml-3">
+                            <input id="placehighlighting" class="form-check-input"
+                                type="checkbox" checked="checked">Označi lokacije</input>
+                        </p>
+                        
+                    </div>
+                    
+                    <script>
+                        // JavaScript code
+                        document.addEventListener("DOMContentLoaded", function() {
+                        const personenCheckbox = document.getElementById("personenhighlighting");
+                        const persnameElements = document.querySelectorAll(".persname");
+                        
+                        personenCheckbox.addEventListener("change", function() {
+                        persnameElements.forEach(function(persname) {
+                        if (personenCheckbox.checked) {
+                        persname.classList.remove("not-checked");
+                        } else {
+                        persname.classList.add("not-checked");
+                        }
+                        });
+                        });
+                        });
+                    </script>
+                </article></div>
+                </div>
             </section>
         </xsl:if>
         
