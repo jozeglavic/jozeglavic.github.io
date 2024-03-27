@@ -99,8 +99,8 @@
       document.addEventListener("DOMContentLoaded", function() {
         handleCheckbox("personenhighlighting", "persname");
         handleCheckbox("placehighlighting", "placename");
-        handleCheckbox("openercloserhighlight", "opener-");   
-        handleCheckbox("openercloserhighlight", "closer-");
+        handleCheckbox("openerhighlight", "opener-");   
+        handleCheckbox("closerhighlight", "closer-");
       });
     ]]>
                                 </script>
