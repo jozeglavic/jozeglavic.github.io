@@ -80,22 +80,28 @@
                                 
                                 <script type="text/javascript">
                                     <![CDATA[
-      function handleCheckbox() {
-        var personenCheckbox = document.getElementById("personenhighlighting");
-        var persnameElements = document.querySelectorAll(".persname");
+      function handleCheckbox(id, className) {
+        var checkbox = document.getElementById(id);
+        var elements = document.querySelectorAll("." + className);
 
-        personenCheckbox.addEventListener("change", function() {
-          persnameElements.forEach(function(persname) {
-            if (personenCheckbox.checked) {
-              persname.classList.remove("not-checked");
+        checkbox.addEventListener("change", function() {
+          elements.forEach(function(element) {
+            if (checkbox.checked) {
+              element.classList.remove("not-checked");
             } else {
-              persname.classList.add("not-checked");
+              element.classList.add("not-checked");
             }
           });
         });
       }
-      // Call the function when the DOM is loaded
-      document.addEventListener("DOMContentLoaded", handleCheckbox);
+
+      // Call the functions when the DOM is loaded
+      document.addEventListener("DOMContentLoaded", function() {
+        handleCheckbox("personenhighlighting", "persname");
+        handleCheckbox("placehighlighting", "placename");
+        handleCheckbox("openercloserhighlight", "opener-, .closer-");
+        handleCheckbox("choicehighlight", "choice");
+      });
     ]]>
                                 </script>
                                 
