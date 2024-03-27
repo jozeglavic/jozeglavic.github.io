@@ -66,7 +66,7 @@
                         <div class="card-body">
                             <div class="col-6">
                                 <p class="ml-3 mt-2" style="text-align:left">
-                                    <input id="pershighlighting" class="form-check-input" type="checkbox" checked="checked">Označi osebe v tekstu</input>
+                                    <input id="personenhighlighting" class="form-check-input" type="checkbox" checked="checked">Označi osebe v tekstu</input>
                                 </p>
                                 <p class="ml-3">
                                     <input id="placehighlighting" class="form-check-input" type="checkbox" checked="checked">Označi lokacije v tekstu</input>
@@ -77,11 +77,10 @@
                                 <p class="ml-3">
                                     <input id="choicehighlight" class="form-check-input" type="checkbox" checked="checked">Označi okrajšave in popravke</input>
                                 </p>
-                    </div>
-                    
-                            <script type="text/javascript">
-                                <![CDATA[
-      function handlePersonenCheckbox() {
+                                
+                                <script type="text/javascript">
+                                    <![CDATA[
+      function handleCheckbox() {
         var personenCheckbox = document.getElementById("personenhighlighting");
         var persnameElements = document.querySelectorAll(".persname");
 
@@ -95,69 +94,19 @@
           });
         });
       }
-
-      function handlePlaceCheckbox() {
-        var placeCheckbox = document.getElementById("placehighlighting");
-        var placenameElements = document.querySelectorAll(".placename");
-
-        placeCheckbox.addEventListener("change", function() {
-          placenameElements.forEach(function(placename) {
-            if (placeCheckbox.checked) {
-              placename.classList.remove("not-checked");
-            } else {
-              placename.classList.add("not-checked");
-            }
-          });
-        });
-      }
-
-      function handleOpenerCloserCheckbox() {
-        var openerCloserCheckbox = document.getElementById("openercloserhighlight");
-        var openernameElements = document.querySelectorAll(".openername");
-        var closernameElements = document.querySelectorAll(".closername");
-
-        openerCloserCheckbox.addEventListener("change", function() {
-          openernameElements.forEach(function(openername) {
-            if (openerCloserCheckbox.checked) {
-              openername.classList.remove("not-checked");
-            } else {
-              openername.classList.add("not-checked");
-            }
-          });
-          closernameElements.forEach(function(closername) {
-            if (openerCloserCheckbox.checked) {
-              closername.classList.remove("not-checked");
-            } else {
-              closername.classList.add("not-checked");
-            }
-          });
-        });
-      }
-
-      function handleChoiceCheckbox() {
-        var choiceCheckbox = document.getElementById("choicehighlight");
-        var choiceElements = document.querySelectorAll(".choice");
-
-        choiceCheckbox.addEventListener("change", function() {
-          choiceElements.forEach(function(choice) {
-            if (choiceCheckbox.checked) {
-              choice.classList.remove("not-checked");
-            } else {
-              choice.classList.add("not-checked");
-            }
-          });
-        });
-      }
-
-      // Call the functions when the DOM is loaded
-      document.addEventListener("DOMContentLoaded", function() {
-        handlePersonenCheckbox();
-        handlePlaceCheckbox();
-        handleOpenerCloserCheckbox();
-        handleChoiceCheckbox();
-      });
+      // Call the function when the DOM is loaded
+      document.addEventListener("DOMContentLoaded", handleCheckbox);
     ]]>
-                            </script>
+                                </script>
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                              </div>                    
+                            
                         </div>
                     </div>
                 </article>
