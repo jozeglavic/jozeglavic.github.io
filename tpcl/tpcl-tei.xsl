@@ -313,10 +313,9 @@
     
     
     <xsl:template match="tei:placeName">  
-        <xsl:variable name="class" select="'danes'"/>
-        <span class="{$class}" id="{@ref}">
+        <span class="placename" id="{@ref}">
             <xsl:apply-templates/>
-        </span>
+        </span> 
     </xsl:template>
     
     
