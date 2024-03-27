@@ -313,7 +313,7 @@
     
     <xsl:template match="tei:placeName">  
         <xsl:variable name="file" select="substring-before(@ref,'.xml#')"/>
-        <span class="$file" id="{@ref}">
+        <span class="{$file}" id="{@ref}">
             <xsl:apply-templates/>
         </span> 
     </xsl:template> 
