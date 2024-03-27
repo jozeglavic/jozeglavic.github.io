@@ -239,7 +239,7 @@
     <xsl:template match="tei:dateline">                
         <div class="dateline-{@rend}">            
             <xsl:if test="@rend='left'">
-                <xsl:attribute name="class">pull-right</xsl:attribute>
+                <xsl:attribute name="style">text-align: left</xsl:attribute>
             </xsl:if>
             <xsl:if test="@rend='right'">
                 <xsl:attribute name="style">text-align: right;</xsl:attribute>
