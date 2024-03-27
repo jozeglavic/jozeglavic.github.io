@@ -466,7 +466,7 @@ margin: 10px;
 }
 
 .not-checked {
-            color: yellow;
+            color: inherit;
         }
 
 
