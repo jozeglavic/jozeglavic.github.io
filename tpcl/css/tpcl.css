@@ -471,6 +471,11 @@ margin: 10px;
 
 }
 
+.closer- { 
+  color: blue;
+  text-align: center;
+}
+
 .not-checked {
             color: inherit;
             font-weight: inherit;
@@ -481,10 +486,7 @@ margin: 10px;
   text-align: center;
 }
 
-.closer- { 
-  color: blue;
-  text-align: center;
-}
+
 
 .dateline-left {
     text-align: left;
