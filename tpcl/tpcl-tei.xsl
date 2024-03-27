@@ -312,10 +312,10 @@
     <!--letter styling based on the tei encoding-->
     
     <xsl:template match="tei:placeName">  
-        <xsl:variable name="file" select="substring-before(@ref,'.xml#')"/>
-        <span class="{$file}" id="{@ref}">
+        <xsl:variable name="class" select="substring-before(@ref, '.xml#')"/>
+        <span class="{$class}" id="{@ref}">
             <xsl:apply-templates/>
-        </span> 
+        </span>
     </xsl:template> 
     
     
