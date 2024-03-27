@@ -1,0 +1,168 @@
+<?xml verslon="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Document contating all of the places mentioned in the coresspondence</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <listPlace>
+            <place xml:id="fuzine">
+               <placeName xml:lang="sl">Fužine</placeName>
+               <placeName xml:lang="de">Kaltenbrun</placeName>
+               <settlement xml:lang="sl" ref="#ljubljana">Ljubljana</settlement>
+               <country key="sl">Slovenija</country>
+               <idno type="GEONAMES">https://sws.geonames.org/3200797/</idno>             
+            </place>
+            <place xml:id="kranj">
+               <placeName xml:lang="sl">Kranj</placeName>
+               <placeName xml:lang="de">Krainburg</placeName>
+               <settlement>Kranj</settlement>
+               <country key="sl">Slovenija</country>   
+               <idno type="GEONAMES">https://sws.geonames.org/3197378/</idno>
+            </place>
+            <place xml:id="ljubljana">
+               <placeName xml:lang="sl">Ljubljana</placeName>
+               <placeName xml:lang="de">Laibach</placeName>               
+               <settlement>Ljubljana</settlement>
+               <country key="sl">Slovenija</country> 
+               <idno type="GEONAMES">https://sws.geonames.org/3196359/</idno>
+            </place>
+            <place xml:id="dol">               
+               <placeName xml:lang="sl">Dol pri Ljubljani</placeName>
+               <placeName xml:lang="de">Lustthal</placeName>               
+               <settlement>Dol pri Ljubljani</settlement>
+               <country key="sl">Slovenija</country>      
+               <idno type="GEONAMES">https://sws.geonames.org/3239115/</idno>
+            </place>
+            <place xml:id="gorenjska">
+               <placeName xml:lang="sl">Gorenjska</placeName>
+               <placeName xml:lang="de">Oberkrain</placeName>          
+               <country key="sl">Slovenija</country>  
+               <idno type="GEONAMES">https://sws.geonames.org/3200345/</idno>
+            </place>
+            <place xml:id="bled">
+               <placeName xml:lang="sl">Bled</placeName>
+               <placeName xml:lang="de">Veldes</placeName>          
+               <country key="sl">Slovenija</country> 
+               <idno type="GEONAMES">https://sws.geonames.org/3203925/</idno>
+            </place>
+            <place xml:id="bokalce">
+               <placeName xml:lang="sl">Grad Bokalce</placeName>
+               <placeName xml:lang="de">Strobelhof</placeName>               
+               <settlement>Ljubljana</settlement>
+               <country key="sl">Slovenija</country> 
+            </place>
+            <place xml:id="belanakoroškem">
+               <placeName xml:lang="sl">Koroška Bela</placeName>
+               <placeName xml:lang="de">Fellach</placeName> 
+               <country key="sl">Slovenija</country> 
+               <idno type="GEONAMES">https://sws.geonames.org/3217862/</idno>
+            </place>
+            <place xml:id="jezerskivrh">
+               <placeName xml:lang="sl">Jezerski vrh</placeName>
+               <placeName xml:lang="de">Seeberges</placeName> 
+               <country key="at">Avstrija</country>     
+               <idno type="GEONAMES">https://sws.geonames.org/2765288/</idno>
+            </place>
+            <place xml:id="thurn">
+               <placeName xml:lang="sl">Thurn</placeName>
+               <placeName xml:lang="de">Thurn</placeName> 
+               <country key="at">Avstrija</country>     
+               <idno type="GEONAMES">https://sws.geonames.org/2765288/</idno>
+            </place>
+            <place xml:id="ajmanovgrad">
+               <placeName xml:lang="sl">Ajmanov grad</placeName>
+               <placeName xml:lang="de">Ehrenau</placeName> 
+               <country key="sl">Slovenija</country> 
+            </place>
+            <place xml:id="šenčur">
+               <placeName xml:lang="sl">Šenčur</placeName>
+               <placeName xml:lang="de">St. Georgen</placeName> 
+               <country key="sl">Slovenija</country>   
+               <idno type="GEONAMES">https://sws.geonames.org/3191059/</idno>
+            </place>
+            <place xml:id="dobrova">
+               <placeName xml:lang="sl">Dobrova</placeName>
+               <placeName xml:lang="de">Dobrowa</placeName> 
+               <country key="sl">Slovenija</country>
+               <idno type="GEONAMES">https://sws.geonames.org/3201901/</idno>
+            </place>
+            <place xml:id="trst">
+               <placeName xml:lang="sl">Trst</placeName>
+               <placeName xml:lang="de">Trieste</placeName> 
+               <country key="it">Italija</country>    
+               <idno type="GEONAMES">https://sws.geonames.org/3196359/</idno>
+            </place>
+            <place xml:id="neapelj">
+               <placeName xml:lang="sl">Neapelj</placeName>
+               <placeName xml:lang="de">Neapel</placeName> 
+               <country key="it">Italija</country>  
+               <idno type="GEONAMES">https://sws.geonames.org/3172394/</idno>
+            </place>
+            <place xml:id="vrhnika">
+               <placeName xml:lang="sl">Vrhnika</placeName>
+               <placeName xml:lang="de">Oberlaibach</placeName> 
+               <country key="sl">Slovenija</country> 
+               <idno type="GEONAMES">https://sws.geonames.org/3187213/</idno>
+            </place>
+            <place xml:id="sentvid">
+               <placeName xml:lang="sl">Šentvid nad Ljubljano</placeName>
+               <placeName xml:lang="de">St. Veit</placeName> 
+               <country key="sl">Slovenija</country> 
+               <idno type="GEONAMES">https://sws.geonames.org/3191021/</idno>
+            </place>
+            <place xml:id="mariafeld">
+               <placeName xml:lang="de">Maria Feld</placeName> 
+               <country key="at">Avstrija</country>            
+            </place>
+            <place xml:id="smarna">
+               <placeName xml:lang="sl">Šmarna gora</placeName> 
+               <placeName xml:lang="de">Großkahlenber</placeName> 
+               <country key="sl">Slovenija</country>            
+            </place>
+            <place xml:id="celovec">
+               <placeName xml:lang="sl">Celovec</placeName> 
+               <placeName xml:lang="de">Klagenfurt</placeName> 
+               <country key="at">Avstrija</country>
+               <idno type="GEONAMES">https://sws.geonames.org/2774326/</idno>
+            </place>
+            <place xml:id="sežana">
+               <placeName xml:lang="sl">Sežana</placeName>
+               <placeName xml:lang="de">Sesana</placeName> 
+               <country key="sl">Slovenija</country> 
+               <idno type="GEONAMES">https://sws.geonames.org/3190945/</idno>
+            </place>
+            <place xml:id="praewald">
+               <placeName xml:lang="sl">Prebold</placeName>
+               <placeName xml:lang="de">Preawald</placeName> 
+               <country key="sl">Slovenija</country> 
+               <idno type="GEONAMES">https://sws.geonames.org/3344907/</idno>
+            </place>
+            <place xml:id="logatec">
+               <placeName xml:lang="sl">Logatec</placeName>
+               <placeName xml:lang="de">Loitzh</placeName> 
+               <country key="sl">Slovenija</country> 
+               <idno type="GEONAMES">https://sws.geonames.org/3196288/</idno>
+            </place>
+            <place xml:id="planina">
+               <placeName xml:lang="sl">Planina</placeName>               
+               <country key="sl">Slovenija</country> 
+               <idno type="GEONAMES">https://sws.geonames.org/8987885/</idno>
+            </place>
+         </listPlace>
+      </body>
+  </text>
+</TEI>
