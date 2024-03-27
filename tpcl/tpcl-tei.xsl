@@ -25,12 +25,10 @@
     <xsl:template name="content">
         <xsl:if test="//tei:correspDesc">
             
-            
-            
                 <div class="row" style="background-color: white; padding: 10px;">
                     <div class="col-md-6">
                         <!-- Content for the first column -->
-                        <h2>Podatki o korepondenci</h2>
+                        <h3>Podatki o korepondenci</h3>
                         <div class="p-3">                            
                             <xsl:text> Od: </xsl:text>
                             <xsl:apply-templates
@@ -61,7 +59,7 @@
                     </div>
                     <div class="col-md-6">
                         <!-- Content for the second column -->
-                        <h2>Prilagoditve</h2>
+                        <h4>Prilagoditve</h4>
                         
                             <p class="ml-3 mt-2" style="text-align:left">
                                 <input id="personenhighlighting" class="form-check-input" type="checkbox" checked="checked">Označi osebe v tekstu</input>
@@ -113,102 +111,7 @@
                     </div>
                 </div>
             
-            <section class="row">               
-                        <!--////////////Letter sender and reciever - correspDesc//////-->
-                
-                <article class="col-md-6">
-                    <div class="card">
-                        <div class="card-body">
-                        <div class="p-3">                            
-                            <xsl:text> Od: </xsl:text>
-                            <xsl:apply-templates
-                                select="//tei:correspAction[@type = 'sent']/tei:persName"/>
-                            <xsl:text> Poslano: </xsl:text>
-                            <xsl:apply-templates
-                                select="//tei:correspAction[@type = 'sent']/tei:placeName"/>
-                            <xsl:text>, </xsl:text>
-                            <xsl:apply-templates
-                                select="//tei:correspAction[@type = 'sent']/tei:date/@when"/>
-                        </div>
-                        
-                        <div class="p-3">
-                            <xsl:text>Za: </xsl:text>
-                            <xsl:apply-templates
-                                select="//tei:correspAction[@type = 'received']/tei:persName"/>
-                            <xsl:text> Prejeto: </xsl:text>
-                            <xsl:apply-templates
-                                select="//tei:correspAction[@type = 'received']/tei:placeName"/>
-                            <xsl:for-each
-                                select="//tei:correspAction[@type = 'received']/tei:date/@when">
-                                <xsl:text>, </xsl:text>
-                                <xsl:apply-templates
-                                    select="//tei:correspAction[@type = 'received']/tei:date/@when"
-                                />
-                            </xsl:for-each>
-                        </div>
-                            
-                    </div>
-                    </div>
-                </article>
-                <article class="col-md-6">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="col-6">
-                                <p class="ml-3 mt-2" style="text-align:left">
-                                    <input id="personenhighlighting" class="form-check-input" type="checkbox" checked="checked">Označi osebe v tekstu</input>
-                                </p>
-                                <p class="ml-3">
-                                    <input id="placehighlighting" class="form-check-input" type="checkbox" checked="checked">Označi lokacije v tekstu</input>
-                                </p>
-                                <p class="ml-3">
-                                    <input id="openerhighlight" class="form-check-input" type="checkbox" checked="checked">Označi pozdravne vrstice</input>
-                                </p>      
-                                <p class="ml-3">
-                                    <input id="closerhighlight" class="form-check-input" type="checkbox" checked="checked">Označi poslovilne vrstice</input>
-                                </p>   
-                                
-                                <script type="text/javascript">
-                                    <![CDATA[
-      function handleCheckbox(id, className) {
-        var checkbox = document.getElementById(id);
-        var elements = document.querySelectorAll("." + className);
-
-        checkbox.addEventListener("change", function() {
-          elements.forEach(function(element) {
-            if (checkbox.checked) {
-              element.classList.remove("not-checked");
-            } else {
-              element.classList.add("not-checked");
-            }
-          });
-        });
-      }
-
-      // Call the functions when the DOM is loaded
-      document.addEventListener("DOMContentLoaded", function() {
-        handleCheckbox("personenhighlighting", "persname");
-        handleCheckbox("placehighlighting", "placename");
-        handleCheckbox("openerhighlight", "opener-");
-        handleCheckbox("openerhighlight", "opener-center");
-        handleCheckbox("closerhighlight", "closer-");
-      });
-    ]]>
-                                </script>
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                              </div>                    
-                            
-                        </div>
-                    </div>
-                </article>
-               
-                
-            </section>
+            
         </xsl:if>
         
         
