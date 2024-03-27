@@ -28,7 +28,7 @@
                 <div class="row" style="background-color: white; padding: 10px;">
                     <div class="col-md-6">
                         <!-- corespondece information from correspDesc -->
-                        <h3>Podatki o korepondenci</h3>
+                        <h3>Podatki o korespondenci</h3>
                         <div class="p-3">                            
                             <xsl:text> Od: </xsl:text>
                             <xsl:apply-templates
