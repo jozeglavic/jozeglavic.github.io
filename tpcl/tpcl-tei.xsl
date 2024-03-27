@@ -65,7 +65,7 @@
                         <div class="card-body">
                             <div class="col-6">
                                 <p class="ml-3 mt-2" style="text-align:left">
-                                    <input id="personenhighlighting" class="form-check-input" type="checkbox" checked="checked">Označi osebe v tekstu</input>
+                                    <input id="pershighlighting" class="form-check-input" type="checkbox" checked="checked">Označi osebe v tekstu</input>
                                 </p>
                                 <p class="ml-3">
                                     <input id="placehighlighting" class="form-check-input" type="checkbox" checked="checked">Označi lokacije v tekstu</input>
@@ -81,21 +81,55 @@
                     <script>
                         // JavaScript code
                         document.addEventListener("DOMContentLoaded", function() {
-                        const checkboxes = document.querySelectorAll('.form-check-input');
+                        const personenCheckbox = document.getElementById("personenhighlighting");
+                        const placeCheckbox = document.getElementById("placehighlighting");
+                        const openerCloserCheckbox = document.getElementById("openercloserhighlight");
+                        const choiceCheckbox = document.getElementById("choicehighlight");
                         
-                        checkboxes.forEach(function(checkbox) {
-                        checkbox.addEventListener("change", function() {
-                        const targetClass = checkbox.id.replace("highlighting", "") + "name";
-                        const elements = document.querySelectorAll("." + targetClass);
+                        const persnameElements = document.querySelectorAll(".persname");
+                        const placenameElements = document.querySelectorAll(".placename");
+                        const openernameElements = document.querySelectorAll(".opener-");
+                        const closernameElements = document.querySelectorAll(".closer-");
                         
-                        elements.forEach(function(element) {
-                        if (checkbox.checked) {
-                        element.classList.remove("not-checked");
+                        personenCheckbox.addEventListener("change", function() {
+                        persnameElements.forEach(function(persname) {
+                        if (personenCheckbox.checked) {
+                        persname.classList.remove("not-checked");
                         } else {
-                        element.classList.add("not-checked");
+                        persname.classList.add("not-checked");
                         }
                         });
                         });
+                        
+                        placeCheckbox.addEventListener("change", function() {
+                        placenameElements.forEach(function(placename) {
+                        if (placeCheckbox.checked) {
+                        placename.classList.remove("not-checked");
+                        } else {
+                        placename.classList.add("not-checked");
+                        }
+                        });
+                        });
+                        
+                        openerCloserCheckbox.addEventListener("change", function() {
+                        openernameElements.forEach(function(opener-) {
+                        if (openerCloserCheckbox.checked) {
+                        openername.classList.remove("not-checked");
+                        } else {
+                        openername.classList.add("not-checked");
+                        }
+                        });
+                        closernameElements.forEach(function(closer-) {
+                        if (openerCloserCheckbox.checked) {
+                        closername.classList.remove("not-checked");
+                        } else {
+                        closername.classList.add("not-checked");
+                        }
+                        });
+                        });
+                        
+                        choiceCheckbox.addEventListener("change", function() {
+                        // Handle choiceCheckbox
                         });
                         });
                     </script></div></div>
