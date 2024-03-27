@@ -313,13 +313,11 @@
     
     
     <xsl:template match="tei:placeName">  
-        <span class="placename" id="{@ref}">
+        <xsl:variable name="file" select="'daens'" />
+        <span class="placename" id="{@ref}" title="{$file}">
             <xsl:apply-templates/>
         </span> 
     </xsl:template>
-    
-    
-    
     
     <xsl:template match="tei:persName">         
         <span class="persname" id="{@ref}">
