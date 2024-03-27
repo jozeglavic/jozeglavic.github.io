@@ -236,6 +236,25 @@
         </div> 
     </xsl:template>
     
+    <xsl:template match="tei:dateline">                
+        <span class="dateline-{@rend}">            
+            <xsl:if test="@rend='left'">
+                <xsl:attribute name="style">text-align: left;</xsl:attribute>
+            </xsl:if>
+            <xsl:if test="@rend='right'">
+                <xsl:attribute name="style">text-align: right;</xsl:attribute>
+            </xsl:if>
+            <xsl:if test="@rend='center'">
+                <xsl:attribute name="style">text-align: center;</xsl:attribute>
+            </xsl:if>
+            <xsl:apply-templates/>
+        </span> 
+        <br/>  
+    </xsl:template>
+    
+    
+    
+    
     
     
     
@@ -274,8 +293,7 @@
     
     
     <xsl:template match="tei:choice">                
-        <xsl:for-each select="tei:abbr">
-            <!-- Use <span> or any other suitable element for tooltip -->
+        <xsl:for-each select="tei:abbr">            
             <span class="choice" style="color:blue; font-weight:bold;" data-toggle="tooltip" data-placement="top" data-original-title="Tooltip on top" aria-describedby="tooltip759877">
                 <xsl:attribute name="title">
                     <xsl:value-of select="concat('razširjeno: ', following-sibling::tei:expan)"/>
@@ -283,8 +301,7 @@
                 <xsl:text>[</xsl:text><xsl:apply-templates/><xsl:text>]</xsl:text>                
             </span>      
         </xsl:for-each> 
-        <xsl:for-each select="tei:sic">
-            <!-- Use <span> or any other suitable element for tooltip -->
+        <xsl:for-each select="tei:sic">            
             <span class="choice" style="color:blue; font-weight:bold;" data-toggle="tooltip" data-placement="top" data-original-title="Tooltip on top" aria-describedby="tooltip759877">
                 <xsl:attribute name="title">
                     <xsl:value-of select="concat('popravek (',@resp,'): ', following-sibling::tei:corr)"/>
