@@ -60,21 +60,14 @@
                         
                         <div class="col-6" style="background-color:rgba(211, 211, 211, 0.3)">
                             <p class="ml-3 mt-2" style="text-align:left">
-                                <input id="osebeoznaci" class="form-check-input" type="checkbox"
-                                    checked="checked">Testiramo ozančevanje oseb</input>
+                                <input id="personenhighlighting" class="form-check-input" type="checkbox"
+                                    checked="checked">Označi osebe</input>
                             </p>
                             <p class="ml-3">
-                                <input id="personenhighlighting" class="form-check-input"
-                                    type="checkbox" checked="checked">Personen hervorheben</input>
+                                <input id="placehighlighting" class="form-check-input"
+                                    type="checkbox" checked="checked">Označi lokacije</input>
                             </p>
-                            <p class="ml-3">
-                                <input id="ortehighlighting" class="form-check-input" type="checkbox"
-                                    checked="checked">Orte hervorheben</input>
-                            </p>
-                            <p class="ml-3">
-                                <input id="datumhighlighting" class="form-check-input" type="checkbox"
-                                    checked="checked">Datum hervorheben</input>
-                            </p>
+                            
                         </div>
                        
                         

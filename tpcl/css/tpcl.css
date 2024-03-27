@@ -461,8 +461,14 @@ margin: 10px;
 }
 
 .persname { 
-  color: red;
+  color: #99D98C;
   font-weight: bold;
+}
+
+#personenhighlighting:not(:checked) ~ .persname {
+  /* You can set the styles to 'inherit' or any other desired value */
+  color: inherit;
+  font-weight: inherit;
 }
 
 .opener- { 
@@ -472,7 +478,7 @@ margin: 10px;
 }
 
 .opener-center { 
-  color: red;
+  color: #990000;
   text-align: center;
 }
 
