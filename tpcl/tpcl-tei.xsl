@@ -312,7 +312,7 @@
     <!--letter styling based on the tei encoding-->
     
     <xsl:template match="tei:placeName">  
-        <xsl:variable name="class" select="substring-before(@ref, '.xml#')"/>
+        <xsl:variable name="class" select="'5555'"/>
         <span class="{$class}" id="{@ref}">
             <xsl:apply-templates/>
         </span>
