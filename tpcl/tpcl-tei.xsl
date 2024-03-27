@@ -312,17 +312,21 @@
     <!--letter styling based on the tei encoding-->
     
     
+    <xsl:template match="tei:placeName">  
+        <xsl:variable name="class" select="'danes'"/>
+        <span class="{$class}" id="{@ref}">
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>
     
     
     
     
-    
-    <xsl:template match="tei:lb"> 
-        <xsl:for-each select=".">                            
-            <xsl:apply-templates/><br/> 
-        </xsl:for-each>
-    </xsl:template>  
-    
+    <xsl:template match="tei:persName">         
+        <span class="persname" id="{@ref}">
+            <xsl:apply-templates/>
+        </span> 
+    </xsl:template>    
     
     <xsl:template match="tei:choice">                
         <xsl:for-each select="tei:abbr">            
