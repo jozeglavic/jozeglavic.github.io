@@ -237,9 +237,9 @@
     </xsl:template>
     
     <xsl:template match="tei:dateline">                
-        <span class="dateline-{@rend}">            
+        <div class="dateline-{@rend}">            
             <xsl:if test="@rend='left'">
-                <xsl:attribute name="style">text-align: left;</xsl:attribute>
+                <xsl:attribute name="class">pull-right</xsl:attribute>
             </xsl:if>
             <xsl:if test="@rend='right'">
                 <xsl:attribute name="style">text-align: right;</xsl:attribute>
@@ -248,7 +248,7 @@
                 <xsl:attribute name="style">text-align: center;</xsl:attribute>
             </xsl:if>
             <xsl:apply-templates/>
-        </span> 
+        </div> 
         <br/>  
     </xsl:template>
     
