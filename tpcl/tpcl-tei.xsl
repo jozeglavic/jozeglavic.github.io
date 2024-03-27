@@ -312,9 +312,8 @@
     <!--letter styling based on the tei encoding-->
     
     
-    <xsl:template match="tei:placeName">  
-        <xsl:variable name="file" select="'daens'" />
-        <span class="placename" id="{@ref}" title="{$file}">
+    <xsl:template match="tei:placeName">          
+        <span class="placename" id="{@ref}" title="{doc(concat(substring-before(@ref,'.xml#'), '/TEI_SOURCE'))//tei:place[@xml:id = substring-after(@ref,'#')]}">
             <xsl:apply-templates/>
         </span> 
     </xsl:template>
