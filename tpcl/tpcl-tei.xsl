@@ -27,7 +27,7 @@
             
                 <div class="row" style="background-color: white; padding: 10px;">
                     <div class="col-md-6">
-                        <!-- Content for the first column -->
+                        <!-- corespondece information from correspDesc -->
                         <h3>Podatki o korepondenci</h3>
                         <div class="p-3">                            
                             <xsl:text> Od: </xsl:text>
@@ -58,7 +58,7 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <!-- Content for the second column -->
+                        <!-- cheboxes and java script which changes the css based on status of checkbox -->
                         <h4>Prilagoditve</h4>
                         
                             <p class="ml-3 mt-2" style="text-align:left">
@@ -101,12 +101,7 @@
       });
     ]]>
                             </script>
-                            
-                            
-                            
-                            
-                            
-                            
+                         
                             
                     </div>
                 </div>
@@ -117,7 +112,7 @@
         
         <xsl:if test="not(//tei:listPlace) and not(//tei:listPerson) and ($mode = 'view:editionobject' or $mode = '')">
             <section class="row">
-                <!-- First Column -->
+                <!-- body of letter-->
                 <article class="col-md-6">
                     <div class="card">
                         <div class="card-body">
@@ -126,7 +121,7 @@
                     </div>
                 </article>
                 
-                <!-- Second Column -->
+                <!-- opneseadragon viewer -->
                 <article class="col-md-6" style="margin-top:30px;">
                     <div class="sticky-top" style="top:67px; z-index:100;">
                         <div id="vwr-content" class="toc" style="background-color: #E8E8E8; height:700px;">
@@ -258,6 +253,8 @@
         </script>
     </xsl:template> 
     
+   
+    
     
     
     <!--after content-->
@@ -314,11 +311,23 @@
     
     <!--letter styling based on the tei encoding-->
     
-    <xsl:template match="tei:placeName">         
+    <xsl:template match="tei:placeName">   
+        <xsl:variable name="file" select="substring-before(@ref,'.xml#')"/> <!-- the gams-places-file part of @ref -->
+        <xsl:variable name="id" select="substring-after(@ref,'#')"/><!-- the xmlid part of the @ref -->
+        <xsl:variable name="places_TEI"><xsl:value-of select="$file"/><xsl:text>/TEI_SOURCE</xsl:text></xsl:variable><!-- Now, let's address the TEI_SOURCE of the gams-places-file by adding the /TEI_SOURCE to the filename, and read this in as an XML document (function `doc()`) and to a bit of XPath on it -->
+        <xsl:variable name="placeInfo"
+            select="doc($places_TEI)//place[@xml:id=$id]"/>
+        <span title="{$placeInfo}"><xsl:apply-templates/></span>
+        
+        
+        
         <span class="placename" id="{@ref}">
             <xsl:apply-templates/>
         </span> 
     </xsl:template> 
+    
+    
+    
     
     <xsl:template match="tei:persName">         
         <span class="persname" id="{@ref}">
