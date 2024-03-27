@@ -69,6 +69,26 @@
                             </p>
                             
                         </div>
+                        
+                        <script>
+                            // JavaScript code
+                            document.addEventListener("DOMContentLoaded", function() {
+                            const personenCheckbox = document.getElementById("personenhighlighting");
+                            const persnameElements = document.querySelectorAll(".persname");
+                            
+                            personenCheckbox.addEventListener("change", function() {
+                            persnameElements.forEach(function(persname) {
+                            if (personenCheckbox.checked) {
+                            persname.classList.remove("not-checked");
+                            } else {
+                            persname.classList.add("not-checked");
+                            }
+                            });
+                            });
+                            });
+                        </script>
+                        
+                        
                        
                         
                         

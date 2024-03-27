@@ -465,11 +465,10 @@ margin: 10px;
   font-weight: bold;
 }
 
-#personenhighlighting:not(:checked) ~ .persname {
-  /* You can set the styles to 'inherit' or any other desired value */
-  color: inherit;
-  font-weight: inherit;
-}
+.not-checked {
+            color: yellow;
+        }
+
 
 .opener- { 
   color: red;
