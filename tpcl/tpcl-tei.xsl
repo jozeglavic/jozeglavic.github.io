@@ -314,9 +314,9 @@
     <xsl:template match="tei:placeName">   
         <xsl:variable name="file" select="substring-before(@ref,'.xml#')"/> <!-- the gams-places-file part of @ref -->
         <xsl:variable name="id" select="substring-after(@ref,'#')"/><!-- the xmlid part of the @ref -->
-        <xsl:variable name="places_TEI"><xsl:value-of/><xsl:text>o:tpcl.placeName/TEI_SOURCE</xsl:text></xsl:variable><!-- Now, let's address the TEI_SOURCE of the gams-places-file by adding the /TEI_SOURCE to the filename, and read this in as an XML document (function `doc()`) and to a bit of XPath on it -->
+        <xsl:variable name="places_TEI" select="concat($file, '/TEI_SOURCE')"/> <!-- Constructing the path to the TEI_SOURCE file -->
         <xsl:variable name="placeInfo" select="doc($places_TEI)//tei:place[@xml:id=$id]"/>
-        <span  title="{$placeInfo}">
+        <span title="{$placeInfo}">
             <xsl:apply-templates/>
         </span>
     </xsl:template> 
