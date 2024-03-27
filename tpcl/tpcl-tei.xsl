@@ -312,13 +312,13 @@
     <!--letter styling based on the tei encoding-->
     
     <xsl:template match="tei:placeName">   
-        <xsl:variable name="file" select="substring-before(@ref,'.xml#')"/> <!-- the gams-places-file part of @ref -->
-        <xsl:variable name="id" select="substring-after(@ref,'#')"/><!-- the xmlid part of the @ref -->
-        <xsl:variable name="places_TEI" select="concat($file, '/TEI_SOURCE')"/> <!-- Constructing the path to the TEI_SOURCE file -->
-        <xsl:variable name="placeInfo" select="doc($places_TEI)//tei:place[@xml:id=$id]"/>
-        <span title="{$placeInfo}">
+        
+        
+        
+        
+        <span class="placename" id="{@ref}">
             <xsl:apply-templates/>
-        </span>
+        </span> 
     </xsl:template> 
     
     
