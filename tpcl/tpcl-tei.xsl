@@ -58,7 +58,8 @@
                             </xsl:for-each>
                         </div>
                             
-                    </div></div>
+                    </div>
+                    </div>
                 </article>
                 <article class="col-md-6">
                     <div class="card">
@@ -78,61 +79,87 @@
                                 </p>
                     </div>
                     
-                    <script>
-                        // JavaScript code
-                        document.addEventListener("DOMContentLoaded", function() {
-                        const personenCheckbox = document.getElementById("personenhighlighting");
-                        const placeCheckbox = document.getElementById("placehighlighting");
-                        const openerCloserCheckbox = document.getElementById("openercloserhighlight");
-                        const choiceCheckbox = document.getElementById("choicehighlight");
-                        
-                        const persnameElements = document.querySelectorAll(".persname");
-                        const placenameElements = document.querySelectorAll(".placename");
-                        const openernameElements = document.querySelectorAll(".opener-");
-                        const closernameElements = document.querySelectorAll(".closer-");
-                        
-                        personenCheckbox.addEventListener("change", function() {
-                        persnameElements.forEach(function(persname) {
-                        if (personenCheckbox.checked) {
-                        persname.classList.remove("not-checked");
-                        } else {
-                        persname.classList.add("not-checked");
-                        }
-                        });
-                        });
-                        
-                        placeCheckbox.addEventListener("change", function() {
-                        placenameElements.forEach(function(placename) {
-                        if (placeCheckbox.checked) {
-                        placename.classList.remove("not-checked");
-                        } else {
-                        placename.classList.add("not-checked");
-                        }
-                        });
-                        });
-                        
-                        openerCloserCheckbox.addEventListener("change", function() {
-                        openernameElements.forEach(function(opener-) {
-                        if (openerCloserCheckbox.checked) {
-                        openername.classList.remove("not-checked");
-                        } else {
-                        openername.classList.add("not-checked");
-                        }
-                        });
-                        closernameElements.forEach(function(closer-) {
-                        if (openerCloserCheckbox.checked) {
-                        closername.classList.remove("not-checked");
-                        } else {
-                        closername.classList.add("not-checked");
-                        }
-                        });
-                        });
-                        
-                        choiceCheckbox.addEventListener("change", function() {
-                        // Handle choiceCheckbox
-                        });
-                        });
-                    </script></div></div>
+                            <script type="text/javascript">
+                                <![CDATA[
+      function handlePersonenCheckbox() {
+        var personenCheckbox = document.getElementById("personenhighlighting");
+        var persnameElements = document.querySelectorAll(".persname");
+
+        personenCheckbox.addEventListener("change", function() {
+          persnameElements.forEach(function(persname) {
+            if (personenCheckbox.checked) {
+              persname.classList.remove("not-checked");
+            } else {
+              persname.classList.add("not-checked");
+            }
+          });
+        });
+      }
+
+      function handlePlaceCheckbox() {
+        var placeCheckbox = document.getElementById("placehighlighting");
+        var placenameElements = document.querySelectorAll(".placename");
+
+        placeCheckbox.addEventListener("change", function() {
+          placenameElements.forEach(function(placename) {
+            if (placeCheckbox.checked) {
+              placename.classList.remove("not-checked");
+            } else {
+              placename.classList.add("not-checked");
+            }
+          });
+        });
+      }
+
+      function handleOpenerCloserCheckbox() {
+        var openerCloserCheckbox = document.getElementById("openercloserhighlight");
+        var openernameElements = document.querySelectorAll(".openername");
+        var closernameElements = document.querySelectorAll(".closername");
+
+        openerCloserCheckbox.addEventListener("change", function() {
+          openernameElements.forEach(function(openername) {
+            if (openerCloserCheckbox.checked) {
+              openername.classList.remove("not-checked");
+            } else {
+              openername.classList.add("not-checked");
+            }
+          });
+          closernameElements.forEach(function(closername) {
+            if (openerCloserCheckbox.checked) {
+              closername.classList.remove("not-checked");
+            } else {
+              closername.classList.add("not-checked");
+            }
+          });
+        });
+      }
+
+      function handleChoiceCheckbox() {
+        var choiceCheckbox = document.getElementById("choicehighlight");
+        var choiceElements = document.querySelectorAll(".choice");
+
+        choiceCheckbox.addEventListener("change", function() {
+          choiceElements.forEach(function(choice) {
+            if (choiceCheckbox.checked) {
+              choice.classList.remove("not-checked");
+            } else {
+              choice.classList.add("not-checked");
+            }
+          });
+        });
+      }
+
+      // Call the functions when the DOM is loaded
+      document.addEventListener("DOMContentLoaded", function() {
+        handlePersonenCheckbox();
+        handlePlaceCheckbox();
+        handleOpenerCloserCheckbox();
+        handleChoiceCheckbox();
+      });
+    ]]>
+                            </script>
+                        </div>
+                    </div>
                 </article>
                
                 
