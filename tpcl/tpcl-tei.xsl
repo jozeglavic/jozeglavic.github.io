@@ -73,10 +73,7 @@
                                 </p>
                                 <p class="ml-3">
                                     <input id="openercloserhighlight" class="form-check-input" type="checkbox" checked="checked">Označi pozdravne in poslovilne vrstice</input>
-                                </p>
-                                <p class="ml-3">
-                                    <input id="choicehighlight" class="form-check-input" type="checkbox" checked="checked">Označi okrajšave in popravke</input>
-                                </p>
+                                </p>                               
                                 
                                 <script type="text/javascript">
                                     <![CDATA[
@@ -99,8 +96,7 @@
       document.addEventListener("DOMContentLoaded", function() {
         handleCheckbox("personenhighlighting", "persname");
         handleCheckbox("placehighlighting", "placename");
-        handleCheckbox("openercloserhighlight", "opener-");
-        handleCheckbox("choicehighlight", "choice");
+        handleCheckbox("openercloserhighlight", "opener-");        
       });
     ]]>
                                 </script>

@@ -465,17 +465,16 @@ margin: 10px;
   font-weight: bold;
 }
 
-.not-checked {
-            color: inherit;
-            font-weight: inherit;
-        }
-
-
 .opener- { 
   color: red;
   font-weight: bold;
 
 }
+
+.not-checked {
+            color: inherit;
+            font-weight: inherit;
+        }
 
 .opener-center { 
   color: #990000;
