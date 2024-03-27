@@ -24,13 +24,12 @@
     
     <xsl:template name="content">
         <xsl:if test="//tei:correspDesc">
-            <section class="row">
-                <div class="card">
-                    <div class="card-body">
+            <section class="row">               
                         <!--////////////Letter sender and reciever - correspDesc//////-->
                 
                 <article class="col-md-6">
-                    <div class="card-body">
+                    <div class="card">
+                        <div class="card-body">
                         <div class="p-3">                            
                             <xsl:text> Od: </xsl:text>
                             <xsl:apply-templates
@@ -59,19 +58,26 @@
                             </xsl:for-each>
                         </div>
                             
-                    </div>
+                    </div></div>
                 </article>
                 <article class="col-md-6">
-                    <div class="col-6" style="background-color:rgba(211, 211, 211, 0.3)">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="col-6" style="background-color:rgba(211, 211, 211, 0.3)">
                         <p class="ml-3 mt-2" style="text-align:left">
                             <input id="personenhighlighting" class="form-check-input" type="checkbox"
-                                checked="checked">Označi osebe</input>
+                                checked="checked">Označi osebe v tekstu</input>
                         </p>
                         <p class="ml-3">
                             <input id="placehighlighting" class="form-check-input"
-                                type="checkbox" checked="checked">Označi lokacije</input>
+                                type="checkbox" checked="checked">Označi lokacije v tekstu</input>
                         </p>
-                        
+                        <p class="ml-3">
+                            <input id="openercloserhiglight" class="form-check-input" type="checkbox" checked="checked">Označi pozdravne in poslovilne vrstice</input>
+                        </p>
+                          <p class="ml-3">
+                              <input id="chicehighlight" class="form-check-input" type="checkbox" checked="checked">Označi okrajšave in popravke</input>
+                          </p>
                     </div>
                     
                     <script>
@@ -90,9 +96,10 @@
                         });
                         });
                         });
-                    </script>
-                </article></div>
-                </div>
+                    </script></div></div>
+                </article>
+               
+                
             </section>
         </xsl:if>
         
