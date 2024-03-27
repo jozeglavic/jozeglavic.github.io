@@ -24,6 +24,22 @@
     
     <xsl:template name="content">
         <xsl:if test="//tei:correspDesc">
+            
+            
+            
+                <div class="row" style="background-color: white; padding: 10px;">
+                    <div class="col-md-6">
+                        <!-- Content for the first column -->
+                        <h2>First Column</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet ligula et risus tincidunt, sit amet venenatis nisi placerat.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <!-- Content for the second column -->
+                        <h2>Second Column</h2>
+                        <p>Integer efficitur augue at urna tempor, sed volutpat metus tristique. Ut laoreet ipsum a libero convallis, et scelerisque orci tristique.</p>
+                    </div>
+                </div>
+            
             <section class="row">               
                         <!--////////////Letter sender and reciever - correspDesc//////-->
                 
