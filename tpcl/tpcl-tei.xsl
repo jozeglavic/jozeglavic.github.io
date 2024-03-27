@@ -63,36 +63,38 @@
                 <article class="col-md-6">
                     <div class="card">
                         <div class="card-body">
-                            <div class="col-6" style="background-color:rgba(211, 211, 211, 0.3)">
-                        <p class="ml-3 mt-2" style="text-align:left">
-                            <input id="personenhighlighting" class="form-check-input" type="checkbox"
-                                checked="checked">Označi osebe v tekstu</input>
-                        </p>
-                        <p class="ml-3">
-                            <input id="placehighlighting" class="form-check-input"
-                                type="checkbox" checked="checked">Označi lokacije v tekstu</input>
-                        </p>
-                        <p class="ml-3">
-                            <input id="openercloserhiglight" class="form-check-input" type="checkbox" checked="checked">Označi pozdravne in poslovilne vrstice</input>
-                        </p>
-                          <p class="ml-3">
-                              <input id="chicehighlight" class="form-check-input" type="checkbox" checked="checked">Označi okrajšave in popravke</input>
-                          </p>
+                            <div class="col-6">
+                                <p class="ml-3 mt-2" style="text-align:left">
+                                    <input id="personenhighlighting" class="form-check-input" type="checkbox" checked="checked">Označi osebe v tekstu</input>
+                                </p>
+                                <p class="ml-3">
+                                    <input id="placehighlighting" class="form-check-input" type="checkbox" checked="checked">Označi lokacije v tekstu</input>
+                                </p>
+                                <p class="ml-3">
+                                    <input id="openercloserhighlight" class="form-check-input" type="checkbox" checked="checked">Označi pozdravne in poslovilne vrstice</input>
+                                </p>
+                                <p class="ml-3">
+                                    <input id="choicehighlight" class="form-check-input" type="checkbox" checked="checked">Označi okrajšave in popravke</input>
+                                </p>
                     </div>
                     
                     <script>
                         // JavaScript code
                         document.addEventListener("DOMContentLoaded", function() {
-                        const personenCheckbox = document.getElementById("personenhighlighting");
-                        const persnameElements = document.querySelectorAll(".persname");
+                        const checkboxes = document.querySelectorAll('.form-check-input');
                         
-                        personenCheckbox.addEventListener("change", function() {
-                        persnameElements.forEach(function(persname) {
-                        if (personenCheckbox.checked) {
-                        persname.classList.remove("not-checked");
+                        checkboxes.forEach(function(checkbox) {
+                        checkbox.addEventListener("change", function() {
+                        const targetClass = checkbox.id.replace("highlighting", "") + "name";
+                        const elements = document.querySelectorAll("." + targetClass);
+                        
+                        elements.forEach(function(element) {
+                        if (checkbox.checked) {
+                        element.classList.remove("not-checked");
                         } else {
-                        persname.classList.add("not-checked");
+                        element.classList.add("not-checked");
                         }
+                        });
                         });
                         });
                         });
