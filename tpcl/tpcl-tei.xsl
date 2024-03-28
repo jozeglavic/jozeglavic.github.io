@@ -313,10 +313,7 @@
     
     
     <xsl:template match="tei:placeName">          
-        <span class="placename" id="{@ref}">
-            <xsl:attribute name="title">
-                <xsl:apply-templates select="doc(substring-before(@ref,'.xml#'))//place[@xml:id = substring-after(tei:placeName/@ref, '#')]"/> 
-            </xsl:attribute>
+        <span class="placename" id="{@ref}" title="{doc(substring-before(@ref,'.xml#'))//tei:place[@xml:id = substring-after(@ref,'#')]}">
             <xsl:apply-templates/>
         </span> 
     </xsl:template>
