@@ -312,8 +312,10 @@
     <!--letter styling based on the tei encoding-->
     
     
-    <xsl:template match="tei:placeName">          
-        <span class="placename" id="{@ref}" title="{doc(substring-before(@ref, '.xml#'))//tei:place[@xml:id='ljubljana']}">
+    <xsl:template match="tei:placeName"> 
+        
+        
+        <span class="placename" id="{@ref}" title="{doc(substring-before(@ref, '.xml#'))//tei:place[@xml:id=substring-after(current()/@ref, '.xml#')]}">
             <xsl:apply-templates/>
         </span> 
     </xsl:template>
