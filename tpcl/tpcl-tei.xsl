@@ -315,9 +315,10 @@
     <xsl:template match="tei:placeName">          
          <span class="placename" id="{@ref}">
             <xsl:attribute name="title">
-                <xsl:value-of select="doc(substring-before(@ref,'.xml#'))/concat(//tei:placeName[@xml:lang='sl'], ', ', //tei:placeName[@xml:lang='de'], ', ', //tei:country/@key, ', ', //tei:idno)"/> 
+                <xsl:value-of select="doc(substring-before(@ref,'.xml#'))/tei:place[@xml:id = substring-after(@ref, '#')]"/> 
+                <xsl:apply-templates/>
             </xsl:attribute>
-             <xsl:value-of select="doc(substring-before(@ref,'.xml#'))/concat(//tei:placeName[@xml:lang='sl'], ', ', //tei:placeName[@xml:lang='de'], ', ', //tei:country/@key, ', ', //tei:idno)"/> 
+            <xsl:apply-templates/>
         </span> 
     </xsl:template>
     
