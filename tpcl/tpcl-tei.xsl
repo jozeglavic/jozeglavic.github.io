@@ -311,11 +311,11 @@
     
     <!--letter styling based on the tei encoding-->
     
-    <xsl:variable name="ref_value" select="@ref"/>
+    
     <xsl:template match="tei:placeName">                 
-        <span class="{substring-after(@ref, '#')}" id="{@ref}" title="{doc(substring-before(@ref, '.xml#'))//tei:place[@xml:id=substring-after($ref_value, '#')]}">
+        <span class="placename" id="{@ref}" title="{doc(substring-before(@ref,'.xml#'))//tei:place[@xml:id = substring-after(@ref,'#')]}">
             <xsl:apply-templates/>
-        </span> 
+        </span>
 
     </xsl:template>
     
