@@ -315,8 +315,7 @@
     <xsl:template match="tei:placeName">          
         <span class="placename" id="{@ref}">
             <xsl:attribute name="title">
-                <xsl:value-of select="doc(substring-before(@ref,'.xml#'))//place"/>
-                <xsl:apply-templates/>
+                <xsl:value-of select="doc(substring-before(@ref,'.xml#'))//place"/>              
             </xsl:attribute>
             <xsl:apply-templates/>
         </span> 
