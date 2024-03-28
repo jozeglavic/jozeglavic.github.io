@@ -311,9 +311,8 @@
     
     <!--letter styling based on the tei encoding-->
     
-    
-    <xsl:template match="tei:placeName"> 
-        <xsl:variable name="ref_value" select="@ref"/>        
+    <xsl:variable name="ref_value" select="@ref"/>
+    <xsl:template match="tei:placeName">                 
         <span class="{substring-after(@ref, '#')}" id="{@ref}" title="{doc(substring-before(@ref, '.xml#'))//tei:place[@xml:id=substring-after($ref_value, '#')]}">
             <xsl:apply-templates/>
         </span> 
