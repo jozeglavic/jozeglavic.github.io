@@ -59,7 +59,7 @@
                         <div class="p-3">
                             <xsl:text>Test: </xsl:text>
                             <xsl:apply-templates
-                                select="concat(//t:correspDesc/t:correspAction[1]/t:date/@when, ', ', //t:correspDesc/t:correspAction[1]/t:persName, ' -> ',//t:correspDesc/t:correspAction[2]/t:persName), ' (' ,//title,' )'"/>
+                                select="concat(//t:correspDesc/t:correspAction[1]/t:date/@when, ', ', //t:correspDesc/t:correspAction[1]/t:persName, ' -> ',//t:correspDesc/t:correspAction[2]/t:persName), ' (' ,//t:title,' )'"/>
                            
                             
                         </div>
