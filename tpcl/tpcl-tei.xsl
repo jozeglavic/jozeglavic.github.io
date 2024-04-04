@@ -56,6 +56,13 @@
                                 />
                             </xsl:for-each>
                         </div>
+                        <div class="p-3">
+                            <xsl:text>Test: </xsl:text>
+                            <xsl:apply-templates
+                                select="//tei:correspAction[@type = 'received']/tei:persName"/>
+                           
+                            
+                        </div>
                     </div>
                     <div class="col-md-6">
                         <!-- cheboxes and java script which changes the css based on status of checkbox -->
