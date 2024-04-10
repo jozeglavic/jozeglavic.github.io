@@ -56,13 +56,7 @@
                                 />
                             </xsl:for-each>
                         </div>
-                        <div class="p-3">
-                            <xsl:text>Test: </xsl:text>
-                            <xsl:apply-templates
-                                select="concat(//t:correspDesc/t:correspAction[1]/t:date/@when, ', ', //t:correspDesc/t:correspAction[1]/t:persName, ' -> ', //t:correspDesc/t:correspAction[2]/t:persName, ' (', //t:title, ')' )"/>
-                           
-                            
-                        </div>
+                       
                     </div>
                     <div class="col-md-6">
                         <!-- cheboxes and java script which changes the css based on status of checkbox -->
