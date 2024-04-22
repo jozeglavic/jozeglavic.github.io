@@ -433,14 +433,16 @@
                                 <xsl:value-of select="concat('/', ./s:identifier)"/>
                             </xsl:attribute>
                             
-                            <xsl:value-of select="substring-before(./s:title, ',')" disable-output-escaping="yes"/>
-                            <em>
-                                <xsl:value-of select="substring-before(substring-after(./s:title, ','), '->')" disable-output-escaping="yes"/>
-                            </em>
-                            <xsl:value-of select="substring-after(./s:title, '->')" disable-output-escaping="yes"/>
                             
                        
-                     
+                            <xsl:value-of select="substring-before(./s:title, ',')" />
+                            <xsl:text>, </xsl:text>
+                            <strong><span style="color: blue;"><xsl:value-of select="substring-before(substring-after(./s:title, ', '), ' ->')" /></span></strong>
+                            <xsl:text> -></xsl:text>
+                            <xsl:value-of select="substring-before(substring-after(./s:title, '-> '), '(')" />
+                            
+                            <em><xsl:value-of select="substring-before(substring-after(./s:title, '('), ')')" /></em>
+                            <xsl:value-of select="substring-after(./s:title, ')')" />
                             
                           
                         </a>
