@@ -432,7 +432,7 @@
                             <xsl:attribute name="href">
                                 <xsl:value-of select="concat('/', ./s:identifier)"/>
                             </xsl:attribute>
-                            <xsl:variable name="title" select="./s:title"/>
+                            <xsl:value-of select="./s:title"/>
                           
                         </a>
                     </span>
