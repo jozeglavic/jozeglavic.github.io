@@ -432,12 +432,16 @@
                             <xsl:attribute name="href">
                                 <xsl:value-of select="concat('/', ./s:identifier)"/>
                             </xsl:attribute>
-                            <xsl:value-of select="./s:title"/>
                             
-                            <xsl:value-of select="substring-before(./s:title, ',')" /><xsl:text>, </xsl:text>
-                            <xsl:value-of select="substring-before(substring-after(./s:title, ','), '->')" /><xsl:text>, </xsl:text>
-                            <em><xsl:value-of select="substring-before(substring-after(substring-after(./s:title, ','), '->'), '(')" /></em><xsl:text> -> </xsl:text>
-                            <strong><span style="color: blue;"><xsl:value-of select="substring-before(substring-after(./s:title, '->'), '(')" /></span></strong>
+                            
+                            <xsl:value-of select="substring-before(./s:title, ',')" />
+                            <xsl:text>, </xsl:text>
+                            <strong><span style="color: blue;"><xsl:value-of select="substring-before(substring-after(./s:title, ', '), ' ->')" /></span></strong>
+                            <xsl:text> (</xsl:text>
+                            <em><xsl:value-of select="substring-before(substring-after(./s:title, '-> '), '(')" /></em>
+                            <xsl:text>) </xsl:text>
+                            <em><xsl:value-of select="substring-before(substring-after(./s:title, '('), ')')" /></em>
+                            
                           
                         </a>
                     </span>
