@@ -438,10 +438,10 @@
                             <xsl:value-of select="substring-before(./s:title, ',')" />
                             <xsl:text>, </xsl:text>
                             <strong><span style="color: blue;"><xsl:value-of select="substring-before(substring-after(./s:title, ', '), ' ->')" /></span></strong>
-                            <xsl:text> -></xsl:text>
-                            <xsl:value-of select="substring-before(substring-after(./s:title, '-> '), '(')" />
+                            <xsl:text> -> </xsl:text>
+                            <span style="color: green;"><xsl:value-of select="substring-before(substring-after(./s:title, '-> '), '(')" /></span>
                             
-                            <em><xsl:value-of select="substring-before(substring-after(./s:title, '('), ')')" /></em>
+                            <em><xsl:text>: (</xsl:text><xsl:value-of select="substring-before(substring-after(./s:title, '('), ')')" /></em><xsl:text>)</xsl:text>
                             <xsl:value-of select="substring-after(./s:title, ')')" />
                             
                           
