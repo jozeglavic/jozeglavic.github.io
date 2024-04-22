@@ -441,6 +441,8 @@
                             <em><xsl:value-of select="substring-before(substring-after(./s:title, '-> '), '(')" /></em>
                             <xsl:text>) </xsl:text>
                             <em><xsl:value-of select="substring-before(substring-after(./s:title, '('), ')')" /></em>
+                            <xsl:value-of select="substring-after(./s:title, ')')" />
+                            
                             
                           
                         </a>
