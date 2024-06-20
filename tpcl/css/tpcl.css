@@ -471,16 +471,47 @@ margin: 10px;
 
 }
 
-.closer- { 
-  color: blue;
-  text-align: center;
-}
-
 .opener-center { 
   color: #990000;
   font-weight: bold;
   text-align: center;
 }
+
+.opener-left { 
+  color: #990000;
+  font-weight: bold;
+  text-align: left;
+}
+
+.opener-right { 
+  color: #990000;
+  font-weight: bold;
+  text-align: right;
+}
+.closer- { 
+  color: blue;
+  text-align: center;
+}
+
+.closer-center { 
+  color: blue;
+  text-align: center;
+}
+
+.closer-left { 
+  color: blue;
+  text-align: left;
+}
+
+.closer-right { 
+  color: blue;
+  text-align: right;
+}
+
+
+
+
+
 
 .not-checked {
             color: inherit;
@@ -503,12 +534,47 @@ margin: 10px;
     text-align: center;
 }
 
+
+
+.date-left {
+    text-align: left;
+}
+
+.date-right {
+    text-align: right;
+}
+
+.date-center {
+    text-align: center;
+}
+
+
 .salute-center {
     text-align: center;
 }
 
+.salute-left {
+    text-align: left;
+}
+
+.salute-right {
+    text-align: right;
+}
+
 .salute-italic-center {
     text-align: center;
+}
+
+.signed-center {
+    text-align: center;
+}
+
+.signed-left {
+    text-align: left;
+}
+
+.signed-right {
+    text-align: right;
 }
 
 
