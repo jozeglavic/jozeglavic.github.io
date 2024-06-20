@@ -290,6 +290,13 @@
         </div> 
         <br/>  
     </xsl:template>
+
+    <xsl:template match="tei:salute">                
+        <div class="salute-{@rend}"> 
+            <xsl:apply-templates/>
+        </div> 
+        <br/>  
+    </xsl:template>
     
     
     

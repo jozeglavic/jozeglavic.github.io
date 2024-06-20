@@ -503,6 +503,10 @@ margin: 10px;
     text-align: center;
 }
 
+.salute-center {
+    text-align: center;
+}
+
 .hi-italic {
     font-style: italic;
 }
