@@ -305,12 +305,7 @@
         <br/>  
     </xsl:template>
 
-    <xsl:template match="tei:date">                
-        <div class="date-{@rend}"> 
-            <xsl:apply-templates/>
-        </div> 
-        <br/>  
-    </xsl:template>
+ 
     
     
     
