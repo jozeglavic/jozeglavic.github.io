@@ -507,6 +507,12 @@ margin: 10px;
     text-align: center;
 }
 
+.salute-italic-center {
+    text-align: center;
+}
+
+
+
 .hi-italic {
     font-style: italic;
 }
