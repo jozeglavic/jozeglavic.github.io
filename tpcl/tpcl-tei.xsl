@@ -340,7 +340,13 @@
         <span class="persname" id="{@ref}">
             <xsl:apply-templates/>
         </span> 
-    </xsl:template>    
+    </xsl:template>   
+
+    <xsl:template match="tei:del">         
+        <del class="@rend">
+            <xsl:apply-templates/>
+        </del> 
+    </xsl:template>   
     
     <xsl:template match="tei:choice">                
         <xsl:for-each select="tei:abbr">            
