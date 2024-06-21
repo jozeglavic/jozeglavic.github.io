@@ -1,0 +1,153 @@
+LIST OF ANNOTATIONS USED/PROPOSED
+
+Semantic Annotations Protocol 
+Example used:
+https://wiki.burckhardtsource.org/protocols/semantic-annotation-protocol/ 
+https://www.digitale-edition.at/o:konde.29 
+https://sidih.si/20.500.12325/file370 
+
+STRUCTURAL
+1.	HEADER [is a standalone document inserted with XSLT transformation. It contains all the data that it is repeated. The XSLT transformation also defines basic structure of document, adding correspDesc and <div> tags. The header information can be added or modified later in all of the letters (most of included information are repetitive; if there are unique tags they are left unchanged).]
+
+2.	correspDesc [A “de facto standard” for digital letter edition today. Gives numerous options for reworking of the metadata. Possibility of creating CMIF format for integration into https://correspsearch.net/. Solves also the problem of more correspondents. In this particular collection of letters there are cca. 10 different correspondents]
+
+Example(|| https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-correspDesc.html)
+
+<correspDesc>
+ <correspAction type="sent">
+  <persName>Carl Maria von Weber</persName>
+  <settlement>Dresden</settlement>
+  <date when="1817-06-23">23 June 1817</date>
+ </correspAction>
+ <correspAction type="received">
+  <persName>Caroline Brandt</persName>
+  <settlement>Prag</settlement>
+ </correspAction>
+ <correspContext>
+  <ref type="prev"
+   target="http://www.weber-gesamtausgabe.de/A041209">Previous letter of
+  <persName>Carl Maria von Weber</persName> 
+     to <persName>Caroline Brandt</persName>:
+  <date from="1817-06-19" to="1817-06-20">June 19/20, 1817</date>
+  </ref>
+  <ref type="next"
+   target="http://www.weber-gesamtausgabe.de/A041217">Next letter of
+  <persName>Carl Maria von Weber</persName> to
+  <persName>Caroline Brandt</persName>:
+  <date when="1817-06-27">June 27, 1817</date>
+  </ref>
+ </correspContext>
+</correspDesc>
+
+3.	Openers and closers [Apart from <div> and <p> tag they define basic layout of the letter. In the tags important data such as date, recipient, greetings can be defined and used for semantic interpretation and also web presentation.]
+Example(||https://encoding-correspondence.bbaw.de/v1/openers-closers.html)
+<opener>
+ <dateline>
+  <name type="place">Great Marlborough Street</name>
+  <date>November 11, 1848</date>
+ </dateline>
+ <salute>My dear Sir,</salute>
+</opener>
+<p>I am sorry to say that absence from town and other circumstances have prevented me from
+earlier enquiring...</p>
+
+<time when="22:00:00">10 Uhr Abend.</time>
+<date when="1826-10-05">5. Octobre.</date>
+
+If postage, seals, postmarks, postscripts appear they are annotated as well
+https://encoding-correspondence.bbaw.de/v1/stamps-seals-postmarks.html
+https://encoding-correspondence.bbaw.de/v1/postscripts.html
+<postscript>
+  <label>P.S.</label>
+  <p>The collision occured on <date when="2001-07-06">06 Jul 01</date>.</p>
+ </postscript>
+https://encoding-correspondence.bbaw.de/v1/pre-printed-parts.html
+
+SEMANTIC
+4.	Defining people and places [Separate files for placeNAmes and personNames are created in which all mention persons and places are defined. Through letters, the mentioned people and places are tagged, annotated and referenced to the base files.] 
+Referring string<rs ref=“”>] tag is used for indirectly mentioned persons.
+Ref= to Slovenian bibliografi if it is https://www.slovenska-biografija.si/oseba/sbi129930/
+placeNames include reference to https://www.geonames.org/
+
+
+When defining the names and places the important thing is that we have used names of place and people (usually German versions). This is why we need to find Slovenian counterpart and annotated it as an additional or explanatory information. This can be then used in web presentation to put that information there, so the users can click on it and see which places or person that is in their language. Or that it can be connected to today better-known name.  E.g. used Laibach is today’s Ljubljana. 
+5.	Text specific [Specific text features will be defined. ]
+Abbreviations
+<choice>
+ 	<expan>World Wide Web Consortium</expan>
+ <abbr>W3C</abbr>
+</choice>
+
+Correction with  deletions
+<subst>
+ 	<add place=«above«>Laut</add>
+ 	<del>Gruss</del>
+</subst>
+
+Deletion only
+<del>Gruss</del>
+
+Deletion only
+<del>Gruss</del>
+
+Editor notes
+<note></note>
+
+Foreign language
+<foreign xml:lang="la">lapis philosophicus</foreign>
+Unclerar
+<unclear cert="medium" resp=«#JG« reason=»illegible«>W</unclear>
+Superscript
+<hi rend=»sup«>
+Underlined
+<hi rend=»underlined«>
+Italic
+<hi rend=»italic«>
+
+
+Editor additions or corrections
+<choice>
+<corr resp="#NBK">u</corr>
+</choice>
+
+<choice>
+<sic  resp=#NBK>discurirt</sic>
+<corr>discutirt</corr>
+</choice>
+______________________________________________________________
+
+Rendition tags logic
+
+The rendition tag for position or esthetical look of the text is defined with the attribute @rend as rendition. Logic of rendition tags is following. The rendition is applied to the youngest child element inside nested elements. 
+Example: 
+
+
+<closer>
+<salute rend="right"><lb facs="#facs_2_r1l38" n="N019"/><hi rend="italic">Dein Dich innigst liebender</hi>
+<lb facs="#facs_2_l_19288" n="N021"/>vergante
+<lb facs="#facs_2_r1l40" n="N020"/><hi rend="italic"><persName ref="persName.xml#fidelij">Fidelis</persName>.</hi></salute>
+</closer>
+
+
+All of the rendition tags are following:
+-	right
+-	left
+-	center
+-	italic
+-	superscript
+-	underlined
+
+Element hi (highlight) with attribute italic is possible to applied to the single word. In case of antoher element denoting the word, hi elelemtn is outside of the element.
+
+Example:
+ <hi rend="italic"><persNameref="persName.xml#fidelij">Fidelis</persName>.</hi>
+
+
+
+Annotation order
+
+1.	Adding correspDesc
+2.	Openers and closers 
+3.	Defining people and places 
+4.	Text specific features
+
