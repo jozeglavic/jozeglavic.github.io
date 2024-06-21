@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">SI_ZAL_LJU-0296_35_ovoj I_pismo 1</title>
+            <editor>
+               <persName instant="false" full="yes">
+                  <surname full="yes">Glavič</surname>
+                  <forename full="yes">Jože</forename>
+               </persName>
+            </editor>
+            <respStmt>
+               <persName instant="false" full="yes">
+                  <surname full="yes">Budna</surname>
+                  <surname full="yes">Kodrič</surname>
+                  <forename full="yes">Nataša</forename>
+               </persName>
+               <resp>Transcribing</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Zgodovinski arhiv Ljubljana</publisher>
+            <address>
+               <orgName instant="false" full="yes">Zgodovinski arhiv Ljubljana</orgName>
+               <street>Mestni trg, 27</street>
+               <settlement>Ljubljana</settlement>
+               <postCode>1000</postCode>
+               <country>Slovenija</country>
+            </address>
+            <distributor>ZIM</distributor>
+            <pubPlace>Ljubljana</pubPlace>
+            <date when="2020" instant="false">2020</date>
+            <idno type="PID">o:tpcl.01</idno>
+         </publicationStmt>
+         <sourceDesc default="false">
+            <bibl default="false" status="draft"/>
+            <!--AUTOMATIC NAMING AFTER adding correspDesc; Naming "Pismo" + <correspAction type="sent"><persName>Josephine Zeschka</persName> ""poslano k" <correspAction type="received"><persName>Fidelis Terpinz</persName> + " <date when="1825-03-22">22.März.1825</date>" -->
+            <msDesc rend="manuscript" status="draft">
+               <msIdentifier>
+                  <institution xml:lang="sl">Zgodovinski arhiv Ljubljana</institution>
+                  <repository>SI_ZAL_LJU/0296 Graščina Fužine, Ljubljana, 1616-1925</repository>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <!-- ADD MANUAL-->
+         <correspDesc>
+            <correspAction type="sent">
+               <persName ref="persName.xml#josephine">Josephine Zeschka</persName>
+               <placeName ref="placeName.xml#ljubljana">Laibach</placeName>
+               <date when="1825-03-22">22.März.1825</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="persName.xml#fidelij">Fidelis Terpinz</persName>
+               <placeName ref="placeName.xml#kranj">Krainburg</placeName>
+            </correspAction>
+            <correspContext>
+               <ref type="next" target="SI_ZAL_LJU_0296,_š__35,_ovoj_I,_pismo_2.xml">Next letter of
+                     <persName ref="persName.xml#josephine">Josephine Zeschka</persName> to
+                     <persName ref="persName.xml#fidelij">Fidelis Terpinz</persName>: <date when="1825-04-07">7.April.1825</date></ref>
+            </correspContext>
+         </correspDesc>
+      </profileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>This document is part of the <ref type="context" target="context:tpcl">Terpinc
+                  Familiy Letters</ref> project.</p>
+         </projectDesc>
+      </encodingDesc>
+   <encodingDesc>
+         <projectDesc>
+            <p>This document is part of the <ref type="context" target="context:tpcl">Terpinc Familiy Letters</ref> project.</p>
+            <p>End line word seperation is marked with <lb break="no"/> with no whitespace. Word is denoted with <w/> tag.</p>
+            <p>People and place names are denoted with <persName/> <placeName/> elements respectively. 
+               Both include reference to an external document persName.xml and Place.xml respectively. Example of a reference <persName ref="persName.xml#josephine">Josephine Zeschka</persName>
+               Reference to a person is denoted with <rs type="person" ref="persName.xml#terezija">Mama</rs> as an example, when person is denoted with a postion or relationship.
+            </p>
+            <p/>								
+         </projectDesc>
+         <tagsDecl>
+            <rendition xml:id="center" scheme="css">text-align: center;</rendition>
+            <rendition xml:id="left" scheme="css">text-align: left;</rendition>
+            <rendition xml:id="right" scheme="css">text-align: right;</rendition>
+            <rendition xml:id="hi-underlined" scheme="css">text-decoration: underline;</rendition>
+            <rendition xml:id="hi-superscript" scheme="css">vertical-align: super;</rendition>
+            <rendition xml:id="hi-italic" scheme="css">font-style: italic;</rendition>
+         </tagsDecl>
+      </encodingDesc></teiHeader>
+   <facsimile>
+      <surface start="#I1L1P1" xml:id="facs_1" ulx="0" uly="0" lrx="1430" lry="2396" corresp="LJU296_35_I_P01_001.jpg">
+         <graphic mimeType="image/jpeg" url="file:///LJU296_35_I_P01_001.jpg" xml:id="IMAGE.1"/>
+      </surface>
+      <surface start="#I1L1P2" xml:id="facs_2" ulx="0" uly="0" lrx="1418" lry="2398" corresp="LJU296_35_I_P01_002.jpg">
+         <graphic mimeType="image/jpeg" url="file:///LJU296_35_I_P01_002.jpg" xml:id="IMAGE.2"/>
+         <zone points="73,29 73,2337 1357,2337 1357,29" rendition="TextRegion" xml:id="facs_2_r1">
+            <zone points="669,741 694,741 720,740 746,740 772,740 797,740 823,740 849,740 875,740 901,740 926,740 952,740 978,740 1004,740 1029,740 1055,740 1081,739 1107,739 1133,738 1133,683 1107,684 1081,684 1055,685 1029,685 1004,685 978,685 952,685 926,685 901,685 875,685 849,685 823,685 797,685 772,685 746,685 720,685 694,686 669,686" rendition="Line" xml:id="facs_2_r1l3"/>
+            <zone points="171,1087 227,1087 283,1087 340,1087 396,1087 453,1086 509,1086 566,1086 622,1085 679,1085 735,1085 791,1084 848,1084 904,1084 961,1083 1017,1083 1074,1082 1130,1082 1187,1082 1243,1081 1300,1081 1300,1026 1243,1026 1187,1027 1130,1027 1074,1027 1017,1028 961,1028 904,1029 848,1029 791,1029 735,1030 679,1030 622,1030 566,1031 509,1031 453,1031 396,1032 340,1032 283,1032 227,1032 171,1032" rendition="Line" xml:id="facs_2_r1l4"/>
+            <zone points="268,1182 319,1180 370,1178 422,1177 473,1176 525,1176 576,1176 627,1176 679,1176 730,1176 782,1177 833,1177 884,1177 936,1177 987,1177 1039,1176 1090,1176 1141,1174 1193,1173 1244,1171 1296,1169 1296,1114 1244,1116 1193,1118 1141,1119 1090,1121 1039,1121 987,1122 936,1122 884,1122 833,1122 782,1122 730,1121 679,1121 627,1121 576,1121 525,1121 473,1121 422,1122 370,1123 319,1125 268,1127" rendition="Line" xml:id="facs_2_r1l5"/>
+            <zone points="258,1260 287,1260 316,1261 345,1261 375,1261 404,1261 433,1261 463,1261 492,1261 521,1261 551,1261 580,1261 609,1261 638,1260 668,1260 697,1260 726,1260 756,1261 785,1261 814,1261 844,1261 844,1206 814,1206 785,1206 756,1206 726,1205 697,1205 668,1205 638,1205 609,1206 580,1206 551,1206 521,1206 492,1206 463,1206 433,1206 404,1206 375,1206 345,1206 316,1206 287,1205 258,1205" rendition="Line" xml:id="facs_2_r1l6"/>
+            <zone points="239,1342 291,1344 343,1345 395,1346 448,1347 500,1347 552,1348 605,1348 657,1348 709,1348 762,1347 814,1347 866,1347 918,1346 971,1346 1023,1346 1075,1346 1128,1346 1180,1346 1232,1346 1285,1347 1285,1292 1232,1291 1180,1291 1128,1291 1075,1291 1023,1291 971,1291 918,1291 866,1292 814,1292 762,1292 709,1293 657,1293 605,1293 552,1293 500,1292 448,1292 395,1291 343,1290 291,1289 239,1287" rendition="Line" xml:id="facs_2_r1l7"/>
+            <zone points="225,1433 278,1434 331,1435 385,1435 438,1435 492,1435 545,1434 599,1434 652,1433 706,1433 759,1432 812,1431 866,1431 919,1430 973,1429 1026,1429 1080,1428 1133,1428 1187,1428 1240,1428 1294,1428 1294,1373 1240,1373 1187,1373 1133,1373 1080,1373 1026,1374 973,1374 919,1375 866,1376 812,1376 759,1377 706,1378 652,1378 599,1379 545,1379 492,1380 438,1380 385,1380 331,1380 278,1379 225,1378" rendition="Line" xml:id="facs_2_r1l8"/>
+            <zone points="216,1514 270,1514 325,1514 380,1514 435,1514 490,1514 545,1514 600,1514 655,1513 710,1513 765,1513 819,1513 874,1513 929,1512 984,1512 1039,1511 1094,1511 1149,1510 1204,1510 1259,1509 1314,1509 1314,1454 1259,1454 1204,1455 1149,1455 1094,1456 1039,1456 984,1457 929,1457 874,1458 819,1458 765,1458 710,1458 655,1458 600,1459 545,1459 490,1459 435,1459 380,1459 325,1459 270,1459 216,1459" rendition="Line" xml:id="facs_2_r1l9"/>
+            <zone points="211,1592 266,1593 322,1594 377,1595 433,1595 488,1596 544,1596 599,1596 655,1596 710,1596 766,1596 821,1596 877,1596 932,1596 988,1595 1043,1595 1099,1595 1154,1595 1210,1595 1265,1595 1321,1595 1321,1540 1265,1540 1210,1540 1154,1540 1099,1540 1043,1540 988,1540 932,1541 877,1541 821,1541 766,1541 710,1541 655,1541 599,1541 544,1541 488,1541 433,1540 377,1540 322,1539 266,1538 211,1537" rendition="Line" xml:id="facs_2_r1l10"/>
+            <zone points="208,1681 261,1682 314,1682 368,1683 421,1683 475,1683 528,1682 581,1682 635,1682 688,1681 742,1681 795,1680 848,1680 902,1680 955,1680 1009,1680 1062,1680 1115,1681 1169,1681 1222,1682 1276,1684 1276,1629 1222,1627 1169,1626 1115,1626 1062,1625 1009,1625 955,1625 902,1625 848,1625 795,1625 742,1626 688,1626 635,1627 581,1627 528,1627 475,1628 421,1628 368,1628 314,1627 261,1627 208,1626" rendition="Line" xml:id="facs_2_r1l11"/>
+            <zone points="170,1759 226,1759 282,1760 338,1760 394,1760 450,1761 506,1761 563,1762 619,1762 675,1762 731,1762 787,1763 843,1763 899,1763 956,1763 1012,1763 1068,1763 1124,1762 1180,1762 1236,1761 1293,1760 1293,1705 1236,1706 1180,1707 1124,1707 1068,1708 1012,1708 956,1708 899,1708 843,1708 787,1708 731,1707 675,1707 619,1707 563,1707 506,1706 450,1706 394,1705 338,1705 282,1705 226,1704 170,1704" rendition="Line" xml:id="facs_2_r1l12"/>
+            <zone points="168,1835 223,1836 279,1837 334,1838 390,1839 445,1839 501,1840 556,1840 612,1841 667,1841 723,1841 778,1841 834,1841 889,1841 945,1840 1000,1840 1056,1840 1111,1839 1167,1838 1222,1838 1278,1837 1278,1782 1222,1783 1167,1783 1111,1784 1056,1785 1000,1785 945,1785 889,1786 834,1786 778,1786 723,1786 667,1786 612,1786 556,1785 501,1785 445,1784 390,1784 334,1783 279,1782 223,1781 168,1780" rendition="Line" xml:id="facs_2_r1l13"/>
+            <zone points="174,1864 598,1864 1221,1865 1260,1866 1260,1921 326,1922 275,1922 224,1921 174,1919" rendition="Line" xml:id="facs_2_line_1545137655564_351"/>
+            <zone points="164,2008 220,2007 277,2006 333,2006 390,2006 447,2006 503,2006 560,2007 616,2007 673,2008 730,2008 786,2009 843,2009 899,2009 956,2009 1013,2008 1069,2008 1126,2007 1182,2006 1239,2003 1296,2002 1296,1947 1239,1948 1182,1951 1126,1952 1069,1953 1013,1953 956,1954 899,1954 843,1954 786,1954 730,1953 673,1953 616,1952 560,1952 503,1951 447,1951 390,1951 333,1951 277,1951 220,1952 164,1953" rendition="Line" xml:id="facs_2_r1l16"/>
+            <zone points="163,2093 222,2094 282,2095 342,2096 402,2096 462,2096 521,2096 581,2096 641,2095 701,2095 761,2094 820,2094 880,2093 940,2093 1000,2093 1060,2093 1119,2093 1179,2094 1239,2095 1299,2097 1359,2098 1359,2043 1299,2042 1239,2040 1179,2039 1119,2038 1060,2038 1000,2038 940,2038 880,2038 820,2039 761,2039 701,2040 641,2040 581,2041 521,2041 462,2041 402,2041 342,2041 282,2040 222,2039 163,2038" rendition="Line" xml:id="facs_2_r1l17"/>
+            <zone points="881,2187 906,2185 931,2183 957,2183 982,2183 1007,2183 1033,2184 1058,2184 1083,2184 1109,2184 1134,2184 1159,2183 1185,2180 1185,2125 1159,2128 1134,2129 1109,2129 1083,2129 1058,2129 1033,2129 1007,2128 982,2128 957,2128 931,2128 906,2130 881,2132" rendition="Line" xml:id="facs_2_r1l18"/>
+            <zone points="894,2263 920,2262 946,2261 972,2260 998,2259 1025,2259 1051,2258 1077,2258 1103,2257 1129,2257 1156,2256 1182,2255 1208,2255 1234,2255 1260,2254 1287,2254 1287,2221 1260,2221 1234,2222 1208,2222 1182,2222 1156,2223 1129,2224 1103,2224 1077,2225 1051,2225 1025,2226 998,2226 972,2227 946,2228 920,2229 894,2230" rendition="Line" xml:id="facs_2_r1l19"/>
+            <zone points="75,2303 100,2303 126,2303 151,2303 177,2302 202,2302 228,2302 254,2302 279,2301 305,2301 330,2301 356,2301 381,2301 407,2300 433,2300 458,2300 484,2300 509,2299 535,2299 561,2299 561,2244 535,2244 509,2244 484,2245 458,2245 433,2245 407,2245 381,2246 356,2246 330,2246 305,2246 279,2246 254,2247 228,2247 202,2247 177,2247 151,2248 126,2248 100,2248 75,2248" rendition="Line" xml:id="facs_2_r1l20"/>
+         </zone>
+         <zone points="1269,0 1269,157 1360,157 1360,0" rendition="TextRegion" xml:id="facs_2_r2"/>
+      </surface>
+      <surface start="#I1L1P3" xml:id="facs_3" ulx="0" uly="0" lrx="1430" lry="2381" corresp="LJU296_35_I_P01_003.jpg">
+         <graphic mimeType="image/jpeg" url="file:///LJU296_35_I_P01_003.jpg" xml:id="IMAGE.3"/>
+         <zone points="141,180 141,2181 1402,2181 1402,180" rendition="TextRegion" xml:id="facs_3_r1">
+            <zone points="750,773 777,772 805,771 832,770 860,769 888,767 915,766 943,765 970,765 998,763 1026,763 1053,762 1081,762 1108,761 1136,761 1164,761 1191,761 1219,761 1246,761 1274,762 1302,762 1302,702 1274,702 1246,701 1219,701 1191,701 1164,701 1136,701 1108,701 1081,702 1053,702 1026,703 998,703 970,705 943,705 915,706 888,707 860,709 832,710 805,711 777,712 750,713" rendition="Line" xml:id="facs_3_r1l2"/>
+            <zone points="144,1114 204,1112 264,1111 324,1109 384,1108 444,1106 504,1105 564,1104 624,1103 684,1102 744,1101 804,1100 864,1099 924,1098 984,1098 1044,1097 1104,1096 1164,1095 1224,1094 1284,1094 1344,1093 1344,1033 1284,1034 1224,1034 1164,1035 1104,1036 1044,1037 984,1038 924,1038 864,1039 804,1040 744,1041 684,1042 624,1043 564,1044 504,1045 444,1046 384,1048 324,1049 264,1051 204,1052 144,1054" rendition="Line" xml:id="facs_3_r1l3"/>
+            <zone points="278,1201 326,1199 375,1197 423,1196 472,1195 521,1194 569,1193 618,1192 666,1192 715,1191 764,1191 812,1191 861,1190 909,1190 958,1190 1007,1189 1055,1188 1104,1187 1152,1186 1201,1185 1250,1183 1250,1123 1201,1125 1152,1126 1104,1127 1055,1128 1007,1129 958,1130 909,1130 861,1130 812,1131 764,1131 715,1131 666,1132 618,1132 569,1133 521,1134 472,1135 423,1136 375,1137 326,1139 278,1141" rendition="Line" xml:id="facs_3_r1l4"/>
+            <zone points="274,1291 327,1290 381,1289 434,1288 488,1288 542,1287 595,1286 649,1285 703,1285 756,1284 810,1283 864,1282 917,1282 971,1281 1025,1280 1078,1280 1132,1279 1186,1279 1239,1278 1293,1277 1347,1277 1347,1217 1293,1217 1239,1218 1186,1219 1132,1219 1078,1220 1025,1220 971,1221 917,1222 864,1222 810,1223 756,1224 703,1225 649,1225 595,1226 542,1227 488,1228 434,1228 381,1229 327,1230 274,1231" rendition="Line" xml:id="facs_3_r1l5"/>
+            <zone points="259,1390 314,1390 369,1390 424,1391 480,1390 535,1390 590,1390 645,1390 701,1389 756,1389 811,1388 866,1388 922,1387 977,1387 1032,1386 1087,1386 1143,1386 1198,1386 1253,1386 1308,1386 1364,1387 1364,1327 1308,1326 1253,1326 1198,1326 1143,1326 1087,1326 1032,1326 977,1327 922,1327 866,1328 811,1328 756,1329 701,1329 645,1330 590,1330 535,1330 480,1330 424,1331 369,1330 314,1330 259,1330" rendition="Line" xml:id="facs_3_r1l6"/>
+            <zone points="254,1483 308,1483 363,1482 417,1482 472,1481 527,1480 581,1479 636,1478 690,1477 745,1476 800,1475 854,1474 909,1473 963,1472 1018,1472 1073,1471 1127,1470 1182,1469 1236,1469 1291,1468 1346,1468 1346,1408 1291,1408 1236,1409 1182,1409 1127,1410 1073,1411 1018,1412 963,1412 909,1413 854,1414 800,1415 745,1416 690,1417 636,1418 581,1419 527,1420 472,1421 417,1422 363,1422 308,1423 254,1423" rendition="Line" xml:id="facs_3_r1l7"/>
+            <zone points="227,1568 284,1568 341,1567 398,1566 455,1565 512,1565 569,1564 626,1563 683,1562 740,1561 797,1560 854,1559 911,1558 968,1557 1025,1555 1082,1553 1139,1551 1196,1549 1253,1546 1310,1544 1368,1540 1368,1486 1310,1490 1253,1492 1196,1495 1139,1497 1082,1499 1025,1501 968,1503 911,1504 854,1505 797,1506 740,1507 683,1508 626,1509 569,1510 512,1511 455,1511 398,1512 341,1513 284,1514 227,1514" rendition="Line" xml:id="facs_3_r1l8"/>
+            <zone points="232,1642 283,1642 335,1642 387,1642 438,1642 490,1642 542,1642 593,1642 645,1642 697,1642 749,1642 800,1641 852,1641 904,1640 955,1640 1007,1639 1059,1639 1110,1638 1162,1637 1214,1636 1266,1635 1266,1581 1214,1582 1162,1583 1110,1584 1059,1585 1007,1585 955,1586 904,1586 852,1587 800,1587 749,1588 697,1588 645,1588 593,1588 542,1588 490,1588 438,1588 387,1588 335,1588 283,1588 232,1588" rendition="Line" xml:id="facs_3_r1l9"/>
+            <zone points="232,1725 290,1725 349,1725 407,1725 466,1725 525,1726 583,1726 642,1726 701,1726 759,1726 818,1726 877,1726 935,1726 994,1726 1053,1725 1111,1725 1170,1724 1229,1723 1287,1722 1346,1721 1405,1720 1405,1660 1346,1661 1287,1662 1229,1663 1170,1664 1111,1665 1053,1665 994,1666 935,1666 877,1666 818,1666 759,1666 701,1666 642,1666 583,1666 525,1666 466,1665 407,1665 349,1665 290,1665 232,1665" rendition="Line" xml:id="facs_3_r1l10"/>
+            <zone points="235,1809 293,1810 351,1811 409,1811 467,1812 525,1812 583,1811 642,1811 700,1811 758,1810 816,1810 874,1809 932,1809 990,1808 1049,1808 1107,1808 1165,1808 1223,1808 1281,1808 1339,1809 1398,1810 1398,1752 1339,1751 1281,1750 1223,1750 1165,1750 1107,1750 1049,1750 990,1750 932,1751 874,1751 816,1752 758,1752 700,1753 642,1753 583,1753 525,1754 467,1754 409,1753 351,1753 293,1752 235,1751" rendition="Line" xml:id="facs_3_r1l11"/>
+            <zone points="214,1888 260,1889 306,1890 353,1891 399,1891 446,1891 492,1891 538,1891 585,1891 631,1890 678,1889 724,1889 770,1888 817,1888 863,1888 910,1888 956,1888 1002,1889 1049,1890 1095,1891 1142,1893 1142,1836 1095,1834 1049,1833 1002,1832 956,1831 910,1831 863,1831 817,1831 770,1831 724,1832 678,1832 631,1833 585,1834 538,1834 492,1834 446,1834 399,1834 353,1834 306,1833 260,1832 214,1831" rendition="Line" xml:id="facs_3_r1l12"/>
+            <zone points="198,1973 255,1972 313,1971 371,1970 429,1970 487,1969 545,1969 603,1969 661,1968 719,1968 777,1968 834,1968 892,1968 950,1968 1008,1968 1066,1967 1124,1967 1182,1966 1240,1965 1298,1964 1356,1963 1356,1906 1298,1907 1240,1908 1182,1909 1124,1910 1066,1910 1008,1911 950,1911 892,1911 834,1911 777,1911 719,1911 661,1911 603,1912 545,1912 487,1912 429,1913 371,1913 313,1914 255,1915 198,1916" rendition="Line" xml:id="facs_3_r1l13"/>
+            <zone points="203,2055 260,2056 318,2055 375,2055 433,2055 491,2054 548,2054 606,2053 664,2053 721,2052 779,2051 837,2050 894,2050 952,2049 1010,2049 1067,2048 1125,2048 1183,2048 1240,2048 1298,2049 1356,2049 1356,1989 1298,1989 1240,1988 1183,1988 1125,1988 1067,1988 1010,1989 952,1989 894,1990 837,1990 779,1991 721,1992 664,1993 606,1993 548,1994 491,1994 433,1995 375,1995 318,1995 260,1996 203,1995" rendition="Line" xml:id="facs_3_r1l14"/>
+         </zone>
+      </surface>
+      <surface start="#I1L1P4" xml:id="facs_4" ulx="0" uly="0" lrx="1429" lry="2385" corresp="LJU296_35_I_P01_004.jpg">
+         <graphic mimeType="image/jpeg" url="file:///LJU296_35_I_P01_004.jpg" xml:id="IMAGE.4"/>
+         <zone points="73,334 70,987 1379,987 1376,359" rendition="TextRegion" xml:id="facs_4_r1">
+            <zone points="223,476 278,476 333,477 388,478 443,480 498,480 553,481 609,482 664,483 719,484 774,485 829,485 884,486 939,486 995,486 1050,486 1105,486 1160,485 1215,485 1270,484 1326,483 1326,450 1270,451 1215,452 1160,452 1105,453 1050,453 995,453 939,453 884,453 829,452 774,452 719,451 664,450 609,449 553,448 498,447 443,447 388,445 333,444 278,443 223,443" rendition="Line" xml:id="facs_4_r1l1"/>
+            <zone points="186,558 245,559 305,560 364,561 424,561 484,561 543,562 603,562 663,562 722,562 782,562 842,562 901,562 961,562 1021,562 1080,563 1140,564 1200,564 1259,566 1319,567 1379,569 1379,539 1319,537 1259,536 1200,534 1140,534 1080,533 1021,532 961,532 901,532 842,532 782,532 722,532 663,532 603,532 543,532 484,531 424,531 364,531 305,530 245,529 186,528" rendition="Line" xml:id="facs_4_r1l3"/>
+            <zone points="200,647 227,647 254,648 281,648 308,649 335,650 362,650 389,651 416,652 443,652 471,653 498,653 525,653 552,654 579,653 606,653 633,653 660,652 687,651 714,650 742,648 742,596 714,598 687,599 660,600 633,601 606,601 579,601 552,602 525,601 498,601 471,601 443,600 416,600 389,599 362,598 335,598 308,597 281,596 254,596 227,595 200,595" rendition="Line" xml:id="facs_4_r1l4"/>
+            <zone points="710,739 735,738 761,738 787,738 813,738 839,738 865,738 891,738 916,738 942,738 968,738 994,738 1020,738 1046,738 1072,737 1098,737 1098,685 1072,685 1046,686 1020,686 994,686 968,686 942,686 916,686 891,686 865,686 839,686 813,686 787,686 761,686 735,686 710,687" rendition="Line" xml:id="facs_4_r1l5"/>
+            <zone points="704,811 729,811 754,811 779,811 804,811 829,811 854,811 880,811 905,811 930,811 955,811 980,812 1005,812 1031,812 1056,812 1081,812 1106,813 1131,813 1156,814 1182,814 1182,772 1156,772 1131,771 1106,771 1081,770 1056,770 1031,770 1005,770 980,770 955,769 930,769 905,769 880,769 854,769 829,769 804,769 779,769 754,769 729,769 704,769" rendition="Line" xml:id="facs_4_r1l6"/>
+            <zone points="70,985 104,985 139,986 174,986 209,986 244,987 279,987 313,987 348,987 383,987 418,987 453,987 488,987 523,987 557,986 592,986 627,985 662,985 697,984 732,983 767,982 767,930 732,931 697,932 662,933 627,933 592,934 557,934 523,935 488,935 453,935 418,935 383,935 348,935 313,935 279,935 244,935 209,934 174,934 139,934 104,933 70,933" rendition="Line" xml:id="facs_4_r1l8"/>
+         </zone>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="letter">
+            <pb facs="#facs_1" xml:id="I1L1P1" n="1"/>
+            <pb facs="#facs_2" xml:id="I1L1P2" n="2"/>
+            <opener><salute><lb facs="#facs_2_r1l3" n="N001"/>Wohlgeborner Herr!</salute></opener>
+            <p facs="#facs_2_r1">
+               <graphic url="/o:tpcl.1/IMAGE.2"/>
+               <lb facs="#facs_2_r1l4" n="N002"/>Gleichwie Sie, die Wünsche für mein Wohl, mir so
+                  <lb facs="#facs_2_r1l5" n="N003"/>tiefgefühlt geschildert haben, – eben so ist <lb facs="#facs_2_r1l6" n="N004"/>auch mein Danck dafür. <lb facs="#facs_2_r1l7" n="N005"/>Sie beehrten mich mit einem Geständnisse, <lb facs="#facs_2_r1l8" n="N006"/>welches ich, wenn ich bloß meine Neigung <lb facs="#facs_2_r1l9" n="N007"/>zu befragen hätte, wahrscheinlich befriedigender <lb facs="#facs_2_r1l10" n="N008"/>beantworten könnte, – allein ich muß Ihnen <lb facs="#facs_2_r1l11" n="N009"/>eines Umstandes erwähnen, der bey meinen <lb facs="#facs_2_r1l12" n="N010"/>Ältern, Ihren Wünschen im Wege stehn dürfte, <lb facs="#facs_2_r1l13" n="N011"/>nähmlich, daß ich mich von <placeName ref="placeName.xml#ljubljana">Laibach</placeName> entfernen <lb facs="#facs_2_line_1545137655564_351" n="N012"/>müßte. - Sprechen Sie in dieser
+               Hinsicht <lb facs="#facs_2_r1l16" n="N013"/>mit meinem Vater, und nach seiner Antwort
+                  <lb facs="#facs_2_r1l17" n="N014"/>werde ich erst die meinige bestimmen können. </p>
+            <closer><salute><lb facs="#facs_2_r1l18" n="N015"/>Ihre Freundin</salute>
+               <signed><lb facs="#facs_2_r1l19" n="N016"/><persName ref="persName.xml#josephine">Josephine Zeschka</persName></signed>
+               <dateline rend="right"><lb facs="#facs_2_r1l20" n="N017"/><placeName ref="placeName.xml#ljubljana">Laibach</placeName> den <date when="1825-03-22">22. März 1825</date>.</dateline></closer>
+
+         </div>
+         <div type="copyletter">
+            <pb facs="#facs_3" xml:id="I1L1P3" n="3"/>
+            <opener><salute><lb facs="#facs_3_r1l2" n="N001"/>Wohlgeborner Herr!</salute></opener>
+            <p facs="#facs_3_r1">
+               <lb facs="#facs_3_r1l3" n="N002"/>Gleichwie Sie, die Wünsche für mein Wohl, <lb facs="#facs_3_r1l4" n="N003"/>mir so tiefgefühlt geschildert haben, <lb facs="#facs_3_r1l5" n="N004"/>eben so ist auch mein Danck dafür. <lb facs="#facs_3_r1l6" n="N005"/>Sie beehrten mich mit einem Geständ <lb facs="#facs_3_r1l7" n="N006"/>nisse,welches ich, wenn ich bloß meine <lb facs="#facs_3_r1l8" n="N007"/>Neigung zu befragen hätte, wahrscheinlich <lb facs="#facs_3_r1l9" n="N008"/>befriedigender beantworten könnte, <lb facs="#facs_3_r1l10" n="N009"/>allein ich muß Ihnen eines Umstandes <lb facs="#facs_3_r1l11" n="N010"/>erwähnen, der bey meinen Ältern, Ihre <lb facs="#facs_3_r1l12" n="N011"/>Wünschen im Wege stehn dürfte, <lb facs="#facs_3_r1l13" n="N012"/>nähmlich, daß ich mich von <placeName ref="placeName.xml#ljubljana">Laibach</placeName> entfernen <lb facs="#facs_3_r1l14" n="N013"/>fernen müßte. –Sprechen Sie in dieser </p>
+            <pb facs="#facs_4" xml:id="I1L1P4" n="4"/>
+            <p facs="#facs_4_r1">
+               <lb facs="#facs_4_r1l1" n="N001"/>Hinsicht mit meinem Vater, und nach <lb facs="#facs_4_r1l3" n="N002"/>seiner Antwort werde ich erst die meinige <lb facs="#facs_4_r1l4" n="N003"/>bestimmen können.</p>
+            <closer><lb facs="#facs_4_r1l5" n="N004"/><salute>Ihre Freundin</salute>
+               <signed><lb facs="#facs_4_r1l6" n="N005"/><persName ref="persName.xml#josephine">Josephine Zeschka</persName></signed>
+               <dateline rend="right"><lb facs="#facs_4_r1l8" n="N006"/><placeName ref="placeName.xml#ljubljana">Laibach</placeName> den <date when="1825-03-22">22. März 1825</date>.</dateline></closer>
+         </div>
+      </body>
+   </text>
+</TEI>

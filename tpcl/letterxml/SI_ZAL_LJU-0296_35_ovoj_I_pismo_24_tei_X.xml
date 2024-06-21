@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title type="main">SI_ZAL_LJU-0296_35_ovoj I_pismo 24</title>
+			<editor>
+               <persName xml:id="JG">
+                  <surname>Glavič</surname>
+                  <forename>Jože</forename>
+               </persName>
+            </editor><respStmt xml:id="NBK">               
+               <persName>
+                  <surname>Budna</surname>
+                  <surname>Kodrič</surname>
+                  <forename>Nataša</forename>
+               </persName>
+               <resp>Transcribing</resp>
+            </respStmt></titleStmt>
+			<publicationStmt>
+            <publisher>Zgodovinski arhiv Ljubljana</publisher>
+            <address>
+               <orgName>Zgodovinski arhiv Ljubljana</orgName>
+               <street>Mestni trg, 27</street>
+               <settlement>Ljubljana</settlement>
+               <postCode>1000</postCode>
+               <country>Slovenija</country>
+            </address>
+            <distributor>ZIM</distributor>
+            <pubPlace>Graz</pubPlace>
+            <date when="2020">2020</date>
+			<idno type="PID">o:tpcl.24</idno>						
+			</publicationStmt>
+			<sourceDesc>
+            <bibl/>   
+            <msDesc rend="manuscript">
+               <msIdentifier>
+                  <institution xml:lang="sl">Zgodovinski arhiv Ljubljana</institution>                  
+                  <repository>SI_ZAL_LJU/0296 Graščina Fužine, Ljubljana, 1616-1925</repository>              
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+		</fileDesc>	
+	<profileDesc>         
+         <correspDesc>
+         	<correspAction type="sent">
+         		<persName ref="persName.xml#fidelij">Fidelis Terpinz</persName>
+         		<placeName ref="placeName.xml#ljubljana">Laibach</placeName>
+         		<date when="1831-05-28"/>
+         	</correspAction>
+         	<correspAction type="received">
+         		<persName ref="persName.xml#josephine">Josephine Zeschka</persName>         		
+         	</correspAction>
+         </correspDesc>
+      </profileDesc>
+	<encodingDesc>
+			<projectDesc>
+				<p>This document is part of the <ref type="context" target="context:tpcl">Terpinc Familiy Letters</ref> project.</p>
+				<p>End line word seperation is marked with <lb break="no"/> with no whitespace. Word is denoted with <w/> tag.</p>
+				<p>People and place names are denoted with <persName/> <placeName/> elements respectively. 
+					Both include reference to an external document persName.xml and Place.xml respectively. Example of a reference <persName ref="persName.xml#josephine">Josephine Zeschka</persName>
+					Reference to a person is denoted with <rs type="person" ref="persName.xml#terezija">Mama</rs> as an example, when person is denoted with a postion or relationship.
+				</p>
+				<p/>								
+			</projectDesc>
+		<tagsDecl>
+			<rendition xml:id="center" scheme="css">text-align: center;</rendition>
+			<rendition xml:id="left" scheme="css">text-align: left;</rendition>
+			<rendition xml:id="right" scheme="css">text-align: right;</rendition>
+			<rendition xml:id="hi-underlined" scheme="css">text-decoration: underline;</rendition>
+			<rendition xml:id="hi-superscript" scheme="css">vertical-align: super;</rendition>
+			<rendition xml:id="hi-italic" scheme="css">font-style: italic;</rendition>
+		</tagsDecl>
+	</encodingDesc>
+	</teiHeader>
+	<facsimile><surface xml:id="facs_1" ulx="0" uly="0" lrx="1513" lry="2389" corresp="LJU296_35_I_P24_001.jpg" start="#I1L24P1">
+			<graphic mimeType="image/jpeg" url="LJU296_35_I_P24_001.jpg" xml:id="IMAGE.1" width="1513px" height="2389px"/>
+			<zone points="128,25 128,2167 1488,2167 1488,25" rendition="TextRegion" xml:id="facs_1_r1">
+				<zone points="690,155 853,180 1037,77 1181,76 1213,50 1336,118 1467,54 1470,0 699,0" rendition="Line" xml:id="facs_1_r1l1"/>
+				<zone points="848,220 882,228 1000,186 1048,193 1090,237 1223,168 1260,183 1337,170 1341,102 1203,128 1134,92 1094,114 1010,81 949,113 853,111" rendition="Line" xml:id="facs_1_r1l2"/>
+				<zone points="281,435 442,433 549,492 637,447 776,494 890,435 953,470 1144,428 1146,311 1026,292 764,400 643,361 563,391 432,338 281,396" rendition="Line" xml:id="facs_1_r1l3"/>
+				<zone points="197,652 423,591 635,657 791,628 1037,664 1154,585 1393,591 1394,499 1018,442 539,546 198,447" rendition="Line" xml:id="facs_1_r1l4"/>
+				<zone points="183,748 366,697 832,697 1068,771 1252,685 1425,694 1426,650 1236,630 833,680 412,632 185,660" rendition="Line" xml:id="facs_1_r1l5"/>
+				<zone points="178,852 842,805 995,882 1116,822 1349,872 1483,803 1485,664 1205,774 835,696 687,761 531,696 307,781 178,746" rendition="Line" xml:id="facs_1_r1l6"/>
+				<zone points="173,937 393,917 484,990 973,904 1141,974 1452,902 1453,862 1231,843 1008,885 857,842 811,880 499,879 398,827 173,885" rendition="Line" xml:id="facs_1_r1l7"/>
+				<zone points="178,1080 349,1030 418,1067 474,1020 669,1075 895,1005 1225,1033 1467,1006 1468,958 1141,973 1001,907 845,964 554,953 457,993 346,922 178,973" rendition="Line" xml:id="facs_1_r1l8"/>
+				<zone points="134,1174 274,1119 425,1183 486,1144 583,1166 692,1104 1126,1176 1248,1114 1404,1112 1406,1033 1235,1085 1159,1025 966,1075 823,1043 517,1092 344,1045 136,1082" rendition="Line" xml:id="facs_1_r1l9"/>
+				<zone points="183,1238 420,1268 492,1221 541,1216 564,1240 605,1216 655,1252 780,1263 785,1131 690,1102 583,1168 499,1144 432,1184 318,1147 186,1163" rendition="Line" xml:id="facs_1_r1l10"/>
+				<zone points="146,1401 328,1336 613,1403 744,1332 1320,1342 1483,1292 1198,1230 864,1312 759,1258 622,1287 538,1218 464,1265 287,1236 148,1294" rendition="Line" xml:id="facs_1_r1l11"/>
+				<zone points="136,1460 743,1448 921,1522 1072,1425 1226,1426 1307,1492 1386,1446 1482,1460 1485,1356 1384,1349 1042,1401 754,1331 613,1403 329,1336 138,1406" rendition="Line" xml:id="facs_1_r1l12"/>
+				<zone points="160,1586 465,1608 573,1547 1033,1530 1458,1579 1460,1455 1315,1494 1173,1420 1023,1512 820,1470 457,1530 240,1487 161,1527" rendition="Line" xml:id="facs_1_r1l13"/>
+				<zone points="148,1712 470,1648 874,1682 1310,1631 1381,1665 1460,1655 1462,1576 1320,1601 1248,1562 1072,1620 942,1532 860,1567 697,1542 314,1633 151,1586" rendition="Line" xml:id="facs_1_r1l14"/>
+				<zone points="136,1793 687,1752 810,1831 969,1767 1126,1828 1404,1746 1468,1766 1470,1693 911,1668 543,1734 407,1670 247,1734 138,1719" rendition="Line" xml:id="facs_1_r1l15"/>
+				<zone points="129,1806 192,1779 979,1777 1408,1793 1448,1814 1448,1851 815,1935 749,1932 129,1897" rendition="Line" xml:id="facs_1_l"/>
+				<zone points="139,2031 297,1976 358,2033 539,1959 677,1962 803,2029 869,1984 976,2019 1063,1961 1472,1959 1473,1861 1364,1915 1067,1866 788,1939 659,1865 402,1919 143,1900" rendition="Line" xml:id="facs_1_r1l19"/>
+				<zone points="146,2102 400,2056 543,2103 862,2046 1473,2065 1475,1981 1216,1947 973,2021 869,1984 800,2028 539,1959 354,2041 148,2036" rendition="Line" xml:id="facs_1_r1l20"/>
+				<zone points="118,2214 474,2216 553,2172 838,2224 981,2154 1446,2155 1446,2066 1327,2034 1102,2105 1015,2053 828,2100 754,2051 551,2120 383,2058 119,2122" rendition="Line" xml:id="facs_1_r1l21"/>
+			</zone>
+		</surface><surface xml:id="facs_2" ulx="0" uly="0" lrx="3009" lry="2394" corresp="LJU296_35_I_P24_002.jpg" start="#I1L24P2">
+			<graphic mimeType="image/jpeg" url="LJU296_35_I_P24_002.jpg" xml:id="IMAGE.2" width="3009px" height="2394px"/>
+			<zone points="108,98 108,2326 1602,2326 1602,98" rendition="TextRegion" xml:id="facs_2_r_19268">
+				<zone points="115,306 237,262 309,309 410,260 467,309 612,228 684,260 810,223 1061,219 1135,281 1243,219 1497,226 1499,163 1259,106 983,136 875,92 578,198 267,210 210,166 117,198" rendition="Line" xml:id="facs_2_r1l2"/>
+				<zone points="152,355 288,345 414,408 546,334 670,408 794,332 951,396 1071,322 1179,368 1246,327 1306,387 1556,387 1561,242 1204,228 1126,279 1045,221 732,295 516,267 467,309 410,260 299,311 235,262 154,272" rendition="Line" xml:id="facs_2_r1l4"/>
+				<zone points="92,511 318,437 477,488 573,431 840,426 965,495 1036,454 1114,500 1347,417 1457,440 1457,378 1179,368 1073,322 965,389 776,345 670,408 516,352 385,408 276,345 94,394" rendition="Line" xml:id="facs_2_r1l6"/>
+				<zone points="129,566 677,534 776,578 861,530 960,557 1140,518 1368,592 1391,486 1264,449 976,500 884,442 728,493 474,486 378,447 129,516" rendition="Line" xml:id="facs_2_r1l7"/>
+				<zone points="129,635 490,684 967,645 1055,702 1464,624 1538,659 1540,532 1368,589 1167,550 1011,596 905,527 776,578 672,536 479,548 380,610 131,589" rendition="Line" xml:id="facs_2_r1l9"/>
+				<zone points="106,764 389,739 490,801 626,758 732,813 926,734 1045,808 1140,801 1276,734 1335,771 1497,746 1499,649 1091,702 967,647 502,684 394,647 309,698 196,635 108,663" rendition="Line" xml:id="facs_2_r1l11"/>
+				<zone points="131,847 808,831 962,907 1117,829 1481,829 1481,753 1418,741 1052,810 997,774 956,810 705,808 645,764 320,817 253,774 131,794" rendition="Line" xml:id="facs_2_r1l13"/>
+				<zone points="140,972 318,946 419,1008 550,949 684,1029 1020,935 1147,992 1322,995 1577,939 1580,880 1467,893 1407,838 1299,898 1246,850 1096,836 965,909 898,845 794,831 299,838 140,896" rendition="Line" xml:id="facs_2_r1l15"/>
+				<zone points="131,1071 709,1048 960,1119 1156,1038 1257,1089 1398,1036 1487,1061 1524,1050 1527,956 1151,1018 958,953 624,1034 495,981 419,1008 318,946 134,965" rendition="Line" xml:id="facs_2_r1l17"/>
+				<zone points="147,1170 543,1234 672,1200 820,1239 981,1197 1384,1218 1432,1207 1434,1052 960,1119 831,1073 711,1137 463,1091 336,1151 147,1128" rendition="Line" xml:id="facs_2_r1l19"/>
+				<zone points="136,1349 412,1312 571,1356 778,1271 1025,1372 1255,1259 1455,1259 1455,1204 1301,1197 824,1243 767,1204 518,1241 417,1202 306,1248 140,1209" rendition="Line" xml:id="facs_2_r1l21"/>
+				<zone points="161,1423 513,1407 831,1487 1080,1388 1246,1455 1352,1400 1485,1402 1487,1306 1170,1296 1022,1370 824,1326 560,1356 408,1310 161,1361" rendition="Line" xml:id="facs_2_r1l23"/>
+				<zone points="170,1531 877,1556 1131,1492 1476,1499 1476,1432 1418,1409 1280,1467 1117,1423 831,1487 603,1430 313,1478 173,1446" rendition="Line" xml:id="facs_2_r1l25"/>
+				<zone points="136,1637 633,1679 916,1614 1068,1660 1266,1593 1441,1621 1444,1531 1218,1490 877,1556 484,1531 138,1570" rendition="Line" xml:id="facs_2_r1l27"/>
+				<zone points="122,1743 345,1803 760,1780 1013,1708 1154,1738 1289,1695 1375,1734 1487,1715 1490,1630 1398,1669 1218,1600 1068,1660 969,1612 557,1692 124,1653" rendition="Line" xml:id="facs_2_r1l29"/>
+				<zone points="161,1870 456,1865 553,1918 695,1833 1128,1814 1312,1904 1405,1842 1575,1863 1577,1731 1393,1715 1043,1791 866,1759 161,1796" rendition="Line" xml:id="facs_2_r1l31"/>
+				<zone points="180,1955 490,1987 626,1948 767,2008 960,1950 1119,1964 1177,2017 1375,1964 1375,1909 1253,1851 854,1870 767,1911 661,1849 548,1920 456,1867 180,1888" rendition="Line" xml:id="facs_2_r1l34"/>
+				<zone points="145,2093 313,2049 444,2123 523,2081 617,2114 748,2049 912,2061 962,2107 1032,2063 1428,2042 1340,1966 1179,2019 1119,1964 951,1955 857,2008 672,1978 560,2031 451,1964 147,1950" rendition="Line" xml:id="facs_2_r1l36"/>
+				<zone points="166,2224 348,2167 479,2233 672,2192 834,2238 969,2167 1117,2157 1255,2236 1602,2146 1602,2055 1462,2054 1306,2111 1207,2058 1091,2104 1038,2065 967,2100 744,2049 615,2118 525,2079 463,2128 357,2068 170,2077" rendition="Line" xml:id="facs_2_l_19282"/>
+			</zone>
+			<zone points="1602,2326 2978,2326 2978,98 1602,98" rendition="TextRegion" xml:id="facs_2_r_19269">
+				<zone points="1676,228 2086,175 2245,228 2397,182 2473,246 2556,212 2597,246 2733,168 2795,180 2802,0 1685,0" rendition="Line" xml:id="facs_2_r1l1"/>
+				<zone points="1688,315 1906,315 2068,394 2549,332 2793,366 2917,302 2922,196 2846,170 2634,251 2560,214 2383,249 2104,166 1757,288 1690,256" rendition="Line" xml:id="facs_2_r1l3"/>
+				<zone points="1676,479 1722,477 1759,454 1814,458 1897,412 1934,419 1934,378 1904,382 1833,350 1791,359 1778,348 1755,355 1748,348 1711,359 1697,345 1679,345" rendition="Line" xml:id="facs_2_r1l5"/>
+				<zone points="1679,564 2005,541 2180,638 2353,534 2664,566 2885,534 2857,426 2740,479 2524,431 2450,477 2072,463 1920,504 1759,454 1681,493" rendition="Line" xml:id="facs_2_r1l8"/>
+				<zone points="1718,668 2114,654 2245,739 2289,698 2415,732 2655,649 2763,716 2844,711 2827,560 2388,532 2171,631 2012,541 1722,557" rendition="Line" xml:id="facs_2_r1l10"/>
+				<zone points="1642,840 1879,792 2008,857 2171,764 2950,769 2973,672 2600,728 2507,679 2436,732 2291,698 2203,737 2116,695 1644,739" rendition="Line" xml:id="facs_2_r1l12"/>
+				<zone points="1662,962 1812,903 1964,939 2247,870 2399,898 2565,861 2735,919 2961,861 2966,783 2850,748 2652,806 2530,760 2471,794 2319,764 2005,857 1959,817 1667,854" rendition="Line" xml:id="facs_2_r1l14"/>
+				<zone points="1644,1048 2128,999 2286,1059 2505,981 2689,1059 2864,1002 2867,891 2650,930 2484,861 2095,960 1819,909 1646,960" rendition="Line" xml:id="facs_2_r1l16"/>
+				<zone points="1630,1158 1856,1167 2061,1098 2187,1165 2307,1103 2489,1165 2643,1089 2910,1103 2915,1004 2662,1059 2505,981 2286,1059 1969,1022 1635,1050" rendition="Line" xml:id="facs_2_r1l18"/>
+				<zone points="1621,1282 1812,1306 2072,1209 2229,1255 2404,1218 2572,1257 2669,1204 2952,1195 2954,1105 2857,1094 2537,1170 2353,1121 2160,1154 2061,1098 1858,1167 1761,1137 1626,1170" rendition="Line" xml:id="facs_2_r1l20"/>
+				<zone points="1621,1335 2005,1372 2116,1315 2701,1333 2874,1299 2876,1262 2461,1227 2296,1278 2010,1204 1812,1306 1621,1292" rendition="Line" xml:id="facs_2_r1l22"/>
+				<zone points="1605,1483 1918,1430 2233,1471 2349,1444 2436,1506 2602,1421 2885,1448 2887,1356 2814,1393 2595,1347 2510,1393 2376,1329 2137,1386 1923,1338 1607,1358" rendition="Line" xml:id="facs_2_r1l24"/>
+				<zone points="1619,1559 1906,1616 2284,1531 2901,1531 2901,1441 2804,1421 2540,1444 2429,1508 2305,1444 1906,1444 1784,1508 1621,1469" rendition="Line" xml:id="facs_2_r1l26"/>
+				<zone points="1593,1669 2920,1630 2920,1570 2754,1540 2411,1609 2217,1552 1978,1619 1833,1582 1755,1621 1688,1570 1596,1605" rendition="Line" xml:id="facs_2_r1l28"/>
+				<zone points="1600,1810 2107,1761 2374,1851 2549,1750 2878,1750 2880,1655 2846,1649 2489,1679 2402,1637 2187,1639 2033,1731 1828,1655 1603,1690" rendition="Line" xml:id="facs_2_r1l30"/>
+				<zone points="1614,1925 1616,1872 1702,1824 2118,1764 2519,1775 2864,1787 2901,1805 2899,1902 2335,1955" rendition="Line" xml:id="facs_2_l_20759"/>
+				<zone points="1602,2066 2063,1980 2816,1999 2818,1911 2537,1883 2372,1957 2058,1900 1847,1948 1745,1890 1602,1964" rendition="Line" xml:id="facs_2_l_19278"/>
+				<zone points="1602,2146 1603,2146 1697,2203 1817,2100 2012,2095 2017,2005 1872,2058 1602,2055" rendition="Line" xml:id="facs_2_l_19283"/>
+				<zone points="1817,2243 2121,2199 2305,2268 2480,2183 2956,2201 2917,2081 2745,2095 2570,2010 2392,2114 2217,2068 1819,2107" rendition="Line" xml:id="facs_2_r1l38"/>
+				<zone points="2529,2325 2556,2341 2635,2306 2711,2320 2759,2304 2784,2316 2833,2295 2860,2304 2863,2212 2777,2223 2697,2205 2529,2256" rendition="Line" xml:id="facs_2_r1l40"/>
+				<zone points="1615,2394 1823,2393 1959,2305 2099,2335 2134,2319 2134,2241 1963,2202 1894,2243 1781,2211 1634,2250 1615,2247" rendition="Line" xml:id="facs_2_l_19288"/>
+			</zone>
+		</surface><surface xml:id="facs_3" ulx="0" uly="0" lrx="1511" lry="2389" corresp="LJU296_35_I_P24_003.jpg" start="#I1L24P3">
+			<graphic mimeType="image/jpeg" url="LJU296_35_I_P24_003.jpg" xml:id="IMAGE.3" width="1511px" height="2389px"/>
+		</surface></facsimile>
+	
+	
+	
+	<text>
+		<body><div type="letter">
+			<pb facs="#facs_1" n="1" xml:id="I1L24P1"/>
+			
+			<opener><lb facs="#facs_1_r1l1" n="N001"/><dateline rend="right">Samstag 2 Uhr Nach
+				
+				<lb facs="#facs_1_r1l2" n="N002"/>dem Essen.</dateline>
+				
+				<lb facs="#facs_1_r1l3" n="N003"/><salute rend="center">Liebe gute <choice><abbr>u</abbr><expan>und</expan></choice> böse <persName ref="persName.xml#josephine">Pepi</persName>!</salute></opener>
+			
+			
+			<p facs="#facs_1_r1">
+				
+					<lb facs="#facs_1_r1l4" n="N004"/>Ich danke Dir für Deine freund
+
+					<lb facs="#facs_1_r1l5" n="N005"/>schaftliche Erinnerung an mich: auch
+
+					<lb facs="#facs_1_r1l6" n="N006"/>ich hätte Dir liebe <persName ref="persName.xml#josephine">Pepi</persName> heute durch
+
+					<lb facs="#facs_1_r1l7" n="N007"/>den Bothen geschrieben, wenn sich mir
+
+					<lb facs="#facs_1_r1l8" n="N008"/>nicht diese viel paßendere Gelegen
+
+					<lb facs="#facs_1_r1l9" n="N009"/>heit durch <choice><abbr>H.</abbr><expan>Herr</expan></choice> <hi rend="italic">Gubernialrath</hi> <choice><sic resp="#NBK">sebst</sic><corr>selbst</corr></choice>
+
+					<lb facs="#facs_1_r1l10" n="N010"/>ereignet hätte.
+
+					<lb facs="#facs_1_r1l11" n="N011"/>Ich möchte Dich schon gerne da haben, um
+
+					<lb facs="#facs_1_r1l12" n="N012"/>Dich nochMahl für die lezt unüberlegte
+
+					<lb facs="#facs_1_r1l13" n="N013"/>Beleidigung abbitten zu können, doch
+
+					<lb facs="#facs_1_r1l14" n="N014"/>ich weiß es zu gut, daß mir meine so
+
+					<lb facs="#facs_1_r1l15" n="N015"/>gute <persName ref="persName.xml#josephine">Pepi</persName> unmöglich jezt noch zürnen
+
+					<lb facs="#facs_1_l" n="N016"/>kann, auch verdiene ich s' nach meiner
+
+					<lb facs="#facs_1_r1l19" n="N017"/>aufrichtigen Meinung nicht so sehr, indem
+
+					<lb facs="#facs_1_r1l20" n="N018"/>ich dabey nichts arges im Schilde führte.
+
+					<lb facs="#facs_1_r1l21" n="N019"/>Doch! genug von dem, ich muß es nun
+
+			</p>
+			<pb facs="#facs_2" n="2" xml:id="I1L24P2"/>
+			<p facs="#facs_2_r_19268">
+				
+					<lb facs="#facs_2_r1l2" n="N001"/>theuer genug büßen, keine größere
+
+					<lb facs="#facs_2_r1l4" n="N002"/>Strafe für mich, als Deine Abwesenheit.
+
+					<lb facs="#facs_2_r1l6" n="N003"/>Sey mir also wieder recht gut meine
+
+					<lb facs="#facs_2_r1l7" n="N004"/>geliebte  <hi rend="italic"><persName ref="persName.xml#josephine">Josephine</persName></hi>, so wie auch Dir
+
+					<lb facs="#facs_2_r1l9" n="N005"/>im innersten Dein <hi rend="italic"><persName ref="persName.xml#fidelij">Fidel</persName></hi>, herzlich gut ist. ––
+
+					<lb facs="#facs_2_r1l11" n="N006"/>Dein Bruder hat vorgestern geschrieben,
+
+					<lb facs="#facs_2_r1l13" n="N007"/>wodurch die <rs type="person" ref="persName.xml#terezija">Mama</rs> gänzlich beruhiget
+
+				<lb facs="#facs_2_r1l15" n="N008"/>ist, er befindet sich schon bey <choice><abbr>H.</abbr><expan>Herr</expan></choice> <choice><abbr>v.</abbr><expan>von</expan></choice> <persName ref="persName.xml#rosweck">Rosweck</persName><note>Verjetno dunajski trgovec/podjetnik Rossweg, ki ga omenja pozneje.</note>
+
+					<lb facs="#facs_2_r1l17" n="N009"/>in <hi rend="italic">Condition</hi>, <choice><abbr>u</abbr><expan>und</expan></choice> ist lustig, <choice><abbr>u</abbr><expan>und</expan></choice> beschreibt
+
+				<lb facs="#facs_2_r1l19" n="N010"/>manches unerwartete von <hi rend="italic"><persName>Haupt.Z</persName></hi>.<note>"Haupt. Z." je mogoče stotnik Zergollern.</note>
+
+					<lb facs="#facs_2_r1l21" n="N011"/>Vorgestern brachte ich die Nacht mit
+
+				<lb facs="#facs_2_r1l23" n="N012"/><hi rend="italic"><persName>Carl</persName><note>Mogoče nečak Karl Florian.</note></hi> in <hi rend="italic"><placeName ref="placeName.xml#fuzine">Kaltenbrunn</placeName></hi> zu, gestern hier,
+
+					<lb facs="#facs_2_r1l25" n="N013"/><choice><abbr>u</abbr><expan>und</expan></choice> war Abends in der <hi rend="italic">Accademie</hi> der
+
+				<lb facs="#facs_2_r1l27" n="N014"/><hi rend="italic"><persName>Lienhard</persName></hi><note>Hči A. T. Linharta Sofija por. Heuschober je imela v petek, 27. maja 1831, v dvorani Filharmoničnega društva koncert. V napovedi je bilo navedeno: "Sophie L i n h a r t , Tochter eines hochgefeierten vaterländischen Schriftstellers dürfte als ausgezeichnete Sängerinn auf die Theilnahme ihrer edlen Landsleute und aller Kunstfreunde um so mehr Anspruch machen können, und sich eines zahlreichen Concertbesuches zu erfreuen haben, als ihr bereits bekannter Entschluss, ihrem Vaterlande durch Bildung der weiblichen Jugend und dem hiesigen Vereine durch stete bereitwillige Mitwirkung bei musikalischen Pro- ductionen nützlich zu werden, wohl alle Berücksichtigung verdient." LZ, 26. 5. 1831, str. 168, Concert-Anzeige.</note> mit <hi rend="italic"><persName>Anderle</persName></hi>, <hi rend="italic"><persName>Eleonore
+
+					<lb facs="#facs_2_r1l29" n="N015"/>H.</persName></hi><note>Eleonora Hauck, pevka Filharmoničnega društva, hči stotnika Leopolda Haucka, bivala v Češkovi hiši v Mestu 8.</note> sang, ich verspättete es aber, es
+
+					<lb facs="#facs_2_r1l31" n="N016"/>soll nach Urtheil anderer alles ziemlich
+
+					<lb facs="#facs_2_r1l34" n="N017"/>mittelmäßig ausgefallen seyn. ––
+
+					<lb facs="#facs_2_r1l36" n="N018"/>Heute trug sich ein Kutscherer, der
+
+				<lb facs="#facs_2_l_19282" n="N019"/>5. Jahre beym <hi rend="italic"><persName>Dreo</persName></hi><note>Mogoče Anton Treo (1806–1888), oče pozneje pomembnega gradbenika in podjetnika Viljema Trea, ki je bil tudi sam zidarski mojster in je že imel stavbno podjetje v Kapucinskem predmestju v bližini Kolizeja (gl. 3. 10. 1888 (Verzeich- niß der hier Verstorbenen); osmrtnica v LZ 3. 10. 1888).</note> gedient, er gefällt
+
+			</p>
+			<p facs="#facs_2_r_19269">
+				
+					<lb facs="#facs_2_r1l1" n="N001"/>mir ziemlich, doch habe ihn zur
+
+					<lb facs="#facs_2_r1l3" n="N002"/>weitern Besichtigung für Dich
+
+					<lb facs="#facs_2_r1l5" n="N003"/>gelassen.
+
+					<lb facs="#facs_2_r1l8" n="N004"/>Morgen holle ich Dich ab, außer
+
+					<lb facs="#facs_2_r1l10" n="N005"/>es wäre der Weg unpaßirlich<choice><corr resp="#NBK">.</corr></choice> ––
+
+					<lb facs="#facs_2_r1l12" n="N006"/>Gestern während der <hi rend="italic">Accademie</hi>
+
+					<lb facs="#facs_2_r1l14" n="N007"/>erhielt ich gerade vor den <hi rend="italic">Redouten</hi>
+
+					<lb facs="#facs_2_r1l16" n="N008"/>Gebäude, dieß <hi rend="italic">Bouquet</hi> von <choice><abbr>H.</abbr><expan>Herr</expan></choice>
+
+				<lb facs="#facs_2_r1l18" n="N009"/><hi rend="italic">Apoth. <persName>Wagner</persName></hi><note>Jožef Friedrich Wagner, lekarnar na Glavnem trgu 4.</note> für Dich, <choice><abbr>u</abbr><expan>und</expan></choice> weil
+
+					<lb facs="#facs_2_r1l20" n="N010"/>solches zu groß war um selbes
+
+					<lb facs="#facs_2_r1l22" n="N011"/>in der <hi rend="italic">Accademie</hi> verborgen zu
+
+					<lb facs="#facs_2_r1l24" n="N012"/>halten, so versteckte ich's, auf
+
+					<lb facs="#facs_2_r1l26" n="N013"/>der <hi rend="underlined">Statue</hi> vor der <hi rend="italic">St. Jakobs</hi>
+
+					<lb facs="#facs_2_r1l28" n="N014"/>Kirche, welches ich nachdem wieder
+
+					<lb facs="#facs_2_r1l30" n="N015"/>abhollte. – Sonst nichts neues
+
+					<lb facs="#facs_2_l_20759" n="N016"/>hier. –– <del rend="overstrike">M</del>einen Handkuß der
+
+					<lb facs="#facs_2_l_19278" n="N017"/>gnad. F. <choice><abbr>v.</abbr><expan>von</expan></choice> <persName>Wagner</persName>, <choice><abbr>u</abbr><expan>und</expan></choice> Dir alle
+
+					<lb facs="#facs_2_l_19283" n="N018"/>übrigen.
+
+			</p>
+			
+			<closer>
+				
+				
+				<salute rend="right"><lb facs="#facs_2_r1l38" n="N019"/><hi rend="italic">Dein Dich innigst liebender</hi>
+				
+				<lb facs="#facs_2_l_19288" n="N021"/>vergante
+					<lb facs="#facs_2_r1l40" n="N020"/><hi rend="italic"><persName ref="persName.xml#fidelij">Fidelis</persName>.</hi></salute>
+			</closer>
+			<pb facs="#facs_3" n="3" xml:id="I1L24P3"/>
+		</div></body>
+	</text>
+</TEI>

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title type="main">SI_ZAL_LJU-0296_35_ovoj I_pismo 68</title>
+			<editor>
+               <persName xml:id="JG">
+                  <surname>Glavič</surname>
+                  <forename>Jože</forename>
+               </persName>
+            </editor><respStmt xml:id="NBK">               
+               <persName>
+                  <surname>Budna</surname>
+                  <surname>Kodrič</surname>
+                  <forename>Nataša</forename>
+               </persName>
+               <resp>Transcribing</resp>
+            </respStmt></titleStmt>
+			<publicationStmt>
+            <publisher>Zgodovinski arhiv Ljubljana</publisher>
+            <address>
+               <orgName>Zgodovinski arhiv Ljubljana</orgName>
+               <street>Mestni trg, 27</street>
+               <settlement>Ljubljana</settlement>
+               <postCode>1000</postCode>
+               <country>Slovenija</country>
+            </address>
+            <distributor>ZIM</distributor>
+            <pubPlace>Graz</pubPlace>
+            <date when="2020">2020</date>
+         <idno type="PID">o:tpcl.68</idno> 			</publicationStmt>
+			<sourceDesc>
+            <bibl/>   <!--AUTOMATIC NAMING AFTER adding correspDesc; Naming "Pismo" + <correspAction type="sent"><persName>Josephine Zeschka</persName> ""poslano k" <correspAction type="received"><persName><persName ref="persName.xml#fidelij">Fidelis</persName> Terpinz</persName> + " <date when="1825-03-22">22.März.1825</date>" -->
+            <msDesc rend="manuscript">
+               <msIdentifier>
+                  <institution xml:lang="sl">Zgodovinski arhiv Ljubljana</institution>                  
+                  <repository>SI_ZAL_LJU/0296 Graščina Fužine, Ljubljana, 1616-1925</repository>              
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+		</fileDesc>
+	<profileDesc>
+         <!-- ADD MANUAL-->
+         <correspDesc>
+         	<correspAction type="sent">
+         		<persName ref="persName.xml#fidelij">Fidelis Terpinz</persName>
+         		<placeName ref="placeName.xml#ljubljana">Laibach</placeName>
+         		<date when="1830-07-24"/>
+         	</correspAction>
+         	<correspAction type="received">
+         		<persName ref="persName.xml#josephine">Josephine Zeschka</persName>
+         		<placeName ref="placeName.xml#belanakoroškem">Koroška Bela</placeName>
+         	</correspAction>
+         </correspDesc>
+      </profileDesc><encodingDesc>
+         <projectDesc>
+            <p>This document is part of the <ref type="context" target="context:tpcl">Terpinc Familiy Letters</ref> project.</p>
+            <p>End line word seperation is marked with <lb break="no"/> with no whitespace. Word is denoted with <w/> tag.</p>
+            <p>People and place names are denoted with <persName/> <placeName/> elements respectively. 
+               Both include reference to an external document persName.xml and Place.xml respectively. Example of a reference <persName ref="persName.xml#josephine">Josephine Zeschka</persName>
+               Reference to a person is denoted with <rs type="person" ref="persName.xml#terezija">Mama</rs> as an example, when person is denoted with a postion or relationship.
+            </p>
+            <p/>								
+         </projectDesc>
+         <tagsDecl>
+            <rendition xml:id="center" scheme="css">text-align: center;</rendition>
+            <rendition xml:id="left" scheme="css">text-align: left;</rendition>
+            <rendition xml:id="right" scheme="css">text-align: right;</rendition>
+            <rendition xml:id="hi-underlined" scheme="css">text-decoration: underline;</rendition>
+            <rendition xml:id="hi-superscript" scheme="css">vertical-align: super;</rendition>
+            <rendition xml:id="hi-italic" scheme="css">font-style: italic;</rendition>
+         </tagsDecl>
+      </encodingDesc></teiHeader><facsimile><surface xml:id="facs_1" ulx="0" uly="0" lrx="1783" lry="2703" corresp="LJU296_35_I_P68_001.jpg" start="#I1L68P1">
+			<graphic mimeType="image/jpeg" url="LJU296_35_I_P68_001.jpg" xml:id="IMAGE.1" width="1783px" height="2703px"/>
+			<zone ulx="39" uly="92" lrx="1771" lry="2571" rendition="TextRegion" xml:id="facs_1_tr_1">
+				<zone ulx="824" uly="0" lrx="1649" lry="202" rendition="Line" xml:id="facs_1_tr_1_tl_1"/>
+				<zone ulx="407" uly="187" lrx="1316" lry="385" rendition="Line" xml:id="facs_1_tr_1_tl_2"/>
+				<zone ulx="27" uly="308" lrx="1721" lry="518" rendition="Line" xml:id="facs_1_tr_1_tl_3"/>
+				<zone ulx="160" uly="451" lrx="1696" lry="602" rendition="Line" xml:id="facs_1_tr_1_tl_4"/>
+				<zone ulx="152" uly="537" lrx="1620" lry="708" rendition="Line" xml:id="facs_1_tr_1_tl_5"/>
+				<zone ulx="145" uly="657" lrx="1660" lry="802" rendition="Line" xml:id="facs_1_tr_1_tl_7"/>
+				<zone ulx="152" uly="771" lrx="1721" lry="916" rendition="Line" xml:id="facs_1_tr_1_tl_8"/>
+				<zone ulx="166" uly="853" lrx="1670" lry="1030" rendition="Line" xml:id="facs_1_tr_1_tl_9"/>
+				<zone ulx="168" uly="998" lrx="1668" lry="1123" rendition="Line" xml:id="facs_1_tr_1_tl_10"/>
+				<zone ulx="162" uly="1091" lrx="1643" lry="1217" rendition="Line" xml:id="facs_1_tr_1_tl_12"/>
+				<zone ulx="152" uly="1184" lrx="1708" lry="1321" rendition="Line" xml:id="facs_1_tr_1_tl_13"/>
+				<zone ulx="164" uly="1297" lrx="1759" lry="1432" rendition="Line" xml:id="facs_1_tr_1_tl_14"/>
+				<zone ulx="173" uly="1354" lrx="1765" lry="1529" rendition="Line" xml:id="facs_1_tr_1_tl_15"/>
+				<zone ulx="192" uly="1449" lrx="1681" lry="1634" rendition="Line" xml:id="facs_1_tr_1_tl_16"/>
+				<zone ulx="185" uly="1550" lrx="1683" lry="1729" rendition="Line" xml:id="facs_1_tr_1_tl_18"/>
+				<zone ulx="179" uly="1653" lrx="857" lry="1826" rendition="Line" xml:id="facs_1_tr_1_tl_19"/>
+				<zone ulx="126" uly="1782" lrx="1704" lry="1940" rendition="Line" xml:id="facs_1_tr_1_tl_20"/>
+				<zone ulx="162" uly="1856" lrx="1677" lry="2028" rendition="Line" xml:id="facs_1_tr_1_tl_21"/>
+				<zone ulx="162" uly="1995" lrx="1677" lry="2134" rendition="Line" xml:id="facs_1_tr_1_tl_22"/>
+				<zone ulx="171" uly="2062" lrx="1637" lry="2239" rendition="Line" xml:id="facs_1_tr_1_tl_23"/>
+				<zone ulx="162" uly="2178" lrx="1744" lry="2332" rendition="Line" xml:id="facs_1_tr_1_tl_24"/>
+				<zone ulx="187" uly="2268" lrx="1757" lry="2437" rendition="Line" xml:id="facs_1_tr_1_tl_25"/>
+				<zone ulx="171" uly="2374" lrx="1763" lry="2532" rendition="Line" xml:id="facs_1_tr_1_tl_26"/>
+				<zone ulx="166" uly="2479" lrx="1611" lry="2624" rendition="Line" xml:id="facs_1_tr_1_tl_27"/>
+			</zone>
+		</surface><surface xml:id="facs_2" ulx="0" uly="0" lrx="3552" lry="2697" corresp="LJU296_35_I_P68_002.jpg" start="#I1L68P2">
+			<graphic mimeType="image/jpeg" url="LJU296_35_I_P68_002.jpg" xml:id="IMAGE.2" width="3552px" height="2697px"/>
+			<zone ulx="116" uly="103" lrx="1778" lry="2488" rendition="TextRegion" xml:id="facs_2_tr_1">
+				<zone ulx="105" uly="193" lrx="1754" lry="343" rendition="Line" xml:id="facs_2_tr_1_tl_2"/>
+				<zone ulx="169" uly="294" lrx="1752" lry="444" rendition="Line" xml:id="facs_2_tr_1_tl_3"/>
+				<zone ulx="169" uly="370" lrx="1766" lry="547" rendition="Line" xml:id="facs_2_tr_1_tl_4"/>
+				<zone ulx="164" uly="463" lrx="1772" lry="652" rendition="Line" xml:id="facs_2_tr_1_tl_6"/>
+				<zone ulx="156" uly="570" lrx="1614" lry="751" rendition="Line" xml:id="facs_2_tr_1_tl_7"/>
+				<zone ulx="156" uly="668" lrx="1713" lry="853" rendition="Line" xml:id="facs_2_tr_1_tl_8"/>
+				<zone ulx="158" uly="794" lrx="1721" lry="962" rendition="Line" xml:id="facs_2_tr_1_tl_9"/>
+				<zone ulx="709" uly="876" lrx="960" lry="950" rendition="Line" xml:id="facs_2_tr_1_tl_10"/>
+				<zone ulx="150" uly="890" lrx="1731" lry="1067" rendition="Line" xml:id="facs_2_tr_1_tl_12"/>
+				<zone ulx="156" uly="1001" lrx="1733" lry="1143" rendition="Line" xml:id="facs_2_tr_1_tl_13"/>
+				<zone ulx="144" uly="1092" lrx="1760" lry="1269" rendition="Line" xml:id="facs_2_tr_1_tl_14"/>
+				<zone ulx="138" uly="1205" lrx="1709" lry="1369" rendition="Line" xml:id="facs_2_tr_1_tl_15"/>
+				<zone ulx="138" uly="1291" lrx="1688" lry="1468" rendition="Line" xml:id="facs_2_tr_1_tl_16"/>
+				<zone ulx="152" uly="1384" lrx="1733" lry="1575" rendition="Line" xml:id="facs_2_tr_1_tl_17"/>
+				<zone ulx="150" uly="1540" lrx="705" lry="1672" rendition="Line" xml:id="facs_2_tr_1_tl_18"/>
+				<zone ulx="138" uly="1571" lrx="1733" lry="1766" rendition="Line" xml:id="facs_2_tr_1_tl_19"/>
+				<zone ulx="173" uly="1690" lrx="1686" lry="1861" rendition="Line" xml:id="facs_2_tr_1_tl_21"/>
+				<zone ulx="181" uly="1793" lrx="1686" lry="1964" rendition="Line" xml:id="facs_2_tr_1_tl_22"/>
+				<zone ulx="185" uly="1881" lrx="1668" lry="2064" rendition="Line" xml:id="facs_2_tr_1_tl_23"/>
+				<zone ulx="185" uly="1980" lrx="1641" lry="2157" rendition="Line" xml:id="facs_2_tr_1_tl_25"/>
+				<zone ulx="185" uly="2064" lrx="1727" lry="2225" rendition="Line" xml:id="facs_2_tr_1_tl_26"/>
+				<zone ulx="175" uly="2178" lrx="1664" lry="2336" rendition="Line" xml:id="facs_2_tr_1_tl_28"/>
+				<zone ulx="173" uly="2260" lrx="1731" lry="2447" rendition="Line" xml:id="facs_2_tr_1_tl_29"/>
+				<zone ulx="179" uly="2373" lrx="1709" lry="2548" rendition="Line" xml:id="facs_2_tr_1_tl_30"/>
+			</zone>
+			<zone ulx="1855" uly="233" lrx="3505" lry="2550" rendition="TextRegion" xml:id="facs_2_tr_2">
+				<zone ulx="1853" uly="216" lrx="3393" lry="389" rendition="Line" xml:id="facs_2_tr_2_tl_1"/>
+				<zone ulx="1927" uly="327" lrx="3481" lry="473" rendition="Line" xml:id="facs_2_tr_2_tl_2"/>
+				<zone ulx="1923" uly="428" lrx="3448" lry="586" rendition="Line" xml:id="facs_2_tr_2_tl_3"/>
+				<zone ulx="1927" uly="541" lrx="3500" lry="693" rendition="Line" xml:id="facs_2_tr_2_tl_4"/>
+				<zone ulx="1943" uly="644" lrx="3413" lry="796" rendition="Line" xml:id="facs_2_tr_2_tl_5"/>
+				<zone ulx="1933" uly="732" lrx="3387" lry="905" rendition="Line" xml:id="facs_2_tr_2_tl_6"/>
+				<zone ulx="1927" uly="847" lrx="3440" lry="1010" rendition="Line" xml:id="facs_2_tr_2_tl_7"/>
+				<zone ulx="1900" uly="948" lrx="3440" lry="1110" rendition="Line" xml:id="facs_2_tr_2_tl_8"/>
+				<zone ulx="1912" uly="1030" lrx="3387" lry="1232" rendition="Line" xml:id="facs_2_tr_2_tl_9"/>
+				<zone ulx="1910" uly="1164" lrx="3494" lry="1339" rendition="Line" xml:id="facs_2_tr_2_tl_10"/>
+				<zone ulx="1842" uly="1279" lrx="3463" lry="1478" rendition="Line" xml:id="facs_2_tr_2_tl_11"/>
+				<zone ulx="1877" uly="1421" lrx="3434" lry="1583" rendition="Line" xml:id="facs_2_tr_2_tl_12"/>
+				<zone ulx="1879" uly="1542" lrx="3415" lry="1696" rendition="Line" xml:id="facs_2_tr_2_tl_13"/>
+				<zone ulx="1894" uly="1631" lrx="3383" lry="1799" rendition="Line" xml:id="facs_2_tr_2_tl_14"/>
+				<zone ulx="1892" uly="1713" lrx="3442" lry="1892" rendition="Line" xml:id="facs_2_tr_2_tl_15"/>
+				<zone ulx="1894" uly="1842" lrx="3467" lry="1962" rendition="Line" xml:id="facs_2_tr_2_tl_16"/>
+				<zone ulx="1906" uly="1904" lrx="3428" lry="2075" rendition="Line" xml:id="facs_2_tr_2_tl_17"/>
+				<zone ulx="1898" uly="2021" lrx="3473" lry="2192" rendition="Line" xml:id="facs_2_tr_2_tl_18"/>
+				<zone ulx="1904" uly="2130" lrx="3306" lry="2299" rendition="Line" xml:id="facs_2_tr_2_tl_19"/>
+				<zone ulx="1980" uly="2229" lrx="3391" lry="2383" rendition="Line" xml:id="facs_2_tr_2_tl_20"/>
+				<zone ulx="2665" uly="2336" lrx="3383" lry="2482" rendition="Line" xml:id="facs_2_tr_2_tl_21"/>
+				<zone ulx="2821" uly="2410" lrx="3208" lry="2597" rendition="Line" xml:id="facs_2_tr_2_tl_22"/>
+			</zone>
+		</surface></facsimile>
+	
+	
+	<text>
+		<body><div type="letter">
+			<pb facs="#facs_1" n="1" xml:id="I1L68P1"/>
+			<p facs="#facs_1_tr_1">
+				
+					<lb facs="#facs_1_tr_1_tl_1" n="N001"/>Laibaach am 24. July 1830.
+					<lb facs="#facs_1_tr_1_tl_2" n="N002"/>Mein Herzens Weibchen!
+
+					<lb facs="#facs_1_tr_1_tl_3" n="N003"/>Durch die Gütte des <choice><abbr>H.</abbr><expan>Herr</expan></choice> Gubernialrath<choice><abbr>v</abbr><expan>von</expan></choice>Kogl habe
+					<lb facs="#facs_1_tr_1_tl_4" n="N004"/>ich bereits Dein 4tes liebes Schreiben erhalten,
+					<lb facs="#facs_1_tr_1_tl_5" n="N005"/>ich muß Dich wirklich sehr loben, daß Du ganz
+					<lb facs="#facs_1_tr_1_tl_7" n="N006"/>nach meinen Wünsche fleißig schreibst, wo ich
+					<lb facs="#facs_1_tr_1_tl_8" n="N007"/>hingeigen ob Mangel an Gelegenheiten leider
+					<lb facs="#facs_1_tr_1_tl_9" n="N008"/>dieß nicht thun kann, den viele gehen von
+					<lb facs="#facs_1_tr_1_tl_10" n="N009"/>da fort für die man gar nicht erfährt.
+					<lb facs="#facs_1_tr_1_tl_12" n="N010"/>Sehr angenehm ist mir von Dir zu hören,
+					<lb facs="#facs_1_tr_1_tl_13" n="N011"/>daß Du Dich sehr wohl befindest, gebe nur
+					<lb facs="#facs_1_tr_1_tl_14" n="N012"/>Acht mein Herzchen, daß Du Dich nicht verkühlst
+					<lb facs="#facs_1_tr_1_tl_15" n="N013"/><choice><abbr>u</abbr><expan>und</expan></choice> daß Du alles befolgst, was zu einer vollkommene
+					<lb facs="#facs_1_tr_1_tl_16" n="N014"/>Stärkung erforderlich ist, sey recht froh
+					<lb facs="#facs_1_tr_1_tl_18" n="N015"/>muter, denn die Deinigen sind ja immer
+					<lb facs="#facs_1_tr_1_tl_19" n="N016"/>im Geiste bey Dir.
+					<lb facs="#facs_1_tr_1_tl_20" n="N017"/>Heir gehet alles in gewöhnlicher Ordung, ich kann
+					<lb facs="#facs_1_tr_1_tl_21" n="N018"/>nicht viel abkommen indem ich selbst auf dem
+					<lb facs="#facs_1_tr_1_tl_22" n="N019"/>Comptoir bin, ich hoffe aber bis Montag
+					<lb facs="#facs_1_tr_1_tl_23" n="N020"/>den <persName ref="persName.xml#fabriotti">Fabriotti</persName> zurück, wo ich sodan mehr in
+					<lb facs="#facs_1_tr_1_tl_24" n="N021"/><placeName ref="placeName.xml#fuzine">Kaltenbrun</placeName> werde seyn können, auch unten ist
+					<lb facs="#facs_1_tr_1_tl_25" n="N022"/>alles in Ordung, beym Stephansdorfer Zehend
+					<lb facs="#facs_1_tr_1_tl_26" n="N023"/>werden wir gut 3 Mahl das in Natura einbringen
+					<lb facs="#facs_1_tr_1_tl_27" n="N024"/>was solche bis Datto in Geld bezahlt haben.
+				
+			</p>
+			<pb facs="#facs_2" n="2" xml:id="I1L68P2"/>
+			<p facs="#facs_2_tr_1">
+				
+					<lb facs="#facs_2_tr_1_tl_2" n="N001"/>Vorgestern wurde hier ein schönes Schlachtstück unter
+					<lb facs="#facs_2_tr_1_tl_3" n="N002"/>den Thurn im Freyen aufgeführt, welches sehr
+					<lb facs="#facs_2_tr_1_tl_4" n="N003"/>nathürlich <choice><abbr>u</abbr><expan>und</expan></choice> gut ausfiell, mit <choice><abbr>H.</abbr><expan>Herr</expan></choice> Vater haben
+					<lb facs="#facs_2_tr_1_tl_6" n="N004"/>wir, dasselbe besucht <choice><abbr>u</abbr><expan>und</expan></choice> viel Menscsen angetrosfen
+					<lb facs="#facs_2_tr_1_tl_7" n="N005"/>es war gut besezt, und die schöne Musick
+					<lb facs="#facs_2_tr_1_tl_8" n="N006"/>aus der Oper Kreuzfahrer ergötzte sehr
+					<lb facs="#facs_2_tr_1_tl_9" n="N007"/>angenehm im grünen. Auf Gesters Abend
+					<lb facs="#facs_2_tr_1_tl_10" n="N008"/>Waßer
+					<lb facs="#facs_2_tr_1_tl_12" n="N009"/>werde ein großes Feuerwerk angesagt, allein
+					<lb facs="#facs_2_tr_1_tl_13" n="N010"/>wegen einigen eingetrettenen Hindernißen
+					<lb facs="#facs_2_tr_1_tl_14" n="N011"/>mußte solches auf einige Tage verschoben werden.
+					<lb facs="#facs_2_tr_1_tl_15" n="N012"/>Das die Uranitzh einen Prinzen bekommen, wirst
+					<lb facs="#facs_2_tr_1_tl_16" n="N013"/>schon gehört haben, wenn er aber gleich sieht,
+					<lb facs="#facs_2_tr_1_tl_17" n="N014"/>weiß ich noch nicht, übrigens ist nicht besonderes
+					<lb facs="#facs_2_tr_1_tl_18" n="N015"/>hier vorgefallen.
+					<lb facs="#facs_2_tr_1_tl_19" n="N016"/>Wahrscheinlich werde ich meine liebe  <hi rend="italic"><persName ref="persName.xml#josephine">Josephine</persName></hi> nicht
+					<lb facs="#facs_2_tr_1_tl_21" n="N017"/>selbst abhollen können, indem mich die fatale
+					<lb facs="#facs_2_tr_1_tl_22" n="N018"/>Grundschätzung davon abhalten sollte, welche
+					<lb facs="#facs_2_tr_1_tl_23" n="N019"/>die nächste Woche dahier beginnt. Ich glaube
+					<lb facs="#facs_2_tr_1_tl_25" n="N020"/>am 1ten August den Dr Trepinz jinauf zu
+					<lb facs="#facs_2_tr_1_tl_26" n="N021"/>senden der Dein treuer Begleiter seyn soll
+					<lb facs="#facs_2_tr_1_tl_28" n="N022"/>und am 3ten August am Dienstag Früh reiset
+					<lb facs="#facs_2_tr_1_tl_29" n="N023"/>Ihr von dort ab Sollte Dich aber nach freuen
+					<lb facs="#facs_2_tr_1_tl_30" n="N024"/>länger dort zu bleiben, wenn es vielleicht die
+				
+			</p>
+			<p facs="#facs_2_tr_2">
+				
+					<lb facs="#facs_2_tr_2_tl_1" n="N001"/>Umstände erheischen sollten, so berichte mir
+					<lb facs="#facs_2_tr_2_tl_2" n="N002"/>aber dieß etwas früher, <choice><abbr>u</abbr><expan>und</expan></choice> werde darnach den
+					<lb facs="#facs_2_tr_2_tl_3" n="N003"/>Doctor spätter hinauf schicksn, überhaupt
+					<lb facs="#facs_2_tr_2_tl_4" n="N004"/>berichte mir aber den Zeitpunkt wann Moises
+					<lb facs="#facs_2_tr_2_tl_5" n="N005"/>über das rothe Meer ziehen wird, damit
+					<lb facs="#facs_2_tr_2_tl_6" n="N006"/>ich ihm jenseits erwarten kann, sehr lieb
+					<lb facs="#facs_2_tr_2_tl_7" n="N007"/>wäre nur wenn er einen andern Weeg eine
+					<lb facs="#facs_2_tr_2_tl_8" n="N008"/>schlagen möchte, auf den er gewißer in daß
+					<lb facs="#facs_2_tr_2_tl_9" n="N009"/>gelobte Land gelangen könnte, Geduld!
+					<lb facs="#facs_2_tr_2_tl_10" n="N010"/>vielleicht fällt ihm bald der gute Gedanku ein.
+					<lb facs="#facs_2_tr_2_tl_11" n="N011"/>Am künftigen Montag reiset Dr Verbitz von hier
+					<lb facs="#facs_2_tr_2_tl_12" n="N012"/>dahin; baade ja recht fleißig und lasse mir
+					<lb facs="#facs_2_tr_2_tl_13" n="N013"/>ja keinen Tag mehr aus, denn es ist ja sehe
+					<lb facs="#facs_2_tr_2_tl_14" n="N014"/>schade darum. Künftige Woche werde ich
+					<lb facs="#facs_2_tr_2_tl_15" n="N015"/>Dir auch den Urbantschitsch hinauf schickhen
+					<lb facs="#facs_2_tr_2_tl_16" n="N016"/>damit Du immer jemanden von unsern nähern
+
+					<lb facs="#facs_2_tr_2_tl_17" n="N017"/>Bekanten oben haben wirst. Die Ältern
+					<lb facs="#facs_2_tr_2_tl_18" n="N018"/>sind recht gesund <choice><abbr>u</abbr><expan>und</expan></choice> laßen Dich schönst grüßen
+					<lb facs="#facs_2_tr_2_tl_19" n="N019"/>Es umarmt Dich mit heißer Liebe im
+					<lb facs="#facs_2_tr_2_tl_20" n="N020"/>Geiste <choice><abbr>u</abbr><expan>und</expan></choice> küßt Dich von ganzen Herzen
+					<lb facs="#facs_2_tr_2_tl_21" n="N021"/>Dein treuer Gatte
+					<lb facs="#facs_2_tr_2_tl_22" n="N022"/><persName ref="persName.xml#fidelij">Fidelis</persName>
+				
+			</p>
+		</div></body>
+	</text>
+</TEI>

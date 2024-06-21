@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title type="main">SI_ZAL_LJU-0296_35_ovoj I_pismo 71</title>
+			<editor>
+               <persName xml:id="JG">
+                  <surname>Glavič</surname>
+                  <forename>Jože</forename>
+               </persName>
+            </editor><respStmt xml:id="NBK">               
+               <persName>
+                  <surname>Budna</surname>
+                  <surname>Kodrič</surname>
+                  <forename>Nataša</forename>
+               </persName>
+               <resp>Transcribing</resp>
+            </respStmt></titleStmt>
+			<publicationStmt>
+            <publisher>Zgodovinski arhiv Ljubljana</publisher>
+            <address>
+               <orgName>Zgodovinski arhiv Ljubljana</orgName>
+               <street>Mestni trg, 27</street>
+               <settlement>Ljubljana</settlement>
+               <postCode>1000</postCode>
+               <country>Slovenija</country>
+            </address>
+            <distributor>ZIM</distributor>
+            <pubPlace>Graz</pubPlace>
+            <date when="2020">2020</date>
+         <idno type="PID">o:tpcl.71</idno> 			</publicationStmt>
+			<sourceDesc>
+            <bibl/>   <!--AUTOMATIC NAMING AFTER adding correspDesc; Naming "Pismo" + <correspAction type="sent"><persName>Josephine Zeschka</persName> ""poslano k" <correspAction type="received"><persName><persName ref="persName.xml#fidelij">Fidelis</persName> Terpinz</persName> + " <date when="1825-03-22">22.März.1825</date>" -->
+            <msDesc rend="manuscript">
+               <msIdentifier>
+                  <institution xml:lang="sl">Zgodovinski arhiv Ljubljana</institution>                  
+                  <repository>SI_ZAL_LJU/0296 Graščina Fužine, Ljubljana, 1616-1925</repository>              
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+		</fileDesc>
+	<profileDesc>
+         <!-- ADD MANUAL-->
+         <correspDesc>
+         	<correspAction type="sent">
+         		<persName ref="persName.xml#fidelij">Fidelis Terpinz</persName>
+         		<placeName ref="placeName.xml#ljubljana">Laibach</placeName>
+         		<date when="1830-07-27"/>
+         	</correspAction>
+         	<correspAction type="received">
+         		<persName ref="persName.xml#jnurbancic">Janez Nepomuk Urbančič</persName>
+         		<placeName ref="placeName.xml#turnpredvor">Turn pri Preddvoru</placeName>
+         	</correspAction>
+         </correspDesc>
+      </profileDesc><encodingDesc>
+         <projectDesc>
+            <p>This document is part of the <ref type="context" target="context:tpcl">Terpinc Familiy Letters</ref> project.</p>
+            <p>End line word seperation is marked with <lb break="no"/> with no whitespace. Word is denoted with <w/> tag.</p>
+            <p>People and place names are denoted with <persName/> <placeName/> elements respectively. 
+               Both include reference to an external document persName.xml and Place.xml respectively. Example of a reference <persName ref="persName.xml#josephine">Josephine Zeschka</persName>
+               Reference to a person is denoted with <rs type="person" ref="persName.xml#terezija">Mama</rs> as an example, when person is denoted with a postion or relationship.
+            </p>
+            <p/>								
+         </projectDesc>
+         <tagsDecl>
+            <rendition xml:id="center" scheme="css">text-align: center;</rendition>
+            <rendition xml:id="left" scheme="css">text-align: left;</rendition>
+            <rendition xml:id="right" scheme="css">text-align: right;</rendition>
+            <rendition xml:id="hi-underlined" scheme="css">text-decoration: underline;</rendition>
+            <rendition xml:id="hi-superscript" scheme="css">vertical-align: super;</rendition>
+            <rendition xml:id="hi-italic" scheme="css">font-style: italic;</rendition>
+         </tagsDecl>
+      </encodingDesc></teiHeader><facsimile><surface xml:id="facs_1" ulx="0" uly="0" lrx="1790" lry="2700" corresp="LJU296_35_I_P71_001.jpg" start="#I1L71P1">
+			<graphic mimeType="image/jpeg" url="LJU296_35_I_P71_001.jpg" xml:id="IMAGE.1" width="1790px" height="2700px"/>
+			<zone ulx="148" uly="138" lrx="1767" lry="2613" rendition="TextRegion" xml:id="facs_1_r3">
+				<zone ulx="725" uly="10" lrx="1569" lry="290" rendition="Line" xml:id="facs_1_r3l1"/>
+				<zone ulx="423" uly="312" lrx="1259" lry="452" rendition="Line" xml:id="facs_1_r3l2"/>
+				<zone ulx="216" uly="394" lrx="1707" lry="682" rendition="Line" xml:id="facs_1_r3l3"/>
+				<zone ulx="230" uly="627" lrx="1730" lry="809" rendition="Line" xml:id="facs_1_r3l4"/>
+				<zone ulx="226" uly="766" lrx="1762" lry="941" rendition="Line" xml:id="facs_1_r3l5"/>
+				<zone ulx="220" uly="887" lrx="1754" lry="1054" rendition="Line" xml:id="facs_1_r3l6"/>
+				<zone ulx="203" uly="1006" lrx="1701" lry="1177" rendition="Line" xml:id="facs_1_r3l7"/>
+				<zone ulx="187" uly="1132" lrx="1715" lry="1308" rendition="Line" xml:id="facs_1_r3l8"/>
+				<zone ulx="185" uly="1267" lrx="1752" lry="1442" rendition="Line" xml:id="facs_1_r3l9"/>
+				<zone ulx="177" uly="1395" lrx="1668" lry="1563" rendition="Line" xml:id="facs_1_r3l10"/>
+				<zone ulx="166" uly="1502" lrx="1676" lry="1668" rendition="Line" xml:id="facs_1_r3l12"/>
+				<zone ulx="170" uly="1600" lrx="1693" lry="1777" rendition="Line" xml:id="facs_1_r3l13"/>
+				<zone ulx="166" uly="1721" lrx="1617" lry="1877" rendition="Line" xml:id="facs_1_r3l14"/>
+				<zone ulx="162" uly="1834" lrx="1598" lry="1994" rendition="Line" xml:id="facs_1_r3l15"/>
+				<zone ulx="152" uly="1968" lrx="1614" lry="2128" rendition="Line" xml:id="facs_1_r3l16"/>
+				<zone ulx="154" uly="2068" lrx="1545" lry="2229" rendition="Line" xml:id="facs_1_r3l17"/>
+				<zone ulx="136" uly="2171" lrx="1635" lry="2337" rendition="Line" xml:id="facs_1_r3l18"/>
+				<zone ulx="140" uly="2270" lrx="1625" lry="2442" rendition="Line" xml:id="facs_1_r3l19"/>
+				<zone ulx="158" uly="2374" lrx="1436" lry="2567" rendition="Line" xml:id="facs_1_r3l20"/>
+				<zone ulx="1263" uly="2496" lrx="1501" lry="2635" rendition="Line" xml:id="facs_1_r3l21"/>
+			</zone>
+		</surface></facsimile>
+	
+	<text>
+		<body><div type="letter">
+			<pb facs="#facs_1" n="1" xml:id="I1L71P1"/>
+			<p facs="#facs_1_r3">
+				
+					<lb facs="#facs_1_r3l1" n="N001"/><placeName ref="placeName.xml#ljubljana">Laibach</placeName> am 27. Jully 1830
+					<lb facs="#facs_1_r3l2" n="N002"/>Lieber Freund <choice><abbr>u</abbr><expan>und</expan></choice> Bruder!
+					<lb facs="#facs_1_r3l3" n="N003"/>Ich muß Dich mit gegenwärtigen unterrichten
+					<lb facs="#facs_1_r3l4" n="N004"/>daß ich meine  <hi rend="italic"><persName ref="persName.xml#josephine">Josephine</persName></hi> gar nicht selbst werder
+					<lb facs="#facs_1_r3l5" n="N005"/>abhollen konnen indem am 29t Jully <choice><abbr>u</abbr><expan>und</expan></choice> die weitern
+					<lb facs="#facs_1_r3l6" n="N006"/>Tage wegen der fatalen Grundschätzung als Ausschuß
+					<lb facs="#facs_1_r3l7" n="N007"/>gar nicht abkommen kann. Deßwegen wird Dir
+					<lb facs="#facs_1_r3l8" n="N008"/>vielleicht lieb seyn dieß früher zu erfahren.
+					<lb facs="#facs_1_r3l9" n="N009"/>indem Du vielleicht gleich dieser Tage nach Vellach
+					<lb facs="#facs_1_r3l10" n="N010"/>reisen kanst. Meine Frau wird wahrschenlich
+					<lb facs="#facs_1_r3l12" n="N011"/>Dr Terpinz am 1ten August abhollen gehen, und
+					<lb facs="#facs_1_r3l13" n="N012"/>für jezt habe ich die Abfahrt von dort auf den
+					<lb facs="#facs_1_r3l14" n="N013"/>3ten August in aller Früh bestimmt: vielleicht
+					<lb facs="#facs_1_r3l15" n="N014"/>könntest auch Du damahls die Retourreise
+					<lb facs="#facs_1_r3l16" n="N015"/>machen. Ich bitte Dich inliegenden Brief
+					<lb facs="#facs_1_r3l17" n="N016"/>an meine <persName ref="persName.xml#josephine">Pepi</persName> eingehend zu machen, oder
+					<lb facs="#facs_1_r3l18" n="N017"/>vielleicht selbst mitzunehmen. Ich wünsche
+					<lb facs="#facs_1_r3l19" n="N018"/>Dir recht viel Vergnügen. In Eile Dein
+					<lb facs="#facs_1_r3l20" n="N019"/>dich herzlichst küßenden Freund
+					<lb facs="#facs_1_r3l21" n="N020"/><persName ref="persName.xml#fidelij">Fidelis</persName>
+				
+			</p>
+		</div></body>
+	</text>
+</TEI>
